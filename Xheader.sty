@@ -1,0 +1,102 @@
+%% Xheader by mKomm
+%% Use with book (KOMA) document class
+
+%Header===============================================
+\usepackage[a4paper,left=25mm,right=25mm,top=40mm,bottom=35mm]{geometry}
+\addtolength{\evensidemargin}{-0.3cm}
+\addtolength{\oddsidemargin}{0.5cm}
+\usepackage[nouppercase]{scrpage2}
+\usepackage{ifthen}
+\pagestyle{scrheadings}
+%Makiere Chapter(odd) & Section(even)
+\automark[chapter]{section}
+%Vergroessere head&foot Breite
+\setheadwidth[0.5cm]{text}
+\setfootwidth[0.5cm]{text}
+%Headschrift
+\renewcommand*{\headfont}{\normalfont\sffamily\itshape}
+%alternativ: \renewcommand*{\headfont}{\normalfont\sffamily\scshape\large}
+%Footschrift
+\renewcommand*{\footfont}{\normalfont\sffamily}
+%Seitenzahlschrift
+\renewcommand*{\pnumfont}{\normalfont\rmfamily\small\bfseries}
+
+%Pakete===============================================
+\usepackage{amsmath,amssymb,amsthm} %fuer mathematische Formeln etc.
+\usepackage{enumerate} %nummerierte Aufzaehlungen
+\usepackage{fancybox}%fuer grosse Boxen, Rahmen
+\usepackage{array}%tabellanartige Strukturen z.B. fuer Formeln Spalten im mathematischen Modus
+\usepackage{calc}%erweitert setlength etc. damit auch arithmetische Funktionen benutzt werden koennen
+\usepackage{color} %zur Benutzung von Farben
+\usepackage{url}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{slashed}
+\usepackage{axodraw4j}
+
+%Befehle zur Formation etc.===========================
+\definecolor{gray}{rgb}{0.85,0.85,0.85}
+\setlength{\parindent}{0.5pt} %Absatzeinzug
+\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\linespread {1.08}\selectfont 
+
+%Schicke Bild- und Tabellenbeschreibungen
+\usepackage[textfont=small,format=plain,labelfont={bf,sc,small},indention=.2cm,labelsep=colon]{caption}
+
+%Schicker Chapterstyle
+\titleformat{\chapter}[display]
+{\normalfont\bfseries\fontsize{28}{22}\selectfont}
+	{\filleft\fontsize{28}{14}{\sc \chaptertitlename \hspace{0.5cm}}\sffamily\fontsize{28}{14} \sc \thechapter}
+	{0.15cm}
+	{\titlerule\vspace{0.15cm}\filright}
+%\renewcommand*{\chapterheadstartvskip}{\vspace{-1.0cm}}
+\titlespacing{\chapter}{-0.3cm}{-2cm}{0.5cm}
+
+%\setkomafont{section}{\normalfont}
+%\setkomafont{subsection}{\normalfont\slshape}
+\addtokomafont{disposition}{\normalfont\bfseries}
+
+%\setkomafont{chapter}{\normalfont\bfseries\fontsize{13}{15.5}\selectfont\scshape}
+%\setkomafont{section}{\normalfont\fontsize{13}{15.5}\selectfont}
+%\setkomafont{subsection}{\normalfont\slshape\fontsize{13}{15.5}\selectfont}
+
+%\renewcommand{\contentsname}{Inhaltsverzeichnis}
+%\renewcommand{\listfigurename}{Abbildungsverzeichnis} 
+%\renewcommand{\listtablename}{Tabellenverzeichnis}
+
+%Definiert Exkursumgebung: \exkurs{Titel}{Text (auch mit Formeln)}
+\newcommand{\exkurs}[2]{ 
+	\parbox{\textwidth}{
+	\parbox{\textwidth}{\textsc{\large #1} \rule[1.5mm]{4cm}{0.2pt}}
+	\colorbox{white}{\line(0,1){50} \parbox{\textwidth}{\vspace{0.2cm} \hspace{0.4cm}\small{#2}} \put(-6.0,0.0){\line(0,-1){50}}}
+	\parbox{\textwidth}{\hspace{\fill} \rule[5mm]{6cm}{0.2pt}}
+	}
+}
+
+%namen
+\newcommand{\name}[1]{
+\textsc{#1}
+}
+
+%einheiten
+\newcommand{\nuu}[2]{
+$#1$\hspace{1.5pt }#2
+}
+
+
+% New definition of square root:
+% it renames \sqrt as \oldsqrt
+\let\oldsqrt\sqrt
+% it defines the new \sqrt in terms of the old one
+\def\sqrt{\mathpalette\DHLhksqrt}
+\def\DHLhksqrt#1#2{%
+\setbox0=\hbox{$#1\oldsqrt{#2\,}$}\dimen0=\ht0
+\advance\dimen0-0.2\ht0
+\setbox2=\hbox{\vrule height\ht0 depth -\dimen0}%
+{\box0\lower0.4pt\box2}}
+
+%Sonst================================================
+\setlength{\jot}{0.7cm} %Vergroessert Zeilenabstand in align-Umgebung
+%Definiert \mbox zu \textrm um -> Textgroesse in Formel-Umgebung wird angepasst
+\let\oldmbox\mbox
+\renewcommand{\mbox}[1]{\textrm{#1}}
