@@ -160,7 +160,7 @@ addcontentsline{toc}{section}{List of Figures}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -198,7 +198,7 @@ addcontentsline{toc}{section}{List of Tables}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -228,39 +228,6 @@ addcontentsline{toc}{section}{List of Abbreviations}
 \backslash
 renewcommand{
 \backslash
-nomname}{List of Abbreviations}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-setlength{
-\backslash
-nomlabelwidth}{.15
-\backslash
-hsize}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
-nomlabel}[1]{{
-\backslash
-bf #1} 
-\backslash
-dotfill}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-renewcommand{
-\backslash
 baselinestretch}{1.0}
 \backslash
 normalsize
@@ -272,9 +239,15 @@ normalsize
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset nomencl_print
-LatexCommand printnomenclature
-set_width "none"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+printnomenclature
+\end_layout
 
 \end_inset
 
@@ -508,17 +481,11 @@ Hiermit versichere, dass ich diese Arbeit selbstständig verfasst und keine
 
 \begin_layout Standard
 Aachen, den XXXX
-\begin_inset space \hfill{}
+\begin_inset space \hspace{}
+\length 5cm
 \end_inset
 
 ____________________
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \end_body
