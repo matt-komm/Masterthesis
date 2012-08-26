@@ -38,8 +38,8 @@
 
 %Befehle zur Formation etc.===========================
 \definecolor{gray}{rgb}{0.85,0.85,0.85}
-\setlength{\parindent}{0.5pt} %Absatzeinzug
-\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\setlength{\parindent}{0.3cm} %Absatzeinzug
+\setlength{\parskip}{0.07cm}
 \linespread {1.08}\selectfont 
 
 %Schicke Bild- und Tabellenbeschreibungen
@@ -117,9 +117,13 @@
 
 %einheiten
 \newcommand{\nuu}[2]{
-$#1$\hspace{1.5pt }#2
+$ #1$\hspace{1.5pt }#2
 }
 
+%marker
+\newcommand{\checkthis}[1]{
+\textcolor{red}{[#1]}
+}
 
 % New definition of square root:
 % it renames \sqrt as \oldsqrt

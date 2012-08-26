@@ -68,7 +68,7 @@ tabs-within-sections
 \headheight 2cm
 \headsep 2cm
 \footskip 2cm
-\secnumdepth 2
+\secnumdepth 1
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
@@ -97,8 +97,102 @@ The Standard Model of Particle Physics
 General Construction
 \end_layout
 
+\begin_layout Standard
+gfhghfgh
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The SM Leptons
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The SM Quarks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 The Electro-Weak Interaction and Higgs Mechanism
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The Higgs Potential - 
+\begin_inset Quotes eld
+\end_inset
+
+Mexican Hat
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

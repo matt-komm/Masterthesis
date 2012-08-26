@@ -89,11 +89,221 @@ tabs-within-sections
 Introduction
 \end_layout
 
-\begin_layout Paragraph
-Unit Convention
+\begin_layout Standard
+In 1995 the top quark was firstly observed at the Tevatron Collider (Fermilab)
+ in Chicago, USA
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TopQuarkObs"
+
+\end_inset
+
+.
+ Back then, its properties like mass and the production cross-sections were
+ measured.
+ Due to the low statistics it was difficult at first to obtain more information
+ about the structure of the top quark, like its coupling.
+ Here the Standard Model of Particle Physics (SM) predicts that only left-handed
+ top quarks couple to the w-boson and the bottom quark.
+ This is called 
+\begin_inset Quotes eld
+\end_inset
+
+vector
+\begin_inset Quotes erd
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+axialvector
+\begin_inset Quotes erd
+\end_inset
+
+ (V-A) structure.
+ With the start of data taking at the Large Hadron Collider in 2010
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{year correct?}
+\end_layout
+
+\end_inset
+
+(CERN) in Geneva, Switzerland, more data about the Top Quark is provided
+ to investigate further into this area.
 \end_layout
 
 \begin_layout Standard
+In my thesis, I present the means, strategy and result of the measurement
+ of the top spin asymmetries.
+ These observables are sensitive to the structure of the top quark coupling
+ to the w-boson and the bottom quark.
+ 
+\end_layout
+
+\begin_layout Standard
+The next chapter will cover briefly the theory behind the Standard Model
+ of Particle Physics and how the top quark fits in it.
+ Also, an effective extension of the SM is discussed to introduce a more
+ general coupling scenario and how this can be simulated.
+\end_layout
+
+\begin_layout Standard
+Then the experimental setup is depicted.
+ Here, the CMS experiment, the reconstruction of the nescessary physics
+ objects as well as the used software to perform the measurement is described.
+\end_layout
+
+\begin_layout Subsection*
+Unit Convention 
+\end_layout
+
+\begin_layout Standard
+Throughout this thesis the 
+\begin_inset Quotes eld
+\end_inset
+
+natural
+\begin_inset Quotes erd
+\end_inset
+
+ unit convention, which differs from the SI units is used.
+ This means that the following is assumed:
+\end_layout
+
+\begin_layout Itemize
+for the speed of light: 
+\begin_inset Formula $c=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{1}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+for the Planck constant: 
+\begin_inset Formula $\hbar=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{1}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+for the electric permittivity: 
+\begin_inset Formula $\epsilon_{0}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{1}{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+which changes amongst others the following basic SI units to
+\end_layout
+
+\begin_layout Itemize
+mass 
+\begin_inset Formula $[m]=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{}{GeV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+time 
+\begin_inset Formula $[t]=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{}{1/GeV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+length 
+\begin_inset Formula $[s]=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{}{1/GeV}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -133,6 +343,7 @@ value{part}<1
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintAll"
 bibfiles "references"
 options "amsplain"
 

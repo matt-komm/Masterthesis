@@ -314,7 +314,7 @@ description "Physics eXtension Library "
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SM"
-description "Standard Model"
+description "Standard Model of Particle Physics"
 
 \end_inset
 
