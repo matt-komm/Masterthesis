@@ -141,11 +141,22 @@ huge Masterarbeit Physik
 \backslash
 
 \backslash
-[2cm]}
+[1.7cm]}
 \end_layout
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+renewcommand{
+\backslash
+baselinestretch}{1.2}
+\backslash
+normalsize
 \end_layout
 
 \begin_layout Plain Layout
@@ -157,9 +168,7 @@ huge Masterarbeit Physik
 
     {
 \backslash
-Large
-\backslash
-textbf{
+LARGE{
 \backslash
 textsc{Measurement of Top Spin Asymmetries in t-channel Single Top Quark
  Production at 7 TeV with the CMS Experiment}}
@@ -172,6 +181,17 @@ textsc{Measurement of Top Spin Asymmetries in t-channel Single Top Quark
 \begin_layout Plain Layout
 
     %% HIER DEN NAMEN EINTRAGEN!
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+renewcommand{
+\backslash
+baselinestretch}{1.0}
+\backslash
+normalsize
 \end_layout
 
 \begin_layout Plain Layout

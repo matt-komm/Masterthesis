@@ -94,7 +94,7 @@ In 1995 the top quark was firstly observed at the Tevatron Collider (Fermilab)
  in Chicago, USA
 \begin_inset CommandInset citation
 LatexCommand cite
-key "TopQuarkObs"
+key "topQuarkObservation"
 
 \end_inset
 
@@ -343,7 +343,6 @@ value{part}<1
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-btprint "btPrintAll"
 bibfiles "references"
 options "amsplain"
 
