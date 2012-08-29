@@ -90,7 +90,7 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-In 1995 the top quark was firstly observed at the Tevatron Collider (Fermilab)
+In 1995 the top quark was discovered at the Tevatron Collider (Fermilab)
  in Chicago, USA
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -101,11 +101,53 @@ key "topQuarkObservation"
 .
  Back then, its properties like mass and the production cross-sections were
  measured.
- Due to the low statistics it was difficult at first to obtain more information
- about the structure of the top quark, like its coupling.
+ Due to the low statistics it was difficult to obtain more information about
+ the structure of the top quark, like its coupling.
  Here the Standard Model of Particle Physics (SM) predicts that only left-handed
- top quarks couple to the w-boson and the bottom quark.
- This is called 
+ top quarks (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+particle{t}
+\end_layout
+
+\end_inset
+
+) couple to the w-boson (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+particle{W}
+\end_layout
+
+\end_inset
+
+) and the bottom quark 
+(
+\lang american
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+particle{b}
+\end_layout
+
+\end_inset
+
+).
+ This is called a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -135,15 +177,27 @@ checkthis{year correct?}
 
 \end_inset
 
-(CERN) in Geneva, Switzerland, more data about the Top Quark is provided
+(CERN) in Geneva, Switzerland, more data about the top quark is provided
  to investigate further into this area.
 \end_layout
 
 \begin_layout Standard
-In my thesis, I present the means, strategy and result of the measurement
- of the top spin asymmetries.
- These observables are sensitive to the structure of the top quark coupling
- to the w-boson and the bottom quark.
+In my thesis, I present the means, strategy and result of the top spin asymmetri
+es measurement.
+ These observables are sensitive to the structure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+particle{Wtb}
+\end_layout
+
+\end_inset
+
+-vertex.
  
 \end_layout
 
@@ -151,7 +205,7 @@ In my thesis, I present the means, strategy and result of the measurement
 The next chapter will cover briefly the theory behind the Standard Model
  of Particle Physics and how the top quark fits in it.
  Also, an effective extension of the SM is discussed to introduce a more
- general coupling scenario and how this can be simulated.
+ general coupling scenario.
 \end_layout
 
 \begin_layout Standard

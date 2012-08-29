@@ -494,6 +494,15 @@ end{center}
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The production and decay of the top quark.
+\end_layout
+
+\end_inset
+
 The production and decay of the top quark: (a) 
 \begin_inset Formula $t\bar{t}$
 \end_inset
@@ -588,7 +597,7 @@ status open
 \begin_inset Graphics
 	filename images/tquantization.eps
 	lyxscale 10
-	width 10cm
+	width 12cm
 
 \end_inset
 

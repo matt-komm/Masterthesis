@@ -48,12 +48,11 @@
 
 %Schicker Chapterstyle
 \titleformat{\chapter}[display]
-{\normalfont\bfseries\fontsize{28}{22}\selectfont}
+{\normalfont\bfseries\fontsize{28}{28}\selectfont}
 	{\filleft\fontsize{28}{14}{\sc \chaptertitlename \hspace{0.5cm}}\sffamily\fontsize{28}{14} \sc \thechapter}
-	{0.15cm}
-	{\titlerule\vspace{0.15cm}\filright}
-%\renewcommand*{\chapterheadstartvskip}{\vspace{-1.0cm}}
-\titlespacing{\chapter}{-0.3cm}{-2cm}{0.5cm}
+	{0.2cm}
+	{\titlerule\vspace{0.2cm}\filright}
+\titlespacing{\chapter}{-0.3cm}{-1.5cm}{0.5cm}
 
 %\setkomafont{section}{\normalfont}
 %\setkomafont{subsection}{\normalfont\slshape}
@@ -114,6 +113,11 @@
 %namen
 \newcommand{\name}[1]{
 \textsc{#1}
+}
+
+%particles
+\newcommand{\particle}[1]{
+\textit{$#1$}
 }
 
 %einheiten
