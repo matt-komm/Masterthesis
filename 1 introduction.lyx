@@ -102,7 +102,7 @@ key "topQuarkObservation"
  Back then, its properties like mass and the production cross-sections were
  measured.
  Due to the low statistics it was difficult to obtain more information about
- the structure of the top quark, like its coupling.
+ the coupling structure of the top quark.
  Here the Standard Model of Particle Physics (SM) predicts that only left-handed
  top quarks (
 \begin_inset ERT
@@ -130,10 +130,7 @@ particle{W}
 
 \end_inset
 
-) and the bottom quark 
-(
-\lang american
-
+) and the bottom quark (
 \begin_inset ERT
 status open
 
@@ -184,7 +181,7 @@ checkthis{year correct?}
 \begin_layout Standard
 In my thesis, I present the means, strategy and result of the top spin asymmetri
 es measurement.
- These observables are sensitive to the structure 
+ These asymmetries are sensitive to the structure of the 
 \begin_inset ERT
 status open
 
@@ -197,8 +194,7 @@ particle{Wtb}
 
 \end_inset
 
--vertex.
- 
+-vertex coupling.
 \end_layout
 
 \begin_layout Standard
@@ -206,12 +202,18 @@ The next chapter will cover briefly the theory behind the Standard Model
  of Particle Physics and how the top quark fits in it.
  Also, an effective extension of the SM is discussed to introduce a more
  general coupling scenario.
+ The Monte-Carlo generator WHIZARD is described, which will be used to generate
+ such generalized scenarios.
 \end_layout
 
 \begin_layout Standard
 Then the experimental setup is depicted.
  Here, the CMS experiment, the reconstruction of the nescessary physics
  objects as well as the used software to perform the measurement is described.
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsection*

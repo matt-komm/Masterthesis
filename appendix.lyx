@@ -367,6 +367,14 @@ description "Quantum ChromoDynamics"
 \end_inset
 
 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "V-A"
+description "Vector - Axialvector"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
