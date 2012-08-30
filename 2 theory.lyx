@@ -159,21 +159,23 @@ The Electro-Weak Interaction and Higgs Mechanism
 \end_layout
 
 \begin_layout Standard
+ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf
+ ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf
+ V V V V
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename images/higgspot.eps
 	lyxscale 10
-	width 7cm
+	scale 45
 
 \end_inset
 
@@ -558,7 +560,7 @@ status open
 \begin_inset Graphics
 	filename images/wquantization.eps
 	lyxscale 10
-	width 8cm
+	scale 45
 
 \end_inset
 
@@ -597,7 +599,7 @@ status open
 \begin_inset Graphics
 	filename images/tquantization.eps
 	lyxscale 10
-	width 12cm
+	scale 45
 
 \end_inset
 

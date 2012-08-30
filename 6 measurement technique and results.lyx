@@ -106,6 +106,22 @@ and Results
 Systematic Uncertainties
 \end_layout
 
+\begin_layout Subsection
+Jet Energy Resolution
+\end_layout
+
+\begin_layout Subsection
+Jet Energy Scale
+\end_layout
+
+\begin_layout Subsection
+Unclustered Energy
+\end_layout
+
+\begin_layout Subsection
+Pileup
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -115,6 +131,68 @@ status open
 \begin_layout Plain Layout
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+N-vertex distribution for WHIZARD and Powheg
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Btagging and Mistagging
+\end_layout
+
+\begin_layout Subsection
+Uncertainties on Yields
+\end_layout
+
+\begin_layout Subsection
+Impact of Uncertainties
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Impact
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -148,6 +226,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/neymandataflow.eps
+	lyxscale 10
+	scale 45
+
+\end_inset
+
 
 \end_layout
 
