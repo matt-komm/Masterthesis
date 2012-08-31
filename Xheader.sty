@@ -105,13 +105,13 @@
 
 %sinnvolle figure Nummerierung
 \counterwithin{figure}{section}
-\renewcommand{\thefigure}{\thesection\hspace{0.05cm} -\hspace{0.05cm}\arabic{figure}}
-\setlength{\cftfignumwidth}{2em} %platz zwischen nummerierung und titel im listoffigures
+\renewcommand{\thefigure}{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{figure}}
+\setlength{\cftfignumwidth}{1.3cm} %platz zwischen nummerierung und titel im listoffigures
 
 %sinnvolle table Nummerierung
 \counterwithin{table}{section}
 \renewcommand{\thetable}{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{table}}
-\setlength{\cfttabnumwidth}{2em} %platz zwischen nummerierung und titel im listoftables
+\setlength{\cfttabnumwidth}{1.3cm} %platz zwischen nummerierung und titel im listoftables
 
 %Definiert Exkursumgebung: \exkurs{Titel}{Text (auch mit Formeln)}
 \newcommand{\exkurs}[2]{ 
