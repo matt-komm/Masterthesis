@@ -30,8 +30,10 @@
 \usepackage{color} %zur Benutzung von Farben
 \usepackage{url}
 \usepackage{breakurl}
+\usepackage{chngcntr} %fuer nummerierung der figures, tables
 \usepackage{microtype}
 \usepackage{titlesec}
+\usepackage{tocloft}
 \usepackage{slashed}
 \usepackage{axodraw4j}
 \usepackage{nomencl} %list of abbreviations
@@ -100,6 +102,16 @@
   \section*{\bibname}%
   \@mkboth{\bibname}{\bibname}%
 }
+
+%sinnvolle figure Nummerierung
+\counterwithin{figure}{section}
+\renewcommand{\thefigure}{\thesection\hspace{0.05cm} -\hspace{0.05cm}\arabic{figure}}
+\setlength{\cftfignumwidth}{2em} %platz zwischen nummerierung und titel im listoffigures
+
+%sinnvolle table Nummerierung
+\counterwithin{table}{section}
+\renewcommand{\thetable}{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{table}}
+\setlength{\cfttabnumwidth}{2em} %platz zwischen nummerierung und titel im listoftables
 
 %Definiert Exkursumgebung: \exkurs{Titel}{Text (auch mit Formeln)}
 \newcommand{\exkurs}[2]{ 

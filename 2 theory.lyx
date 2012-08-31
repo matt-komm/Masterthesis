@@ -11,8 +11,6 @@
 \use_default_options true
 \begin_modules
 eqs-within-sections
-figs-within-sections
-tabs-within-sections
 \end_modules
 \maintain_unincluded_children false
 \language american
@@ -70,7 +68,7 @@ tabs-within-sections
 \headheight 2cm
 \headsep 2cm
 \footskip 2cm
-\secnumdepth 1
+\secnumdepth 2
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
@@ -159,9 +157,7 @@ The Electro-Weak Interaction and Higgs Mechanism
 \end_layout
 
 \begin_layout Standard
-ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf
- ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf ghfghfgfghf
- V V V V
+
 \end_layout
 
 \begin_layout Standard

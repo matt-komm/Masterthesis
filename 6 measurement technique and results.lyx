@@ -9,8 +9,6 @@
 \use_default_options true
 \begin_modules
 eqs-within-sections
-figs-within-sections
-tabs-within-sections
 \end_modules
 \maintain_unincluded_children false
 \language american
@@ -107,19 +105,7 @@ Systematic Uncertainties
 \end_layout
 
 \begin_layout Subsection
-Jet Energy Resolution
-\end_layout
-
-\begin_layout Subsection
-Jet Energy Scale
-\end_layout
-
-\begin_layout Subsection
-Unclustered Energy
-\end_layout
-
-\begin_layout Subsection
-Pileup
+Sources
 \end_layout
 
 \begin_layout Standard
@@ -154,14 +140,6 @@ N-vertex distribution for WHIZARD and Powheg
 \end_layout
 
 \begin_layout Subsection
-Btagging and Mistagging
-\end_layout
-
-\begin_layout Subsection
-Uncertainties on Yields
-\end_layout
-
-\begin_layout Subsection
 Impact of Uncertainties
 \end_layout
 
@@ -192,7 +170,7 @@ Impact
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -301,12 +279,93 @@ Results
 The Top Spin Asymmetries
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The top spin asymmetry measurement (Neyman construction)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 The Top Spin Ratios
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The top spin asymmetry ratio measurement (Neyman construction)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Fit to Anomalous Couplings
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Limits on anomalous couplings using TopFit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
