@@ -122,7 +122,20 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-N-vertex distribution for WHIZARD and Powheg
+N-vertex distribution for 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ and Powheg
 \end_layout
 
 \end_inset
@@ -171,6 +184,29 @@ Impact
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Yield changes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption

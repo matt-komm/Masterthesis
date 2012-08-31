@@ -88,6 +88,22 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hide{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 In 1995 the top quark was discovered at the Tevatron Collider (Fermilab)
  in Chicago, USA
 \begin_inset CommandInset citation
@@ -211,11 +227,41 @@ Then the experimental setup is depicted.
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
 \begin_layout Subsection*
 Unit Convention 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hide{
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -354,6 +400,20 @@ status open
 
 \backslash
 nuu{}{1/GeV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset

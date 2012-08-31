@@ -278,19 +278,80 @@ Multivariate analysis
 \end_layout
 
 \begin_layout Subsection
-VISPA and PXL
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{VISPA}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{PXL}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-CMSSW
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{CMSSW}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-THETA
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{THETA}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-ROOT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{ROOT}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

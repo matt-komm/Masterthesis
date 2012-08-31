@@ -47,6 +47,9 @@
 
 %Schicke Bild- und Tabellenbeschreibungen
 \usepackage[textfont=small,format=plain,labelfont={bf},indention=.2cm,labelsep=colon]{caption}
+%abstand zwischen caption und figure,table
+\captionsetup[figure]{position=bottom,skip=0.3cm}
+\captionsetup[table]{position=top,skip=0.3cm}
 
 %Schicker Chapterstyle
 \titleformat{\chapter}[display]
@@ -124,7 +127,7 @@
 
 %namen
 \newcommand{\name}[1]{
-\textsc{#1}
+\textsc{\sf #1}
 }
 
 %particles
@@ -140,6 +143,9 @@ $ #1$\hspace{1.5pt }#2
 %marker
 \newcommand{\checkthis}[1]{
 \textcolor{red}{[#1]}
+}
+
+\newcommand{\hide}[1]{
 }
 
 % New definition of square root:

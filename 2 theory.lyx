@@ -624,7 +624,20 @@ Quantization of the top quark spin
 \end_layout
 
 \begin_layout Section
-The WHIZARD Monte Carlo Generator
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ Monte Carlo Generator
 \end_layout
 
 \begin_layout Standard
