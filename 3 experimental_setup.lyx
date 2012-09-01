@@ -274,7 +274,19 @@ Analysis Software
 \end_layout
 
 \begin_layout Subsection
-Multivariate analysis
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{TMVA}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

@@ -373,6 +373,22 @@ description "Vector - Axialvector"
 \end_inset
 
 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "QFT"
+description "Quantum Field Theory"
+
+\end_inset
+
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "EM"
+description "ElectroMagnetism"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
