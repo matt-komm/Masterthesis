@@ -94,6 +94,22 @@ The Standard Model of Particle Physics
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hide{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The Standard Model of Particle Physics is a theory that describes the interactio
 n between elementary particles.
  Elementary particles are up till now, known to have no sub structure and
@@ -129,6 +145,17 @@ reference "tab:The-SM-Quarks"
  Each particle carries different charges which determine the interactions
  it can participate in.
  The next sections will show how the interactions can be derived.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -794,6 +821,22 @@ General Construction
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hide{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The SM is based on Quantum Field Theory (QFT).
  Here, elementary particles are considered as excitation modes of associated
  quantized fields.
@@ -812,7 +855,7 @@ free
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{L}=\bar{\Psi}\left(i\slashed\partial-m\right)\Psi,\qquad\slashed\partial=\gamma_{\mu}\frac{\partial}{\partial x^{\mu}},\qquad\bar{\Psi}=\gamma_{0}\Psi^{\dagger}
+\mathcal{L}=\bar{\Psi}\left(i\slashed\partial-m\right)\Psi,\qquad\slashed\partial=\gamma_{\mu}\frac{\partial}{\partial x^{\mu}},\qquad\bar{\Psi}=\Psi^{\dagger}\gamma_{0}
 \]
 
 \end_inset
@@ -824,7 +867,7 @@ one can optain the equation of motion (for fermions: the Dirac equation)
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-0=\frac{\partial}{\partial x_{\mu}}\left(\frac{\partial\mathcal{L}}{\partial\left(\partial\bar{\Psi}/\partial x_{\mu}\right)}\right)-\frac{\partial}{\partial\bar{\Psi}}\mathcal{L}=\left(i\slashed\partial+m\right)\Psi.
+0=\frac{\partial}{\partial x_{\mu}}\left(\frac{\partial\mathcal{L}}{\partial\left(\partial\bar{\Psi}/\partial x_{\mu}\right)}\right)-\frac{\partial}{\partial\bar{\Psi}}\mathcal{L}=\left(i\slashed\partial-m\right)\Psi.
 \end{align*}
 
 \end_inset
@@ -853,10 +896,6 @@ An interaction can be introduced by requiring that the Lagrange density
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 This can be solved by adding the additional photon field 
 \begin_inset Formula $A_{\mu}$
 \end_inset
@@ -908,6 +947,17 @@ checkthis{add ref to lep z,w discovery}
 
  have shown that the gauge bosons of the weak interaction have non-zero
  masses.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -999,7 +1049,7 @@ EM
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $U(1)$
+\begin_inset Formula $\mathrm{U(1)}$
 \end_inset
 
 
@@ -1044,7 +1094,7 @@ weak
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $SU(2)$
+\begin_inset Formula $\mathrm{SU(2)}$
 \end_inset
 
 
@@ -1131,7 +1181,7 @@ strong
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $SU(3)$
+\begin_inset Formula $\mathrm{SU(3)}$
 \end_inset
 
 
@@ -1183,6 +1233,182 @@ The Electro-Weak Interaction and Higgs Mechanism
 \end_layout
 
 \begin_layout Standard
+The EM and weak interaction can be united to the electro-weak interaction.
+ In addition, the following experimental results had to be included:
+\end_layout
+
+\begin_layout Enumerate
+in weak interaction, only left-handed fermions can couple to flavor changing
+ charged currents (FCCC)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{ref to wu,goldhaber experiment}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+three of the four gauge bosons of the 
+\begin_inset Formula $U(1)\,\otimes\, SU(2)$
+\end_inset
+
+ group are massive
+\end_layout
+
+\begin_layout Standard
+The Glashow-Weinberg-Salam model does the first by dividing the fermions
+ into left- and right-handed fields:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Psi_{\mathrm{L}} & =\frac{1}{2}\left(1-\gamma_{5}\right)\Psi,\quad\mbox{\mathrm{SU(2)\, doublett}};\qquad\Psi_{\mathrm{R}}=\frac{1}{2}\left(1+\gamma_{5}\right)\Psi,\quad\mathrm{SU(2)\, singulett}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\Rightarrow\mathrm{\vec{E}_{L}} & =\left\{ \left(\begin{array}{c}
+\nu_{\mathrm{e}}\\
+\mathrm{e^{-}}
+\end{array}\right)_{\mathrm{L}},\,\left(\begin{array}{c}
+\nu_{\mu}\\
+\mu\mathrm{^{-}}
+\end{array}\right)_{\mathrm{L}},\,\left(\begin{array}{c}
+\nu_{\tau}\\
+\tau\mathrm{^{-}}
+\end{array}\right)_{\mathrm{L}}\right\} ;\quad & \mathrm{\vec{Q}_{L}} & =\left\{ \left(\begin{array}{c}
+\mathrm{u}\\
+\mathrm{d}
+\end{array}\right)_{\mathrm{L}},\,\left(\begin{array}{c}
+\mathrm{c}\\
+\mathrm{s}
+\end{array}\right)_{\mathrm{L}},\,\left(\begin{array}{c}
+\mathrm{t}\\
+\mathrm{b}
+\end{array}\right)_{\mathrm{L}}\right\} 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathrm{\vec{e}_{R}}=\left\{ \mathrm{e_{R},\,}\mu_{\mathrm{R}},\,\tau_{\mathrm{R}}\right\} ;\quad\mathrm{\vec{u}_{R}=\left\{ u_{R},\, c_{R},\, t_{R}\right\} ;\quad\vec{d}_{R}=\left\{ d_{R},\, s_{R},\, b_{R}\right\} }
+\]
+
+\end_inset
+
+The Lagrange density
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}=\sum_{j}^{3}\left(\mathrm{\bar{E}_{L}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{E_{L}}^{j}+\mathrm{\bar{Q}_{L}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{Q_{L}}^{j}+\mathrm{\bar{e}_{R}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{e_{R}}^{j}+\mathrm{\bar{u}_{R}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{u_{R}}^{j}+\mathrm{\bar{d}_{R}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{d_{R}}^{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the covariant derivatives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+D_{\mu}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mass terms for the three gauge bosons are generated by the Englert-Brout-Higgs-G
+uralnik-Hagen-Kibble-mechanism.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{ref??}
+\end_layout
+
+\end_inset
+
+ For this, another 
+\begin_inset Formula $\mathrm{SU(2)}$
+\end_inset
+
+ field 
+\begin_inset Formula $\phi$
+\end_inset
+
+ with an 
+\begin_inset Formula $\mathrm{U(1)}\otimes SU(2)$
+\end_inset
+
+ symmetry is needed.
+ This symmetry gets 
+\begin_inset Quotes eld
+\end_inset
+
+broken
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+hidden
+\begin_inset Quotes erd
+\end_inset
+
+ by shifting the energy minimum through a potential 
+\begin_inset Formula $\mathrm{V}(\phi^{\dagger}\phi)$
+\end_inset
+
+ shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-Higgs-Potential"
+
+\end_inset
+
+ to 
+\begin_inset Formula $(\phi^{\dagger}\phi)_{\mathrm{min}}=2\mu^{2}/\lambda\equiv v^{2}/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1201,9 +1427,26 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\mathrm{V}(\phi^{\dagger}\phi)=\frac{1}{4}\lambda\left(\phi^{\dagger}\phi\right)^{2}-\mu^{2}\phi^{\dagger}\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-Higgs-Potential"
+
+\end_inset
+
 The Higgs Potential - 
 \begin_inset Quotes eld
 \end_inset
@@ -1226,11 +1469,58 @@ Mexican Hat
 
 \end_inset
 
+Then one can develop 
+\begin_inset Formula $\phi$
+\end_inset
+
+ around this mimimum:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\phi=\frac{1}{\sqrt{2}}\left(v+h(x)\right)\cdot\exp\left(-\frac{i\theta(x)}{v}\right)
+\end{align*}
+
+\end_inset
+
+For the masses of the electro-weak gauge bosons, the 
+\begin_inset Formula $\mathrm{U(1)\otimes SU(2)}$
+\end_inset
+
+ invariant Lagrange density
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}\supseteq\left(D_{\mu}\phi^{\dagger}\right)\left(D^{\mu}\phi\right)-\mathrm{V}(\phi^{\dagger}\phi),\quad D_{\mu}=\partial_{\mu}+\underbrace{ig\frac{\vec{\tau}}{2}\vec{W}_{\mu}}_{\mathrm{SU(2)}}+\underbrace{ig^{\prime}\frac{1}{2}B_{\mu}}_{\mathrm{U(1)}}
+\]
+
+\end_inset
+
+ contains after the symmetry breaking amongst others the following terms
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathrm{"Higgs"-boson:\quad} & \mathcal{L}_{h} & =\frac{1}{2}\left(\partial_{\mu}h\right)\left(\partial^{\mu}h\right)-\mu^{2}h^{2}\\
+\mathrm{W^{\pm}-bosons:\quad} & \mathcal{L}_{W^{\pm}} & =\\
+\mathrm{W_{3},\, B-bosons:\quad} & \mathcal{L}_{W_{3},B} & =
+\end{align*}
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Subsection
 Quantum Chromodynamics
+\end_layout
+
+\begin_layout Standard
+confinement,
 \end_layout
 
 \begin_layout Section
