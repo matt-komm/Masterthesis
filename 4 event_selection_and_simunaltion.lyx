@@ -1596,6 +1596,17 @@ checkthis{füge herleitung für formel hinzu.
  checke generierte muon zahlen!}
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{A-beaml>A-spec!!!!}
+\end_layout
+
 \end_inset
 
 
@@ -2511,6 +2522,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.255$
+\end_inset
+
 
 \end_layout
 
@@ -2520,6 +2534,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.225$
+\end_inset
+
 
 \end_layout
 
@@ -2529,6 +2546,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.079$
+\end_inset
+
 
 \end_layout
 
@@ -2538,6 +2558,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.068$
+\end_inset
+
 
 \end_layout
 
@@ -2547,6 +2570,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.128$
+\end_inset
+
 
 \end_layout
 
@@ -2556,6 +2582,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.112$
+\end_inset
+
 
 \end_layout
 
@@ -2565,6 +2594,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.246\pm0.002$
+\end_inset
+
 
 \end_layout
 
@@ -2574,6 +2606,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.667\pm0.002$
+\end_inset
+
 
 \end_layout
 
@@ -2633,6 +2668,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.456$
+\end_inset
+
 
 \end_layout
 
@@ -2642,6 +2680,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.419$
+\end_inset
+
 
 \end_layout
 
@@ -2651,6 +2692,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.239$
+\end_inset
+
 
 \end_layout
 
@@ -2660,6 +2704,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.219$
+\end_inset
+
 
 \end_layout
 
@@ -2669,6 +2716,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.159$
+\end_inset
+
 
 \end_layout
 
@@ -2678,6 +2728,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.145$
+\end_inset
+
 
 \end_layout
 
@@ -2687,6 +2740,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.209\pm0.002$
+\end_inset
+
 
 \end_layout
 
@@ -2696,6 +2752,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.514\pm0.003$
+\end_inset
+
 
 \end_layout
 
@@ -2707,6 +2766,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $1.0$
 \end_inset
 
@@ -2719,6 +2780,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -2731,6 +2794,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -2743,6 +2808,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $0.5$
 \end_inset
 
@@ -2756,23 +2823,10 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
-\end_layout
-
+\color red
+\begin_inset Formula $+0.077$
 \end_inset
-</cell>
-<cell alignment="decimal" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="decimal" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2783,6 +2837,11 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
+\color red
+\begin_inset Formula $+0.132$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2791,6 +2850,39 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $-0.158$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $-0.273$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $+0.100$
+\end_inset
+
 
 \end_layout
 
@@ -2801,6 +2893,11 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
+\color red
+\begin_inset Formula $+0.172$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2810,6 +2907,11 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
+\color red
+\begin_inset Formula $0.040\pm0.001$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2818,6 +2920,11 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $0.917\pm0.002$
+\end_inset
+
 
 \end_layout
 
@@ -2877,6 +2984,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.151$
+\end_inset
+
 
 \end_layout
 
@@ -2886,6 +2996,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.139$
+\end_inset
+
 
 \end_layout
 
@@ -2895,6 +3008,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.191$
+\end_inset
+
 
 \end_layout
 
@@ -2904,6 +3020,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.182$
+\end_inset
+
 
 \end_layout
 
@@ -2913,6 +3032,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.476$
+\end_inset
+
 
 \end_layout
 
@@ -2922,6 +3044,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.445$
+\end_inset
+
 
 \end_layout
 
@@ -2931,6 +3056,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.032\pm0.001$
+\end_inset
+
 
 \end_layout
 
@@ -2940,6 +3068,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.659\pm0.002$
+\end_inset
+
 
 \end_layout
 
@@ -2999,6 +3130,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.398$
+\end_inset
+
 
 \end_layout
 
@@ -3008,6 +3142,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $+0.401$
+\end_inset
+
 
 \end_layout
 
@@ -3017,6 +3154,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.318$
+\end_inset
+
 
 \end_layout
 
@@ -3026,6 +3166,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.321$
+\end_inset
+
 
 \end_layout
 
@@ -3035,6 +3178,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.163$
+\end_inset
+
 
 \end_layout
 
@@ -3044,6 +3190,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-0.166$
+\end_inset
+
 
 \end_layout
 
@@ -3053,6 +3202,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.006\pm0.001$
+\end_inset
+
 
 \end_layout
 
@@ -3062,6 +3214,9 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $0.106\pm0.002$
+\end_inset
+
 
 \end_layout
 
@@ -3073,6 +3228,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -3085,6 +3242,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -3097,6 +3256,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -3109,6 +3270,8 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 \begin_inset Formula $1.0$
 \end_inset
 
@@ -3122,23 +3285,10 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
-\end_layout
-
+\color red
+\begin_inset Formula $-0.149$
 \end_inset
-</cell>
-<cell alignment="decimal" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="decimal" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3149,6 +3299,11 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
+\color red
+\begin_inset Formula $-0.168$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3157,6 +3312,39 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $-0.297$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $-0.338$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="decimal" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $+0.367$
+\end_inset
+
 
 \end_layout
 
@@ -3167,6 +3355,11 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
+\color red
+\begin_inset Formula $+0.417$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3176,6 +3369,11 @@ w helicity fractions
 
 \begin_layout Plain Layout
 
+\color red
+\begin_inset Formula $0.869\pm0.002$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3184,6 +3382,11 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
+\begin_inset Formula $0.124\pm0.002$
+\end_inset
+
 
 \end_layout
 
