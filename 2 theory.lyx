@@ -185,8 +185,9 @@ The SM Leptons
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="4">
+<lyxtabular version="3" rows="7" columns="5">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -223,7 +224,16 @@ mass
 \begin_inset Text
 
 \begin_layout Plain Layout
-interaction
+EM charge
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+interactions
 \end_layout
 
 \end_inset
@@ -255,6 +265,18 @@ electron
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
 
 \end_layout
 
@@ -305,6 +327,18 @@ muon
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 EM, weak
 \end_layout
 
@@ -337,6 +371,18 @@ tau
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
 
 \end_layout
 
@@ -387,7 +433,19 @@ electron neutrino
 \begin_inset Text
 
 \begin_layout Plain Layout
-weak
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EM, weak
 \end_layout
 
 \end_inset
@@ -428,7 +486,19 @@ muon neutrino
 \begin_inset Text
 
 \begin_layout Plain Layout
-weak
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EM, weak
 \end_layout
 
 \end_inset
@@ -469,7 +539,19 @@ tau neutrino
 \begin_inset Text
 
 \begin_layout Plain Layout
-weak
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EM, weak
 \end_layout
 
 \end_inset
@@ -514,8 +596,9 @@ The SM Quarks
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="4">
+<lyxtabular version="3" rows="7" columns="5">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -552,7 +635,16 @@ mass
 \begin_inset Text
 
 \begin_layout Plain Layout
-interaction
+EM charge
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+interactions
 \end_layout
 
 \end_inset
@@ -584,6 +676,18 @@ up
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
 
 \end_layout
 
@@ -634,6 +738,18 @@ down
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 EM, weak, strong
 \end_layout
 
@@ -666,6 +782,18 @@ charm
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
 
 \end_layout
 
@@ -716,38 +844,9 @@ strange
 \begin_inset Text
 
 \begin_layout Plain Layout
-EM, weak, strong
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-bottom
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{b}$
+\begin_inset Formula $-\frac{1}{3}$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -789,6 +888,71 @@ top
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EM, weak, strong
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bottom
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{3}$
+\end_inset
+
 
 \end_layout
 
@@ -1237,9 +1401,9 @@ The EM and weak interaction can be united to the electro-weak interaction.
  In addition, the following experimental results had to be included:
 \end_layout
 
-\begin_layout Enumerate
-in weak interaction, only left-handed fermions can couple to flavor changing
- charged currents (FCCC)
+\begin_layout Itemize
+in weak interaction, only left-handed fermions can couple to charged currents
+ 
 \begin_inset ERT
 status open
 
@@ -1255,8 +1419,8 @@ checkthis{ref to wu,goldhaber experiment}
 
 \end_layout
 
-\begin_layout Enumerate
-three of the four gauge bosons of the 
+\begin_layout Itemize
+three of the four gauge bosons of the unified 
 \begin_inset Formula $U(1)\,\otimes\, SU(2)$
 \end_inset
 
@@ -1264,8 +1428,8 @@ three of the four gauge bosons of the
 \end_layout
 
 \begin_layout Standard
-The Glashow-Weinberg-Salam model does the first by dividing the fermions
- into left- and right-handed fields:
+The Glashow-Weinberg-Salam model accounts for the coupling of left-handed
+ ferminons by splitting the fermion fields into left- and right-handed fields:
 \end_layout
 
 \begin_layout Standard
@@ -1327,28 +1491,37 @@ The Lagrange density
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 with the covariant derivatives
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-D_{\mu}=
+D_{\mu}=\partial_{\mu}-ig\vec{W}_{\mu}\vec{T}-ig^{\prime}Y\cdot B_{\mu},\qquad Y=Q_{\mathrm{EM}}-T_{3}\quad\mbox{\mathrm{("hyper-charge")}}
 \]
 
 \end_inset
 
+does then not involves terms of the form
+\end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}_{\mathrm{R}}\propto W_{\mu}^{+}\bar{f}_{\mathrm{R}}\gamma^{\mu}f_{\mathrm{R}}+\mathrm{h.c.}
+\]
+
+\end_inset
+
+where the EM charge is conserved.
 \end_layout
 
 \begin_layout Standard
 Mass terms for the three gauge bosons are generated by the Englert-Brout-Higgs-G
-uralnik-Hagen-Kibble-mechanism.
- 
+uralnik-Hagen-Kibble-mechanis
+m.
+\lang american
+
 \begin_inset ERT
 status open
 
@@ -1390,19 +1563,27 @@ hidden
 \begin_inset Quotes erd
 \end_inset
 
- by shifting the energy minimum through a potential 
+ by shifting the vacuum expectations value of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ through a potential 
 \begin_inset Formula $\mathrm{V}(\phi^{\dagger}\phi)$
 \end_inset
 
- shown in figure 
+, shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:The-Higgs-Potential"
 
 \end_inset
 
- to 
-\begin_inset Formula $(\phi^{\dagger}\phi)_{\mathrm{min}}=2\mu^{2}/\lambda\equiv v^{2}/2$
+, to 
+\begin_inset Formula 
+\[
+(\phi^{\dagger}\phi)_{\mathrm{min}}=\frac{2\mu^{2}}{\lambda}\equiv\frac{v^{2}}{2}.
+\]
+
 \end_inset
 
 .
@@ -1479,7 +1660,10 @@ Then one can develop
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\phi=\frac{1}{\sqrt{2}}\left(v+h(x)\right)\cdot\exp\left(-\frac{i\theta(x)}{v}\right)
+\phi=\frac{1}{\sqrt{2}}\left(\begin{array}{c}
+0\\
+v+h(x)
+\end{array}\right)\cdot\exp\left(-\frac{i\theta(x)}{v}\right)
 \end{align*}
 
 \end_inset
@@ -1505,14 +1689,86 @@ For the masses of the electro-weak gauge bosons, the
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\mathrm{"Higgs"-boson:\quad} & \mathcal{L}_{h} & =\frac{1}{2}\left(\partial_{\mu}h\right)\left(\partial^{\mu}h\right)-\mu^{2}h^{2}\\
-\mathrm{W^{\pm}-bosons:\quad} & \mathcal{L}_{W^{\pm}} & =\\
-\mathrm{W_{3},\, B-bosons:\quad} & \mathcal{L}_{W_{3},B} & =
+\mathrm{"Higgs"-boson:\quad} & \mathcal{L}_{h}=\frac{1}{2}\left(\partial_{\mu}h\right)\left(\partial^{\mu}h\right)-\mu^{2}h^{2}\\
+\mathrm{W^{\pm}-bosons:\quad} & \mathcal{L}_{W^{\pm}}=\frac{1}{8}g^{2}v^{2}W_{1,\,\mu}W_{1}^{\mu}+\frac{1}{8}g^{2}v^{2}W_{2,\,\mu}W_{2}^{\mu}\\
+\mathrm{W_{3},\, B-bosons:\quad} & \mathcal{L}_{W_{3},B}=\frac{1}{8}v^{2}\left(gW_{3,\,\mu}-g^{\prime}B_{\mu}\right)\left(gW_{3}^{\mu}-g^{\prime}B^{\mu}\right)
 \end{align*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ can be optained by transforming 
+\begin_inset Formula $W_{1,2}$
+\end_inset
+
+....
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $W_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ - fields are mixed.
+ By introducing the following transformation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+Z^{0}\\
+A
+\end{array}\right)=\left(\begin{array}{cc}
+\cos\theta_{\mathrm{W}} & -\sin\theta_{\mathrm{W}}\\
+\sin\theta_{\mathrm{W}} & \cos\theta_{\mathrm{W}}
+\end{array}\right)\left(\begin{array}{c}
+W_{3}\\
+B
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the weak-mixing angle 
+\begin_inset Formula $\theta_{\mathrm{W}}$
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Weinberg
+\begin_inset Quotes erd
+\end_inset
+
+ angle one massless boson, the photon 
+\begin_inset Formula $A$
+\end_inset
+
+ and one massive boson, the 
+\begin_inset Formula $Z^{0}$
+\end_inset
+
+ boson is optained.
+\end_layout
+
+\begin_layout Standard
+fermion masses, CKM
 \end_layout
 
 \begin_layout Subsection
