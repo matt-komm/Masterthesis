@@ -116,6 +116,10 @@
 \renewcommand{\thetable}{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{table}}
 \setlength{\cfttabnumwidth}{1.3cm} %platz zwischen nummerierung und titel im listoftables
 
+%sinnvolle formel Nummerierung
+\counterwithout{equation}{section}
+\renewcommand\theequation{\thesection-\arabic{equation}}
+
 %strecke zeilenabstände im table
 \renewcommand{\arraystretch}{1.3}
 
@@ -169,6 +173,5 @@ $\mathrm{#1}$\hspace{0.5pt }$\mathrm{#2}$
 \let\oldmbox\mbox
 \renewcommand{\mbox}[1]{\textrm{#1}}
 
-%formel abstände
-\setlength{\abovedisplayskip}{1pt plus 1pt minus 1pt}
-\setlength{\belowdisplayskip}{1pt plus 1pt minus 1pt}
+
+

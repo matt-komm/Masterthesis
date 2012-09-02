@@ -115,6 +115,47 @@ baselinestretch}{1.1}
 normalsize
 \end_layout
 
+\begin_layout Plain Layout
+
+%formel abstände 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+abovedisplayskip}{-0.2cm plus 0.1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+abovedisplayshortskip}{-0.2cm plus 0.1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+belowdisplayskip}{0.2cm plus 0.1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+belowdisplayshortskip}{0.2cm plus 0.1cm}
+\end_layout
+
 \end_inset
 
 
