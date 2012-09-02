@@ -92,6 +92,95 @@ The Large Hadron Collider
 \end_layout
 
 \begin_layout Standard
+The Large Hadron Collider (LHC) is a proton-proton storage ring at the European
+ Organization for Nuclear Research (CERN) in Geneva, Switzerland.
+ It has a circumference of approximately 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{27}{km}
+\end_layout
+
+\end_inset
+
+.
+ The performance goal is a center of mass energy of 
+\begin_inset Formula $\sqrt{s}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{14}{TeV}
+\end_layout
+
+\end_inset
+
+ at a luminosity of 
+\begin_inset Formula $L=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{10^{32}}{cm^{2}s}
+\end_layout
+
+\end_inset
+
+.
+ The protons beams can also be switched to ion beams.
+ Here, the aimed peak luminosity is 
+\begin_inset Formula $L=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{10^{27}}{cm^{2}s}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCmachine"
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-CERN-accelerator"
+
+\end_inset
+
+ shows the accelerator complex with the LHC, its experiments and the additional
+ accelerators.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -113,10 +202,49 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-CERN-accelerator"
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+The CERN accelerator complex
+\end_layout
+
+\end_inset
+
 The CERN accelerator complex 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "pic_cern_acc_complex"
+
+\end_inset
+
+.
+ Injection of proton bunches into the LHC starts from the Linac2, the Proton
+ Synchrotron Booster (PSB), the Proton Synchrotron (PS), the Super Proton
+ Synchrotron (SPS) and finaly with an energy of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{450}{GeV}
+\end_layout
+
+\end_inset
+
+ into the LHC 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCmachine"
 
 \end_inset
 
@@ -134,7 +262,209 @@ key "pic_cern_acc_complex"
 
 \end_inset
 
+The proton beams consists maximally of 2808 bunches with a spacing between
+ them of 
+\begin_inset ERT
+status open
 
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{25}{ns}
+\end_layout
+
+\end_inset
+
+.
+ With 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{1.15
+\backslash
+cdot 10^{11}}{}
+\end_layout
+
+\end_inset
+
+ protons per bunch, the current per beam is 
+
+\begin_inset Formula $I=$
+\end_inset
+
+
+\lang american
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{0.58}{A}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For deflecting and focusing the beams a magnet system of NbTi superconductors
+ is used.
+ Superfluid helium cools the superconductors to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{1.9}{K}
+\end_layout
+
+\end_inset
+
+ and lets the magnet field of the dipols to be 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{8.33}{T}
+\end_layout
+
+\end_inset
+
+ with a current of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{11850}{A}
+\end_layout
+
+\end_inset
+
+.
+ Magents for both beams are integrated into one cold mass inside the cryostats
+ (“twin-bore” design).
+ 1232 dipol magnets are needed for deflection, additionally around 450 quadrupol
+e magnets for focusing and approximately 4800 magents for orbit correction
+ are installed.
+\end_layout
+
+\begin_layout Standard
+For accelerating, a superconducting cavity system operating at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{400}{Mhz}
+\end_layout
+
+\end_inset
+
+ is used.
+ The beams will gain 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{485}{keV}
+\end_layout
+
+\end_inset
+
+ per turn which yields an acceleration time from injection at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{450}{GeV}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{7}{TeV}
+\end_layout
+
+\end_inset
+
+ of around 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{20}{min}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCmachine"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Four major experiments are using the LHC beam collisions for analysis:
+\end_layout
+
+\begin_layout Itemize
+ALICE
+\end_layout
+
+\begin_layout Itemize
+ATLAS
+\end_layout
+
+\begin_layout Itemize
+CMS
+\end_layout
+
+\begin_layout Itemize
+LHCb
+\end_layout
+
+\begin_layout Standard
+The first collisons where observerd ...
+ 
 \end_layout
 
 \begin_layout Section
@@ -163,6 +493,15 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The CMS Experiment
+\end_layout
+
+\end_inset
+
 The CMS Experiment 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -175,10 +514,6 @@ key "pic_cms_detector"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
