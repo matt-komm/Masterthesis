@@ -1429,7 +1429,7 @@ three of the four gauge bosons of the unified
 
 \begin_layout Standard
 The Glashow-Weinberg-Salam model accounts for the coupling of left-handed
- ferminons by splitting the fermion fields into left- and right-handed fields:
+ fermions by splitting the fermion fields into left- and right-handed fields:
 \end_layout
 
 \begin_layout Standard
@@ -1514,8 +1514,11 @@ does then not involves terms of the form
 \end_inset
 
 where the EM charge is conserved.
- 
-The structure of the coupling to involves terms like 
+ The structure of the coupling to 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ includes only terms like 
 \begin_inset Formula $\propto(\gamma_{\mu}-\gamma_{\mu}\gamma_{5})$
 \end_inset
 
@@ -1791,7 +1794,7 @@ Weinberg
 \begin_inset Formula $\theta_{\mathrm{W}}$
 \end_inset
 
- or one massless boson, the photon 
+ one massless boson, the photon 
 \begin_inset Formula $A$
 \end_inset
 

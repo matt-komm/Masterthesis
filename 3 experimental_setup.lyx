@@ -137,7 +137,9 @@ status open
 
 
 \backslash
-nuu{10^{32}}{cm^{2}s}
+nuu{10^{32}}{
+\backslash
+frac{1}{cm^{2}s}}
 \end_layout
 
 \end_inset
@@ -156,7 +158,9 @@ status open
 
 
 \backslash
-nuu{10^{27}}{cm^{2}s}
+nuu{10^{27}}{
+\backslash
+frac{1}{cm^{2}s}}
 \end_layout
 
 \end_inset
@@ -226,9 +230,9 @@ key "pic_cern_acc_complex"
 \end_inset
 
 .
- Injection of proton bunches into the LHC starts from the Linac2, the Proton
- Synchrotron Booster (PSB), the Proton Synchrotron (PS), the Super Proton
- Synchrotron (SPS) and finaly with an energy of 
+ Injection of proton bunches into the LHC starts from the Linac2 and continues
+ the Proton Synchrotron Booster (PSB), the Proton Synchrotron (PS), the
+ Super Proton Synchrotron (SPS) and finally with an energy of 
 \begin_inset ERT
 status open
 
@@ -253,10 +257,6 @@ key "LHCmachine"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -293,12 +293,9 @@ cdot 10^{11}}{}
 \end_inset
 
  protons per bunch, the current per beam is 
-
 \begin_inset Formula $I=$
 \end_inset
 
-
-\lang american
 
 \begin_inset ERT
 status open
@@ -331,7 +328,7 @@ nuu{1.9}{K}
 
 \end_inset
 
- and lets the magnet field of the dipols to be 
+ and lets the magnet field of the dipoles to be 
 \begin_inset ERT
 status open
 
@@ -358,11 +355,11 @@ nuu{11850}{A}
 \end_inset
 
 .
- Magents for both beams are integrated into one cold mass inside the cryostats
+ Magnets for both beams are integrated into one cold mass inside the cryostats
  (“twin-bore” design).
- 1232 dipol magnets are needed for deflection, additionally around 450 quadrupol
-e magnets for focusing and approximately 4800 magents for orbit correction
- are installed.
+ 1232 dipole magnets are needed for deflection, additionally around 450
+ quadrupole magnets for focusing and approximately 4800 magnets for orbit
+ correction are installed.
 \end_layout
 
 \begin_layout Standard
@@ -446,6 +443,22 @@ key "LHCmachine"
 Four major experiments are using the LHC beam collisions for analysis:
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{find reference for other experiments}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 ALICE
 \end_layout
@@ -463,8 +476,71 @@ LHCb
 \end_layout
 
 \begin_layout Standard
-The first collisons where observerd ...
- 
+After an initial breakdown in September 2008 of the LHC, the first beams
+ at injection energy were successfully circulating on 20th November 2009.
+ In March 2010 the targeted beam energy of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{3.5}{TeV}
+\end_layout
+
+\end_inset
+
+ for the first run period of 2010 had been established 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pressLHCrecord"
+
+\end_inset
+
+.
+ The proton-proton run finished 2011 with a delivered integrated luminosity
+ of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{5.32}{fb^{-1}}
+\end_layout
+
+\end_inset
+
+ for ATLAS and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{5.37}{fb^{-1}}
+\end_layout
+
+\end_inset
+
+ for CMS.
+ In 2012 the beam energy has been raised to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{4}{TeV}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
