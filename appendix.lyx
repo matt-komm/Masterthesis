@@ -413,6 +413,14 @@ description "Super Proton Synchrotron"
 \end_inset
 
 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OPE"
+description "Operator Product Expansion"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -929,7 +929,7 @@ bottom
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $b$
+\begin_inset Formula $\mathrm{b}$
 \end_inset
 
 
@@ -1435,7 +1435,7 @@ The Glashow-Weinberg-Salam model accounts for the coupling of left-handed
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\Psi_{\mathrm{L}} & =\frac{1}{2}\left(1-\gamma_{5}\right)\Psi,\quad\mbox{\mathrm{SU(2)\, doublett}};\qquad\Psi_{\mathrm{R}}=\frac{1}{2}\left(1+\gamma_{5}\right)\Psi,\quad\mathrm{SU(2)\, singulett}
+\Psi_{\mathrm{L}} & =\underbrace{\frac{1}{2}\left(1-\gamma_{5}\right)}_{\mathrm{P_{L}}}\Psi,\quad\mbox{\mathrm{SU(2)\, doublett}};\qquad\Psi_{\mathrm{R}}=\underbrace{\frac{1}{2}\left(1+\gamma_{5}\right)}_{\mathrm{P_{R}}}\Psi,\quad\mathrm{SU(2)\, singulett}
 \end{align*}
 
 \end_inset
@@ -1834,10 +1834,6 @@ For the quark masses the procedure is nearly equivalent:
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 With the transformations 
 \begin_inset Formula $\mathrm{u_{L}}^{i}\rightarrow U_{u}^{ij}\mathrm{u_{L}}^{j}$
 \end_inset
@@ -1857,10 +1853,6 @@ With the transformations
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 For the 
 \begin_inset Formula $W^{\pm}$
 \end_inset
@@ -1876,10 +1868,6 @@ For the
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 were 
 \begin_inset Formula $V_{ij}$
 \end_inset
@@ -1908,6 +1896,57 @@ The Top Quark
 
 \begin_layout Subsection
 Production Processes
+\end_layout
+
+\begin_layout Standard
+Top quarks can be produced through strong or weak interaction.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-production-and-decay-of-tops"
+
+\end_inset
+
+ gives an overview of the different production channels.
+ Via strong interaction top quarks can only be optained in 
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+ pairs due to flavor conservation (so-called 
+\begin_inset Quotes eld
+\end_inset
+
+topness
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Single top quarks are produced by weak interaction.
+ Here, the measured relation of the CKM matrix elements 
+\begin_inset Formula $\mathrm{V_{tb}}\gg\mathrm{V_{ts},\, V_{td}}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add ref - look into pdg}
+\end_layout
+
+\end_inset
+
+ favors the production and decay by 
+\begin_inset Formula $\mathrm{W}^{\pm}$
+\end_inset
+
+- bosons and bottom quarks.
+ Even the decay via hadronization by QCD of top quarks would act through
+ its high mass on a larger time scale.
+ Thus, it is possible to probe the top quark and its properties directly.
 \end_layout
 
 \begin_layout Standard
@@ -2192,6 +2231,13 @@ The production and decay of the top quark.
 
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-production-and-decay-of-tops"
+
+\end_inset
+
 The production and decay of the top quark: (a) 
 \begin_inset Formula $t\bar{t}$
 \end_inset
@@ -2220,8 +2266,294 @@ key "topprocesspics"
 
 \end_layout
 
+\begin_layout Standard
+For this thesis, it is crucial, that the spin information of the top quark
+ stays encoded in its decay products and are not lost due to gluon or photon
+ radiation.
+\end_layout
+
 \begin_layout Subsection
 Measurements and Results
+\end_layout
+
+\begin_layout Standard
+Measuring the top quark production cross sections and properties is essential
+ for understanding the electro-weak symmetry breaking, since the top quark
+ is with its mass in the vicinity of the higgs potential vaccum expectation
+ value 
+\begin_inset Formula $v=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{246.22}{GeV.}
+\end_layout
+
+\end_inset
+
+ Futhermore, new heavy particles are predicted by various extensions to
+ the SM like SUSY or technicolor models.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add some example ref for susy and technicolor or overview paper}
+\end_layout
+
+\end_inset
+
+Those particles can decay into top quarks or change its expected properties
+ due to loop corrections.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mass
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{173.5
+\backslash
+pm 0.6
+\backslash
+mathrm{(stat.)}
+\backslash
+pm 0.8
+\backslash
+mathrm{(sys.)}}{GeV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pdg"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+decay width
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{1.99^{+0.69}_{-0.55}}{GeV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pdg"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+ cross section
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Top quark cross sections and properties
+\end_layout
+
+\end_inset
+
+Top quark cross sections and properties
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2230,6 +2562,78 @@ Effective Theory
 
 \begin_layout Subsection
 Anomalous Couplings
+\end_layout
+
+\begin_layout Standard
+The effect of new particles to the top quark coupling can be parameterized
+ by using the Operator Product Expansion (OPE).
+ New products of operators may arise from new interactions at higher energies
+ 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+ Those can be develop around their spatial separation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "peskin"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}_{\mathrm{new}}\approx\mathcal{L}_{\mathrm{eff}}=\sum_{j}\left(\frac{v}{\Lambda}\right)^{j}\mathcal{O}_{j}
+\]
+
+\end_inset
+
+In the case of the top quark the SM Lagrange density 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}_{\mathrm{Wtb}}^{\mathrm{SM}}=-\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\gamma^{\mu}\mbox{\mathrm{V_{tb}}}\mbox{\mathrm{P_{L}}}\mathrm{t}\mathrm{W_{\mu}^{-}}+\mathrm{h.c.}
+\]
+
+\end_inset
+
+can be extended to an effective coupling scenario 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wtb-top-pair"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\mathcal{L}_{\mathrm{Wtb}}^{\mathrm{eff}}= & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\gamma^{\mu}\left(\mathrm{V_{L}}\mathrm{P_{L}}+\mathrm{V_{R}}\mathrm{P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-} & \mathrm{(vector\, coupling)}\\
+ & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\frac{i\sigma^{\mu\nu}q_{\nu}}{m_{W}}\left(\mathrm{g_{L}P_{L}+g_{R}P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-}+\mbox{\mathrm{h.c.}} & \mathrm{\left(tensor\, coupling\right)}
+\end{align*}
+
+\end_inset
+
+The scale dependence 
+\begin_inset Formula $\frac{v}{\Lambda}$
+\end_inset
+
+ has been absorbed into the new coupling strength parameters 
+\begin_inset Formula $\mathrm{V_{R},\, g_{L}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
