@@ -1539,6 +1539,20 @@ axialvector
 \end_inset
 
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add right-, left-handed def, helicity}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2567,8 +2581,8 @@ Anomalous Couplings
 \begin_layout Standard
 The effect of new particles to the top quark coupling can be parameterized
  by using the Operator Product Expansion (OPE).
- New products of operators may arise from new interactions at higher energies
- 
+ New products of operators may arise from new interactions at a higher energy
+ scale 
 \begin_inset Formula $\Lambda$
 \end_inset
 
@@ -2586,12 +2600,23 @@ key "peskin"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{L}_{\mathrm{new}}\approx\mathcal{L}_{\mathrm{eff}}=\sum_{j}\left(\frac{v}{\Lambda}\right)^{j}\mathcal{O}_{j}
+\mathcal{O}_{1}(x)\mathcal{O}_{2}(0)\rightarrow\sum_{j}C_{12}^{j}(x)\mathcal{O}_{j}(0)
 \]
 
 \end_inset
 
-In the case of the top quark the SM Lagrange density 
+This can be understood as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}\rightarrow\mathcal{L}_{\mathrm{SM}}+\mathcal{L}_{\mathrm{eff}}=\mathcal{L}_{\mathrm{SM}}+\sum_{j}\left(\frac{v}{\Lambda}\right)^{j}\mathcal{O}_{j}.
+\]
+
+\end_inset
+
+In the case of the top quark, the SM Lagrange density 
 \end_layout
 
 \begin_layout Standard
@@ -2615,8 +2640,8 @@ key "Wtb-top-pair"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\mathcal{L}_{\mathrm{Wtb}}^{\mathrm{eff}}= & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\gamma^{\mu}\left(\mathrm{V_{L}}\mathrm{P_{L}}+\mathrm{V_{R}}\mathrm{P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-} & \mathrm{(vector\, coupling)}\\
- & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\frac{i\sigma^{\mu\nu}q_{\nu}}{m_{W}}\left(\mathrm{g_{L}P_{L}+g_{R}P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-}+\mbox{\mathrm{h.c.}} & \mathrm{\left(tensor\, coupling\right)}
+\mathcal{L}_{\mathrm{Wtb}}^{\mathrm{eff}}= & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\gamma^{\mu}\left(\mathrm{V_{L}}\mathrm{P_{L}}+\mathrm{V_{R}}\mathrm{P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-} & \mathrm{(vector\, couplings)}\\
+ & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\frac{i\sigma^{\mu\nu}q_{\nu}}{m_{W}}\left(\mathrm{g_{L}P_{L}+g_{R}P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-}+\mbox{\mathrm{h.c.}} & \mathrm{\left(tensor\, couplings\right)}
 \end{align*}
 
 \end_inset
@@ -2634,10 +2659,37 @@ The scale dependence
 \end_inset
 
 .
+ The SM is optained by setting 
+\begin_inset Formula $\mathrm{V_{L}=V_{tb}}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{V_{R}=g_{L}=g_{R}=0}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathrm{V_{R}}$
+\end_inset
+
+ introduces new right-handed vector anomalous coupling and 
+\begin_inset Formula $\mathrm{g_{L},\, g_{R}}$
+\end_inset
+
+ new tensor left- and right-handed anomalous couplings.
 \end_layout
 
 \begin_layout Subsection
 W-Boson Helicity Fractions
+\end_layout
+
+\begin_layout Standard
+One way of probing the presents of anomalous coupling is by analyzing the
+ 
+\begin_inset Formula $\mathrm{W}^{\pm}$
+\end_inset
+
+ helicity fractions.
 \end_layout
 
 \begin_layout Standard
