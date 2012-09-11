@@ -1357,7 +1357,7 @@ strong
 \begin_inset Text
 
 \begin_layout Plain Layout
-gluons 
+8 gluons 
 \begin_inset Formula $\mathrm{g}$
 \end_inset
 
@@ -1502,12 +1502,12 @@ does then not involves terms of the form
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{L}_{\mathrm{R}}\propto W_{\mu}^{+}\bar{\Psi}_{\mathrm{R}}\gamma^{\mu}\Psi_{\mathrm{R}}+\mathrm{h.c.}
+\mathcal{L}_{\mathrm{R}}\propto W_{\mu}^{+}\bar{\Psi}_{\mathrm{R}}\gamma^{\mu}\Psi_{\mathrm{R}}^{\prime}+\mathrm{h.c.}
 \]
 
 \end_inset
 
-where the EM charge is conserved.
+where the EM charge would be conserved.
  The structure of the coupling to 
 \begin_inset Formula $W^{\pm}$
 \end_inset
@@ -1549,11 +1549,27 @@ axialvector
 \begin_inset Formula $\Psi_{\mathrm{L}}$
 \end_inset
 
- left-handed and 
+ 
+\begin_inset Quotes eld
+\end_inset
+
+left-handed
+\begin_inset Quotes erd
+\end_inset
+
+ and 
 \begin_inset Formula $\Psi_{\mathrm{R}}$
 \end_inset
 
- right-handed.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+right-handed
+\begin_inset Quotes erd
+\end_inset
+
+.
  In the case of massless particles, the chirality is equal to the helicity
  
 \begin_inset Formula $\mathrm{H}$
@@ -1903,7 +1919,28 @@ Quantum Chromodynamics
 \end_layout
 
 \begin_layout Standard
-confinement,
+Quantum Chromodynamics is the description of the strong interaction which
+ is only present between quarks.
+ The 
+\begin_inset Formula $\mathrm{SU(3)}$
+\end_inset
+
+ gauge charge is 
+\begin_inset Quotes eld
+\end_inset
+
+color
+\begin_inset Quotes erd
+\end_inset
+
+.
+ It demonstrates new effects through its non-abelian gauge group.
+ With the renormalization of fields, for each interaction, the coupling
+ constant depends on the enegry scale.
+\end_layout
+
+\begin_layout Standard
+hadronization
 \end_layout
 
 \begin_layout Section
@@ -2325,7 +2362,7 @@ checkthis{add some example ref for susy and technicolor or overview paper}
 \end_inset
 
 Those particles can decay into top quarks or change its expected properties
- due to loop corrections.
+ due to higher order corrections.
 \end_layout
 
 \begin_layout Standard
@@ -2672,6 +2709,22 @@ This can be understood as
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{need ref!!}
+\end_layout
+
+\end_inset
+
 In the case of the top quark, the SM Lagrange density 
 \end_layout
 
@@ -2851,13 +2904,13 @@ Top Spin Asymmetries
 \begin_layout Standard
 Further observables to constrain anomalous couplings can be optained by
  quantizing the top quark spin directly.
- In single top t-channel production it is however complicated to reconstruct
- the center-of-mass system in the presents of additional jets with high
+ In single top quark t-channel production it is however complicated to reconstru
+ct the center-of-mass system in the presents of additional jets with high
  precision.
  Thus a different quantization axis has to be found.
  Here, it has been shown, that the spectator jet comes with a high polarization
  
-\begin_inset Formula $\mathrm{\rho}$
+\begin_inset Formula $\rho$
 \end_inset
 
  as top quark spin axis 
