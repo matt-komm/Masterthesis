@@ -92,6 +92,22 @@ The Large Hadron Collider
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hide{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The Large Hadron Collider (LHC) is a proton-proton storage ring at the European
  Organization for Nuclear Research (CERN) in Geneva, Switzerland.
  It has a circumference of approximately 
@@ -182,6 +198,17 @@ reference "fig:The-CERN-accelerator"
 
  shows the accelerator complex with the LHC, its experiments and the additional
  accelerators.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -258,6 +285,19 @@ key "LHCmachine"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hide{
 \end_layout
 
 \end_inset
@@ -541,6 +581,17 @@ nuu{4}{TeV}
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
