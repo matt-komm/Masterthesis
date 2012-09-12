@@ -1393,11 +1393,11 @@ color
 \end_layout
 
 \begin_layout Subsection
-The Electro-Weak Interaction and Higgs Mechanism
+The Electroweak Interaction and Higgs Mechanism
 \end_layout
 
 \begin_layout Standard
-The EM and weak interaction can be united to the electro-weak interaction.
+The EM and weak interaction can be united to the electroweak interaction.
  In addition, the following experimental results had to be included:
 \end_layout
 
@@ -1722,7 +1722,7 @@ v+h(x)
 
 \end_inset
 
-For the masses of the electro-weak gauge bosons, the 
+For the masses of the electroweak gauge bosons, the 
 \begin_inset Formula $\mathrm{U(1)\otimes SU(2)}$
 \end_inset
 
@@ -1777,6 +1777,22 @@ checkthis{leaf out propagators}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add masses}
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
@@ -1919,8 +1935,8 @@ Quantum Chromodynamics
 \end_layout
 
 \begin_layout Standard
-Quantum Chromodynamics is the description of the strong interaction which
- is only present between quarks.
+Quantum Chromodynamics is the description of the strong interaction in which
+ only quarks can participate in.
  The 
 \begin_inset Formula $\mathrm{SU(3)}$
 \end_inset
@@ -1934,13 +1950,123 @@ color
 \end_inset
 
 .
- It demonstrates new effects through its non-abelian gauge group.
- With the renormalization of fields, for each interaction, the coupling
- constant depends on the enegry scale.
+ QCD demonstrates new effects through its non-abelian gauge group.
+ Experiments have shown that no 
+\begin_inset Quotes eld
+\end_inset
+
+free
+\begin_inset Quotes erd
+\end_inset
+
+ quarks could be observed so far.
+ This effect can be explained through a modified potential between quarks:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+V_{\mathrm{q}\bar{\mathrm{q}}}(r)=-\frac{4}{3}\frac{\alpha_{s}}{r}+\sigma\cdot r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here, the additional term 
+\begin_inset Formula $\sigma\cdot r$
+\end_inset
+
+ leads to a 
+\begin_inset Quotes eld
+\end_inset
+
+confinement
+\begin_inset Quotes erd
+\end_inset
+
+ of quarks, if they are not grouped into a color singulett of mesons (
+\begin_inset Formula $\mathrm{q}\bar{\mathrm{q}}$
+\end_inset
+
+) or baryons (
+\begin_inset Formula $\mathrm{qqq}$
+\end_inset
+
+).
+ Moreover, it is possible to produce additional 
+\begin_inset Formula $\mathrm{q}\bar{\mathrm{q}}$
+\end_inset
+
+ pairs from the vaccum if the potential is exceeds 
+\begin_inset Formula $2\cdot m_{\mathrm{q}}$
+\end_inset
+
+.
+ This process of grouping and pair production is called 
+\begin_inset Quotes eld
+\end_inset
+
 hadronization
+\begin_inset Quotes erd
+\end_inset
+
+ and can not be perturbatively caculated.
+\end_layout
+
+\begin_layout Standard
+However, QCD scattering processes can be caculated in a perturbative way
+ through the behavoir of the running coupling constant 
+\begin_inset Formula $\alpha_{s}$
+\end_inset
+
+.
+ With the renormalization of fields, coupling constants depend on the enegry
+ scale.
+ For QCD this leads to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{s}(q^{2})=\frac{\alpha_{s}(\mu_{R}^{2})}{1+\left(\alpha_{s}(\mu_{R}^{2})\cdot\frac{33-2\cdot n_{f}}{12\pi}\right)\cdot\ln\left(\frac{\left|q^{2}\right|}{\mu_{R}^{2}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with 
+\begin_inset Formula $\mu_{R}$
+\end_inset
+
+ as a measured reference scale and 
+\begin_inset Formula $q^{2}$
+\end_inset
+
+ the scale to which the coupling is extrapolated.
+ 
+\begin_inset Formula $n_{f}$
+\end_inset
+
+ counts the quark flavors.
+ For 
+\begin_inset Formula $\underset{q\rightarrow\infty}{\lim}\alpha_{s}(q^{2})=0$
+\end_inset
+
+ quark are 
+\begin_inset Quotes eld
+\end_inset
+
+asymptotically free
+\begin_inset Quotes erd
+\end_inset
+
+ so that perturbative the can be applied.
 \end_layout
 
 \begin_layout Section
@@ -1952,7 +2078,7 @@ Production Processes
 \end_layout
 
 \begin_layout Standard
-Top quarks can be produced through strong or weak interaction.
+Top quarks can be produced through strong or electroweak interaction.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1974,7 +2100,7 @@ topness
 \end_inset
 
 ).
- Single top quarks are produced by weak interaction.
+ Single top quarks are produced by electroweak interaction.
  Here, the measured relation of the CKM matrix elements 
 \begin_inset Formula $\mathrm{V_{tb}}\gg\mathrm{V_{ts},\, V_{td}}$
 \end_inset
@@ -2327,7 +2453,7 @@ Measurements and Results
 
 \begin_layout Standard
 Measuring the top quark production cross sections and properties is essential
- for understanding the electro-weak symmetry breaking, since the top quark
+ for understanding the electroweak symmetry breaking, since the top quark
  is with its mass in the vicinity of the higgs potential vaccum expectation
  value 
 \begin_inset Formula $v=$
