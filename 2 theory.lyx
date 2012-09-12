@@ -110,23 +110,13 @@ hide{
 \end_layout
 
 \begin_layout Standard
-The Standard Model of Particle Physics is a theory that describes the interactio
-n between elementary particles.
- Elementary particles are up till now, known to have no sub structure and
- are considered as point-like.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{fermions}
-\end_layout
-
+The Standard Model of Particle Physics (SM) is a theory that describes the
+ interaction between elementary particles.
+ Elementary particles are up till now, fermions (
+\begin_inset Formula $s=\frac{1}{2}$
 \end_inset
 
+) with no sub structure and are therefore considered as point-like.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1622,7 +1612,7 @@ hidden
 \end_inset
 
  through a potential 
-\begin_inset Formula $\mathrm{V}(\phi^{\dagger}\phi)$
+\begin_inset Formula $\mathrm{V}(\phi^{\dagger}\phi)=\frac{1}{4}\lambda\left(\phi^{\dagger}\phi\right)^{2}-\mu^{2}\phi^{\dagger}\phi$
 \end_inset
 
 , shown in figure 
@@ -1640,7 +1630,7 @@ reference "fig:The-Higgs-Potential"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
@@ -1655,17 +1645,6 @@ status open
 	filename images/higgspot.eps
 	lyxscale 10
 	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-\mathrm{V}(\phi^{\dagger}\phi)=\frac{1}{4}\lambda\left(\phi^{\dagger}\phi\right)^{2}-\mu^{2}\phi^{\dagger}\phi
-\]
 
 \end_inset
 
@@ -1905,7 +1884,7 @@ For the
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
-- interaction terms, this rewritting leads to
+- interaction terms, this rewriting leads to
 \end_layout
 
 \begin_layout Standard
@@ -2000,7 +1979,7 @@ confinement
 \begin_inset Formula $\mathrm{q}\bar{\mathrm{q}}$
 \end_inset
 
- pairs from the vaccum if the potential is exceeds 
+ pairs from the vaccum if the potential exceeds 
 \begin_inset Formula $2\cdot m_{\mathrm{q}}$
 \end_inset
 
@@ -2066,7 +2045,7 @@ asymptotically free
 \begin_inset Quotes erd
 \end_inset
 
- so that perturbative the can be applied.
+ so that perturbative theory can be applied.
 \end_layout
 
 \begin_layout Section
@@ -2105,22 +2084,16 @@ topness
 \begin_inset Formula $\mathrm{V_{tb}}\gg\mathrm{V_{ts},\, V_{td}}$
 \end_inset
 
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add ref - look into pdg}
-\end_layout
+ favors the production and decay by W-bosons and bottom quarks 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ckmVtb"
 
 \end_inset
 
- favors the production and decay by W-bosons and bottom quarks.
- Even the decay via hadronization by QCD of top quarks would act through
- its high mass on a larger time scale.
+.
+ Even hadronization of top quarks and subsequent hadron decays of would
+ act through the high top quark mass on a larger time scale.
  Thus, it is possible to probe the top quark and its properties directly.
 \end_layout
 
@@ -2161,7 +2134,7 @@ begin{center}
 \begin_inset Graphics
 	filename images/ttbarprod.png
 	lyxscale 10
-	width 13cm
+	width 12cm
 
 \end_inset
 
@@ -2226,7 +2199,7 @@ begin{center}
 \begin_inset Graphics
 	filename images/schannelprod.png
 	lyxscale 10
-	width 4cm
+	width 3.5cm
 
 \end_inset
 
@@ -2242,7 +2215,7 @@ begin{center}
 \begin_inset Graphics
 	filename images/tWprod.png
 	lyxscale 10
-	width 8cm
+	width 7.5cm
 
 \end_inset
 
@@ -2298,7 +2271,7 @@ begin{center}
 \begin_inset Graphics
 	filename images/tchannelprod.png
 	lyxscale 10
-	width 3.7cm
+	width 3.5cm
 
 \end_inset
 
@@ -2314,7 +2287,7 @@ begin{center}
 \begin_inset Graphics
 	filename images/tchannelprod2.png
 	lyxscale 10
-	width 3.7cm
+	width 3.5cm
 
 \end_inset
 
@@ -2330,7 +2303,7 @@ begin{center}
 \begin_inset Graphics
 	filename images/topdecay.png
 	lyxscale 10
-	width 4.3cm
+	width 4cm
 
 \end_inset
 
@@ -2442,9 +2415,9 @@ key "topprocesspics"
 \end_layout
 
 \begin_layout Standard
-For this thesis, it is crucial, that the spin information of the top quark
- stays encoded in its decay products and are not lost due to gluon or photon
- radiation.
+For this thesis, it is crucial, that the spin orientation of the top quark
+ stays encoded in its decay products and is not lost due to none-perturbative
+ gluon radiation.
 \end_layout
 
 \begin_layout Subsection
@@ -2498,9 +2471,51 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Top quark cross sections and properties
+\end_layout
+
+\end_inset
+
+Top quark cross sections and properties.
+ Cross sections are calculated for proton-proton collision at 
+\begin_inset Formula $\sqrt{s}$
+\end_inset
+
+
+=
+\lang american
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{7}{TeV}
+\end_layout
+
+\end_inset
+
+ in NNLO approximation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="3">
+<lyxtabular version="3" rows="6" columns="3">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
@@ -2510,7 +2525,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-mass
+mass (measured)
 \end_layout
 
 \end_inset
@@ -2566,7 +2581,7 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
-decay width
+decay width (measured)
 \end_layout
 
 \end_inset
@@ -2616,7 +2631,7 @@ key "pdg"
 \begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
 \end_inset
 
- cross section
+
 \end_layout
 
 \end_inset
@@ -2625,6 +2640,22 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{163^{+4}_{-8}
+\backslash
+mathrm{(scale)}^{+9}_{-9}
+\backslash
+mathrm{(pdf)}}{pb}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2634,6 +2665,12 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ttbar-xsec"
+
+\end_inset
+
 
 \end_layout
 
@@ -2645,7 +2682,10 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\mathrm{t}$
+\end_inset
 
+-channel single top
 \end_layout
 
 \end_inset
@@ -2654,6 +2694,22 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{64.57^{+2.09}_{-0.71}
+\backslash
+mathrm{(scale)}^{+1.51}_{-1.74}
+\backslash
+mathrm{(pdf)}}{pb}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2663,6 +2719,12 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "toptch-xsec"
+
+\end_inset
+
 
 \end_layout
 
@@ -2674,7 +2736,10 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\mathrm{s}$
+\end_inset
 
+-channel single top
 \end_layout
 
 \end_inset
@@ -2683,6 +2748,24 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{4.63
+\backslash
+pm 0.07 
+\backslash
+mathrm{(scale)}^{+0.19}_{-0.17}
+\backslash
+mathrm{(pdf)}}{pb}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2692,35 +2775,12 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "topsch-xsec"
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2732,6 +2792,36 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\mathrm{tW}$
+\end_inset
+
+-channel single top
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{15.74
+\backslash
+pm 0.40 
+\backslash
+mathrm{(scale)}^{+1.10}_{-1.14}
+\backslash
+mathrm{(pdf)}}{pb}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2741,15 +2831,12 @@ key "pdg"
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tW-xsec"
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2757,27 +2844,6 @@ key "pdg"
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset Argument
-status open
-
-\begin_layout Plain Layout
-Top quark cross sections and properties
-\end_layout
-
-\end_inset
-
-Top quark cross sections and properties
-\end_layout
 
 \end_inset
 
@@ -2895,7 +2961,7 @@ The scale dependence
 
 .
  The SM is optained by setting 
-\begin_inset Formula $\mathrm{V_{L}=V_{tb}}=1$
+\begin_inset Formula $\mathrm{V_{L}=V_{tb}}\approx1$
 \end_inset
 
  and 
@@ -2911,7 +2977,7 @@ The scale dependence
 \begin_inset Formula $\mathrm{g_{L},\, g_{R}}$
 \end_inset
 
- new tensor left- and right-handed anomalous couplings.
+ new tensor left-, right-handed anomalous couplings.
 \end_layout
 
 \begin_layout Subsection
@@ -2942,6 +3008,13 @@ One way of probing the presents of anomalous coupling is by analyzing the
 
 with the helicity fractions 
 \begin_inset Formula $\mathrm{F}_{j}\equiv\textnormal{\frac{\Gamma_{j}}{\Gamma}}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wbeyond"
+
 \end_inset
 
 .
@@ -3077,18 +3150,98 @@ The polarization
 \end_layout
 
 \begin_layout Standard
-depends on the choosen basis 
+depends on the chosen basis 
 \begin_inset Formula $\mathrm{B}$
 \end_inset
 
 .
  Here the specator basis yields a expected polarization of 
-\begin_inset Formula $\rho_{\mathrm{B}}\approx$
+\begin_inset Formula $\rho_{\mathrm{spec.}}^{\mathrm{t}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{99}{
+\backslash
+%}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{\mathrm{spec.}}^{\bar{\mathrm{t}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{-96}{
+\backslash
+%}
+\end_layout
+
 \end_inset
 
 .
  Another basis with high polarization can be constructed by projecting the
  spectator jet along the beamline.
+ Here, the polarizations are 
+\begin_inset Formula $\rho_{\mathrm{bml.}}^{\mathrm{t}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{96}{
+\backslash
+%}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{\mathrm{bml.}}^{\bar{\mathrm{t}}}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{-97}{
+\backslash
+%}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "topPhysicsWBernreuther"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3104,7 +3257,15 @@ spin-analyzing power
 \begin_inset Quotes erd
 \end_inset
 
-, where the 
+ and depends on the anomalous couplings 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wbeyond"
+
+\end_inset
+
+.
+ The 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3124,7 +3285,7 @@ reference "fig:Quantization-of-the-top-spin"
 
 \end_inset
 
- visualizes the construction of the angles.
+ visualizes the construction of the different angles in the top restframe.
 \end_layout
 
 \begin_layout Standard
@@ -3165,10 +3326,6 @@ Quantization of the top quark spin
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 In this thesis, the top quark spin asymmetries will be measured.
  These are defined as follows:
 \end_layout
@@ -3176,12 +3333,37 @@ In this thesis, the top quark spin asymmetries will be measured.
 \begin_layout Standard
 \begin_inset Formula 
 \[
-A_{\mathrm{B,\, X}}
+A_{\mathrm{B,\, X}}=\frac{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)-N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)+N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}=\frac{1}{2}\rho_{\mathrm{B}}\cdot c_{\mathrm{X}}\left(\mathrm{V_{L},\, V_{R},\, g_{L},\, g_{R}}\right)
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Another interesting variable is the ratio between two top quark asymmetries
+ for two different spin-analyzers in the same basis:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{A_{\mathrm{B,\, X}}}{A_{\mathrm{B,\, X^{\prime}}}}=\frac{c_{\mathrm{X}}}{c_{\mathrm{X}^{\prime}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In combination with the w-boson helicity fractions, these observables provides
+ new insight into the coupling structure at the 
+\begin_inset Formula $\mathrm{Wtb}$
+\end_inset
+
+-vertex.
 \end_layout
 
 \begin_layout Section
