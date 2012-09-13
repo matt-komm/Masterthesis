@@ -33,7 +33,7 @@ eqs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement h
-\paperfontsize 12
+\paperfontsize 11
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
@@ -129,7 +129,7 @@ hide{
 The Standard Model of Particle Physics (SM) is a theory that describes the
  interaction between elementary particles.
  Elementary particles are up till now, fermions (
-\begin_inset Formula $s=\frac{1}{2}$
+\begin_inset Formula ${\textstyle s=\frac{1}{2}}$
 \end_inset
 
 ) with no sub structure and are therefore considered as point-like.
@@ -2961,7 +2961,7 @@ key "Wtb-top-pair"
 \end_inset
 
 The scale dependence 
-\begin_inset Formula $\frac{v}{\Lambda}$
+\begin_inset Formula ${\textstyle \frac{v}{\Lambda}}$
 \end_inset
 
  has been absorbed into the new coupling strength parameters 

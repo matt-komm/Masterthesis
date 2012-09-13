@@ -35,6 +35,7 @@
 \usepackage{titlesec}
 \usepackage{tocloft}
 \usepackage{slashed}
+\usepackage{scrextend}
 \usepackage{axodraw4j}
 \usepackage{nomencl} %list of abbreviations
 \makenomenclature 
@@ -59,13 +60,10 @@
 	{\titlerule\vspace{0.2cm}\filright}
 \titlespacing{\chapter}{-0.3cm}{-1.5cm}{0.5cm}
 
-%\setkomafont{section}{\normalfont}
-%\setkomafont{subsection}{\normalfont\slshape}
+%\setkomafont{chapter}{\normalfont\bfseries\fontsize{16}{8}\selectfont}
+\setkomafont{section}{\normalfont\bfseries\fontsize{15}{8}\selectfont}
+\setkomafont{subsection}{\normalfont\bfseries\fontsize{14}{8}\selectfont}
 \addtokomafont{disposition}{\normalfont\bfseries}
-
-%\setkomafont{chapter}{\normalfont\bfseries\fontsize{13}{15.5}\selectfont\scshape}
-%\setkomafont{section}{\normalfont\fontsize{13}{15.5}\selectfont}
-%\setkomafont{subsection}{\normalfont\slshape\fontsize{13}{15.5}\selectfont}
 
 %\renewcommand{\contentsname}{Inhaltsverzeichnis}
 %\renewcommand{\listfigurename}{Abbildungsverzeichnis} 
@@ -157,8 +155,7 @@
 }
 
 \newcommand{\setupTextStyle}{
-\renewcommand{\baselinestretch}{1.2}
-\fontsize{10.5}{10.5} \selectfont
+\renewcommand{\baselinestretch}{1.11} \normalsize
 
 %formel abstände 
 \setlength{\abovedisplayskip}{-0.2cm plus 0.1cm}

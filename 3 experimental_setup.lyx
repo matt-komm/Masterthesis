@@ -31,7 +31,7 @@ eqs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement h
-\paperfontsize 12
+\paperfontsize 11
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true

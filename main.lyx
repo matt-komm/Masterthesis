@@ -31,7 +31,7 @@ eqs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement h
-\paperfontsize 12
+\paperfontsize 11
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
@@ -110,7 +110,7 @@ setupTextStyle
 \backslash
 renewcommand{
 \backslash
-baselinestretch}{1.1}
+baselinestretch}{1.2} 
 \backslash
 normalsize
 \end_layout

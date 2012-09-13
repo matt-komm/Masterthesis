@@ -31,7 +31,7 @@ eqs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement h
-\paperfontsize 12
+\paperfontsize 11
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
@@ -89,13 +89,16 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+begin{titlepage}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-begin{titlepage}
+changefontsizes[12pt]{12pt}
 \end_layout
 
 \begin_layout Plain Layout
@@ -344,6 +347,10 @@ end{center}
   
 \backslash
 end{center} 
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
