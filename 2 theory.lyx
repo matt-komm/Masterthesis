@@ -85,6 +85,22 @@ eqs-within-sections
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setupTextStyle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Theory
 \end_layout
@@ -2488,10 +2504,7 @@ Top quark cross sections and properties.
 \begin_inset Formula $\sqrt{s}$
 \end_inset
 
-
 =
-\lang american
-
 \begin_inset ERT
 status open
 

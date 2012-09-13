@@ -91,6 +91,33 @@ status open
 
 
 \backslash
+setupTextStyle
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+baselinestretch}{1.3}
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
 pagenumbering{Alph}
 \end_layout
 

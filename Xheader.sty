@@ -108,17 +108,17 @@
 
 %sinnvolle figure Nummerierung
 \counterwithin{figure}{section}
-\renewcommand{\thefigure}{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{figure}}
+\renewcommand{\thefigure}{\mbox{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{figure}}}
 \setlength{\cftfignumwidth}{1.3cm} %platz zwischen nummerierung und titel im listoffigures
 
 %sinnvolle table Nummerierung
 \counterwithin{table}{section}
-\renewcommand{\thetable}{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{table}}
+\renewcommand{\thetable}{\mbox{\thesection\hspace{0.05cm}-\hspace{0.05cm}\arabic{table}}}
 \setlength{\cfttabnumwidth}{1.3cm} %platz zwischen nummerierung und titel im listoftables
 
 %sinnvolle formel Nummerierung
 \counterwithout{equation}{section}
-\renewcommand\theequation{\thesection-\arabic{equation}}
+\renewcommand\theequation{\mbox{\thesection-\arabic{equation}}}
 
 %strecke zeilenabstände im table
 \renewcommand{\arraystretch}{1.3}
@@ -154,6 +154,17 @@
 
 \newcommand{\hide}[1]{
 #1
+}
+
+\newcommand{\setupTextStyle}{
+\renewcommand{\baselinestretch}{1.2}
+\fontsize{10.5}{10.5} \selectfont
+
+%formel abstände 
+\setlength{\abovedisplayskip}{-0.2cm plus 0.1cm}
+\setlength{\abovedisplayshortskip}{-0.2cm plus 0.1cm}
+\setlength{\belowdisplayskip}{0.2cm plus 0.1cm}
+\setlength{\belowdisplayshortskip}{0.2cm plus 0.1cm}
 }
 
 % New definition of square root:
