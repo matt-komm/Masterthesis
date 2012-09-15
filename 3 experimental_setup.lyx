@@ -108,22 +108,6 @@ The Large Hadron Collider
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hide{
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The Large Hadron Collider (LHC) is a proton-proton storage ring at the European
  Organization for Nuclear Research (CERN) in Geneva, Switzerland.
  It has a circumference of approximately 
@@ -204,7 +188,11 @@ key "LHCmachine"
 
 \end_inset
 
-.
+ at 
+\begin_inset Formula $\sqrt{s}=$
+\end_inset
+
+????.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -214,17 +202,34 @@ reference "fig:The-CERN-accelerator"
 
  shows the accelerator complex with the LHC, its experiments and the additional
  accelerators.
+ 
+\end_layout
+
+\begin_layout Standard
+The acceleration of protons starts at the Linac2.
+ This continues with the Proton Synchrotron Booster (PSB), the Proton Synchrotro
+n (PS), the Super Proton Synchrotron (SPS) and finally with an energy of
+ 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-}
+
+\backslash
+nuu{450}{GeV}
 \end_layout
 
 \end_inset
 
+ the protons are injected into the LHC 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCmachine"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -273,29 +278,6 @@ key "pic_cern_acc_complex"
 \end_inset
 
 .
- Injection of proton bunches into the LHC starts from the Linac2 and continues
- the Proton Synchrotron Booster (PSB), the Proton Synchrotron (PS), the
- Super Proton Synchrotron (SPS) and finally with an energy of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{450}{GeV}
-\end_layout
-
-\end_inset
-
- into the LHC 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "LHCmachine"
-
-\end_inset
-
-.
 \end_layout
 
 \end_inset
@@ -305,21 +287,7 @@ key "LHCmachine"
 
 \end_inset
 
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hide{
-\end_layout
-
-\end_inset
-
-The proton beams consists maximally of 2808 bunches with a spacing between
- them of 
+The proton beams consists maximally of 2808 bunches with a spacing of 
 \begin_inset ERT
 status open
 
@@ -332,7 +300,7 @@ nuu{25}{ns}
 
 \end_inset
 
-.
+ between them.
  With 
 \begin_inset ERT
 status open
@@ -371,7 +339,7 @@ nuu{0.58}{A}
 \begin_layout Standard
 For deflecting and focusing the beams a magnet system of NbTi superconductors
  is used.
- Superfluid helium cools the superconductors to 
+ Superfluid helium cools the superconductors down to 
 \begin_inset ERT
 status open
 
@@ -384,20 +352,8 @@ nuu{1.9}{K}
 
 \end_inset
 
- and lets the magnet field of the dipoles to be 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{8.33}{T}
-\end_layout
-
-\end_inset
-
- with a current of 
+.
+ This allows the dipoles to be driven with a current of 
 \begin_inset ERT
 status open
 
@@ -406,6 +362,19 @@ status open
 
 \backslash
 nuu{11850}{A}
+\end_layout
+
+\end_inset
+
+ which produces a magent field of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{8.33}{T}
 \end_layout
 
 \end_inset
@@ -472,7 +441,7 @@ nuu{7}{TeV}
 
 \end_inset
 
- of around 
+ per beam of around 
 \begin_inset ERT
 status open
 
@@ -532,8 +501,8 @@ LHCb
 \end_layout
 
 \begin_layout Standard
-After an initial breakdown in September 2008 of the LHC, the first beams
- at injection energy were successfully circulating on 20th November 2009.
+The first beams at injection energy were successfully circulating on 20th
+ November 2009.
  In March 2010 the targeted beam energy of 
 \begin_inset ERT
 status open
@@ -597,12 +566,112 @@ nuu{4}{TeV}
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+The CMS Experiment
+\end_layout
+
+\begin_layout Standard
+The Compact Muon Solenoid (CMS) is a general-purpose dectector developed
+ to record the proton-proton collisions at the high luminosity the LHC is
+ providing.
+ The physics programm of the CMS collaboration involves the search for the
+ Higgs boson and detection or exclusion of supersymmetric particles (SUSY),
+ new heavy vector bosons as well as extra dimensions.
+ Besides that, precision measurements of the SM are performed like studies
+ of QCD, elektroweak and top quark physics.
+ During heavy-ion runs, the properties of strong interacting nuclear matter
+ is investigated.
+\end_layout
+
+\begin_layout Standard
+This program is matched by the detector requirements.
+ Here a good muon momentum resolution and a good dimuon mass resolution
+ is needed.
+ Furthermore, precise tracking of charged particles for momentum resolution
+ and reconstruction efficiency is required.
+ Detection of missing transversal energy is achieved by a good electromagnetic
+ and hadronic energy resolution.
+ Masses of two electrons, photons or jets have to be caculated with a good
+ resolution as well 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMStechnicalReport"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The CMS detector is 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-}
+
+\backslash
+nuu{21.5}{m}
+\end_layout
+
+\end_inset
+
+ long and has diameter of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{14.6}{m}
+\end_layout
+
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-CMS-Experiment"
+
+\end_inset
+
+ shows the CMS detector and its sub-systems.
+ 
+\end_layout
+
+\begin_layout Standard
+The used coordinate system by CMS is as follows: The origin is the interaction
+ point (IP).
+ The z-axis matches the beamline.
+ The x-axis points towards the center of the LHC ring and the y-axis points
+ upwards orthogonal to x and z.
+ To reflect the cylindrical symmetry of the detector, one often uses the
+ pseudorapidity 
+\begin_inset Formula $\eta=-\ln\left(\tan{\textstyle \frac{\theta}{2}}\right)$
+\end_inset
+
+ of the azimuthal angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ between the z-axis and the xy plane and the polar angle 
+\begin_inset Formula $\phi$
+\end_inset
+
+ inside the xy plane.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{is RF wrong}
 \end_layout
 
 \end_inset
@@ -610,8 +679,9 @@ status open
 
 \end_layout
 
-\begin_layout Section
-The CMS Experiment
+\begin_layout Standard
+The next paragraphs will describe briefly the main systems of the detector
+ starting from the IP.
 \end_layout
 
 \begin_layout Standard
@@ -623,9 +693,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/CMS_3D_Detector_50.gif
+	filename images/CMS_3D.jpg
 	lyxscale 10
-	width 13cm
+	width 15cm
 
 \end_inset
 
@@ -640,12 +710,19 @@ status open
 status open
 
 \begin_layout Plain Layout
-The CMS Experiment
+The CMS detector and its sub-systems
 \end_layout
 
 \end_inset
 
-The CMS Experiment 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-CMS-Experiment"
+
+\end_inset
+
+The CMS detector and its sub-systems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "pic_cms_detector"
@@ -663,6 +740,183 @@ key "pic_cms_detector"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Inner tracking system
+\end_layout
+
+\begin_layout Standard
+Around the IP, the tracking system is placed.
+ It is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{540}{cm}
+\end_layout
+
+\end_inset
+
+ long and has an outer radius of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{110}{cm}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The system itself is divided into three regions based on the expected particle
+ flux at the high luminosity.
+ At 
+\begin_inset Formula $r\approx$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{10}{cm}
+\end_layout
+
+\end_inset
+
+ pixel detectors are placed with a size of 
+\begin_inset Formula $\mathrm{100}\times\mathrm{150}\,\mu\mathrm{m^{2}}$
+\end_inset
+
+.
+ In the next region around 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{20<r<55}{cm}
+\end_layout
+
+\end_inset
+
+ silicon microstrip detectors can be used due to the lower particle flux.
+ They have a minimal cell size of 
+\begin_inset Formula $\mathrm{10\, cm}\times\mathrm{80}\,\mu\mathrm{m}$
+\end_inset
+
+.
+ In last region of the tracking system, larger-pitch silicon microstrips
+ are installed.
+ Their cell size is at mimimum 
+\begin_inset Formula $\mathrm{25\, cm}\times\mathrm{180}\,\mu\mathrm{m}$
+\end_inset
+
+.
+ Even in the high density environment of heavy-ion runs, the tracking system
+ is able to reconstruct particle tracks.
+\end_layout
+
+\begin_layout Paragraph*
+Electromagnetic calorimeter
+\end_layout
+
+\begin_layout Standard
+The electromagnetic calorimeter is composed out of lead tungstate (
+\begin_inset Formula $\mathrm{PbWO_{4}}$
+\end_inset
+
+) scintillating crystals.
+ 61200 are installed in the central barrel part and additionally 7324 are
+ placed in each of the two endcap.
+\end_layout
+
+\begin_layout Paragraph*
+Hadron calorimeter
+\end_layout
+
+\begin_layout Standard
+fsdf
+\end_layout
+
+\begin_layout Paragraph*
+Magent
+\end_layout
+
+\begin_layout Standard
+For the momentum resolution requirements, a large superconduction solenoid
+ for bending of charged particles is used.
+ It generates a field of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{4}{T}
+\end_layout
+
+\end_inset
+
+ at the IP with a current of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{19.5}{kA}
+\end_layout
+
+\end_inset
+
+.
+ This provides a momentum resolution of
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Delta p}{p}\approx10\%\qquad\mathrm{(at}\, p=\mathrm{1\, TeV)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for the muons.
+\end_layout
+
+\begin_layout Paragraph*
+Muon system
+\end_layout
+
+\begin_layout Standard
+Muons from the IP are measured at three points.
+ First with the inner tracker
+\end_layout
+
+\begin_layout Paragraph*
+Trigger and data acquisition
 \end_layout
 
 \begin_layout Section
