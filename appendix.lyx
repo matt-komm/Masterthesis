@@ -31,7 +31,7 @@ eqs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement h
-\paperfontsize 11
+\paperfontsize 12
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
@@ -169,6 +169,17 @@ addcontentsline{toc}{chapter}{Appendix}
 
 \backslash
 addcontentsline{toc}{section}{List of Figures}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+baselinestretch}{1.25} 
+\backslash
+normalsize
 \end_layout
 
 \end_inset

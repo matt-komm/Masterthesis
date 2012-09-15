@@ -40,12 +40,6 @@
 \usepackage{nomencl} %list of abbreviations
 \makenomenclature 
 
-%Befehle zur Formation etc.===========================
-\definecolor{gray}{rgb}{0.85,0.85,0.85}
-\setlength{\parindent}{0.35cm} %Absatzeinzug
-\setlength{\parskip}{0.075cm}
-\linespread {1.08}\selectfont 
-
 %Schicke Bild- und Tabellenbeschreibungen
 \usepackage[textfont=small,format=plain,labelfont={bf},indention=.2cm,labelsep=colon]{caption}
 %abstand zwischen caption und figure,table
@@ -60,9 +54,9 @@
 	{\titlerule\vspace{0.2cm}\filright}
 \titlespacing{\chapter}{-0.3cm}{-1.5cm}{0.5cm}
 
-%\setkomafont{chapter}{\normalfont\bfseries\fontsize{16}{8}\selectfont}
-\setkomafont{section}{\normalfont\bfseries\fontsize{15}{8}\selectfont}
-\setkomafont{subsection}{\normalfont\bfseries\fontsize{14}{8}\selectfont}
+%\setkomafont{chapter}{\normalfont\bfseries\fontsize{16}{16}\selectfont}
+\setkomafont{section}{\normalfont\bfseries\fontsize{15}{15}\selectfont}
+\setkomafont{subsection}{\normalfont\bfseries\fontsize{14}{14}\selectfont}
 \addtokomafont{disposition}{\normalfont\bfseries}
 
 %\renewcommand{\contentsname}{Inhaltsverzeichnis}
@@ -155,7 +149,13 @@
 }
 
 \newcommand{\setupTextStyle}{
+%\changefontsizes[11.5pt]{11.5pt}
+\definecolor{gray}{rgb}{0.85,0.85,0.85}
+\setlength{\parindent}{0.35cm} %Absatzeinzug
+\setlength{\parskip}{0.075cm}
+\linespread {1.08}\selectfont 
 \renewcommand{\baselinestretch}{1.11} \normalsize
+
 
 %formel abstände 
 \setlength{\abovedisplayskip}{-0.2cm plus 0.1cm}

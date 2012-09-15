@@ -31,7 +31,7 @@ eqs-within-sections
 \bibtex_command default
 \index_command default
 \float_placement h
-\paperfontsize 11
+\paperfontsize 12
 \spacing single
 \use_hyperref true
 \pdf_bookmarks true
@@ -101,22 +101,6 @@ setupTextStyle
 
 \begin_layout Chapter
 Introduction
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hide{
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -242,42 +226,8 @@ Then the experimental setup is depicted.
  objects as well as the used software to perform the measurement is described.
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Subsection*
 Unit Convention 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hide{
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -416,20 +366,6 @@ status open
 
 \backslash
 nuu{}{1/GeV}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
 \end_layout
 
 \end_inset
