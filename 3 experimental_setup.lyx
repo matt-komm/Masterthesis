@@ -287,7 +287,8 @@ key "pic_cern_acc_complex"
 
 \end_inset
 
-The proton beams consists maximally of 2808 bunches with a spacing of 
+After filling the LHC ring, the proton beams consists maximally of 2808
+ bunches with a spacing of 
 \begin_inset ERT
 status open
 
@@ -380,11 +381,11 @@ nuu{8.33}{T}
 \end_inset
 
 .
- Magnets for both beams are integrated into one cold mass inside the cryostats
- (“twin-bore” design).
- 1232 dipole magnets are needed for deflection, additionally around 450
- quadrupole magnets for focusing and approximately 4800 magnets for orbit
- correction are installed.
+ The magnets for both beams are integrated into one cold mass inside the
+ cryostats (“twin-bore” design).
+ 1232 dipole magnets are needed for deflection.
+ Additionally, around 450 quadrupole magnets for focusing and approximately
+ 4800 magnets for orbit correction are installed.
 \end_layout
 
 \begin_layout Standard
@@ -396,7 +397,7 @@ status open
 
 
 \backslash
-nuu{400}{Mhz}
+nuu{400}{MHz}
 \end_layout
 
 \end_inset
@@ -415,7 +416,7 @@ nuu{485}{keV}
 
 \end_inset
 
- per turn which yields an acceleration time from injection at 
+ per turn which yields an acceleration time from injection energy at 
 \begin_inset ERT
 status open
 
@@ -577,31 +578,12 @@ The Compact Muon Solenoid (CMS) is a general-purpose dectector developed
  to record the proton-proton collisions at the high luminosity the LHC is
  providing.
  The physics programm of the CMS collaboration involves the search for the
- Higgs boson and detection or exclusion of supersymmetric particles (SUSY),
- new heavy vector bosons as well as extra dimensions.
+ Higgs boson and the detection or exclusion of supersymmetric particles
+ (SUSY), new heavy vector bosons as well as extra dimensions.
  Besides that, precision measurements of the SM are performed like studies
  of QCD, elektroweak and top quark physics.
  During heavy-ion runs, the properties of strong interacting nuclear matter
  is investigated.
-\end_layout
-
-\begin_layout Standard
-This program is matched by the detector requirements.
- Here a good muon momentum resolution and a good dimuon mass resolution
- is needed.
- Furthermore, precise tracking of charged particles for momentum resolution
- and reconstruction efficiency is required.
- Detection of missing transversal energy is achieved by a good electromagnetic
- and hadronic energy resolution and containment.
- Masses of two electrons, photons or jets have to be caculated with a good
- resolution as well 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "CMStechnicalReport"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -618,7 +600,7 @@ nuu{21.5}{m}
 
 \end_inset
 
- long and has diameter of 
+ long and has a diameter of 
 \begin_inset ERT
 status open
 
@@ -640,7 +622,6 @@ reference "fig:The-CMS-Experiment"
 \end_inset
 
  shows the CMS detector and its sub-systems.
- 
 \end_layout
 
 \begin_layout Standard
@@ -662,7 +643,7 @@ The used coordinate system by CMS is as follows: The origin is the interaction
 \begin_inset Formula $\phi$
 \end_inset
 
- inside the xy plane.
+ inside the xy plane instead.
  
 \begin_inset ERT
 status open
@@ -762,6 +743,10 @@ nuu{540}{cm}
 \end_inset
 
  long and has an outer radius of 
+\begin_inset Formula $r=$
+\end_inset
+
+
 \begin_inset ERT
 status open
 
@@ -821,15 +806,15 @@ nuu{20<r<55}{cm}
 \end_inset
 
 .
- In last region of the tracking system, larger-pitch silicon microstrips
+ In the last region of the tracking system, larger-pitch silicon microstrips
  are installed.
  Their cell size is at mimimum 
 \begin_inset Formula $\mathrm{25\, cm}\times\mathrm{180}\,\mu\mathrm{m}$
 \end_inset
 
 .
- Even in the high density environment of heavy-ion runs, the tracking system
- is able to reconstruct particle tracks.
+ With these components, the tracking system is able to reconstruct particle
+ tracks even in the high density environment of heavy-ion collisions.
 \end_layout
 
 \begin_layout Paragraph*
@@ -939,22 +924,9 @@ Magent
 \end_layout
 
 \begin_layout Standard
-For the momentum resolution requirements, a large superconduction solenoid
- for bending of charged particles is used.
- It generates a field of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{4}{T}
-\end_layout
-
-\end_inset
-
- at the IP with a current of 
+A large superconduction solenoid coil for bending of charged particles is
+ used.
+ Supplied with a current of 
 \begin_inset ERT
 status open
 
@@ -967,7 +939,20 @@ nuu{19.5}{kA}
 
 \end_inset
 
-.
+, it generates a field of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{4}{T}
+\end_layout
+
+\end_inset
+
+ at the IP .
  This provides a momentum resolution of
 \end_layout
 
@@ -1004,9 +989,10 @@ Muon system
 \end_layout
 
 \begin_layout Standard
-Muons from the IP are measured at three points.
- First with the inner tracker then after the coil and in its return flux.
- The inner tracker can measure muon momenta with a good resolution only
+Muons originating from the IP are measured at three points.
+ First with the inner tracker, then after the coil and finally in the return
+ flux of the magnetic field.
+ The inner tracker can only measure muon momenta with a good resolution
  up to round 
 \begin_inset ERT
 status open
@@ -1029,7 +1015,7 @@ full system
 \begin_inset Quotes erd
 \end_inset
 
- which matches the required muon resolution over the wide momentum range.
+ which leads to a precise muon resolution over a wide momentum range.
 \end_layout
 
 \begin_layout Standard
@@ -1058,7 +1044,7 @@ Trigger and data acquisition
 \end_layout
 
 \begin_layout Standard
-For preselection from of around 
+For preselection of around 
 \begin_inset Formula $10^{9}$
 \end_inset
 
@@ -1068,18 +1054,16 @@ For preselection from of around
 \begin_inset Formula $10^{2}$
 \end_inset
 
- crossing/sec which can be stored.
-\end_layout
-
-\begin_layout Standard
-Figure 
+ crossing/sec.
+ At this rate, it is possible to store the data on archival media.
+ In Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:The-CMS-trigger"
 
 \end_inset
 
- visualizes the data flow inside the system.
+ the data flow through the trigger system is depicted.
  
 \end_layout
 
@@ -1142,22 +1126,23 @@ nuu{40}{MHz}
 
 \end_inset
 
- the detector data is first written into a buffer.
+, the detector data is first written into a buffer.
  Within 
 \begin_inset Formula $3.2\,\mu\mathrm{s}$
 \end_inset
 
- all data has to be collected from the the sub systems and a decision is
- made whether to keep or reject the data.
- By using data from the calorimetry and muon systems, the Level-1 (LV1)
- trigger has less than 
+ all data has to be collected from the the sub systems and a decision has
+ to be made whether to keep or reject the event.
+ By using only the readout from the calorimetry and muon systems, the Level-1
+ (LV1) trigger has less than 
 \begin_inset Formula $1\,\mu\mathrm{s}$
 \end_inset
 
  to reach a decision.
- The logic is implemented into custom Application Specific Integrated Circuits
+ The used relatively simple logic needs to be executed very fast and is
+ therefore implemented into custom Application Specific Integrated Circuits
  (ASICs), Field Programmable Gate Arrays (FPGAs) and Programmable Logic
- Devices (PLDs) besides others.
+ Devices (PLDs) amongst others.
 \end_layout
 
 \begin_layout Standard
@@ -1175,7 +1160,10 @@ nuu{1.5}{MB}
 \end_inset
 
  and is transferred to the processor farm.
- Here, the High Level Trigger (HLT) software reduces the rate from 
+ Here, the more complex High Level Trigger (HLT) software decides the storing
+ of events.
+ By using the full event data including all detector sub systems, it singles
+ out the interesting events and reduces the rate from 
 \begin_inset ERT
 status open
 
@@ -1201,9 +1189,14 @@ nuu{100}{Hz}
 
 \end_inset
 
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMStechnicalReport"
+
+\end_inset
+
 .
- The reconstruction of a physics object is only performed within the HLT
- code, if it is needed to test for the event rejection.
 \end_layout
 
 \begin_layout Section
