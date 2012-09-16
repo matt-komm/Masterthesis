@@ -1474,9 +1474,11 @@ Jet Definition
 \end_layout
 
 \begin_layout Standard
-Jets are particle showers originating from hadronization of gluons or quarks.
- Jet algorithms are used to group reconstructed particles to jets which
- gives an inference about the hadronized parton.
+A jet is a group of particles originating from hadronization of gluons or
+ quarks.
+ Jet algorithms are used to group reconstructed particles to jets.
+ By summing up the momenta within a jet, an inference about the hadronized
+ parton momentum can be made.
  
 \begin_inset ERT
 status open
@@ -1490,11 +1492,35 @@ checkthis{parton explained somewhere?}
 
 \end_inset
 
- 
+
 \end_layout
 
-\begin_layout Subsection
-Identifcation of Jet from b-Quarks
+\begin_layout Standard
+Todays main used jet algorithms are the 
+\begin_inset Formula $\mathrm{k_{T}}$
+\end_inset
+
+, the anti-
+\begin_inset Formula $\mathrm{k_{T}}$
+\end_inset
+
+ and the Seedless Infrared-Safe Cone (SIS-Cone) algorithms 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "antiKT,siscone"
+
+\end_inset
+
+.
+ Each is considered infrared and collinear safe.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Jet-definition"
+
+\end_inset
+
+ shows examplary scenarios to explain this two nescessary safety features.
 \end_layout
 
 \begin_layout Standard
@@ -1504,6 +1530,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/jet.eps
+	lyxscale 10
+	scale 45
+
+\end_inset
+
 
 \end_layout
 
@@ -1511,7 +1545,25 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-secondary vertex
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Jet-definition"
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Jet definition in different scenarios of additional particles
+\end_layout
+
+\end_inset
+
+Jet definition in different scenarios of additional particles.
+ The dark dottet gray eclipse shows the result, if not a infrared and collinear
+ algorithm is used.
 \end_layout
 
 \end_inset
@@ -1528,8 +1580,133 @@ secondary vertex
 
 \end_layout
 
+\begin_layout Standard
+Soft gluons emitted from a parton during the hardonization produces additionally
+ particles with low momenta that should not be left out of the jet construction.
+ However, particles originating from other interactions should not be clustered.
+ Those may sum up and have a significantly wrong input to the jet.
+ Suppressing this infrared accumulation by setting a minimum momentum threshold
+ (
+\begin_inset Quotes eld
+\end_inset
+
+seed
+\begin_inset Quotes erd
+\end_inset
+
+) for the clustering will lead to the wrong result in the collinear limit
+ case.
+ Here, jet algorithms should not change their results, if one particle with
+ high momentum is splitted into many collinear particles.
+\end_layout
+
+\begin_layout Standard
+In the reconstruction by CMS, the anti-
+\begin_inset Formula $\mathrm{k_{T}}$
+\end_inset
+
+algorithm is used.
+ Its core procedure is the iteratively caculation of the distances
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{ij}=\min\left(\frac{1}{p_{\mathrm{T,}\, i}^{2}},\,\frac{1}{p_{\mathrm{T,}\, j}^{2}}\right)\cdot\frac{\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}}{R^{2}},\qquad d_{i}=\frac{1}{p_{\mathrm{T,}\, i}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+between all proto-jets 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Proto-jets are intially the reconstructed particles.
+ After the first caculation of the two distances, a proto-jet 
+\begin_inset Formula $i$
+\end_inset
+
+ is considered as a jet if 
+\begin_inset Formula $d_{i}<d_{ij}$
+\end_inset
+
+.
+ This jet is then removed from the next iteration.
+ In the case of 
+\begin_inset Formula $d_{i}>d_{ij}$
+\end_inset
+
+ the two proto-jets 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ are merged to a new proto-jet.
+ The algorithm continues until all proto-jets have been considered as jets.
+ Hereby, the parameter 
+\begin_inset Formula $R=0.3$
+\end_inset
+
+ controls the cone sizes of the resulting jets.
+\end_layout
+
+\begin_layout Subsection
+Identifcation of Jet from b-Quarks
+\end_layout
+
+\begin_layout Standard
+Jet algorithms can not determine the original flavor of a hadronized quark.
+ However, the relatively long decay time of B hadrons can be exploited for
+ identifing jets which originate from bottom quarks.
+ In a proton-proton collision, the hard interaction is often boosted against
+ the lab frame.
+ If a long-lived particle such as a B hadron is produced, it will fly a
+ measureable distance away from the primary interaction vertex before decaying.
+\end_layout
+
+\begin_layout Standard
+The reconstruction by CMS uses amongst others the track counting method.
+ A 
+\begin_inset Quotes eld
+\end_inset
+
+b-tag
+\begin_inset Quotes erd
+\end_inset
+
+ discriminator is constructed by using the significance that the n-th good
+ track of a jet is not from the primary vertex 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "btagging"
+
+\end_inset
+
+.
+ The analysis in this thesis uses the 
+Track Counting High Purity (TCHP) algorithm which is based on the significance
+ of the third track of a jet.
+\end_layout
+
 \begin_layout Section
 Analysis Software
+\end_layout
+
+\begin_layout Standard
+For perfoming the analysis in this thesis, various software packages have
+ been used.
 \end_layout
 
 \begin_layout Subsection
