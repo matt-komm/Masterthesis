@@ -1143,7 +1143,7 @@ name "fig:The-CMS-trigger"
 
 \end_inset
 
-The CMS trigger system
+The CMS trigger system.
 \end_layout
 
 \end_inset
@@ -1695,9 +1695,8 @@ key "btagging"
 \end_inset
 
 .
- The analysis in this thesis uses the 
-Track Counting High Purity (TCHP) algorithm which is based on the significance
- of the third track of a jet.
+ The analysis in this thesis uses the Track Counting High Purity (TCHP)
+ algorithm which is based on the significance of the third track of a jet.
 \end_layout
 
 \begin_layout Section

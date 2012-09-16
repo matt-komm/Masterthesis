@@ -111,12 +111,10 @@ The Standard Model of Particle Physics
 
 \begin_layout Standard
 The Standard Model of Particle Physics (SM) is a theory that describes the
- interaction between elementary particles.
- Elementary particles are up till now, fermions (
-\begin_inset Formula ${\textstyle s=\frac{1}{2}}$
-\end_inset
-
-) with no sub structure and are therefore considered as point-like.
+ interactions between elementary particles.
+ So far, deep inelastic scattering experiments have detected no sub structure
+ of elementary particles.
+ They are therefore considered as point-like.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -131,10 +129,27 @@ reference "tab:The-SM-Quarks"
 
 \end_inset
 
- list these particles.
- Each particle carries different charges which determine the interactions
- it can participate in.
- The next sections will show how the interactions can be derived.
+ list the elementary particles with spin 
+\begin_inset Formula $s={\textstyle \frac{1}{2}}$
+\end_inset
+
+ (fermions).
+ Each particle carries different charges.
+ These determine if it can participate in electromagnetic (EM), in weak
+ or in strong interactions.
+ The interactions itsselfs are mediated by bosonic elementary particle with
+ spin 
+\begin_inset Formula $s=1$
+\end_inset
+
+ and are listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-SM-interactions"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -153,7 +168,7 @@ name "tab:The-SM-Leptons"
 
 \end_inset
 
-The SM Leptons
+The SM Leptons.
 \end_layout
 
 \end_inset
@@ -564,7 +579,7 @@ name "tab:The-SM-Quarks"
 
 \end_inset
 
-The SM Quarks
+The SM Quarks.
 \end_layout
 
 \end_inset
@@ -959,6 +974,11 @@ EM, weak, strong
 
 \end_layout
 
+\begin_layout Standard
+The next subsections will shortly describe the construction procedure of
+ the SM theory.
+\end_layout
+
 \begin_layout Subsection
 General Construction
 \end_layout
@@ -966,8 +986,12 @@ General Construction
 \begin_layout Standard
 The SM is based on Quantum Field Theory (QFT).
  Here, elementary particles are considered as excitation modes of associated
- quantized fields.
- Dynamics are described via Lagrange density functions.
+ quantized fields 
+\begin_inset Formula $\mathrm{\Psi}$
+\end_inset
+
+.
+ Dynamics are described via Lagrangian density functions.
  Starting with a 
 \begin_inset Quotes eld
 \end_inset
@@ -976,19 +1000,19 @@ free
 \begin_inset Quotes erd
 \end_inset
 
- Lagrange density for fermions
+ Lagrangian density for fermions
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\mathcal{L} & =\bar{\Psi}\left(i\slashed\partial-m\right)\Psi,\qquad\slashed\partial=\gamma_{\mu}\frac{\partial}{\partial x^{\mu}},\qquad\bar{\Psi}=\Psi^{\dagger}\gamma_{0}
+\mathcal{L} & =\bar{\Psi}\left(i\slashed\partial-m\right)\Psi,\qquad\slashed\partial=\gamma_{\mu}\frac{\partial}{\partial x^{\mu}},\qquad\bar{\Psi}=\Psi^{\dagger}\gamma_{0},
 \end{align*}
 
 \end_inset
 
-one can optain the equation of motion (for fermions: the Dirac equation)
- the by using the Euler-Lagrange equation
+one can obtain the equation of motion (for fermions: the Dirac equation)
+ the by using the Euler-Lagrangian equation
 \end_layout
 
 \begin_layout Standard
@@ -999,16 +1023,65 @@ one can optain the equation of motion (for fermions: the Dirac equation)
 
 \end_inset
 
-An interaction can be introduced by requiring that the Lagrange density
- is invariant under a local gauge transformation of the field.
- For example, the electromagnetic interaction (EM) is optained by postulate
+
+\end_layout
+
+\begin_layout Standard
+Interactions can be introduced by requiring that the Lagrangian density
+ is invariant under a local gauge transformation of the field 
+\begin_inset Formula $\mathrm{\Psi}$
+\end_inset
+
+.
+ For example, the electromagnetic interactions is obtained by postulating
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\Psi & \rightarrow\Psi^{\prime}=\Psi\cdot e^{-i\alpha(x)}.
+\Psi & \rightarrow\Psi^{\prime}=\Psi\cdot e^{-iq\alpha(x)}
 \end{align*}
+
+\end_inset
+
+with the free chosen local phase 
+\begin_inset Formula $\alpha(x)$
+\end_inset
+
+ and the EM charge 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ This transforms the Lagrangian density to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow\mathcal{L}\rightarrow\mathcal{L}^{\prime}=\bar{\Psi}(i\slashed\partial+q\slashed\partial\alpha(x)-m)\Psi.
+\]
+
+\end_inset
+
+The requirement for invariance of the Lagrangian density 
+\begin_inset Formula $\mathcal{L}\left(\mathrm{\Psi}^{\prime}\right)=\mathcal{L}\left(\Psi\right)$
+\end_inset
+
+ under such transformation can be solved by adding the additional photon
+ field 
+\begin_inset Formula $A_{\mu}$
+\end_inset
+
+.
+ It transforms to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{\mu}\rightarrow A_{\mu}^{\prime}=A_{\mu}-\partial_{\mu}\alpha(x).
+\]
 
 \end_inset
 
@@ -1016,18 +1089,7 @@ An interaction can be introduced by requiring that the Lagrange density
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\Rightarrow\mathcal{L}\rightarrow\mathcal{L}^{\prime}=\bar{\Psi}(i\slashed\partial+\slashed\partial\alpha(x)-m)\Psi\overset{!}{=}\mathcal{L}
-\]
-
-\end_inset
-
-This can be solved by adding the additional photon field 
-\begin_inset Formula $A_{\mu}$
-\end_inset
-
-.
+This leads to
 \end_layout
 
 \begin_layout Standard
@@ -1038,27 +1100,27 @@ This can be solved by adding the additional photon field
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-In conclusion, the Lagrange density is determined by requiring local gauge
- invariance.
- Additionally, it has also to be lorentz-invariant and renormalizable.
- Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:The-SM-interactions"
-
+where additionaly the already gauge invariant photon propagator has as been
+ added.
+ This construction procedure predicts that the photon is massless.
+ Extending the Lagrangian density with a massterm propotional to 
+\begin_inset Formula $\propto m_{\gamma}^{2}A_{\mu}A^{\mu}$
 \end_inset
 
- summarizes the interactions describeable by the SM.
- This construction procedure predicts that gauge particles are massless
- bosons with spin 
+ violates the invariance.
+ Furthermore, at the interactions vertex, the conservation of angular momentum
+ states that the photon is a boson with spin 
 \begin_inset Formula $s=1$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+In conclusion, the Lagrangian density of the electromagnetic interactions
+ is determined by requiring local gauge invariance.
+ Weak and strong interactions are as well connected to a certain gauge group
+ transformation.
  However, experiments 
 \begin_inset ERT
 status open
@@ -1072,8 +1134,16 @@ checkthis{add ref to lep z,w discovery}
 
 \end_inset
 
- have shown that the gauge bosons of the weak interaction have non-zero
+ have shown that the gauge bosons of the weak interactions have non-zero
  masses.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-SM-interactions"
+
+\end_inset
+
+ summarizes this.
 \end_layout
 
 \begin_layout Standard
@@ -1081,10 +1151,6 @@ checkthis{add ref to lep z,w discovery}
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -1096,7 +1162,7 @@ name "tab:The-SM-interactions"
 
 \end_inset
 
-The SM interactions
+The SM interactions.
 \end_layout
 
 \end_inset
@@ -1107,8 +1173,9 @@ The SM interactions
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="4">
+<lyxtabular version="3" rows="5" columns="5">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -1118,7 +1185,7 @@ The SM interactions
 \begin_inset Text
 
 \begin_layout Plain Layout
-interaction
+interactions
 \end_layout
 
 \end_inset
@@ -1132,11 +1199,20 @@ gauge group
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 gauge bosons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mass
 \end_layout
 
 \end_inset
@@ -1173,7 +1249,7 @@ EM
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1182,6 +1258,15 @@ photon
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
 \end_layout
 
 \end_inset
@@ -1218,14 +1303,22 @@ weak
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Z}^{0}$
+\end_inset
+
+ boson 
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Z-boson 
-\begin_inset Formula $\mathrm{Z}^{0}$
-\end_inset
-
 
 \end_layout
 
@@ -1260,14 +1353,22 @@ weak isospin
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{W^{\pm}}$
+\end_inset
+
+ bosons 
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-W-bosons 
-\begin_inset Formula $\mathrm{W^{\pm}}$
-\end_inset
-
 
 \end_layout
 
@@ -1305,7 +1406,7 @@ strong
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1314,6 +1415,15 @@ strong
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
 \end_layout
 
 \end_inset
@@ -1345,16 +1455,16 @@ color
 \end_layout
 
 \begin_layout Subsection
-The Electroweak Interaction and Higgs Mechanism
+The Electroweak interactions and Higgs Mechanism
 \end_layout
 
 \begin_layout Standard
-The EM and weak interaction can be united to the electroweak interaction.
+The EM and weak interactions can be united to the electroweak interactions.
  In addition, the following experimental results had to be included:
 \end_layout
 
 \begin_layout Itemize
-In weak interaction, partity is not conserved.
+In weak interactions, partity is not conserved.
  Only left-handed fermions can couple to charged currents 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1381,18 +1491,18 @@ The Glashow-Weinberg-Salam model accounts for the coupling of left-handed
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\Psi_{\mathrm{L}} & =\underbrace{\frac{1}{2}\left(1-\gamma_{5}\right)}_{\mathrm{P_{L}}}\Psi,\quad\mbox{\mathrm{SU(2)\, doublett}};\qquad\Psi_{\mathrm{R}}=\underbrace{\frac{1}{2}\left(1+\gamma_{5}\right)}_{\mathrm{P_{R}}}\Psi,\quad\mathrm{SU(2)\, singulett}
+\Psi_{\mathrm{L}} & =\underbrace{\frac{1}{2}\left(1-\gamma_{5}\right)}_{\mathrm{P_{L}}}\Psi,\quad\mbox{\mathrm{SU(2)\, doublet}};\qquad\Psi_{\mathrm{R}}=\underbrace{\frac{1}{2}\left(1+\gamma_{5}\right)}_{\mathrm{P_{R}}}\Psi,\quad\mathrm{SU(2)\, singulet}
 \end{align*}
 
 \end_inset
 
-
+Leptons and quarks are splitted into
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\Rightarrow\vec{\mathrm{E}}_{\mathrm{L}} & =\left\{ \left(\begin{array}{c}
+\vec{\mathrm{E}}_{\mathrm{L}} & =\left\{ \left(\begin{array}{c}
 \nu_{\mathrm{e}}\\
 \mathrm{e^{-}}
 \end{array}\right)_{\mathrm{L}},\,\left(\begin{array}{c}
@@ -1415,18 +1525,18 @@ The Glashow-Weinberg-Salam model accounts for the coupling of left-handed
 
 \end_inset
 
-
+and
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\vec{\mathrm{e}}_{\mathrm{R}}=\left\{ \mathrm{e_{R},\,}\mu_{\mathrm{R}},\,\tau_{\mathrm{R}}\right\} ;\quad\vec{\mathrm{u}}\mathrm{_{\mathrm{R}}=\left\{ u_{R},\, c_{R},\, t_{R}\right\} ;\quad}\vec{\mathrm{d}}\mathrm{_{\mathrm{R}}=\left\{ d_{R},\, s_{R},\, b_{R}\right\} }
+\vec{\mathrm{e}}_{\mathrm{R}}=\left\{ \mathrm{e_{R},\,}\mu_{\mathrm{R}},\,\tau_{\mathrm{R}}\right\} ;\quad\vec{\mathrm{u}}\mathrm{_{\mathrm{R}}=\left\{ u_{R},\, c_{R},\, t_{R}\right\} ;\quad}\vec{\mathrm{d}}\mathrm{_{\mathrm{R}}=\left\{ d_{R},\, s_{R},\, b_{R}\right\} }.
 \]
 
 \end_inset
 
-The Lagrange density
+The Lagrangian density
 \end_layout
 
 \begin_layout Standard
@@ -1443,12 +1553,12 @@ with the covariant derivatives
 \begin_layout Standard
 \begin_inset Formula 
 \[
-D_{\mu}=\partial_{\mu}-ig\vec{W}_{\mu}\vec{T}-ig^{\prime}Y\cdot B_{\mu},\qquad Y=Q_{\mathrm{EM}}-T_{3}\quad\mbox{\mathrm{("hyper-charge")}}
+D_{\mu}=\partial_{\mu}-ig\vec{W}_{\mu}\vec{T}-ig^{\prime}Y\cdot B_{\mu},\qquad Y=Q_{\mathrm{EM}}-T_{3}\quad\mbox{\mathrm{("hypercharge")}}
 \]
 
 \end_inset
 
-does then not involves terms of the form
+does then not involve terms of the form
 \end_layout
 
 \begin_layout Standard
@@ -1464,7 +1574,7 @@ where the EM charge would be conserved.
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
- includes only terms like 
+ includes only terms propotional to 
 \begin_inset Formula $\propto(\gamma_{\mu}-\gamma_{\mu}\gamma_{5})$
 \end_inset
 
@@ -1497,11 +1607,11 @@ axialvector
 \begin_inset Formula $\gamma_{5}\Psi_{\mathrm{R}}=(+1)\Psi_{\mathrm{R}}$
 \end_inset
 
- one calls 
+, the eigenstate 
 \begin_inset Formula $\Psi_{\mathrm{L}}$
 \end_inset
 
- 
+ is labeled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1509,11 +1619,11 @@ left-handed
 \begin_inset Quotes erd
 \end_inset
 
- and 
+ and the eigenstate 
 \begin_inset Formula $\Psi_{\mathrm{R}}$
 \end_inset
 
- 
+ is labeled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1548,7 +1658,7 @@ key "higgs1,higgs2,englert,guralnik"
 \begin_inset Formula $\phi$
 \end_inset
 
- with an 
+ with a 
 \begin_inset Formula $\mathrm{U(1)}\otimes SU(2)$
 \end_inset
 
@@ -1569,7 +1679,7 @@ hidden
 \begin_inset Quotes erd
 \end_inset
 
- by shifting the vacuum expectations value of 
+ by shifting the vacuum expectation value of 
 \begin_inset Formula $\phi$
 \end_inset
 
@@ -1631,7 +1741,7 @@ Mexican Hat
 \begin_inset Quotes erd
 \end_inset
 
-
+.
 \end_layout
 
 \end_inset
@@ -1649,7 +1759,7 @@ Then one can develop
 \begin_inset Formula $\phi$
 \end_inset
 
- around this mimimum:
+ around this mimimum to
 \end_layout
 
 \begin_layout Standard
@@ -1658,7 +1768,7 @@ Then one can develop
 \phi=\frac{1}{\sqrt{2}}\left(\begin{array}{c}
 0\\
 v+h(x)
-\end{array}\right)\cdot\exp\left(-\frac{i\theta(x)}{v}\right)
+\end{array}\right)\cdot\exp\left(-\frac{i\theta(x)}{v}\right).
 \end{align*}
 
 \end_inset
@@ -1667,7 +1777,7 @@ For the masses of the electroweak gauge bosons, the
 \begin_inset Formula $\mathrm{U(1)\otimes SU(2)}$
 \end_inset
 
- invariant Lagrange density 
+ invariant Lagrangian density 
 \begin_inset ERT
 status open
 
@@ -1686,12 +1796,13 @@ checkthis{add propagators for W,B?}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{L}\supseteq\left(D_{\mu}\phi^{\dagger}\right)\left(D^{\mu}\phi\right)-\mathrm{V}(\phi^{\dagger}\phi),\quad D_{\mu}=\partial_{\mu}+\underbrace{ig\frac{\vec{\tau}}{2}\vec{W}_{\mu}}_{\mathrm{SU(2)}}+\underbrace{ig^{\prime}\frac{1}{2}B_{\mu}}_{\mathrm{U(1)}}
+\mathcal{L}=\ldots+\left(D_{\mu}\phi^{\dagger}\right)\left(D^{\mu}\phi\right)-\mathrm{V}(\phi^{\dagger}\phi),\quad D_{\mu}=\partial_{\mu}+\underbrace{ig\frac{\vec{\tau}}{2}\vec{W}_{\mu}}_{\mathrm{SU(2)}}+\underbrace{ig^{\prime}\frac{1}{2}B_{\mu}}_{\mathrm{U(1)}}
 \]
 
 \end_inset
 
- contains after the symmetry breaking amongst interaction terms 
+ contains amongst interactions terms the following after the symmetry breaking
+ 
 \begin_inset ERT
 status open
 
@@ -1704,15 +1815,15 @@ checkthis{leaf out propagators}
 
 \end_inset
 
- the following:
+ :
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
-\mathrm{"Higgs"-boson:\quad} & \mathcal{L}_{h}=\frac{1}{2}\left(\partial_{\mu}h\right)\left(\partial^{\mu}h\right)-\mu^{2}h^{2}\\
-\mathrm{W^{\pm}-bosons:\quad} & \mathcal{L}_{W^{\pm}}=\frac{1}{8}g^{2}v^{2}W_{1,\,\mu}W_{1}^{\mu}+\frac{1}{8}g^{2}v^{2}W_{2,\,\mu}W_{2}^{\mu}\\
-\mathrm{W_{3},\, B-bosons:\quad} & \mathcal{L}_{W_{3},B}=\frac{1}{8}v^{2}\left(gW_{3,\,\mu}-g^{\prime}B_{\mu}\right)\left(gW_{3}^{\mu}-g^{\prime}B^{\mu}\right)
+\mathrm{"Higgs"\, boson:\quad} & \mathcal{L}_{h}=\frac{1}{2}\left(\partial_{\mu}h\right)\left(\partial^{\mu}h\right)-\mu^{2}h^{2}\\
+\mathrm{W^{\pm}\, bosons:\quad} & \mathcal{L}_{W^{\pm}}=\frac{1}{8}g^{2}v^{2}W_{1,\,\mu}W_{1}^{\mu}+\frac{1}{8}g^{2}v^{2}W_{2,\,\mu}W_{2}^{\mu}\\
+\mathrm{W_{3},\, B\, bosons:\quad} & \mathcal{L}_{W_{3},B}=\frac{1}{8}v^{2}\left(gW_{3,\,\mu}-g^{\prime}B_{\mu}\right)\left(gW_{3}^{\mu}-g^{\prime}B^{\mu}\right)
 \end{align*}
 
 \end_inset
@@ -1733,11 +1844,11 @@ checkthis{add masses}
 
 \end_inset
 
- 
+ The 
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
- can be optained by transforming 
+ bosons can be obtained by transforming 
 \begin_inset Formula $W_{\mu}^{\pm}=\frac{1}{\sqrt{2}}\left(W_{1,\,\mu}\mp iW_{2,\,\mu}\right)$
 \end_inset
 
@@ -1783,36 +1894,34 @@ Weinberg
 \begin_inset Formula $\theta_{\mathrm{W}}$
 \end_inset
 
- one massless boson, the photon 
+, one obtains a massless boson, the photon 
 \begin_inset Formula $A$
 \end_inset
 
- and one massive boson, the 
+, and one massive boson, the 
 \begin_inset Formula $Z^{0}$
 \end_inset
 
--boson is optained.
+ boson.
  Lepton masses can also be generated by interacting with the field 
 \begin_inset Formula $\phi$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
 \mathcal{L} & =-\sum_{j}^{3}\left(\lambda_{j}\bar{\mathrm{E}}_{\mathrm{L}}^{j}\phi\cdot\mathrm{e_{R}^{j}}+\mathrm{h.c.}\right)\qquad(\mathrm{U(1)}\otimes\mbox{\mathrm{SU(2)\, invariant}})\\
- & =-\lambda_{e}\frac{v}{\sqrt{2}}\bar{\mathrm{e}}_{\mathrm{L}}\mathrm{e_{\mathrm{R}}}-\lambda_{e}\frac{v}{\sqrt{2}}\bar{\mu}_{\mathrm{L}}\mu\mathrm{_{\mathrm{R}}}-\lambda_{e}\frac{v}{\sqrt{2}}\bar{\tau}_{\mathrm{L}}\tau\mathrm{_{\mathrm{R}}}+\mathcal{L}_{h\Psi_{\mathrm{L}}\Psi_{\mathrm{R}}}^{\mathrm{interaction}}+\mathrm{h.c.}
+ & =-\underbrace{\lambda_{e}\frac{v}{\sqrt{2}}}_{m_{e}}\bar{\mathrm{e}}_{\mathrm{L}}\mathrm{e_{\mathrm{R}}}-\underbrace{\lambda_{\mu}\frac{v}{\sqrt{2}}}_{m_{\mu}}\bar{\mu}_{\mathrm{L}}\mu\mathrm{_{\mathrm{R}}}-\underbrace{\lambda_{\tau}\frac{v}{\sqrt{2}}}_{m_{\tau}}\bar{\tau}_{\mathrm{L}}\tau\mathrm{_{\mathrm{R}}}+\mathcal{L}_{h\Psi_{\mathrm{L}}\Psi_{\mathrm{R}}}^{\mathrm{interaction}}+\mathrm{h.c.}
 \end{align*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-For the quark masses the procedure is nearly equivalent:
+mass terms for the electron, muon and tau appears after the symmetry breaking.
+ For the quark masses the procedure is nearly equivalent.
+ Starting with
 \end_layout
 
 \begin_layout Standard
@@ -1823,7 +1932,7 @@ For the quark masses the procedure is nearly equivalent:
 
 \end_inset
 
-With the transformations 
+and applying the transformations 
 \begin_inset Formula $\mathrm{u_{L}}^{i}\rightarrow U_{u}^{ij}\mathrm{u_{L}}^{j}$
 \end_inset
 
@@ -1831,13 +1940,13 @@ With the transformations
 \begin_inset Formula $\mathrm{d_{L}}^{i}\rightarrow U_{d}^{ij}\mathrm{d_{L}}^{j}$
 \end_inset
 
- the Lagrange density can be written in the mass eigenstates
+, the Lagrangian density can be written in the mass eigenstates
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{L}=-m_{d}^{i}\bar{\mathrm{d}}_{\mathrm{L}}^{i}\mathrm{d_{R}}^{i}--m_{u}^{i}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\mathrm{u_{R}}^{i}+\mathrm{h.c.}
+\mathcal{L}=-m_{d}^{i}\bar{\mathrm{d}}_{\mathrm{L}}^{i}\mathrm{d_{R}}^{i}-m_{u}^{i}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\mathrm{u_{R}}^{i}+\mathrm{h.c.}
 \]
 
 \end_inset
@@ -1846,13 +1955,13 @@ For the
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
-- interaction terms, this rewriting leads to
+ interactions terms, this rewriting leads to
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{L}_{W^{\pm}}^{\mathrm{interaction}}=\frac{e}{\sqrt{2}}\frac{1}{\sin\theta_{\mathrm{W}}}\left(W_{\mu}^{+}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\gamma^{\mu}\underbrace{\left(U_{u}^{\dagger}U_{d}\right)^{ij}}_{=V^{ij}}\mathrm{d}_{\mathrm{L}}^{j}+\mathrm{h.c.}\right),\qquad g=\frac{e}{\sin\theta_{\mathrm{W}}}
+\mathcal{L}_{W^{\pm}}^{\mathrm{interaction}}=\frac{e}{\sqrt{2}}\frac{1}{\sin\theta_{\mathrm{W}}}\left(W_{\mu}^{+}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\gamma^{\mu}\underbrace{\left(U_{u}^{\dagger}U_{d}\right)^{ij}}_{=V^{ij}}\mathrm{d}_{\mathrm{L}}^{j}+\mathrm{h.c.}\right),\qquad g=\frac{e}{\sin\theta_{\mathrm{W}}},
 \]
 
 \end_inset
@@ -1876,8 +1985,8 @@ Quantum Chromodynamics
 \end_layout
 
 \begin_layout Standard
-Quantum Chromodynamics is the description of the strong interaction in which
- only quarks can participate in.
+Quantum Chromodynamics is the description of the strong interactions in
+ which only partons (quarks and gluons) can participate in.
  The 
 \begin_inset Formula $\mathrm{SU(3)}$
 \end_inset
@@ -1901,26 +2010,8 @@ free
 \end_inset
 
  quarks could be observed so far.
- This effect can be explained through a modified potential between quarks:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-V_{\mathrm{q}\bar{\mathrm{q}}}(r)=-\frac{4}{3}\frac{\alpha_{s}}{r}+\sigma\cdot r
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Here, the additional term 
-\begin_inset Formula $\sigma\cdot r$
-\end_inset
-
- leads to a 
+ This effect can be explained through a modified potential between quarks
+ which leads to a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1928,7 +2019,8 @@ confinement
 \begin_inset Quotes erd
 \end_inset
 
- of quarks, if they are not grouped into a color singulett of mesons (
+.
+ Bounded states of quarks appear in color singulets of mesons (
 \begin_inset Formula $\mathrm{q}\bar{\mathrm{q}}$
 \end_inset
 
@@ -1954,19 +2046,12 @@ hadronization
 \begin_inset Quotes erd
 \end_inset
 
- and can not be perturbatively caculated.
+ and can not be caculated perturbatively.
 \end_layout
 
 \begin_layout Standard
 However, QCD scattering processes can be caculated in a perturbative way
- through the behavoir of the running coupling constant 
-\begin_inset Formula $\alpha_{s}$
-\end_inset
-
-.
- With the renormalization of fields, coupling constants depend on the enegry
- scale.
- For QCD this leads to
+ through the behavior of the running coupling constant
 \end_layout
 
 \begin_layout Standard
@@ -1990,16 +2075,18 @@ with
 \end_inset
 
  the scale to which the coupling is extrapolated.
- 
+ The number 
 \begin_inset Formula $n_{f}$
 \end_inset
 
  counts the quark flavors.
- For 
+ Strong interactions involving a large momentum scale the coupling goes
+ to
 \begin_inset Formula $\underset{q\rightarrow\infty}{\lim}\alpha_{s}(q^{2})=0$
 \end_inset
 
- quark are 
+.
+ Quark are 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2012,6 +2099,10 @@ asymptotically free
 
 \begin_layout Section
 The Top Quark
+\end_layout
+
+\begin_layout Standard
+bla bla masse, gold, postulate & discovery, hadronization
 \end_layout
 
 \begin_layout Subsection
@@ -2028,25 +2119,17 @@ reference "fig:The-production-and-decay-of-tops"
 \end_inset
 
  gives an overview of the different production channels.
- Via strong interaction top quarks can only be optained in 
+ Via strong interactions top quarks can only be produced in 
 \begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
 \end_inset
 
- pairs due to flavor conservation (so-called 
-\begin_inset Quotes eld
-\end_inset
-
-topness
-\begin_inset Quotes erd
-\end_inset
-
-).
+ pairs due to flavor conservation.
  Single top quarks are produced by electroweak interaction.
  Here, the measured relation of the CKM matrix elements 
 \begin_inset Formula $\mathrm{V_{tb}}\gg\mathrm{V_{ts},\, V_{td}}$
 \end_inset
 
- favors the production and decay by W-bosons and bottom quarks 
+ favors the production and decay by a W boson and a bottom quark 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ckmVtb"
@@ -2054,8 +2137,6 @@ key "ckmVtb"
 \end_inset
 
 .
- Even hadronization of top quarks and subsequent hadron decays of would
- act through the high top quark mass on a larger time scale.
  Thus, it is possible to probe the top quark and its properties directly.
 \end_layout
 
@@ -2364,6 +2445,20 @@ key "topprocesspics"
 \end_inset
 
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{4FS & 5FS weglassen oder PDF erklären}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2377,8 +2472,8 @@ key "topprocesspics"
 \end_layout
 
 \begin_layout Standard
-For this thesis, it is crucial, that the spin orientation of the top quark
- stays encoded in its decay products and is not lost due to none-perturbative
+For this thesis, it is crucial that the spin orientation of the top quark
+ stays encoded in its decay products and is not lost due to non-perturbative
  gluon radiation.
 \end_layout
 
@@ -2387,9 +2482,9 @@ Measurements and Results
 \end_layout
 
 \begin_layout Standard
-Measuring the top quark production cross sections and properties is essential
- for understanding the electroweak symmetry breaking, since the top quark
- is with its mass in the vicinity of the higgs potential vaccum expectation
+Measuring the top quark production cross sections and its properties is
+ essential for understanding the electroweak symmetry breaking, since the
+ top quark mass is in the vicinity of the higgs potential vacuum expectation
  value 
 \begin_inset Formula $v=$
 \end_inset
@@ -2408,7 +2503,7 @@ nuu{246.22}{GeV.}
 \end_inset
 
  Futhermore, new heavy particles are predicted by various extensions to
- the SM like SUSY or technicolor models.
+ the SM like SUSY or extra dimension models.
  
 \begin_inset ERT
 status open
@@ -2417,13 +2512,25 @@ status open
 
 
 \backslash
-checkthis{add some example ref for susy and technicolor or overview paper}
+checkthis{add some example ref for susy and extra dimension or overview
+ paper}
 \end_layout
 
 \end_inset
 
-Those particles can decay into top quarks or change its expected properties
- due to higher order corrections.
+Those particles can decay into top quarks which changes the SM cross section.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Loop corrections, higher order...
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2480,7 +2587,7 @@ nuu{7}{TeV}
 <column alignment="left" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2489,7 +2596,7 @@ mass (measured)
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2519,7 +2626,7 @@ mathrm{(sys.)}}{GeV}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2536,7 +2643,7 @@ key "pdg"
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2545,7 +2652,7 @@ decay width (measured)
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2566,7 +2673,7 @@ nuu{1.99^{+0.69}_{-0.55}}{GeV}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2583,11 +2690,11 @@ key "pdg"
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\begin_inset Formula $\sigma(\mathrm{t}\bar{\mathrm{t}})$
 \end_inset
 
 
@@ -2595,7 +2702,7 @@ key "pdg"
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2620,7 +2727,7 @@ mathrm{(pdf)}}{pb}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2637,19 +2744,19 @@ key "ttbar-xsec"
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{t}$
+\begin_inset Formula $\sigma(\mathrm{t}$
 \end_inset
 
--channel single top
+-channel single top)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2674,7 +2781,7 @@ mathrm{(pdf)}}{pb}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2691,19 +2798,19 @@ key "toptch-xsec"
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{s}$
+\begin_inset Formula $\sigma(\mathrm{s}$
 \end_inset
 
--channel single top
+-channel single top)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2730,7 +2837,7 @@ mathrm{(pdf)}}{pb}
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2747,14 +2854,14 @@ key "topsch-xsec"
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{tW}$
+\begin_inset Formula $\sigma(\mathrm{tW}$
 \end_inset
 
--channel single top
+-channel single top)
 \end_layout
 
 \end_inset
@@ -2823,8 +2930,9 @@ Anomalous Couplings
 \end_layout
 
 \begin_layout Standard
-The effect of new particles to the top quark coupling can be parameterized
- by using the Operator Product Expansion (OPE).
+The effect of new particles or interactions to the top quark electroweak
+ couplings can be parameterized by using the Operator Product Expansion
+ (OPE).
  New products of operators may arise from new interactions at a higher energy
  scale 
 \begin_inset Formula $\Lambda$
@@ -2855,7 +2963,7 @@ This can be understood as
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathcal{L}\rightarrow\mathcal{L}_{\mathrm{SM}}+\mathcal{L}_{\mathrm{eff}}=\mathcal{L}_{\mathrm{SM}}+\sum_{j}\left(\frac{v}{\Lambda}\right)^{j}\mathcal{O}_{j}.
+\mathcal{L}\rightarrow\mathcal{L}_{\mathrm{SM}}+\mathcal{L}_{\mathrm{eff}}=\mathcal{L}_{\mathrm{SM}}+\sum_{j}\left(\frac{v}{\Lambda}\right)^{j}\mathcal{O}_{j}
 \]
 
 \end_inset
@@ -2876,7 +2984,12 @@ checkthis{need ref!!}
 
 \end_inset
 
-In the case of the top quark, the SM Lagrange density 
+ where 
+\begin_inset Formula $v$
+\end_inset
+
+ denotes the vacuum expectation value of the higgs potential.
+ In the case of the top quark, the SM Lagrangian density 
 \end_layout
 
 \begin_layout Standard
@@ -2887,7 +3000,7 @@ In the case of the top quark, the SM Lagrange density
 
 \end_inset
 
-can be extended to an effective coupling scenario 
+can be extended in an effective coupling scenario 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wtb-top-pair"
@@ -2919,7 +3032,7 @@ The scale dependence
 \end_inset
 
 .
- The SM is optained by setting 
+ The SM is obtained by setting 
 \begin_inset Formula $\mathrm{V_{L}=V_{tb}}\approx1$
 \end_inset
 
@@ -2932,7 +3045,7 @@ The scale dependence
 \begin_inset Formula $\mathrm{V_{R}}$
 \end_inset
 
- introduces new right-handed vector anomalous coupling and 
+ introduces a new right-handed vector anomalous coupling and 
 \begin_inset Formula $\mathrm{g_{L},\, g_{R}}$
 \end_inset
 
@@ -2940,20 +3053,20 @@ The scale dependence
 \end_layout
 
 \begin_layout Subsection
-W-Boson Helicity Fractions
+W Boson Helicity Fractions
 \end_layout
 
 \begin_layout Standard
-One way of probing the presents of anomalous coupling is by analyzing the
- W-boson helicity fractions.
- The W-boson spin is quantizied along its momentum in the top quark rest
+One way of probing the presence of anomalous couplings is by analyzing the
+ W boson helicity fractions.
+ The W boson spin is quantizied along its momentum in the top quark rest
  frame.
- The angle between the lepton in the W-boson restframe and the quantized
+ The angle between the lepton in the W boson rest frame and the quantized
  spin, 
 \begin_inset Formula $\cos\theta^{\star}$
 \end_inset
 
-, is then an observable which follows the distribution
+, then follows the distribution
 \end_layout
 
 \begin_layout Standard
@@ -3015,7 +3128,7 @@ name "fig:Quantization-of-the-w-spin"
 
 \end_inset
 
-Quantization of the W-boson spin
+Quantization of the W boson spin.
 \end_layout
 
 \end_inset
@@ -3029,7 +3142,7 @@ Quantization of the W-boson spin
 \begin_inset Formula $\mathrm{F}_{\pm}$
 \end_inset
 
- corresponds to positive/negative W-boson helicity 
+ corresponds to positive/negative W boson helicity 
 \begin_inset Formula $\mathrm{H=}\pm1$
 \end_inset
 
@@ -3042,8 +3155,8 @@ Quantization of the W-boson spin
 \end_inset
 
 ).
- The fractions depend in the effective extension model on the anomalous
- couplings 
+ In the effective extension the fractions depend on the anomalous couplings
+ 
 \begin_inset Formula $\mathrm{F}_{j}=\mathrm{F}_{j}\left(\mathrm{V_{L},\, V_{R},\, g_{L},\, g_{R}}\right)$
 \end_inset
 
@@ -3060,13 +3173,13 @@ Top Spin Asymmetries
 \end_layout
 
 \begin_layout Standard
-Further observables to constrain anomalous couplings can be optained by
+Further observables to constrain anomalous couplings can be obtained by
  quantizing the top quark spin directly.
  In single top quark t-channel production it is however complicated to reconstru
-ct the center-of-mass system in the presents of additional jets with high
+ct the center-of-mass system in the presence of additional jets with high
  precision.
  Thus a different quantization axis has to be found.
- Here, it has been shown, that the spectator jet comes with a high polarization
+ Here, it has been shown that the spectator jet comes with a high polarization
  
 \begin_inset Formula $\rho$
 \end_inset
@@ -3109,12 +3222,28 @@ The polarization
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{what is polarization???}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 depends on the chosen basis 
 \begin_inset Formula $\mathrm{B}$
 \end_inset
 
 .
- Here the specator basis yields a expected polarization of 
+ Here the specator basis yields an expected polarization of 
 \begin_inset Formula $\rho_{\mathrm{spec.}}^{\mathrm{t}}=$
 \end_inset
 
@@ -3244,7 +3373,7 @@ reference "fig:Quantization-of-the-top-spin"
 
 \end_inset
 
- visualizes the construction of the different angles in the top restframe.
+ visualizes the construction of the different angles in the top rest frame.
 \end_layout
 
 \begin_layout Standard
@@ -3275,7 +3404,7 @@ name "fig:Quantization-of-the-top-spin"
 
 \end_inset
 
-Quantization of the top quark spin
+Quantization of the top quark spin.
 \end_layout
 
 \end_inset
@@ -3317,12 +3446,29 @@ Another interesting variable is the ratio between two top quark asymmetries
 \end_layout
 
 \begin_layout Standard
-In combination with the w-boson helicity fractions, these observables provides
+In combination with the W boson helicity fractions, these observables provide
  new insight into the coupling structure at the 
 \begin_inset Formula $\mathrm{Wtb}$
 \end_inset
 
 -vertex.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{more...
+ fundamental quantities!!!}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
