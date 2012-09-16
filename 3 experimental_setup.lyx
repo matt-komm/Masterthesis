@@ -161,7 +161,7 @@ frac{1}{cm^{2}s}}
 \end_inset
 
 .
- The protons beams can also be switched to ion beams.
+ The proton beams can also be switched to ion beams.
  Here, the aimed peak luminosity is 
 \begin_inset Formula $L=$
 \end_inset
@@ -643,8 +643,8 @@ The used coordinate system by CMS is as follows: The origin is the interaction
  The z-axis matches the beamline.
  The x-axis points towards the center of the LHC ring and the y-axis points
  upwards orthogonal to x and z.
- To reflect the cylindrical symmetry of the detector, one often uses the
- pseudorapidity 
+ To reflect the cylindrical symmetry of the detector, one often uses instead
+ the pseudorapidity 
 \begin_inset Formula $\eta=-\ln\left(\tan{\textstyle \frac{\theta}{2}}\right)$
 \end_inset
 
@@ -652,11 +652,11 @@ The used coordinate system by CMS is as follows: The origin is the interaction
 \begin_inset Formula $\theta$
 \end_inset
 
- between the z-axis and the xy plane and the polar angle 
+ between the z-axis and the xy plane, and the polar angle 
 \begin_inset Formula $\phi$
 \end_inset
 
- inside the xy plane instead.
+ inside the xy plane.
  
 \begin_inset ERT
 status open
@@ -841,7 +841,8 @@ The electromagnetic calorimeter (ECAL) is composed out of lead tungstate
 \end_inset
 
 ) scintillating crystals.
- The crystals had been chosen for their fast response time within 
+ The crystal material had been chosen for its fast response time (within
+ 
 \begin_inset ERT
 status open
 
@@ -854,7 +855,7 @@ nuu{25}{ns}
 
 \end_inset
 
- and their radiation hardness up to 
+) and radiation hardness (up to 
 \begin_inset ERT
 status open
 
@@ -867,11 +868,11 @@ nuu{10}{Mrad}
 
 \end_inset
 
-.
+).
  61200 crystals are installed in the central barrel part and additionally
  7324 are placed in each of the two endcaps.
- Due to the rather low light yield, photodetectors with intrinsic gain had
- to be applied.
+ Due to the crystals rather low light yield, photodetectors with intrinsic
+ gain had to be applied.
  In the barrel, silicon Avalanche PhotoDiodes (APDs) and in the endcaps,
  Vacuum PhotoTriodes (VPTs) are used for amplification.
 \end_layout
@@ -887,6 +888,22 @@ The complete ECAL covers a pseudorapidity range of
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add energy resolution}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
@@ -923,13 +940,31 @@ The Hadron Barrel (HB) is installed inside the magnetic coil, which covers
 \end_layout
 
 \begin_layout Standard
-To provide a good missing transverse energy containment, the HCAL consists
- of brass as absorber material which has a short interaction length.
+The HCAL consists of brass as absorber material which has a short interaction
+ length.
+ It provides a good particle containment which is needed for the detection
+ of missing transverse energy.
  To maximize the absorber space inside the barrel, plastic scintillator
  titles with embedded WaveLength-Shifting (WLS) fibres are used as active
  medium.
  Those require only a minimum of space to carry the light to the readout
  system of multi-channel Hybrid PhotoDiodes (HPDs).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add energy resolution}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
@@ -1047,7 +1082,7 @@ The muon system itself consists of three types of gaseous detectors to cover
 
 .
  Both systems however lack in time resolution.
- Resistive Plate Chambers (RPCs) are deployed in both regions.
+ Additionally, Resistive Plate Chambers (RPCs) are deployed in both regions.
  Driven in avalanche mode, they complete the muon system by providing a
  good time resolution.
 \end_layout
@@ -1144,8 +1179,8 @@ nuu{40}{MHz}
 \begin_inset Formula $3.2\,\mu\mathrm{s}$
 \end_inset
 
- all data has to be collected from the the sub systems and a decision has
- to be made whether to keep or reject the event.
+ all data is collected from the the sub systems and a decision has to be
+ made whether to keep or reject the event.
  By using only the readout from the calorimetry and muon systems, the Level-1
  (LV1) trigger has less than 
 \begin_inset Formula $1\,\mu\mathrm{s}$
@@ -1175,8 +1210,8 @@ nuu{1.5}{MB}
  and is transferred to the processor farm.
  Here, the more complex High Level Trigger (HLT) software decides the storing
  of events.
- By using the full event data including all detector sub systems, it singles
- out the interesting events and reduces the rate from 
+ By reconstructing the full event data which uses all detector sub systems,
+ it singles out the interesting events and reduces the rate from 
 \begin_inset ERT
 status open
 
@@ -1202,7 +1237,24 @@ nuu{100}{Hz}
 
 \end_inset
 
- 
+.
+ The recorded data is stored at the 
+\begin_inset Quotes eld
+\end_inset
+
+Tier-0
+\begin_inset Quotes erd
+\end_inset
+
+ and copied to the 
+\begin_inset Quotes eld
+\end_inset
+
+Tier-1
+\begin_inset Quotes erd
+\end_inset
+
+ of the Worldwide LHC Computing Grid (WLCG) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMStechnicalReport"
@@ -1217,46 +1269,228 @@ Reconstruction of Physics Objects
 \end_layout
 
 \begin_layout Subsection
-The Particle Flow Algorithm
+The Particle-Flow Algorithm
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Particle Flow Objects are linked accross detector components
+The particle-flow (PF) algorithm aims to precisely identify particle types
+ and their momenta by exploiting all detector sub systems.
+ It creates particle hypotheses within an event by combining information
+ from charged-particle tracks, calorimetry hits and muon tracks.
 \end_layout
+
+\begin_layout Standard
+The algorithm starts with the tracker information by single out first tracks
+ with very tight criteria originating closely from the IP.
+ On the remaining tracks, iteratively looser criteria are applied for selection.
+ In the calorimeters, hits are clustered.
+ This is performed by finding cells with high energy maxima (
+\begin_inset Quotes eld
+\end_inset
+
+cluster seeds
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Then, 
+\begin_inset Quotes eld
+\end_inset
+
+topological clusters
+\begin_inset Quotes erd
+\end_inset
+
+ are constructed by combining with adjacent cells which are over a certain
+ energy threshold.
+ 
+\end_layout
+
+\begin_layout Standard
+One expects, that a particle causes a charged-particle track and/or hits
+ serveral calorimeter clusters as well as one or none track in the muon
+ system.
+ All this information are linked to reconstruct each single observed particle
+ while possible double counting has to be taken care of.
+ The particle flow algorithm is also independent of the event complexity.
+ It depends on the granularity of particle building blocks of the detector
+ sub systems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "particleflow"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+.
 \end_layout
 
 \begin_layout Subsection
 Muon Identification
 \end_layout
 
+\begin_layout Standard
+Muons can be identified in three ways:
+\end_layout
+
+\begin_layout Enumerate
+For muons with low momenta, the 
+\begin_inset Quotes eld
+\end_inset
+
+Tracker Muon
+\begin_inset Quotes erd
+\end_inset
+
+ is defined by extrapolating tracker tracks into the muon system.
+ For this, energy loss and possible multiple scattering of muons from the
+ tracker to the muon system is taken into account.
+ At least one segment of the muon system (DT or CSC) needs to be coincidence
+ with the extrapolation to claim this muon hypothesis.
+\end_layout
+
+\begin_layout Enumerate
+A 
+\begin_inset Quotes eld
+\end_inset
+
+Global Muon
+\begin_inset Quotes erd
+\end_inset
+
+ is reconstructed through a fit to the inner tracker and the muon system
+ data.
+ This combination method improves the muon momentum resolution above a transerva
+l momentum of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{200}{GeV}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Quotes eld
+\end_inset
+
+Standalone-Muon track only
+\begin_inset Quotes erd
+\end_inset
+
+ is claimed, if both previous described methods fail.
+ Due to the high tracker effciency, those muons are often originating from
+ cosmic-rays and not from an interaction at the IP 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "muonID"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The particle-flow algorithm categorizes the muons further.
+ A muon is 
+\begin_inset Quotes eld
+\end_inset
+
+isolated
+\begin_inset Quotes erd
+\end_inset
+
+, if in a cone of 
+\begin_inset Formula $\sqrt{\eta^{2}+\phi^{2}}<0.3$
+\end_inset
+
+ around the muon there is less than a 10% fraction of the muons transveral
+ momentum in total.
+ The none-
+\begin_inset Quotes erd
+\end_inset
+
+isolated
+\begin_inset Quotes erd
+\end_inset
+
+ muons are then found in the vicinity of hadrons.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+PF-tight
+\begin_inset Quotes erd
+\end_inset
+
+ muons are identified by requiring a minimum number of hits in the muon
+ system to be compatible with the calorimeter deposits.
+ The remaining uncategorized muons are labeled 
+\begin_inset Quotes eld
+\end_inset
+
+PF-loose
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pfmuon"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Missing Transversal Energy
 \end_layout
 
+\begin_layout Standard
+After the particle-flow reconstruction the missing transversal energy can
+ be calculated.
+ Due to conversation of momentum, the total transversal momentum is zero
+ before a collision and has to be zero again after a collision.
+ Therefore by summing up all reconstructed particles and mirroring the azimuthal
+ momentum two-vector one obtains the missing transversal energy.
+\end_layout
+
+\begin_layout Standard
+Depending on the physics analysis, the missing transversal energy is often
+ used to construct hypotheses about not directly measureable particles,
+ like neutrinos or SUSY particles.
+\end_layout
+
 \begin_layout Subsection
 Jet Definition
+\end_layout
+
+\begin_layout Standard
+Jets are particle showers originating from hadronization of gluons or quarks.
+ Jet algorithms are used to group reconstructed particles to jets which
+ gives an inference about the hadronized parton.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{parton explained somewhere?}
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1406,10 +1640,6 @@ status open
 ifnum
 \backslash
 value{part}<1
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
