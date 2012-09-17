@@ -137,8 +137,8 @@ reference "tab:The-SM-Quarks"
  Each particle carries different charges.
  These determine if it can participate in electromagnetic (EM), in weak
  or in strong interactions.
- The interactions itsselfs are mediated by bosonic elementary particle with
- spin 
+ The interactions themselves are mediated by bosonic elementary particle
+ with spin 
 \begin_inset Formula $s=1$
 \end_inset
 
@@ -1100,10 +1100,10 @@ This leads to
 
 \end_inset
 
-where additionaly the already gauge invariant photon propagator has as been
- added.
+where additionally the already gauge invariant photon propagator has as
+ been added.
  This construction procedure predicts that the photon is massless.
- Extending the Lagrangian density with a massterm propotional to 
+ Extending the Lagrangian density with a mass term proportional to 
 \begin_inset Formula $\propto m_{\gamma}^{2}A_{\mu}A^{\mu}$
 \end_inset
 
@@ -1464,7 +1464,7 @@ The EM and weak interactions can be united to the electroweak interactions.
 \end_layout
 
 \begin_layout Itemize
-In weak interactions, partity is not conserved.
+In weak interactions, parity is not conserved.
  Only left-handed fermions can couple to charged currents 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1574,7 +1574,7 @@ where the EM charge would be conserved.
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
- includes only terms propotional to 
+ includes only terms proportional to 
 \begin_inset Formula $\propto(\gamma_{\mu}-\gamma_{\mu}\gamma_{5})$
 \end_inset
 
@@ -1586,11 +1586,15 @@ vector
 \begin_inset Quotes erd
 \end_inset
 
--
+ 
+\begin_inset Formula $-$
+\end_inset
+
+ 
 \begin_inset Quotes erd
 \end_inset
 
-axialvector
+axial vector
 \begin_inset Quotes erd
 \end_inset
 
@@ -1759,7 +1763,7 @@ Then one can develop
 \begin_inset Formula $\phi$
 \end_inset
 
- around this mimimum to
+ around this minimum to
 \end_layout
 
 \begin_layout Standard
@@ -2033,7 +2037,7 @@ confinement
 \begin_inset Formula $\mathrm{q}\bar{\mathrm{q}}$
 \end_inset
 
- pairs from the vaccum if the potential exceeds 
+ pairs from the vacuum if the potential exceeds 
 \begin_inset Formula $2\cdot m_{\mathrm{q}}$
 \end_inset
 
@@ -2046,11 +2050,11 @@ hadronization
 \begin_inset Quotes erd
 \end_inset
 
- and can not be caculated perturbatively.
+ and can not be calculated perturbatively.
 \end_layout
 
 \begin_layout Standard
-However, QCD scattering processes can be caculated in a perturbative way
+However, QCD scattering processes can be calculated in a perturbative way
  through the behavior of the running coupling constant
 \end_layout
 
@@ -2434,8 +2438,8 @@ The production and decay of the top quark: (a)
 \end_inset
 
  production; (b) s-channel production; (c) tW associated production; (d)
- t-channel production in four flavour scheme (4FS); (e) t-channel production
- in five flavour scheme (5FS); (f) top decay.
+ t-channel production in four flavor scheme (4FS); (e) t-channel production
+ in five flavor scheme (5FS); (f) top decay.
  Figures were taken from Ref.
  
 \begin_inset CommandInset citation
@@ -2484,7 +2488,7 @@ Measurements and Results
 \begin_layout Standard
 Measuring the top quark production cross sections and its properties is
  essential for understanding the electroweak symmetry breaking, since the
- top quark mass is in the vicinity of the higgs potential vacuum expectation
+ top quark mass is in the vicinity of the Higgs potential vacuum expectation
  value 
 \begin_inset Formula $v=$
 \end_inset
@@ -2502,7 +2506,7 @@ nuu{246.22}{GeV.}
 
 \end_inset
 
- Futhermore, new heavy particles are predicted by various extensions to
+ Furthermore, new heavy particles are predicted by various extensions to
  the SM like SUSY or extra dimension models.
  
 \begin_inset ERT
@@ -2931,8 +2935,7 @@ Anomalous Couplings
 
 \begin_layout Standard
 The effect of new particles or interactions to the top quark electroweak
- couplings can be parameterized by using the Operator Product Expansion
- (OPE).
+ couplings can be parametrized by using the Operator Product Expansion (OPE).
  New products of operators may arise from new interactions at a higher energy
  scale 
 \begin_inset Formula $\Lambda$
@@ -2988,7 +2991,7 @@ checkthis{need ref!!}
 \begin_inset Formula $v$
 \end_inset
 
- denotes the vacuum expectation value of the higgs potential.
+ denotes the vacuum expectation value of the Higgs potential.
  In the case of the top quark, the SM Lagrangian density 
 \end_layout
 
@@ -3059,7 +3062,7 @@ W Boson Helicity Fractions
 \begin_layout Standard
 One way of probing the presence of anomalous couplings is by analyzing the
  W boson helicity fractions.
- The W boson spin is quantizied along its momentum in the top quark rest
+ The W boson spin is quantized along its momentum in the top quark rest
  frame.
  The angle between the lepton in the W boson rest frame and the quantized
  spin, 
@@ -3243,7 +3246,7 @@ depends on the chosen basis
 \end_inset
 
 .
- Here the specator basis yields an expected polarization of 
+ Here the spectator basis yields an expected polarization of 
 \begin_inset Formula $\rho_{\mathrm{spec.}}^{\mathrm{t}}=$
 \end_inset
 

@@ -380,7 +380,7 @@ nuu{11850}{A}
 
 \end_inset
 
- which produces a magent field of 
+ which produces a magnet field of 
 \begin_inset ERT
 status open
 
@@ -587,14 +587,14 @@ The CMS Experiment
 \end_layout
 
 \begin_layout Standard
-The Compact Muon Solenoid (CMS) is a general-purpose dectector developed
+The Compact Muon Solenoid (CMS) is a general-purpose detector developed
  to record the proton-proton collisions at the high luminosity the LHC is
  providing.
- The physics programm of the CMS collaboration involves the search for the
+ The physics program of the CMS collaboration involves the search for the
  Higgs boson and the detection or exclusion of supersymmetric particles
  (SUSY), new heavy vector bosons as well as extra dimensions.
  Besides that, precision measurements of the SM are performed like studies
- of QCD, elektroweak and top quark physics.
+ of QCD, electroweak and top quark physics.
  During heavy-ion runs, the properties of strong interacting nuclear matter
  is investigated.
 \end_layout
@@ -821,7 +821,7 @@ nuu{20<r<55}{cm}
 .
  In the last region of the tracking system, larger-pitch silicon microstrips
  are installed.
- Their cell size is at mimimum 
+ Their cell size is at minimum 
 \begin_inset Formula $\mathrm{25\, cm}\times\mathrm{180}\,\mu\mathrm{m}$
 \end_inset
 
@@ -922,7 +922,7 @@ The Hadron Barrel (HB) is installed inside the magnetic coil, which covers
 \end_inset
 
 .
- The Hadron Outer (HO) is located at the outer vaccum tank of the coil.
+ The Hadron Outer (HO) is located at the outer vacuum tank of the coil.
  It has a range of 
 \begin_inset Formula $\left|\eta\right|\leq1.26$
 \end_inset
@@ -945,7 +945,7 @@ The HCAL consists of brass as absorber material which has a short interaction
  It provides a good particle containment which is needed for the detection
  of missing transverse energy.
  To maximize the absorber space inside the barrel, plastic scintillator
- titles with embedded WaveLength-Shifting (WLS) fibres are used as active
+ titles with embedded WaveLength-Shifting (WLS) fibers are used as active
  medium.
  Those require only a minimum of space to carry the light to the readout
  system of multi-channel Hybrid PhotoDiodes (HPDs).
@@ -968,11 +968,11 @@ checkthis{add energy resolution}
 \end_layout
 
 \begin_layout Paragraph*
-Magent
+Magnet
 \end_layout
 
 \begin_layout Standard
-A large superconduction solenoid coil for bending of charged particles is
+A large superconducting solenoid coil for bending of charged particles is
  used.
  Supplied with a current of 
 \begin_inset ERT
@@ -1073,9 +1073,9 @@ The muon system itself consists of three types of gaseous detectors to cover
 \begin_inset Formula $\left|\eta\right|\leq1.2$
 \end_inset
 
- where the magetic field and neutron background is low.
- In the two encaps, Cathode Strip Chambers (CSCs) are used.
- These can operate in presents of the high magentic field and neutron background.
+ where the magnetic field and neutron background is low.
+ In the two endcaps, Cathode Strip Chambers (CSCs) are used.
+ These can operate in presents of the high magnetic field and neutron background.
  The endcaps cover a region up to 
 \begin_inset Formula $\left|\eta\right|\leq2.4$
 \end_inset
@@ -1308,13 +1308,11 @@ topological clusters
 
 \begin_layout Standard
 One expects, that a particle causes a charged-particle track and/or hits
- serveral calorimeter clusters as well as one or none track in the muon
- system.
+ several calorimeter clusters as well as one or none track in the muon system.
  All this information are linked to reconstruct each single observed particle
  while possible double counting has to be taken care of.
  The particle flow algorithm is also independent of the event complexity.
- It depends on the granularity of particle building blocks of the detector
- sub systems 
+ It depends mainly on the granularity of the particle building blocks 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "particleflow"
@@ -1359,8 +1357,8 @@ Global Muon
 
  is reconstructed through a fit to the inner tracker and the muon system
  data.
- This combination method improves the muon momentum resolution above a transerva
-l momentum of 
+ This combination method improves the muon momentum resolution above a transvers
+al momentum of 
 \begin_inset ERT
 status open
 
@@ -1386,7 +1384,8 @@ Standalone-Muon track only
 \end_inset
 
  is claimed, if both previous described methods fail.
- Due to the high tracker effciency, those muons are often originating from
+ This is the case if the muon is observed only in the muon system.
+ Due to the high tracker efficiency, those muons are often originating from
  cosmic-rays and not from an interaction at the IP 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1407,12 +1406,12 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
-, if in a cone of 
-\begin_inset Formula $\sqrt{\eta^{2}+\phi^{2}}<0.3$
+, if additionally less than a 10% fraction of the muons transversal momentum
+ in total has been detected in a cone of 
+\begin_inset Formula $\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}<0.3$
 \end_inset
 
- around the muon there is less than a 10% fraction of the muons transveral
- momentum in total.
+ around the muon.
  The none-
 \begin_inset Quotes erd
 \end_inset
@@ -1457,16 +1456,16 @@ Missing Transversal Energy
 \begin_layout Standard
 After the particle-flow reconstruction the missing transversal energy can
  be calculated.
- Due to conversation of momentum, the total transversal momentum is zero
- before a collision and has to be zero again after a collision.
+ Due to conversation of momentum, the net transversal momentum has to be
+ zero after a collision.
  Therefore by summing up all reconstructed particles and mirroring the azimuthal
  momentum two-vector one obtains the missing transversal energy.
 \end_layout
 
 \begin_layout Standard
 Depending on the physics analysis, the missing transversal energy is often
- used to construct hypotheses about not directly measureable particles,
- like neutrinos or SUSY particles.
+ used to construct hypotheses about not directly measurable particles, like
+ neutrinos or SUSY particles.
 \end_layout
 
 \begin_layout Subsection
@@ -1479,24 +1478,10 @@ A jet is a group of particles originating from hadronization of gluons or
  Jet algorithms are used to group reconstructed particles to jets.
  By summing up the momenta within a jet, an inference about the hadronized
  parton momentum can be made.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{parton explained somewhere?}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-Todays main used jet algorithms are the 
+Nowadays, the main used jet algorithms are the 
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
@@ -1520,7 +1505,7 @@ reference "fig:Jet-definition"
 
 \end_inset
 
- shows examplary scenarios to explain this two nescessary safety features.
+ shows exemplary scenarios to explain this two necessary safety features.
 \end_layout
 
 \begin_layout Standard
@@ -1562,7 +1547,7 @@ Jet definition in different scenarios of additional particles
 \end_inset
 
 Jet definition in different scenarios of additional particles.
- The dark dottet gray eclipse shows the result, if not a infrared and collinear
+ The dark dotted gray eclipse shows the result, if not a infrared and collinear
  algorithm is used.
 \end_layout
 
@@ -1581,7 +1566,7 @@ Jet definition in different scenarios of additional particles.
 \end_layout
 
 \begin_layout Standard
-Soft gluons emitted from a parton during the hardonization produces additionally
+Soft gluons emitted from a parton during the hadronization produces additionally
  particles with low momenta that should not be left out of the jet construction.
  However, particles originating from other interactions should not be clustered.
  Those may sum up and have a significantly wrong input to the jet.
@@ -1605,8 +1590,8 @@ In the reconstruction by CMS, the anti-
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
-algorithm is used.
- Its core procedure is the iteratively caculation of the distances
+ algorithm is used.
+ Its core procedure is the iteratively calculation of the distances
 \end_layout
 
 \begin_layout Standard
@@ -1630,8 +1615,8 @@ between all proto-jets
 \end_inset
 
 .
- Proto-jets are intially the reconstructed particles.
- After the first caculation of the two distances, a proto-jet 
+ Proto-jets are initially the reconstructed particles.
+ After the first calculation of the two distances, a proto-jet 
 \begin_inset Formula $i$
 \end_inset
 
@@ -1663,17 +1648,17 @@ between all proto-jets
 \end_layout
 
 \begin_layout Subsection
-Identifcation of Jet from b-Quarks
+Identification of Jet from b-Quarks
 \end_layout
 
 \begin_layout Standard
 Jet algorithms can not determine the original flavor of a hadronized quark.
  However, the relatively long decay time of B hadrons can be exploited for
- identifing jets which originate from bottom quarks.
+ identifying jets which originate from bottom quarks.
  In a proton-proton collision, the hard interaction is often boosted against
  the lab frame.
  If a long-lived particle such as a B hadron is produced, it will fly a
- measureable distance away from the primary interaction vertex before decaying.
+ measurable distance away from the primary interaction vertex before decaying.
 \end_layout
 
 \begin_layout Standard
@@ -1704,7 +1689,7 @@ Analysis Software
 \end_layout
 
 \begin_layout Standard
-For perfoming the analysis in this thesis, various software packages have
+For performing the analysis in this thesis, various software packages have
  been used.
 \end_layout
 
