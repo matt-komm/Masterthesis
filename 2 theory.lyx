@@ -987,7 +987,7 @@ General Construction
 The SM is based on Quantum Field Theory (QFT).
  Here, elementary particles are considered as excitation modes of associated
  quantized fields 
-\begin_inset Formula $\mathrm{\Psi}$
+\begin_inset Formula $\Psi$
 \end_inset
 
 .
@@ -1005,9 +1005,9 @@ free
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \mathcal{L} & =\bar{\Psi}\left(i\slashed\partial-m\right)\Psi,\qquad\slashed\partial=\gamma_{\mu}\frac{\partial}{\partial x^{\mu}},\qquad\bar{\Psi}=\Psi^{\dagger}\gamma_{0},
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1017,9 +1017,9 @@ one can obtain the equation of motion (for fermions: the Dirac equation)
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 0=\frac{\partial}{\partial x_{\mu}}\left(\frac{\partial\mathcal{L}}{\partial\left(\partial\bar{\Psi}/\partial x_{\mu}\right)}\right)-\frac{\partial}{\partial\bar{\Psi}}\mathcal{L}=\left(i\slashed\partial-m\right)\Psi.
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1029,7 +1029,7 @@ one can obtain the equation of motion (for fermions: the Dirac equation)
 \begin_layout Standard
 Interactions can be introduced by requiring that the Lagrangian density
  is invariant under a local gauge transformation of the field 
-\begin_inset Formula $\mathrm{\Psi}$
+\begin_inset Formula $\Psi$
 \end_inset
 
 .
@@ -1038,9 +1038,9 @@ Interactions can be introduced by requiring that the Lagrangian density
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \Psi & \rightarrow\Psi^{\prime}=\Psi\cdot e^{-iq\alpha(x)}
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1058,14 +1058,14 @@ with the free chosen local phase
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \Rightarrow\mathcal{L}\rightarrow\mathcal{L}^{\prime}=\bar{\Psi}(i\slashed\partial+q\slashed\partial\alpha(x)-m)\Psi.
-\]
+\end{equation}
 
 \end_inset
 
 The requirement for invariance of the Lagrangian density 
-\begin_inset Formula $\mathcal{L}\left(\mathrm{\Psi}^{\prime}\right)=\mathcal{L}\left(\Psi\right)$
+\begin_inset Formula $\mathcal{L}\left(\Psi^{\prime}\right)=\mathcal{L}\left(\Psi\right)$
 \end_inset
 
  under such transformation can be solved by adding the additional photon
@@ -1074,14 +1074,14 @@ The requirement for invariance of the Lagrangian density
 \end_inset
 
 .
- It transforms to
+ It transforms under local gauge transformation to
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 A_{\mu}\rightarrow A_{\mu}^{\prime}=A_{\mu}-\partial_{\mu}\alpha(x).
-\]
+\end{equation}
 
 \end_inset
 
@@ -1094,9 +1094,9 @@ This leads to
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \Rightarrow\mathcal{L}=\underbrace{-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}}_{\mathrm{photon\, propagator}}+\underbrace{\bar{\Psi}\left(i\slashed\partial-m\right)\Psi}_{\mathrm{fermion\, propagator}}-\underbrace{q\bar{\Psi}\gamma_{\mu}\Psi A^{\mu}}_{\mathrm{interaction}},\qquad F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1490,9 +1490,9 @@ The Glashow-Weinberg-Salam model accounts for the coupling of left-handed
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \Psi_{\mathrm{L}} & =\underbrace{\frac{1}{2}\left(1-\gamma_{5}\right)}_{\mathrm{P_{L}}}\Psi,\quad\mbox{\mathrm{SU(2)\, doublet}};\qquad\Psi_{\mathrm{R}}=\underbrace{\frac{1}{2}\left(1+\gamma_{5}\right)}_{\mathrm{P_{R}}}\Psi,\quad\mathrm{SU(2)\, singulet}
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1501,7 +1501,7 @@ Leptons and quarks are splitted into
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \vec{\mathrm{E}}_{\mathrm{L}} & =\left\{ \left(\begin{array}{c}
 \nu_{\mathrm{e}}\\
 \mathrm{e^{-}}
@@ -1521,7 +1521,7 @@ Leptons and quarks are splitted into
 \mathrm{t}\\
 \mathrm{b}
 \end{array}\right)_{\mathrm{L}}\right\} 
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1530,9 +1530,9 @@ and
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \vec{\mathrm{e}}_{\mathrm{R}}=\left\{ \mathrm{e_{R},\,}\mu_{\mathrm{R}},\,\tau_{\mathrm{R}}\right\} ;\quad\vec{\mathrm{u}}\mathrm{_{\mathrm{R}}=\left\{ u_{R},\, c_{R},\, t_{R}\right\} ;\quad}\vec{\mathrm{d}}\mathrm{_{\mathrm{R}}=\left\{ d_{R},\, s_{R},\, b_{R}\right\} }.
-\]
+\end{equation}
 
 \end_inset
 
@@ -1541,9 +1541,9 @@ The Lagrangian density
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}=\sum_{j}^{3}\left(\mathrm{\bar{E}_{L}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{E_{L}}^{j}+\mathrm{\bar{Q}_{L}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{Q_{L}}^{j}+\mathrm{\bar{e}_{R}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{e_{R}}^{j}+\mathrm{\bar{u}_{R}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{u_{R}}^{j}+\mathrm{\bar{d}_{R}}^{j}i\gamma_{\mu}D^{\mu}\mathrm{d_{R}}^{j}\right)
-\]
+\end{equation}
 
 \end_inset
 
@@ -1552,9 +1552,9 @@ with the covariant derivatives
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 D_{\mu}=\partial_{\mu}-ig\vec{W}_{\mu}\vec{T}-ig^{\prime}Y\cdot B_{\mu},\qquad Y=Q_{\mathrm{EM}}-T_{3}\quad\mbox{\mathrm{("hypercharge")}}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1563,9 +1563,9 @@ does then not involve terms of the form
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}_{\mathrm{R}}\propto W_{\mu}^{+}\bar{\Psi}_{\mathrm{R}}\gamma^{\mu}\Psi_{\mathrm{R}}^{\prime}+\mathrm{h.c.}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1700,9 +1700,9 @@ reference "fig:The-Higgs-Potential"
 
 , to 
 \begin_inset Formula 
-\[
+\begin{equation}
 (\phi^{\dagger}\phi)_{\mathrm{min}}=\frac{2\mu^{2}}{\lambda}\equiv\frac{v^{2}}{2}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -1768,12 +1768,12 @@ Then one can develop
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \phi=\frac{1}{\sqrt{2}}\left(\begin{array}{c}
 0\\
 v+h(x)
 \end{array}\right)\cdot\exp\left(-\frac{i\theta(x)}{v}\right).
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1799,9 +1799,9 @@ checkthis{add propagators for W,B?}
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}=\ldots+\left(D_{\mu}\phi^{\dagger}\right)\left(D^{\mu}\phi\right)-\mathrm{V}(\phi^{\dagger}\phi),\quad D_{\mu}=\partial_{\mu}+\underbrace{ig\frac{\vec{\tau}}{2}\vec{W}_{\mu}}_{\mathrm{SU(2)}}+\underbrace{ig^{\prime}\frac{1}{2}B_{\mu}}_{\mathrm{U(1)}}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1824,11 +1824,11 @@ checkthis{leaf out propagators}
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \mathrm{"Higgs"\, boson:\quad} & \mathcal{L}_{h}=\frac{1}{2}\left(\partial_{\mu}h\right)\left(\partial^{\mu}h\right)-\mu^{2}h^{2}\\
 \mathrm{W^{\pm}\, bosons:\quad} & \mathcal{L}_{W^{\pm}}=\frac{1}{8}g^{2}v^{2}W_{1,\,\mu}W_{1}^{\mu}+\frac{1}{8}g^{2}v^{2}W_{2,\,\mu}W_{2}^{\mu}\\
 \mathrm{W_{3},\, B\, bosons:\quad} & \mathcal{L}_{W_{3},B}=\frac{1}{8}v^{2}\left(gW_{3,\,\mu}-g^{\prime}B_{\mu}\right)\left(gW_{3}^{\mu}-g^{\prime}B^{\mu}\right)
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1871,7 +1871,7 @@ checkthis{add masses}
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \left(\begin{array}{c}
 Z^{0}\\
 A
@@ -1882,7 +1882,7 @@ A
 W_{3}\\
 B
 \end{array}\right),\qquad\cos\theta_{\mathrm{W}}=\frac{g}{\sqrt{g^{2}+g^{\prime2}}}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1916,10 +1916,10 @@ Weinberg
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \mathcal{L} & =-\sum_{j}^{3}\left(\lambda_{j}\bar{\mathrm{E}}_{\mathrm{L}}^{j}\phi\cdot\mathrm{e_{R}^{j}}+\mathrm{h.c.}\right)\qquad(\mathrm{U(1)}\otimes\mbox{\mathrm{SU(2)\, invariant}})\\
  & =-\underbrace{\lambda_{e}\frac{v}{\sqrt{2}}}_{m_{e}}\bar{\mathrm{e}}_{\mathrm{L}}\mathrm{e_{\mathrm{R}}}-\underbrace{\lambda_{\mu}\frac{v}{\sqrt{2}}}_{m_{\mu}}\bar{\mu}_{\mathrm{L}}\mu\mathrm{_{\mathrm{R}}}-\underbrace{\lambda_{\tau}\frac{v}{\sqrt{2}}}_{m_{\tau}}\bar{\tau}_{\mathrm{L}}\tau\mathrm{_{\mathrm{R}}}+\mathcal{L}_{h\Psi_{\mathrm{L}}\Psi_{\mathrm{R}}}^{\mathrm{interaction}}+\mathrm{h.c.}
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -1930,9 +1930,9 @@ mass terms for the electron, muon and tau appears after the symmetry breaking.
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}=-\lambda_{d}^{ij}\bar{\mathrm{Q}}_{\mathrm{L}}^{i}\phi\cdot\mbox{\mathrm{d_{R}}}^{j}-\lambda_{u}^{ij}\epsilon^{ab}\bar{\mathrm{Q}}_{\mathrm{L,\,}a}^{i}\phi_{b}^{\dagger}\mathrm{u_{R}}^{j}+\mathrm{h.c.}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1949,9 +1949,9 @@ and applying the transformations
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}=-m_{d}^{i}\bar{\mathrm{d}}_{\mathrm{L}}^{i}\mathrm{d_{R}}^{i}-m_{u}^{i}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\mathrm{u_{R}}^{i}+\mathrm{h.c.}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1964,9 +1964,9 @@ For the
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}_{W^{\pm}}^{\mathrm{interaction}}=\frac{e}{\sqrt{2}}\frac{1}{\sin\theta_{\mathrm{W}}}\left(W_{\mu}^{+}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\gamma^{\mu}\underbrace{\left(U_{u}^{\dagger}U_{d}\right)^{ij}}_{=V^{ij}}\mathrm{d}_{\mathrm{L}}^{j}+\mathrm{h.c.}\right),\qquad g=\frac{e}{\sin\theta_{\mathrm{W}}},
-\]
+\end{equation}
 
 \end_inset
 
@@ -2060,9 +2060,9 @@ However, QCD scattering processes can be calculated in a perturbative way
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \alpha_{s}(q^{2})=\frac{\alpha_{s}(\mu_{R}^{2})}{1+\left(\alpha_{s}(\mu_{R}^{2})\cdot\frac{33-2\cdot n_{f}}{12\pi}\right)\cdot\ln\left(\frac{\left|q^{2}\right|}{\mu_{R}^{2}}\right)}
-\]
+\end{equation}
 
 \end_inset
 
@@ -2457,7 +2457,7 @@ status open
 
 
 \backslash
-checkthis{4FS & 5FS weglassen oder PDF erklären}
+checkthis{4FS, 5FS weglassen oder PDF erklären}
 \end_layout
 
 \end_inset
@@ -2522,19 +2522,10 @@ checkthis{add some example ref for susy and extra dimension or overview
 
 \end_inset
 
-Those particles can decay into top quarks which changes the SM cross section.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-Loop corrections, higher order...
-\end_layout
-
-\end_inset
-
-
+Those particles can decay into top quarks which changes the expected SM
+ cross sections.
+ Also, loop corrections involving new particles or interactions may alter
+ the V-A coupling structure.
 \end_layout
 
 \begin_layout Standard
@@ -2954,9 +2945,9 @@ key "peskin"
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{O}_{1}(x)\mathcal{O}_{2}(0)\rightarrow\sum_{j}C_{12}^{j}(x)\mathcal{O}_{j}(0)
-\]
+\end{equation}
 
 \end_inset
 
@@ -2965,9 +2956,9 @@ This can be understood as
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}\rightarrow\mathcal{L}_{\mathrm{SM}}+\mathcal{L}_{\mathrm{eff}}=\mathcal{L}_{\mathrm{SM}}+\sum_{j}\left(\frac{v}{\Lambda}\right)^{j}\mathcal{O}_{j}
-\]
+\end{equation}
 
 \end_inset
 
@@ -2997,9 +2988,9 @@ checkthis{need ref!!}
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}_{\mathrm{Wtb}}^{\mathrm{SM}}=-\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\gamma^{\mu}\mbox{\mathrm{V_{tb}}}\mbox{\mathrm{P_{L}}}\mathrm{t}\mathrm{W_{\mu}^{-}}+\mathrm{h.c.}
-\]
+\end{equation}
 
 \end_inset
 
@@ -3015,10 +3006,10 @@ key "Wtb-top-pair"
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \mathcal{L}_{\mathrm{Wtb}}^{\mathrm{eff}}= & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\gamma^{\mu}\left(\mathrm{V_{L}}\mathrm{P_{L}}+\mathrm{V_{R}}\mathrm{P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-} & \mathrm{(vector\, couplings)}\\
- & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\frac{i\sigma^{\mu\nu}q_{\nu}}{m_{W}}\left(\mathrm{g_{L}P_{L}+g_{R}P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-}+\mbox{\mathrm{h.c.}} & \mathrm{\left(tensor\, couplings\right)}
-\end{align*}
+ & -\frac{g}{\sqrt{2}}\bar{\mathrm{b}}\frac{i\sigma^{\mu\nu}q_{\nu}}{m_{W}}\left(\mathrm{g_{L}P_{L}+g_{R}P_{R}}\right)\mathrm{t}\mathrm{W}_{\mu}^{-}+\mbox{\mathrm{h.c.}} & \mathrm{\left(tensor\, couplings\right)}\nonumber 
+\end{align}
 
 \end_inset
 
@@ -3074,18 +3065,33 @@ One way of probing the presence of anomalous couplings is by analyzing the
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \frac{\mathrm{d}\Gamma}{\Gamma\cdot\mathrm{d}\cos\theta^{\star}}= & \frac{3}{8}\left(1+\cos\theta^{\star}\right)^{2}\cdot\mathrm{F}_{+}+\frac{3}{8}\left(1-\cos\theta^{\star}\right)^{2}\cdot\mathrm{F}_{-}\\
- & +\frac{3}{4}\sin^{2}\theta^{\star}\cdot\mathrm{F}_{0} & ,\quad\cos\theta^{\star}=\frac{\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}}{\left|\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}\right|}
-\end{align*}
+ & +\frac{3}{4}\sin^{2}\theta^{\star}\cdot\mathrm{F}_{0}\nonumber 
+\end{align}
 
 \end_inset
 
-with the helicity fractions 
+
+\end_layout
+
+\begin_layout Standard
+where the angle is caculated through
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\cos\theta^{\star}=\frac{\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}}{\left|\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}\right|}
+\end{equation}
+
+\end_inset
+
+and 
 \begin_inset Formula $\mathrm{F}_{j}\equiv\textnormal{\frac{\Gamma_{j}}{\Gamma}}$
 \end_inset
 
- 
+ denotes the W boson helicity fractions 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wbeyond"
@@ -3182,7 +3188,7 @@ Further observables to constrain anomalous couplings can be obtained by
 ct the center-of-mass system in the presence of additional jets with high
  precision.
  Thus a different quantization axis has to be found.
- Here, it has been shown that the spectator jet comes with a high polarization
+ Here, it has been shown that the spectator quark comes with a high polarization
  
 \begin_inset Formula $\rho$
 \end_inset
@@ -3200,9 +3206,9 @@ key "topPhysicsWBernreuther"
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\frac{\mathrm{d}\Gamma}{\Gamma\cdot\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}=\frac{1}{2}\left(1+\rho_{\mathrm{B}}\cdot c_{X}\cdot\cos\theta_{\mathrm{B,\, X}}\right),\qquad\cos\theta_{\mathrm{B,\, X}}=\frac{\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}}{\left|\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}\right|}.
-\]
+\begin{equation}
+\frac{\mathrm{d}\Gamma}{\Gamma\cdot\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}=\frac{1}{2}\left(1+\rho_{\mathrm{B}}\cdot c_{X}\cdot\cos\theta_{\mathrm{B,\, X}}\right),\qquad\cos\theta_{\mathrm{B,\, X}}=\frac{\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}}{\left|\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}\right|}.\label{eq:diff-cross-sec}
+\end{equation}
 
 \end_inset
 
@@ -3215,33 +3221,14 @@ The polarization
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \rho_{\mathrm{B}}=\frac{N_{\uparrow}-N_{\downarrow}}{N_{\uparrow}+N_{\downarrow}}
-\]
+\end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{what is polarization???}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-depends on the chosen basis 
+denotes the degree of how much the top spin actually coincide with the direction
+ of a chosen basis 
 \begin_inset Formula $\mathrm{B}$
 \end_inset
 
@@ -3286,7 +3273,7 @@ nuu{-96}{
 
 .
  Another basis with high polarization can be constructed by projecting the
- spectator jet along the beamline.
+ spectator quark along the beamline.
  Here, the polarizations are 
 \begin_inset Formula $\rho_{\mathrm{bml.}}^{\mathrm{t}}=$
 \end_inset
@@ -3344,7 +3331,7 @@ The factor
 \begin_inset Quotes eld
 \end_inset
 
-spin-analyzing power
+spin analyzing power
 \begin_inset Quotes erd
 \end_inset
 
@@ -3360,7 +3347,7 @@ key "Wbeyond"
 \begin_inset Quotes eld
 \end_inset
 
-spin-analyzer
+spin analyzer
 \begin_inset Quotes erd
 \end_inset
 
@@ -3377,6 +3364,17 @@ reference "fig:Quantization-of-the-top-spin"
 \end_inset
 
  visualizes the construction of the different angles in the top rest frame.
+ Like the W boson helicity fractions, those spin analyzing powers can be
+ considered as fundamental quantities.
+ However, the differential cross section in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:diff-cross-sec"
+
+\end_inset
+
+ depends on the product of the polarization and the spin analyzing power.
+ Therefore, the spin analyzing powers can not be measured directly.
 \end_layout
 
 \begin_layout Standard
@@ -3417,15 +3415,20 @@ Quantization of the top quark spin.
 
 \end_inset
 
-In this thesis, the top quark spin asymmetries will be measured.
+In this thesis, the top spin asymmetries which are related to the product
+ 
+\begin_inset Formula $\rho\cdot c_{\mathrm{X}}$
+\end_inset
+
+ will be measured.
  These are defined as follows:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-A_{\mathrm{B,\, X}}=\frac{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)-N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)+N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}=\frac{1}{2}\rho_{\mathrm{B}}\cdot c_{\mathrm{X}}\left(\mathrm{V_{L},\, V_{R},\, g_{L},\, g_{R}}\right)
-\]
+\begin{equation}
+A_{\mathrm{X}}^{\mathrm{B}}=\frac{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)-N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)+N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}=\frac{1}{2}\rho_{\mathrm{B}}\cdot c_{\mathrm{X}}\left(\mathrm{V_{L},\, V_{R},\, g_{L},\, g_{R}}\right)
+\end{equation}
 
 \end_inset
 
@@ -3433,15 +3436,15 @@ A_{\mathrm{B,\, X}}=\frac{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)-N\left(\c
 \end_layout
 
 \begin_layout Standard
-Another interesting variable is the ratio between two top quark asymmetries
- for two different spin-analyzers in the same basis:
+Another interesting variable is the ratio between two top quark spin asymmetries
+ for two different spin analyzers in the same basis:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\frac{A_{\mathrm{B,\, X}}}{A_{\mathrm{B,\, X^{\prime}}}}=\frac{c_{\mathrm{X}}}{c_{\mathrm{X}^{\prime}}}
-\]
+\begin{equation}
+r_{\mathrm{XX}^{\prime}}\equiv\frac{A_{\mathrm{X}}^{\mathrm{B}}}{A_{\mathrm{X}^{\prime}}^{\mathrm{B}}}=\frac{c_{\mathrm{X}}}{c_{\mathrm{X}^{\prime}}}
+\end{equation}
 
 \end_inset
 
@@ -3449,29 +3452,339 @@ Another interesting variable is the ratio between two top quark asymmetries
 \end_layout
 
 \begin_layout Standard
-In combination with the W boson helicity fractions, these observables provide
- new insight into the coupling structure at the 
+In total 
+\begin_inset Formula $2\cdot3$
+\end_inset
+
+ asymmetries and 
+\begin_inset Formula $2$
+\end_inset
+
+ ratios can be constructed which is summarized in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-top-quark-spin-asymmetries-and-ratios"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-top-quark-spin-asymmetries-and-ratios"
+
+\end_inset
+
+The top quark spin asymmetries and ratios.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+muon
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bottom quark
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+neutrino
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{\frac{bottom\, quark}{muon}}$
+\end_inset
+
+ ratio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{\frac{neutrino}{muon}}$
+\end_inset
+
+ ratio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+spectator basis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{l}^{\mathrm{spec.}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{b}^{\mathrm{spec.}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $r_{bl}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $r_{\nu l}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+beamline basis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{l}^{\mathrm{bml.}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{b}^{\mathrm{bml.}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{\nu}^{\mathrm{bml.}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $r_{bl}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $r_{\nu l}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the context of the effective SM extension, the analysis of the top quark
+ spin asymmetries gives a model independent new insight into the coupling
+ structure at the 
 \begin_inset Formula $\mathrm{Wtb}$
 \end_inset
 
 -vertex.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{more...
- fundamental quantities!!!}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -3489,6 +3802,73 @@ name{WHIZARD}
 \end_inset
 
  Monte Carlo Generator
+\end_layout
+
+\begin_layout Standard
+To simulate events with anomalous top quark couplings, the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ Monte Carlo generator is used.
+ It has been designed for efficient calculation and simulation of multi-particle
+ scattering.
+ Matrix elements for leading order processes are automatically generated
+ as needed by the integrated 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{O'Mega}
+\end_layout
+
+\end_inset
+
+ matrix element generator.
+ The configuration is performed through a script file written in the general-pur
+pose programming language Caml (in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ this is called 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{SINADRIN}
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Besides the SM, other models like MSSM, little Higgs and anomalous couplings
+ are implemented.
 \end_layout
 
 \begin_layout Standard

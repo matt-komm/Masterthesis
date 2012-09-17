@@ -1006,9 +1006,9 @@ nuu{4}{T}
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \frac{\Delta p}{p}\approx10\%\qquad\mathrm{(at}\, p=\mathrm{1\, TeV)}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1596,9 +1596,10 @@ In the reconstruction by CMS, the anti-
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-d_{ij}=\min\left(\frac{1}{p_{\mathrm{T,}\, i}^{2}},\,\frac{1}{p_{\mathrm{T,}\, j}^{2}}\right)\cdot\frac{\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}}{R^{2}},\qquad d_{i}=\frac{1}{p_{\mathrm{T,}\, i}^{2}}
-\]
+\begin{align}
+d_{ij} & =\min\left(\frac{1}{p_{\mathrm{T,}\, i}^{2}},\,\frac{1}{p_{\mathrm{T,}\, j}^{2}}\right)\cdot\frac{\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}}{R^{2}}\\
+d_{i} & =\frac{1}{p_{\mathrm{T,}\, i}^{2}}
+\end{align}
 
 \end_inset
 
