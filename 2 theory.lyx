@@ -137,7 +137,7 @@ reference "tab:The-SM-Quarks"
  Each particle carries different charges.
  These determine if it can participate in electromagnetic (EM), in weak
  or in strong interactions.
- The interactions themselves are mediated by bosonic elementary particle
+ The interactions themselves are mediated by bosonic elementary particles
  with spin 
 \begin_inset Formula $s=1$
 \end_inset
@@ -1206,7 +1206,7 @@ This leads to
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Rightarrow\mathcal{L}=\underbrace{-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}}_{\mathrm{photon\, propagator}}+\underbrace{\bar{\Psi}\left(i\slashed\partial-m\right)\Psi}_{\mathrm{fermion\, propagator}}-\underbrace{q\bar{\Psi}\gamma_{\mu}\Psi A^{\mu}}_{\mathrm{interaction}},\qquad F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}
+\Rightarrow\mathcal{L}=\underbrace{-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}}_{\mathrm{photon\, propagator}}+\underbrace{\bar{\Psi}\left(i\slashed\partial-m\right)\Psi}_{\mathrm{fermion\, propagator}}-\underbrace{q\bar{\Psi}\gamma_{\mu}\Psi A^{\mu}}_{\mathrm{interaction\, vertex}},\qquad F_{\mu\nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}
 \end{equation}
 
 \end_inset
@@ -1219,8 +1219,9 @@ where additionally the already gauge invariant photon propagator has as
 \end_inset
 
  violates the invariance.
- Furthermore, at the interactions vertex, the conservation of angular momentum
- states that the photon is a boson with spin 
+ Furthermore, the conservation of angular momentum at the interaction vertex
+ and its degrees of freedom states that the photon is a boson with spin
+ 
 \begin_inset Formula $s=1$
 \end_inset
 
@@ -1230,8 +1231,8 @@ where additionally the already gauge invariant photon propagator has as
 \begin_layout Standard
 In conclusion, the Lagrangian density of the electromagnetic interactions
  is determined by requiring local gauge invariance.
- Weak and strong interactions are as well connected to a certain gauge group
- transformation.
+ Weak and strong interactions are as well connected to certain gauge group
+ transformations.
  However, experiments 
 \begin_inset ERT
 status open
@@ -1607,7 +1608,7 @@ The Glashow-Weinberg-Salam model accounts for the coupling of left-handed
 
 \end_inset
 
-Therefore, leptons and quarks are splitted into
+Therefore, lepton and quark fields are splitted into
 \end_layout
 
 \begin_layout Standard
@@ -1647,7 +1648,8 @@ and
 
 \end_inset
 
-The resulting Lagrangian density
+The right-handed neutrinos do not couple at all in the SM.
+ The resulting Lagrangian density
 \end_layout
 
 \begin_layout Standard
@@ -1709,7 +1711,7 @@ axial vector
 \begin_inset Quotes erd
 \end_inset
 
- (V-A).
+ (V-A structure).
  By using the chiral representation of a general field 
 \begin_inset Formula $\Psi=\left(\Psi_{\mathrm{L}},\,\Psi_{\mathrm{R}}\right)$
 \end_inset
@@ -1892,20 +1894,7 @@ For the masses of the electroweak gauge bosons, the
 \begin_inset Formula $\mathrm{U(1)\otimes SU(2)}$
 \end_inset
 
- invariant Lagrangian density 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add propagators for W,B?}
-\end_layout
-
-\end_inset
-
-
+ invariant Lagrangian density
 \end_layout
 
 \begin_layout Standard
@@ -1916,21 +1905,7 @@ checkthis{add propagators for W,B?}
 
 \end_inset
 
- contains amongst interactions terms the following after the symmetry breaking
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{leaf out propagators}
-\end_layout
-
-\end_inset
-
- :
+ contains amongst interactions terms the following after the symmetry breaking:
 \end_layout
 
 \begin_layout Standard
@@ -1943,23 +1918,7 @@ checkthis{leaf out propagators}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add masses}
-\end_layout
-
-\end_inset
-
- The 
+The 
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
@@ -2018,16 +1977,16 @@ Weinberg
 \end_inset
 
  boson.
- The mechanism of spontanous symmetry breaking finaly yields the following
- masses for the four bosons:
+ Thus, this mechanism of spontanous symmetry breaking yields the following
+ mass terms for the four bosons:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
-m_{\mathrm{Higgs}} & =\lambda v &  & m_{\mathrm{W}^{\pm}} & =\frac{1}{2}gv\\
-m_{\mbox{\mathrm{Z}}^{0}} & =\frac{1}{2}\sqrt{g^{2}+g^{\prime2}}v &  & m_{\gamma} & =0
-\end{align*}
+\begin{align}
+m_{\mathrm{Higgs}} & =\lambda v &  & m_{\mathrm{W}^{\pm}}=\frac{1}{2}gv\\
+m_{\mbox{\mathrm{Z}}^{0}} & =\frac{1}{2}\sqrt{g^{2}+g^{\prime2}}v &  & m_{\gamma}=0\nonumber 
+\end{align}
 
 \end_inset
 
@@ -2060,7 +2019,7 @@ where after the symmetry breaking a mass term for the electron, muon and
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathcal{L}=-\lambda_{d}^{ij}\bar{\mathrm{Q}}_{\mathrm{L}}^{i}\phi\cdot\mbox{\mathrm{d_{R}}}^{j}-\lambda_{u}^{ij}\epsilon^{ab}\bar{\mathrm{Q}}_{\mathrm{L,\,}a}^{i}\phi_{b}^{\dagger}\mathrm{u_{R}}^{j}+\mathrm{h.c.}
+\mathcal{L}=-\sum_{i}^{3}\sum_{j}^{3}\left(\lambda_{d}^{ij}\bar{\mathrm{Q}}_{\mathrm{L}}^{i}\phi\cdot\mbox{\mathrm{d_{R}}}^{j}+\lambda_{u}^{ij}\epsilon^{ab}\bar{\mathrm{Q}}_{\mathrm{L,\,}a}^{i}\phi_{b}^{\dagger}\mathrm{u_{R}}^{j}\right)+\mathrm{h.c.}
 \end{equation}
 
 \end_inset
@@ -2073,13 +2032,13 @@ and applying the rotations
 \begin_inset Formula $\mathrm{d_{L}}^{i}\rightarrow U_{d}^{ij}\mathrm{d_{L}}^{j}$
 \end_inset
 
-, the Lagrangian density can be written in the mass eigenstates
+, the Lagrangian density can be written in the quark mass eigenstates
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathcal{L}=-m_{d}^{i}\bar{\mathrm{d}}_{\mathrm{L}}^{i}\mathrm{d_{R}}^{i}-m_{u}^{i}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\mathrm{u_{R}}^{i}+\mathrm{h.c.}
+\mathcal{L}=-\sum_{i}^{3}\left(m_{d}^{i}\bar{\mathrm{d}}_{\mathrm{L}}^{i}\mathrm{d_{R}}^{i}+m_{u}^{i}\bar{\mathrm{u}}_{\mathrm{L}}^{i}\mathrm{u_{R}}^{i}\right)+\mathrm{h.c.}\,.
 \end{equation}
 
 \end_inset
@@ -2120,12 +2079,12 @@ Quantum Chromodynamics
 \begin_layout Standard
 Quantum Chromodynamics is the description of the strong interactions in
  which only partons (quarks and gluons) can participate in.
- The coupling charge is 
- The 
+ QCD demonstrates new effects through its non-abelian 
 \begin_inset Formula $\mathrm{SU(3)}$
 \end_inset
 
- gauge charge is 
+ gauge group.
+ The coupling charge is called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2134,12 +2093,40 @@ color
 \end_inset
 
 .
- QCD demonstrates new effects through its non-abelian 
+ It features also a 
 \begin_inset Formula $\mathrm{SU(3)}$
 \end_inset
 
- gauge group.
- Experiments have shown that no 
+ group with the states 
+\begin_inset Quotes eld
+\end_inset
+
+red
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+green
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+blue
+\begin_inset Quotes erd
+\end_inset
+
+ but its strength is always equal to one.
+ 
+\end_layout
+
+\begin_layout Standard
+Experiments have shown that no 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2158,7 +2145,7 @@ confinement
 \end_inset
 
 .
- Bounded states of quarks appear in color singulets of mesons (
+ Bounded states of quarks appear only in color singulets of mesons (
 \begin_inset Formula $\mathrm{q}\bar{\mathrm{q}}$
 \end_inset
 
@@ -2200,10 +2187,6 @@ However, QCD scattering processes can be calculated in a perturbative way
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 with 
 \begin_inset Formula $\mu_{R}$
 \end_inset
@@ -2236,7 +2219,7 @@ asymptotically free
 \end_layout
 
 \begin_layout Section
-The Top QuarK
+The Top Quark
 \end_layout
 
 \begin_layout Standard
@@ -2276,6 +2259,13 @@ key "pdg"
 \end_inset
 
 .
+ Thus, it is possible to probe the top quark and its properties directly.
+\end_layout
+
+\begin_layout Standard
+For this thesis, it is crucial that the spin orientation of the top quark
+ stays encoded in its decay products and is not lost due to non-perturbative
+ gluon radiation.
 \end_layout
 
 \begin_layout Subsection
@@ -2310,13 +2300,6 @@ key "ckmVtb"
 \end_inset
 
 .
- Thus, it is possible to probe the top quark and its properties directly.
-\end_layout
-
-\begin_layout Standard
-For this thesis, it is crucial that the spin orientation of the top quark
- stays encoded in its decay products and is not lost due to non-perturbative
- gluon radiation.
 \end_layout
 
 \begin_layout Standard
@@ -2659,7 +2642,7 @@ Measuring the top quark production cross sections and its properties is
  essential for understanding the electroweak symmetry breaking, since the
  top quark mass is in the vicinity of the Higgs potential vacuum expectation
  value 
-\begin_inset Formula $v={\textstyle \left(\sqrt{2}G_{\mathrm{F}}\right)^{-1/2}}\approx$
+\begin_inset Formula $v={\textstyle (\sqrt{2}G_{\mathrm{F}})^{-1/2}}\approx$
 \end_inset
 
 
@@ -2684,29 +2667,23 @@ status open
 \end_inset
 
  denotes the Fermi constant.
- It can be measured in 
+ It can be measured in beta decays.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pdg"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
 .
  Furthermore, new heavy particles are predicted by various extensions to
- the SM like SUSY or extra dimension models.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add some example ref for susy and extra dimension or overview
- paper}
-\end_layout
-
-\end_inset
-
-Those particles can decay into top quarks which changes the expected SM
+ the SM like SUper SYmmetry (SUSY) or extra dimension models.
+ Those particles can decay into top quarks which changes the expected SM
  cross sections.
  Also, loop corrections involving new particles or interactions may alter
  the V-A coupling structure.
@@ -3109,7 +3086,7 @@ Anomalous Couplings
 \end_layout
 
 \begin_layout Standard
-The effect of new particles or interactions to the top quark electroweak
+The effects of new particles or interactions to the top quark electroweak
  couplings can be parametrized by using the Operator Product Expansion (OPE).
  New products of operators may arise from new interactions at a higher energy
  scale 
@@ -3178,7 +3155,11 @@ checkthis{need ref!!}
 
 \end_inset
 
-can be extended in an effective coupling scenario 
+can be extended in an effective coupling scenario at the 
+\begin_inset Formula $\mathrm{Wtb}$
+\end_inset
+
+-vertex 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wtb-top-pair"
@@ -3235,8 +3216,11 @@ W Boson Helicity Fractions
 \end_layout
 
 \begin_layout Standard
-One way of probing the presence of anomalous couplings is by analyzing the
- W boson helicity fractions.
+One way of probing the presence of anomalous couplings at the 
+\begin_inset Formula $\mathrm{Wtb}$
+\end_inset
+
+-vertex is by analyzing the W boson helicity fractions.
  The W boson spin is quantized along its momentum in the top quark rest
  frame.
  The angle between the lepton in the W boson rest frame and the quantized
@@ -3266,12 +3250,12 @@ where the angle is caculated through
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\cos\theta^{\star}=\frac{\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}}{\left|\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}\right|}
+\cos\theta^{\star}=\frac{\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}}{\left|\vec{p}_{\mathrm{W}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{lepton}}^{\mathrm{(W)}}\right|}.
 \end{equation}
 
 \end_inset
 
-and 
+
 \begin_inset Formula $\mathrm{F}_{j}\equiv\textnormal{\frac{\Gamma_{j}}{\Gamma}}$
 \end_inset
 
@@ -3636,22 +3620,30 @@ r_{\mathrm{XX}^{\prime}}\equiv\frac{A_{\mathrm{X}}^{\mathrm{B}}}{A_{\mathrm{X}^{
 \end_layout
 
 \begin_layout Standard
-In total 
-\begin_inset Formula $2\cdot3$
-\end_inset
-
- asymmetries and 
-\begin_inset Formula $2$
-\end_inset
-
- ratios can be constructed which are summarized in table 
+In total three asymmetries, each in two bases, and two ratios can be constructed.
+ Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:The-top-quark-spin-asymmetries-and-ratios"
 
 \end_inset
 
-.
+ gives an overview for the analytically caculated asymmetries in the SM
+ case.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add values!}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
