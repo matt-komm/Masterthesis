@@ -1897,9 +1897,9 @@ A decision tree tries to identify signal- or background-like phase spaces
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 y(\vec{x})=\frac{1}{N_{\mathrm{trees}}}\cdot\sum_{j}^{N_{\mathrm{trees}}}\ln\left(\alpha_{j}\right)\cdot h_{j}(\vec{x}),
-\]
+\end{equation}
 
 \end_inset
 
@@ -1959,9 +1959,9 @@ name{AdaBoost}
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \alpha=\frac{1-\mathrm{err}}{\mathrm{err}}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -1975,6 +1975,13 @@ Through the normalization to
 
  and 
 \begin_inset Formula $1$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TMVAGuide"
+
 \end_inset
 
 .
