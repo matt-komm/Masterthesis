@@ -1812,7 +1812,14 @@ name{TMVA}
 \end_layout
 
 \begin_layout Standard
-The next paragraph describe the 
+To setup such a discriminator, the classifier method is first trained and
+ tested with simulated signal and background events.
+ For evaluation, a statistical independent simulated samples are needed
+ for a bias free comparison with actual data.
+\end_layout
+
+\begin_layout Standard
+The next paragraphs describe the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1835,8 +1842,50 @@ Boosted Decision and Regression Tree
 Projective likelihood estimator
 \end_layout
 
+\begin_layout Standard
+For each event in the evaluation, the Likelihood ratio
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{\mathrm{L}}(i)=\frac{\mathrm{L_{S}}(i)}{\mathrm{L_{S}}(i)+\mathrm{L_{B}}(i)}
+\]
+
+\end_inset
+
+is defined.
+ 
+\begin_inset Formula $\mathrm{L_{S(B)}}$
+\end_inset
+
+ is the product propability over all input variables from the training,
+ that the event is signal (background) like.
+ The resulting classifier ranges from 
+\begin_inset Formula $0$
+\end_inset
+
+ (= background-like) to 
+\begin_inset Formula $1$
+\end_inset
+
+ (= signal-like).
+ 
+\end_layout
+
+\begin_layout Standard
+This method has been chosen because it is not sensitive to correlations
+ within the input variables.
+ This is required to do not artificially alter the signal shape if cutted
+ on the classifier.
+\end_layout
+
 \begin_layout Paragraph*
-Boosted Decision and Regression Tree
+Boosted Decision and Regression Tree (BDT)
+\end_layout
+
+\begin_layout Standard
+A decision tree 
 \end_layout
 
 \begin_layout Standard
