@@ -1702,7 +1702,7 @@ status open
 
 
 \backslash
-name{TMVA}
+name{CMSSW}
 \end_layout
 
 \end_inset
@@ -1747,22 +1747,6 @@ status open
 
 
 \backslash
-name{CMSSW}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
 name{THETA}
 \end_layout
 
@@ -1785,6 +1769,74 @@ name{ROOT}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{TMVA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Toolkit for Multivariate Data Analysis with ROOT 
+(
+\lang american
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{TMVA}
+\end_layout
+
+\end_inset
+
+) is a C++ analysis framework.
+ It hosts various algorithms for multivariate classification.
+ In High Energy Physics (HEP), the provided classification in high dimensional
+ spaces is often used for further discriminating between signal and background
+ events after preselection.
+\end_layout
+
+\begin_layout Standard
+The next paragraph describe the 
+\begin_inset Quotes eld
+\end_inset
+
+Projective likelihood estimator
+\begin_inset Quotes eld
+\end_inset
+
+ and the 
+\begin_inset Quotes eld
+\end_inset
+
+Boosted Decision and Regression Tree
+\begin_inset Quotes erd
+\end_inset
+
+ algorithms which are applied in the analysis within this thesis.
+\end_layout
+
+\begin_layout Paragraph*
+Projective likelihood estimator
+\end_layout
+
+\begin_layout Paragraph*
+Boosted Decision and Regression Tree
 \end_layout
 
 \begin_layout Standard
