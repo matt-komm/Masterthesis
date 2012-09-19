@@ -1788,10 +1788,7 @@ name{TMVA}
 \end_layout
 
 \begin_layout Standard
-The Toolkit for Multivariate Data Analysis with ROOT 
-(
-\lang american
-
+The Toolkit for Multivariate Data Analysis with ROOT (
 \begin_inset ERT
 status open
 
@@ -1848,9 +1845,9 @@ For each event in the evaluation, the Likelihood ratio
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 y_{\mathrm{L}}(i)=\frac{\mathrm{L_{S}}(i)}{\mathrm{L_{S}}(i)+\mathrm{L_{B}}(i)}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1860,7 +1857,7 @@ is defined.
 \end_inset
 
  is the product propability over all input variables from the training,
- that the event is signal (background) like.
+ that the event is signal- (background-) like.
  The resulting classifier ranges from 
 \begin_inset Formula $0$
 \end_inset
@@ -1881,11 +1878,111 @@ This method has been chosen because it is not sensitive to correlations
 \end_layout
 
 \begin_layout Paragraph*
-Boosted Decision and Regression Tree (BDT)
+Boosted Decision Tree (BDT)
 \end_layout
 
 \begin_layout Standard
-A decision tree 
+A decision tree tries to identify signal- or background-like phase spaces
+ within the n-dimensional input variables space.
+ This is performed by cutting sequentially on every variable to select a
+ signal enhanced region.
+ But a single trained decision tree can be very unstable due to statistical
+ fluctuations in the training samples.
+ Therefore, many decision trees are constructed.
+ A stabilzed discriminator is derived by a majority vote over all trees.
+ Boosting increases the discriminator stability by applying additionally
+ weight factors for each decision tree based on its performance.
+ The Boosted Decision Tree (BDT) discriminator can be written as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y(\vec{x})=\frac{1}{N_{\mathrm{trees}}}\cdot\sum_{j}^{N_{\mathrm{trees}}}\ln\left(\alpha_{j}\right)\cdot h_{j}(\vec{x}),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $N_{\mathrm{trees}}$
+\end_inset
+
+ counts the number of decision trees.
+ The decision result of an individual tree is 
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ for an event 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ which takes the values 
+\begin_inset Formula $h_{j}=1$
+\end_inset
+
+ for signal-like and 
+\begin_inset Formula $h_{j}=-1$
+\end_inset
+
+ for background-like events.
+ 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+ notes the additional boosting weight.
+\end_layout
+
+\begin_layout Standard
+The used 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{AdaBoost}
+\end_layout
+
+\end_inset
+
+ algorithm, caculates the weights 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+ from the misclassifcation rate 
+\begin_inset Formula $\mathrm{err}$
+\end_inset
+
+ by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha=\frac{1-\mathrm{err}}{\mathrm{err}}.
+\]
+
+\end_inset
+
+Through the normalization to 
+\begin_inset Formula $\sum\alpha_{j}=\mathrm{const.}$
+\end_inset
+
+ the BDT discriminator ranges between 
+\begin_inset Formula $-1$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The BDT has been chosen for its stability and high discriminating performance
+ which exploits also correlations between the input variables.
 \end_layout
 
 \begin_layout Standard
