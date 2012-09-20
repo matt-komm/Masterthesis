@@ -110,7 +110,7 @@ The Large Hadron Collider
 \begin_layout Standard
 The Large Hadron Collider (LHC) is a proton-proton storage ring at the European
  Organization for Nuclear Research (CERN) in Geneva, Switzerland.
- It has a circumference of approximately 
+ It is build underground and has a circumference of approximately 
 \begin_inset ERT
 status open
 
@@ -367,7 +367,7 @@ nuu{1.9}{K}
 \end_inset
 
 .
- This allows the dipoles to be driven with a current of 
+ This allows the dipole magnets to be driven with a current of 
 \begin_inset ERT
 status open
 
@@ -380,7 +380,7 @@ nuu{11850}{A}
 
 \end_inset
 
- which produces a magnet field of 
+ which produce a magnet field of 
 \begin_inset ERT
 status open
 
@@ -394,8 +394,8 @@ nuu{8.33}{T}
 \end_inset
 
 .
- The magnets for both beams are integrated into one cold mass inside the
- cryostats (“twin-bore” design).
+ Magnets for both beams are integrated into one cold mass inside the cryostats
+ (“twin-bore” design).
  1232 dipole magnets are needed for deflection.
  Additionally, around 450 quadrupole magnets for focusing and approximately
  4800 magnets for orbit correction are installed.
@@ -538,8 +538,24 @@ key "pressLHCrecord"
 \end_inset
 
 .
- The proton-proton run finished 2011 with a delivered integrated luminosity
- of 
+ The proton-proton run program at 
+\begin_inset Formula $\sqrt{s}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{7}{TeV}
+\end_layout
+
+\end_inset
+
+ finished 2011 with a delivered integrated luminosity of 
 \begin_inset ERT
 status open
 
@@ -657,20 +673,6 @@ The used coordinate system by CMS is as follows: The origin is the interaction
 \end_inset
 
  inside the xy plane.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{is RF wrong}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1211,7 +1213,7 @@ nuu{1.5}{MB}
  Here, the more complex High Level Trigger (HLT) software decides the storing
  of events.
  By reconstructing the full event data which uses all detector sub systems,
- it singles out the interesting events and reduces the rate from 
+ it further singles out interesting events and reduces the rate from 
 \begin_inset ERT
 status open
 
@@ -1254,7 +1256,8 @@ Tier-1
 \begin_inset Quotes erd
 \end_inset
 
- of the Worldwide LHC Computing Grid (WLCG) 
+ of the Worldwide LHC Computing Grid (WLCG) to be accessed from experimentalists
+ around the world 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMStechnicalReport"
@@ -1420,7 +1423,7 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
- muons are then found in the vicinity of hadrons.
+ muons are then found in the vicinity of hadronic activity.
  
 \begin_inset Quotes eld
 \end_inset
@@ -1568,7 +1571,8 @@ Jet definition in different scenarios of additional particles.
 \begin_layout Standard
 Soft gluons emitted from a parton during the hadronization produces additionally
  particles with low momenta that should not be left out of the jet construction.
- However, particles originating from other interactions should not be clustered.
+ However, low energetic particles originating from other interactions should
+ not be clustered.
  Those may sum up and have a significantly wrong input to the jet.
  Suppressing this infrared accumulation by setting a minimum momentum threshold
  (
@@ -1597,16 +1601,22 @@ In the reconstruction by CMS, the anti-
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-d_{ij} & =\min\left(\frac{1}{p_{\mathrm{T,}\, i}^{2}},\,\frac{1}{p_{\mathrm{T,}\, j}^{2}}\right)\cdot\frac{\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}}{R^{2}}\\
-d_{i} & =\frac{1}{p_{\mathrm{T,}\, i}^{2}}
+d_{ij} & =\min\left(\frac{1}{p_{\mathrm{T,}\, i}^{2}},\,\frac{1}{p_{\mathrm{T,}\, j}^{2}}\right)\cdot\frac{\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}}{R^{2}}
 \end{align}
 
 \end_inset
 
-
+and 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+d_{i}=\frac{1}{p_{\mathrm{T,}\, i}^{2}}
+\end{equation}
+
+\end_inset
+
 between all proto-jets 
 \begin_inset Formula $i$
 \end_inset
