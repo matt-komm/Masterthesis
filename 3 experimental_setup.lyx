@@ -1710,6 +1710,94 @@ name{CMSSW}
 
 \end_layout
 
+\begin_layout Standard
+The CMS SoftWare (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{CMSSW}
+\end_layout
+
+\end_inset
+
+) framework provides a collection of software packages for simulation and
+ reconstruction.
+ The Event Data Model (EDM) acts as a common interface between the different
+ packages.
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{CMSSW}
+\end_layout
+
+\end_inset
+
+ job is configured by a script file which specifies the inputs and outputs
+ as well as the intermediate analysis module chain.
+ This script file is passed to the cmsRun executable 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMSSW"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For splitting and running large 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{CMSSW}
+\end_layout
+
+\end_inset
+
+ jobs on the WLCG, the CMS Remote Analysis Builder (CRAB) provides an easy
+ to use configuration and submittion as well as job status tracking 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "crab"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For the analysis, the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{CMSSW}
+\end_layout
+
+\end_inset
+
+ version 4.2.8 has been used for event reconstruction, skimming and simulation.
+\end_layout
+
 \begin_layout Subsection
 \begin_inset ERT
 status open
@@ -1753,6 +1841,96 @@ name{THETA}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{THETA}
+\end_layout
+
+\end_inset
+
+ framework provides tools for template-based statistical modeling and inference.
+ A model is defined by a set of histograms (templates), parameters and observabl
+es.
+ A simple observable 
+\begin_inset Formula $O$
+\end_inset
+
+ within a model is constructed for example by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+O(\vec{p})=\sum t_{i}\cdot p_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with the templates 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ and the parameters 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{THETA}
+\end_layout
+
+\end_inset
+
+ provides then various producers to obtain a statistical inference by comparing
+ for example model with real data.
+ Producers are available to perform frequentist or Bayesian methods including
+ maximum likelihood estimator, marginalization using Markov-Chain Monte-Carlo
+ and many more 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "THETA"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Here, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{THETA}
+\end_layout
+
+\end_inset
+
+ is used to produce toy samples for propagation of error and to obtain a
+ data driven yield estimate through a fit.
 \end_layout
 
 \begin_layout Subsection
@@ -1803,14 +1981,14 @@ name{TMVA}
 
 ) is a C++ analysis framework.
  It hosts various algorithms for multivariate classification.
- In High Energy Physics (HEP), the provided classification in high dimensional
- spaces is often used for further discriminating between signal and background
+ In High Energy Physics (HEP), such classifications in high dimensional
+ spaces are often used for further discriminating between signal and background
  events after preselection.
 \end_layout
 
 \begin_layout Standard
-To setup such a discriminator, the classifier method is first trained and
- tested with simulated signal and background events.
+To setup a discriminator for classification, the classifier method is first
+ trained and tested with simulated signal and background events.
  For evaluation, a statistical independent simulated samples are needed
  for a bias free comparison with actual data.
 \end_layout
