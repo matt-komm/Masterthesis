@@ -3002,7 +3002,22 @@ The effects of new particles or interactions to the top quark electroweak
 \end_inset
 
 .
- Those can be develop around their spatial separation 
+ Those can be develop around their spatial separation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{O}_{1}(x)\mathcal{O}_{2}(0)\rightarrow\sum_{j}C_{12}^{j}(x)\mathcal{O}_{j}(0),
+\end{equation}
+
+\end_inset
+
+with the complex functions 
+\begin_inset Formula $C_{12}^{j}(x)$
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "peskin"
@@ -3010,48 +3025,29 @@ key "peskin"
 \end_inset
 
 .
+ This can be understood as
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathcal{O}_{1}(x)\mathcal{O}_{2}(0)\rightarrow\sum_{j}C_{12}^{j}(x)\mathcal{O}_{j}(0)
+\mathcal{L}\rightarrow\mathcal{L}_{\mathrm{eff}}=\sum_{j}\frac{v^{2}}{\Lambda^{2}}C_{j}\cdot\mathcal{O}_{j}+\ldots
 \end{equation}
 
 \end_inset
 
-This can be understood as
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathcal{L}\rightarrow\mathcal{L}_{\mathrm{SM}}+\mathcal{L}_{\mathrm{eff}}=\mathcal{L}_{\mathrm{SM}}+\sum_{j}\left(\frac{v}{\Lambda}\right)^{j}\mathcal{O}_{j}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{need ref!!}
-\end_layout
-
-\end_inset
-
- where 
+where 
 \begin_inset Formula $v$
 \end_inset
 
- denotes the vacuum expectation value of the Higgs potential.
+ denotes the vacuum expectation value of the Higgs potential 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AS-minimalset"
+
+\end_inset
+
+.
  In the case of the top quark, the SM Lagrangian density 
 \end_layout
 

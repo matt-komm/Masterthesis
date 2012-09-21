@@ -117,7 +117,7 @@ Simulation
 \end_layout
 
 \begin_layout Standard
-Monte-Carlo (MC) events has been simulated for comparison with data.
+Monte-Carlo (MC) events have been simulated for comparison with data.
  Also background processes with the same signature as the single top production
  needs to be included in the analysis.
  The signature of the single top t-channel production with leptonic W boson
@@ -4676,6 +4676,18 @@ Top Quark Reconstruction
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/topquarkreco.png
+	lyxscale 10
+	scale 35
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
