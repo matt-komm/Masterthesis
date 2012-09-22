@@ -121,8 +121,9 @@ Monte-Carlo (MC) events have been simulated for comparison with data.
  Also background processes with the same signature as the single top production
  needs to be included in the analysis.
  The signature of the single top t-channel production with leptonic W boson
- decay involves two jets, where one is required as b-tagged jet, a lepton
- and missing transveral energy (MET) through the escaping neutrino.
+ decay (signal process) involves two jets, where one is required as b-tagged
+ jet, a lepton and missing transveral energy (MET) through the escaping
+ neutrino.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -130,7 +131,7 @@ reference "fig:The-signature-of-tchannel-top-prod"
 
 \end_inset
 
- shows the corresponding Feynman diagram.
+ shows how this is derived from the Feynman diagram.
 \end_layout
 
 \begin_layout Standard
@@ -204,16 +205,16 @@ light
 \end_layout
 
 \begin_layout Standard
-The next sections will describe the used MC signal and background samples
- in the analysis.
+The next sections will describe the used MC samples for signal and background
+ simulation.
 \end_layout
 
 \begin_layout Section
-Simulated Background Samples
+The Simulated SM Samples
 \end_layout
 
 \begin_layout Standard
-The used background samples are listed in Table 
+The used SM samples are listed in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:The-background-samples"
@@ -221,7 +222,7 @@ reference "tab:The-background-samples"
 \end_inset
 
 .
- The simulated events of the MC generators 
+ Simulated events from the MC generators 
 \begin_inset ERT
 status open
 
@@ -229,7 +230,20 @@ status open
 
 
 \backslash
-name{Madgraph}
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
 \end_layout
 
 \end_inset
@@ -242,12 +256,12 @@ status open
 
 
 \backslash
-name{Powheg}
+name{Pythia6}
 \end_layout
 
 \end_inset
 
- are subjected to a hardonization simulation through 
+ are subjected to a hardonization simulation by interfacing with 
 \begin_inset ERT
 status open
 
@@ -260,7 +274,8 @@ name{Pythia6}
 
 \end_inset
 
- and then reconstructed by CMS through a 
+.
+ Then, after passing a 
 \begin_inset ERT
 status open
 
@@ -273,7 +288,8 @@ name{Geant4}
 
 \end_inset
 
- based simulation of the detector.
+-based simulation of the CMS detector, the resulting events are reconstructed
+ and can be compared to recorded data.
 \end_layout
 
 \begin_layout Standard
@@ -285,14 +301,14 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="4">
+<lyxtabular version="3" rows="18" columns="4">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -301,7 +317,7 @@ process
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -310,57 +326,23 @@ generator
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-events
+simulated events
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-cross section
-\end_layout
-
+cross section in 
+\begin_inset Formula $\mathrm{pb}$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -368,75 +350,59 @@ cross section
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+single top quark t-channel 
+\begin_inset Formula $(\mathrm{t})$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $3900171$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $41.92$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -444,75 +410,59 @@ cross section
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+single top quark t-channel 
+\begin_inset Formula $(\bar{\mathrm{t}})$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $1944826$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $22.65$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -520,75 +470,59 @@ cross section
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+single top quark s-channel 
+\begin_inset Formula $(\mathrm{t})$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $259971$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $3.19$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -596,37 +530,829 @@ cross section
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+single top quark s-channel 
+\begin_inset Formula $(\bar{\mathrm{t}})$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $137980$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $1.44$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark tW-channel 
+\begin_inset Formula $(\mathrm{t})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $814390$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.87$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark tW-channel 
+\begin_inset Formula $(\bar{\mathrm{t}})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $809984$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.87$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+QCD multijet (
+\begin_inset Formula $\mu$
+\end_inset
+
+ enriched)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{Pythia6}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $25080241$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $84679^{(\star)}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3701947$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $157.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $81352581$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $31314^{(\star\star)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{exclusive\,1\, jets}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $76042128$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.199\cdot4480.0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{exclusive\,2\, jets}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $25424787$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.174\cdot1435.0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{exclusive\,3\, jets}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7685944$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.638\cdot304.2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{exclusive\,4\, jets}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $13133738$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.163\cdot172.6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{Z}/\gamma^{\star}(\rightarrow\mathrm{l}^{+}\mathrm{l}^{-})+\mathrm{jets}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{MadGraph}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $36277961$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3048^{(\star\star)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{WW}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{Pythia6}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4225916$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $47.04$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{WZ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{Pythia6}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4265243$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $18.57$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{ZZ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{Pythia6}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4187885$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6.46$
+\end_inset
+
 
 \end_layout
 
@@ -650,7 +1376,59 @@ name "tab:The-background-samples"
 
 \end_inset
 
-The background samples
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The simulated SM samples
+\end_layout
+
+\end_inset
+
+The simulated SM samples.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $^{(\star)}$
+\end_inset
+
+ Cross section has been caculated by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{Pythia6}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Formula $^{(\star\star)}$
+\end_inset
+
+ Cross sections have been caculated in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WZxsec"
+
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{need to add and describe what DR for tW means?}
 \end_layout
 
 \end_inset
@@ -661,6 +1439,72 @@ The background samples
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+W+jets sample
+\end_layout
+
+\begin_layout Standard
+To account for the low MC statistic after event selection the inclusive
+ W+jets sample has been enriched in statistic by adding exclusive contributions
+ from the one to four additional jet phase spaces.
+ Furthermore, the samples are mainly dominated by light flavored jets (
+\begin_inset Quotes eld
+\end_inset
+
+light
+\begin_inset Quotes erd
+\end_inset
+
+=
+\begin_inset Formula $\mathrm{u,\, d,\, s}$
+\end_inset
+
+).
+ The signal selection requires however a b-tagged jet which selects the
+ statistically low heavy flavor content from this background events.
+ To gain confidence into the flavor contributions after merging the inclusive
+ and exclusive samples, the generated processes are renamed into the following
+ three categories due to their flavor content:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+W+bX
+\begin_inset Quotes erd
+\end_inset
+
+ are all events with at least one bottom quark during generation.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+W+cX
+\begin_inset Quotes erd
+\end_inset
+
+ are all the remaining events with at least one charm quark during generation.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+W+light flavor
+\begin_inset Quotes erd
+\end_inset
+
+ are all other events with no bottom or charm quark.
 \end_layout
 
 \begin_layout Section
@@ -686,7 +1530,7 @@ name{WHIZARD}
 
 \end_inset
 
-Simulated Signal Samples
+Simulated Signal Events
 \begin_inset Newline newline
 \end_inset
 
@@ -706,8 +1550,54 @@ name{WHIZARD}
 
 \end_layout
 
+\begin_layout Standard
+For simulation of single top quark production with anomalous couplings the
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ event generator is used.
+ It provides a model called 
+\begin_inset Quotes eld
+\end_inset
+
+SM_top_anom
+\begin_inset Quotes erd
+\end_inset
+
+ where the couplings 
+\begin_inset Formula $\mathrm{V_{L},\, V_{R},\, g_{L}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+ can be configured.
+\end_layout
+
 \begin_layout Subsection
 Sample Generation
+\end_layout
+
+\begin_layout Standard
+The generated processes are listed in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-simulated-processes-with-whizard"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -739,6 +1629,13 @@ name{WHIZARD}
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-simulated-processes-with-whizard"
 
 \end_inset
 
@@ -773,20 +1670,6 @@ name{WHIZARD}
 \end_inset
 
 .
- Subsequent tau decays were simulated by interfacing with the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Tauola}
-\end_layout
-
-\end_inset
-
- Monte-Carlo generator.
 \end_layout
 
 \end_inset
@@ -2030,8 +2913,173 @@ name{Tauola}
 
 \end_layout
 
+\begin_layout Standard
+Due to the trivial CKM matrix implementation within the chosen model, their
+ are no contributions from 
+\begin_inset Formula $\mathrm{Wqq}^{\prime}$
+\end_inset
+
+-vertices, where the quarks are not from the same quark generation.
+ The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ generator automatically mixes each defined process with a certain fraction
+ according to the internally caculated cross sections into one sample.
+\end_layout
+
+\begin_layout Standard
+The next steps in the sample generation are performed with the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{CMSSW}
+\end_layout
+
+\end_inset
+
+ framework.
+ Subsequent tau decays were simulated by interfacing with the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{Tauola}
+\end_layout
+
+\end_inset
+
+ Monte-Carlo generator.
+ Hadronization is peformed with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{Pythia6}
+\end_layout
+
+\end_inset
+
+.
+ For detector simulation and reconstruction, the Fast Simulation package
+ is applied which provides a 100 - 1000 faster simulation by approximating
+ the detector response 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FastSim"
+
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{what about pileup conditions?}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Approximatly 2,000,000 events have been simulated for ten different coupling
+ scenarios.
+ For quantifying a bias through the analysis, the motivation for the coupling
+ choices for these samples was to generate most extreme deviations from
+ the SM coupling values.
+ Therefore, four samples with pure 
+\begin_inset Formula $\mathrm{V_{L},\, V_{R},\, g_{L}}$
+\end_inset
+
+and 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+ couplings and six samples with mixes of 
+\begin_inset Formula $\mathrm{V_{L}}=1$
+\end_inset
+
+ and one additional 
+\begin_inset Formula $\mathrm{V_{R},\, g_{L}}$
+\end_inset
+
+ or 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+coupling for including interference effects have been generated.
+\end_layout
+
 \begin_layout Subsection
 Validation
+\end_layout
+
+\begin_layout Standard
+For the validation of the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ prediction, the SM coupling scenario (
+\begin_inset Formula $\mathrm{V_{L}}=1,\,\mathrm{V_{R}}=\mathrm{g_{L}}=\mathrm{g_{R}}=0$
+\end_inset
+
+) is compared to the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
+ single top t-channel sample.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:-SM-compared"
+
+\end_inset
+
+ shows kinematic distributions in variables related to the single top quark
+ production process.
 \end_layout
 
 \begin_layout Standard
@@ -2041,6 +3089,150 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{WHIZARD}
+\end_layout
+
+\end_inset
+
+ SM and Powheg comparison
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
 
 \end_layout
 
@@ -2060,7 +3252,14 @@ name{WHIZARD}
 
 \end_inset
 
- SM compared to an anomalous coupling scenario
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:-SM-compared"
+
+\end_inset
+
+SM compared to an anomalous coupling scenario
 \end_layout
 
 \end_inset
@@ -2078,10 +3277,6 @@ name{WHIZARD}
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -3941,20 +5136,12 @@ w helicity fractions
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
+\begin_layout Section
+Datasets
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
+\begin_layout Standard
+For the analysis, data from the first half of the 2011 run at 
 \begin_inset ERT
 status open
 
@@ -3962,30 +5149,28 @@ status open
 
 
 \backslash
-name{WHIZARD}
+nuu{7}{TeV}
 \end_layout
 
 \end_inset
 
- SM and Powheg comparison
-\end_layout
-
-\end_inset
-
-
-\end_layout
+ recorded from the CMS detector is used.
+ This correspondes to an integrated luminosity of 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+nuu{1165.595}{pb^{-1}}
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Section
-Datasets
+.
+ In table the required HTL triggers on the recorded data and run ranges
+ are listed.
 \end_layout
 
 \begin_layout Standard
@@ -3995,10 +5180,188 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+trigger
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+run
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+integrated luminosity
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{HLT}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Datasets
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-used-datasets"
+
+\end_inset
+
+The used datasets for the analysis.
 \end_layout
 
 \end_inset
@@ -4016,6 +5379,364 @@ Event Selection
 \end_layout
 
 \begin_layout Standard
+To select single top t-channel events from the recorded data the following
+ requirements have to be fullfilled:
+\end_layout
+
+\begin_layout Paragraph*
+Muon selection 
+\end_layout
+
+\begin_layout Standard
+Besides that one of the triggers in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-used-datasets"
+
+\end_inset
+
+ has been fired the muon needs to have:
+\end_layout
+
+\begin_layout Itemize
+a transveral momentum of 
+\begin_inset Formula $p_{\mathrm{T}}>20\,\mathrm{GeV}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+be measured within a pseudorapidity range of 
+\begin_inset Formula $|\eta|<2.1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+originates less than 
+\begin_inset Formula $<0.02\,\mathrm{cm}$
+\end_inset
+
+ away from the beamspot (2D impact parameter)
+\end_layout
+
+\begin_layout Itemize
+a relative isolation of 
+\begin_inset Formula $\frac{\mathrm{charged\, hadron\, iso+neutral\, hadron\, iso+photon\, hadron\, iso}}{p_{\mathrm{T}}}<0.15$
+\end_inset
+
+ within a cone of 
+\begin_inset Formula $\Delta R=0.4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+is a 
+\begin_inset Quotes eld
+\end_inset
+
+Global Muon
+\begin_inset Quotes erd
+\end_inset
+
+ and tagged as PF-
+\begin_inset Quotes erd
+\end_inset
+
+tight
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+more that 
+\begin_inset Formula $<10$
+\end_inset
+
+ hits in the silicon part of the inner tracker
+\end_layout
+
+\begin_layout Itemize
+at least 
+\begin_inset Formula $1$
+\end_inset
+
+ hit in the pixel tracker
+\end_layout
+
+\begin_layout Itemize
+segments in at least two ...
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{what does that mean?}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also, vetos for additional leptons in are applied.
+ Events are rejected if they contain one of the following:
+\end_layout
+
+\begin_layout Itemize
+a PF-
+\begin_inset Quotes erd
+\end_inset
+
+loose
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Global Muon
+\begin_inset Quotes erd
+\end_inset
+
+ with 
+\begin_inset Formula $p_{\mathrm{T}}>10\,\mathrm{GeV}$
+\end_inset
+
+ in 
+\begin_inset Formula $|\eta|<2.5$
+\end_inset
+
+ and a relative isolation of 
+\begin_inset Formula $<0.2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+a PF-
+\begin_inset Quotes erd
+\end_inset
+
+loose
+\begin_inset Quotes erd
+\end_inset
+
+ electron with 
+\begin_inset Formula $E_{\mathrm{T}}>15\,\mathrm{GeV}$
+\end_inset
+
+ in 
+\begin_inset Formula $|\eta|<2.5$
+\end_inset
+
+ and a relative isolation of 
+\begin_inset Formula $<0.2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Missing transversal energy
+\end_layout
+
+\begin_layout Standard
+The undetected neutrino reveals itself in large missing energy.
+ Events are selected if the missing transversal energy combined with the
+ muon leads to a transversal W boson mass above 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
+\end_inset
+
+.
+ The calculation is peformed by using
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathrm{T}}^{\mu}\cdot\left(1-\cos\theta\right)}.
+\end{equation}
+
+\end_inset
+
+The requirement reduces the QCD multijet background very strong.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+MTW QCD reduction.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Jets
+\end_layout
+
+\begin_layout Standard
+Two PF jets which are constructed by the anti-
+\begin_inset Formula $\mathrm{k_{T}}$
+\end_inset
+
+ algorithm with 
+\begin_inset Formula $R=0.5$
+\end_inset
+
+ are required.
+ The light jet originates from the quark which recoils against the W boson.
+ Therefore single top t-channel processes involves often at least one very
+ forward jet.
+ 
+\end_layout
+
+\begin_layout Standard
+For the event selection both jets needs to match the following:
+\end_layout
+
+\begin_layout Itemize
+a transversal momentum of 
+\begin_inset Formula $p_{\mathrm{T}}>30\,\mathrm{GeV}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+detected in a pseudorapidity range of 
+\begin_inset Formula $|\eta|<4.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+consists of more than one PF-object
+\end_layout
+
+\begin_layout Standard
+For jets within the detector barrel (
+\begin_inset Formula $|\eta|<2.4$
+\end_inset
+
+), additional requirements have to apply:
+\end_layout
+
+\begin_layout Itemize
+the neutral and charged EM energy fraction are below 
+\begin_inset Formula $<0.99$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+the neutral hadron energy fraction are below 
+\begin_inset Formula $<0.99$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{what's neutral charged had.
+ fraction}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+the charged multiplicity is larger than 
+\begin_inset Formula $>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To consider that a jet originates from a bottom quark the discriminator
+ of the Track Counting High Purity 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{TCHP}
+\end_layout
+
+\end_inset
+
+ algorithm needs to be larger than 
+\begin_inset Formula $>3.41$
+\end_inset
+
+.
+ The b-tagged jets has to be measured within the tracker (
+\begin_inset Formula $|\eta|<2.4$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+After applying all described cuts table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Cutflow"
+
+\end_inset
+
+ lists the obtained event yields from data and MC.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -4025,7 +5746,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Cutflow
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Cutflow"
+
+\end_inset
+
+Event yields of data and MC after selection.
 \end_layout
 
 \end_inset
@@ -4625,33 +6352,6 @@ Data
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Cutflow
-\end_layout
 
 \end_inset
 

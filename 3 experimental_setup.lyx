@@ -1652,7 +1652,7 @@ between all proto-jets
  are merged to a new proto-jet.
  The algorithm continues until all proto-jets have been considered as jets.
  Hereby, the parameter 
-\begin_inset Formula $R=0.3$
+\begin_inset Formula $R$
 \end_inset
 
  controls the cone sizes of the resulting jets.
