@@ -303,9 +303,9 @@ First, the distributions of
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 x_{i}^{\mathrm{sorted}}\rightarrow\tilde{x}_{i}\equiv\frac{i}{N},\quad y_{i}^{\mathrm{sorted}}\rightarrow\tilde{y}_{i}\equiv\frac{i}{N}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -341,9 +341,9 @@ Second, from the flattend distributions an
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \chi^{2}=\sum_{i}\sum_{j}\frac{\left(h_{ij}-e\right)^{2}}{\sigma_{e}^{2}}
-\]
+\end{equation}
 
 \end_inset
 
@@ -352,9 +352,9 @@ with the expectation value and its uncertainty
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 e=\frac{N}{n^{2}},\qquad\sigma_{e}=\sqrt{\frac{N}{n^{2}}}
-\]
+\end{equation}
 
 \end_inset
 
@@ -589,8 +589,161 @@ Examplary discrimantion power of BDT and Likelihood
 Unfolding
 \end_layout
 
+\begin_layout Standard
+After event selection and an additional cut on a MVA discriminator a single
+ top t-channel signal containing less background can be obtain from data.
+ A caculation of the top spin asymmetries from that can not yet be compared
+ to the theory prediction.
+ This is due to the smearing effects, finite resolution and the acceptance
+ of the detector and from the conducted cuts which bias the differential
+ 
+\begin_inset Formula ${\textstyle \frac{d\sigma}{d\cos\theta}}$
+\end_inset
+
+-shape.
+ Unfolding is a method to correct these effects from a measured distribution
+ .
+\end_layout
+
 \begin_layout Subsection
 Introduction
+\end_layout
+
+\begin_layout Standard
+Suppose a true distribution 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ leads to a measured distribution 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ due to smearing, finite resolution and acceptance effects.
+ This can be model by 
+\begin_inset Formula 
+\begin{equation}
+g(x)=\int f(y)A(x,\, y)\mathrm{d}y\label{eq:folding-integral}
+\end{equation}
+
+\end_inset
+
+which is called a Fredholm integral equation of the first kind.
+ The function 
+\begin_inset Formula $A(x,\, y)$
+\end_inset
+
+ encodes the behavior of the detector for a transformation 
+\begin_inset Formula $y\rightarrow x$
+\end_inset
+
+ which may even include non-linear responses.
+ One is then interested in solving this equation to obtain the true distribution
+ 
+\begin_inset Formula $f(y)$
+\end_inset
+
+ from the measured one 
+\begin_inset Formula $g(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+By discretizing the distributions within histograms, equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:folding-integral"
+
+\end_inset
+
+ can be written as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{x}=A\cdot\vec{y},\label{eq:unfolding}
+\end{equation}
+
+\end_inset
+
+where the vectors 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ are the measured and the true binned distributions.
+ The matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is called 
+\begin_inset Quotes eld
+\end_inset
+
+response matrix
+\begin_inset Quotes erd
+\end_inset
+
+ and encodes the effects of the detector.
+ It can be constructed through a MC simulation, where both distributions
+ 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ are accessable.
+ An element 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ of the response matrix is then proportional to the probability that a true
+ value in bin 
+\begin_inset Formula $j$
+\end_inset
+
+ is measured in bin 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:unfolding"
+
+\end_inset
+
+ can simply be solved by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\vec{y}=A^{-1}\vec{x}.
+\end{equation}
+
+\end_inset
+
+However, this solution can be very unstable.
+ An example is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Oscillations"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -662,7 +815,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+(a)
 \end_layout
 
 \end_inset
@@ -671,7 +824,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+(b)
 \end_layout
 
 \end_inset
@@ -680,7 +833,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+(c)
 \end_layout
 
 \end_inset
@@ -697,7 +850,28 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Oscillations.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Oscillations"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The ill-posed unfolding problem.
+\end_layout
+
+\end_inset
+
+The ill-posed unfolding problem.
+ (a): The true distribution.
+ (b): The measured distribution for constructing the response matrix in
+ solid and a second dashed distribution subjected to unfolding.
+ (c): The result from the unfolding of the dashed distribution by inversion
+ of the response matrix.
  Figures where taken from Ref.
  
 \begin_inset CommandInset citation
@@ -714,13 +888,162 @@ key "GCowan"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
+Large oscillations appear if one tries to unfold another distribution with
+ an inverted response matrix.
+ Those oscillations can already arise through statistical fluctuations.
+ To understand this behavior the Singular Value Decomposition (SVD) provides
+ more insight.
 \end_layout
+
+\begin_layout Standard
+SVD can be used to decompose even non-quadratic matrices 
+\begin_inset Formula $A$
+\end_inset
+
+ into the form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=U\cdot D\cdot V
+\end{equation}
+
+\end_inset
+
+with the diagonal matrix 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ The diagonal elements 
+\begin_inset Formula $D_{ii}$
+\end_inset
+
+ are called singular values.
+ They are per convention normalized as 
+\begin_inset Formula $D_{11}=1$
+\end_inset
+
+ and sorted as 
+\begin_inset Formula $D_{ii}>D_{i+1,\, i+1}$
+\end_inset
+
+.
+ To provide a simple example, the response matrix 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=\frac{1}{2}\cdot\left(\begin{array}{cc}
+1+\epsilon & 1-\epsilon\\
+1-\epsilon & 1+\epsilon
+\end{array}\right),\qquad\epsilon\in[0;\,1]
+\end{equation}
+
+\end_inset
+
+from a fictitious detector with the parameter 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ shall be analyzed.
+ If 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ goes to 
+\begin_inset Formula $1$
+\end_inset
+
+ the detector can measure a variable in both bins unmistakable.
+ For 
+\begin_inset Formula $\epsilon\rightarrow0$
+\end_inset
+
+ both bins get more smeared until they are not more distinguishable by the
+ detector.
+ 
+\end_layout
+
+\begin_layout Standard
+The SVD decomposition applied to 
+\begin_inset Formula $A$
+\end_inset
+
+ leads to the solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\vec{y} & =\underbrace{\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right)}_{=U^{-1}}\cdot\underbrace{\left(\begin{array}{cc}
+1 & 0\\
+0 & {\textstyle \frac{1}{\epsilon}}
+\end{array}\right)}_{=D^{-1}}\cdot\underbrace{\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right)}_{=V^{-1}}\cdot\left(\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right)\\
+ & =\underbrace{1}_{D_{11}^{-1}}\cdot\frac{1}{2}\left(\begin{array}{c}
+x_{1}+x_{2}\\
+x_{1}+x_{2}
+\end{array}\right)+\underbrace{\frac{1}{\epsilon}}_{D_{22}^{-1}}\cdot\frac{1}{2}\underbrace{\left(\begin{array}{c}
+x_{1}-x_{2}\\
+x_{2}-x_{1}
+\end{array}\right)}_{\mathrm{anti\, correlation}}\label{eq:anticorr}
+\end{align}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+for the unfolding problem.
+ The last term in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:anticorr"
+
+\end_inset
+
+ induces an anticorrelation between 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+.
+ If the singular value 
+\begin_inset Formula $D_{22}$
+\end_inset
+
+ goes to zero, this leads to oscillations.
+ Those dominate through the sorting of the SVDs the term multiplied by 
+\begin_inset Formula $D_{11}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In conclusion, this means that differences between two bins get unphysically
+ amplified through simple inversion if the response matrix contains very
+ small singular values.
+ For a tradeoff between unphysical fluctuations and physical meaning the
+ singular values need to be regularized.
 \end_layout
 
 \begin_layout Subsection
