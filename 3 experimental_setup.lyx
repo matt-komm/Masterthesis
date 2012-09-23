@@ -482,36 +482,27 @@ key "LHCmachine"
 Four major experiments are using the LHC beam collisions for analysis:
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{find reference for other experiments}
-\end_layout
-
-\end_inset
-
-
+\begin_layout Itemize
+ALICE (A Large Ion Collider Experiment) is a detector for studing heavy-ion
+ collisions and the properties of quark-gluon plasma.
 \end_layout
 
 \begin_layout Itemize
-ALICE
+ATLAS is a general purpose detector with a special donut-shaped magnet system.
+ Its physics program ranges from Higgs to SUSY and extra dimensions besides
+ others.
 \end_layout
 
 \begin_layout Itemize
-ATLAS
+CMS (Compact Muon Solenoid) is also a general purpose detector with a wide
+ ranging physics program.
+ Its design involves different technical solutions compared to ATLAS.
 \end_layout
 
 \begin_layout Itemize
-CMS
-\end_layout
-
-\begin_layout Itemize
-LHCb
+LHC-b (Large Hadron Collider beauty Experiment) has a forward sub-detector
+ system for measuring at large pseudorapidities.
+ It probes besides others the CP violation in B hadrons.
 \end_layout
 
 \begin_layout Standard
@@ -1816,35 +1807,6 @@ status open
 
 
 \backslash
-name{VISPA}
-\end_layout
-
-\end_inset
-
- and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{PXL}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
 name{THETA}
 \end_layout
 
@@ -1957,6 +1919,58 @@ name{ROOT}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{ROOT}
+\end_layout
+
+\end_inset
+
+ is a large C++ class collection for various tasks.
+ It is used for data analyses, plotting, storing, and monitoring in many
+ high energy physics experiments.
+ For example, the main file format for data exchange in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{CMSSW}
+\end_layout
+
+\end_inset
+
+ is a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{ROOT}
+\end_layout
+
+\end_inset
+
+ tree structure 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ROOT"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -2178,6 +2192,58 @@ key "TMVAGuide"
 \begin_layout Standard
 The BDT has been chosen for its stability and high discriminating performance
  which exploits also correlations between the input variables.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{VISPA}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{PXL}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Visual Physics Analysis (VISPA) is a development enviroment for physics
+ analyses.
+ It utilizes the Physics eXtension Library (PXL), a C++ toolkit, for designing
+ of modular analyses 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "VISPA"
+
+\end_inset
+
+.
+ Within the software, the user can write C++ or Python modules an connect
+ them graphically to create complex analysis logics.
+ During runtime, data objects are passed along these connections and trigger
+ methods within the modules where the user code is executed.
+\end_layout
+
+\begin_layout Standard
+Data objects are stored in the PXLIO file format.
+ For 
 \end_layout
 
 \begin_layout Standard

@@ -103,39 +103,37 @@ setupTextStyle
 Analysis Strategy
 \end_layout
 
+\begin_layout Standard
+The core of the analysis is the measurement of the top quark spin asymmetries.
+ Those can be caculated from the differential 
+\begin_inset Formula ${\textstyle \frac{d\sigma}{d\cos\theta}}$
+\end_inset
+
+ distributions, where the angle 
+\begin_inset Formula $\cos\theta$
+\end_inset
+
+ is calculated between the spin bases (spectator jet or beamline) and the
+ spin-analyzers (muon, b-tagged jet or neutrino) in the top quark rest frame.
+\end_layout
+
 \begin_layout Section
 The Observables
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-basic event variables
-\end_layout
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cos-helicity-after"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ displayes the observables after the event selection.
+ It shows that the constributions from background processes are still very
+ high.
+ Therefore, multivariant methods are used to enhance the signal over background
+ ratio.
 \end_layout
 
 \begin_layout Standard
@@ -152,6 +150,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cos-helicity-after"
+
+\end_inset
+
 Cos helicity after event selection
 \end_layout
 
@@ -173,8 +177,249 @@ Cos helicity after event selection
 Discrimination of Signal and Background
 \end_layout
 
+\begin_layout Standard
+For multivariant analyses (MVA), input variables have to be pict from the
+ event kinematics.
+ The choice for a certain variable is often made according to its significance
+ within the multivariant training phase.
+ This is case if one is solely interested in the highest discrimination
+ power with a minimum set of variables.
+\end_layout
+
+\begin_layout Standard
+For this analyses it is crucial to minimalize the influence on the shape
+ of the observables after a cut on a discriminator.
+ This requirement can be matched by choosing the most independent variables
+ which have no correlation to the observables.
+\end_layout
+
 \begin_layout Subsection
 Choice of Independent Variables
+\end_layout
+
+\begin_layout Standard
+One way of estimating a dependence between two variables is provided by
+ the Pearson product-moment correlation coefficient.
+ It is calculated between the variables 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r=\frac{\sum_{i}\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum_{i}\left(x_{i}-\bar{x}\right)^{2}}\sqrt{\sum_{i}\left(y_{i}-\bar{y}\right)^{2}}}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ are the means of the respective distributions.
+ It is however only sensitive to a linear dependence between two variables.
+ To detect even non-linear dependencies a more sophisticated method has
+ to be applied.
+\end_layout
+
+\begin_layout Standard
+An algorithm to test an independence hypothesis has been proposed by utilizing
+ a 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+-test 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "independentAlgo"
+
+\end_inset
+
+.
+ The algorithm is composed in two steps.
+ Suppose the distributions 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are subjected to testing for independence between them.
+\end_layout
+
+\begin_layout Standard
+First, the distributions of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are flattend.
+ This is performed by constructing a copula in which 
+\begin_inset Formula $x\rightarrow\tilde{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\rightarrow\tilde{y}$
+\end_inset
+
+ are only within the interval 
+\begin_inset Formula $\tilde{x},\,\tilde{y}\in[0;\,1]$
+\end_inset
+
+.
+ For a finite amount 
+\begin_inset Formula $N$
+\end_inset
+
+ of 
+\begin_inset Formula $(x,\, y)$
+\end_inset
+
+ pairs this can be done by sorting each 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ independently and reasigning
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{i}^{\mathrm{sorted}}\rightarrow\tilde{x}_{i}\equiv\frac{i}{N},\quad y_{i}^{\mathrm{sorted}}\rightarrow\tilde{y}_{i}\equiv\frac{i}{N}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Second, from the flattend distributions an 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ histogram 
+\begin_inset Formula $h$
+\end_inset
+
+ with equidistant binning is created.
+ If 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are independent, then the histogram content is expected to be compatible
+ with a 2d uniformed distribution.
+ To quantify the hypothesis a 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+-test by calculating
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\chi^{2}=\sum_{i}\sum_{j}\frac{\left(h_{ij}-e\right)^{2}}{\sigma_{e}^{2}}
+\]
+
+\end_inset
+
+with the expectation value and its uncertainty
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e=\frac{N}{n^{2}},\qquad\sigma_{e}=\sqrt{\frac{N}{n^{2}}}
+\]
+
+\end_inset
+
+is performed.
+ The probability of the flat hypothese follows a 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+-distribution with 
+\begin_inset Formula $n^{2}-(2n-1)$
+\end_inset
+
+ degrees of freedom.
+ The additional 
+\begin_inset Formula $2n-1$
+\end_inset
+
+ degrees of freedom are not present due to the copula transformation in
+ the first step.
+\end_layout
+
+\begin_layout Standard
+This algorithms has been fed with over 700 different variables, including
+ basic kinematics of one reconstructed particle and correlated variables
+ like 
+\begin_inset Formula $\Delta p_{\mathrm{T}}$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta R$
+\end_inset
+
+, angles and invariant masses between two particles which are defined during
+ the top quark event reconstruction.
+\end_layout
+
+\begin_layout Standard
+Confidence was gained in the algorithm as it first suggested the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ angles of all particles which are expected to be independent to any other
+ kinematic variable due to the detector geometry.
+ But these angles do not support any discrimination power between signal
+ and background processes and are therefore neglected in the MVA variable
+ choice.
+\end_layout
+
+\begin_layout Standard
+The ranking in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Variable-Ranking"
+
+\end_inset
+
+ has been created by summing up the calculated 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ for each observable against the one variable to test.
 \end_layout
 
 \begin_layout Standard
@@ -184,13 +429,15 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Variable-Ranking"
+
+\end_inset
+
 Variable Ranking
 \end_layout
 
@@ -206,6 +453,16 @@ Variable Ranking
 
 \begin_layout Subsection
 MVA Training
+\end_layout
+
+\begin_layout Standard
+To delay the choice for a certain amount of variables, 20 different discriminato
+rs for each BDT and Likelihood method has been trained.
+ Their used amount of variables from the ranking ranges up to one hundred
+ in steps of five.
+ Later in the analysis a tradeoff between a discriminator independent from
+ the observables which uses less variables and contradicting to that a discrimin
+ator with a high background suppression which uses many variables is made.
 \end_layout
 
 \begin_layout Standard
@@ -285,13 +542,6 @@ Likelihood ROC curves
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/BDT_ROC_selection-crop.pdf
-	lyxscale 10
-	scale 33
-
-\end_inset
-
 
 \end_layout
 
@@ -301,13 +551,6 @@ Likelihood ROC curves
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/Likelihood_ROC_selection-crop.pdf
-	lyxscale 10
-	scale 33
-
-\end_inset
-
 
 \end_layout
 
@@ -355,10 +598,6 @@ Introduction
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center

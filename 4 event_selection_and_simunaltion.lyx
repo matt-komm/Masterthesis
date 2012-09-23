@@ -6367,8 +6367,77 @@ Data
 
 \end_layout
 
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:basic-event-variables"
+
+\end_inset
+
+ shows basic kinematic distributions after the event selection.
+ For the single top t-channel process, the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{POWHEG}
+\end_layout
+
+\end_inset
+
+ sample is used.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:basic-event-variables"
+
+\end_inset
+
+basic event variables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Top Quark Reconstruction
+\end_layout
+
+\begin_layout Standard
+The reconstruction of the top quark is depicted in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-quark-reco"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6393,6 +6462,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-top-quark-reco"
+
+\end_inset
+
 The 
 \begin_inset Quotes eld
 \end_inset
@@ -6412,6 +6487,24 @@ top quark event view
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+It shows an event view within the analysis development environment 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{VISPA}
+\end_layout
+
+\end_inset
+
+ which is used as top quark hypothesis.
+ 
 \end_layout
 
 \begin_layout Standard
