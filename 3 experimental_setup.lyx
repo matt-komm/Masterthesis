@@ -483,7 +483,7 @@ Four major experiments are using the LHC beam collisions for analysis:
 \end_layout
 
 \begin_layout Itemize
-ALICE (A Large Ion Collider Experiment) is a detector for studing heavy-ion
+ALICE (A Large Ion Collider Experiment) is a detector for studying heavy-ion
  collisions and the properties of quark-gluon plasma.
 \end_layout
 
@@ -501,7 +501,7 @@ CMS (Compact Muon Solenoid) is also a general purpose detector with a wide
 
 \begin_layout Itemize
 LHC-b (Large Hadron Collider beauty Experiment) has a forward sub-detector
- system for measuring at large pseudorapidities.
+ system.
  It probes besides others the CP violation in B hadrons.
 \end_layout
 
@@ -1747,7 +1747,15 @@ name{CMSSW}
 
  job is configured by a script file which specifies the inputs and outputs
  as well as the intermediate analysis module chain.
- This script file is passed to the cmsRun executable 
+ This script file is passed to the 
+\begin_inset Quotes eld
+\end_inset
+
+cmsRun
+\begin_inset Quotes erd
+\end_inset
+
+ executable 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMSSW"
@@ -1772,7 +1780,7 @@ name{CMSSW}
 \end_inset
 
  jobs on the WLCG, the CMS Remote Analysis Builder (CRAB) provides an easy
- to use configuration and submittion as well as job status tracking 
+ to use configuration and submission as well as job status tracking 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "crab"
@@ -1936,7 +1944,7 @@ name{ROOT}
 
  is a large C++ class collection for various tasks.
  It is used for data analyses, plotting, storing, and monitoring in many
- high energy physics experiments.
+ high energy physics experiments and analyses.
  For example, the main file format for data exchange in 
 \begin_inset ERT
 status open
@@ -1971,6 +1979,20 @@ key "ROOT"
 \end_inset
 
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{more.....!!!!!}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2058,7 +2080,7 @@ is defined.
 \begin_inset Formula $\mathrm{L_{S(B)}}$
 \end_inset
 
- is the product propability over all input variables from the training,
+ is the product probability over all input variables from the training,
  that the event is signal- (background-) like.
  The resulting classifier ranges from 
 \begin_inset Formula $0$
@@ -2075,8 +2097,8 @@ is defined.
 \begin_layout Standard
 This method has been chosen because it is not sensitive to correlations
  within the input variables.
- This is required to do not artificially alter the signal shape if cutted
- on the classifier.
+ This is required to do not artificially alter the signal shape if cut on
+ the classifier.
 \end_layout
 
 \begin_layout Paragraph*
@@ -2091,7 +2113,7 @@ A decision tree tries to identify signal- or background-like phase spaces
  But a single trained decision tree can be very unstable due to statistical
  fluctuations in the training samples.
  Therefore, many decision trees are constructed.
- A stabilzed discriminator is derived by a majority vote over all trees.
+ A stabilized discriminator is derived by a majority vote over all trees.
  Boosting increases the discriminator stability by applying additionally
  weight factors for each decision tree based on its performance.
  The Boosted Decision Tree (BDT) discriminator can be written as
@@ -2148,11 +2170,11 @@ name{AdaBoost}
 
 \end_inset
 
- algorithm, caculates the weights 
+ algorithm, calculates the weights 
 \begin_inset Formula $\alpha_{j}$
 \end_inset
 
- from the misclassifcation rate 
+ from the misclassification rate 
 \begin_inset Formula $\mathrm{err}$
 \end_inset
 
@@ -2224,7 +2246,7 @@ name{PXL}
 \end_layout
 
 \begin_layout Standard
-The Visual Physics Analysis (VISPA) is a development enviroment for physics
+The Visual Physics Analysis (VISPA) is a development environment for physics
  analyses.
  It utilizes the Physics eXtension Library (PXL), a C++ toolkit, for designing
  of modular analyses 
@@ -2236,7 +2258,7 @@ key "VISPA"
 
 .
  Within the software, the user can write C++ or Python modules an connect
- them graphically to create complex analysis logics.
+ them graphically to create complex analysis logic.
  During runtime, data objects are passed along these connections and trigger
  methods within the modules where the user code is executed.
 \end_layout
@@ -2244,6 +2266,19 @@ key "VISPA"
 \begin_layout Standard
 Data objects are stored in the PXLIO file format.
  For 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{more......!!!}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
