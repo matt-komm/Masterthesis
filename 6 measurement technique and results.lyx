@@ -169,15 +169,108 @@ Fit to m(top)
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
+\begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/mTop.ps-crop.pdf
+	lyxscale 50
+	width 8.5cm
+
+\end_inset
+
 
 \end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/whizard_mtop.ps-crop.pdf
+	lyxscale 50
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+m(top)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -846,7 +939,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{sChannelTop}}*$
+\begin_inset Formula $\beta_{\mathrm{sChannelTop}}\,^{(\star)}$
 \end_inset
 
  
@@ -908,7 +1001,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{sChannelAntiTop}}*$
+\begin_inset Formula $\beta_{\mathrm{sChannelAntiTop}}\,^{(\star)}$
 \end_inset
 
  
@@ -970,7 +1063,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{tWChannelDRTop}}*$
+\begin_inset Formula $\beta_{\mathrm{tWChannelDRTop}}\,^{(\star)}$
 \end_inset
 
  
@@ -1032,7 +1125,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{tWChannelDRAntiTop}}*$
+\begin_inset Formula $\beta_{\mathrm{tWChannelDRAntiTop}}\,^{(\star)}$
 \end_inset
 
  
@@ -1094,7 +1187,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{TTJets}}*$
+\begin_inset Formula $\beta_{\mathrm{TTJets}}\,^{(\star)}$
 \end_inset
 
  
@@ -1156,7 +1249,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{W2LightFlavor}}*$
+\begin_inset Formula $\beta_{\mathrm{W2LightFlavor}}\,^{(\star)}$
 \end_inset
 
  
@@ -1218,7 +1311,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{W2cc}}*$
+\begin_inset Formula $\beta_{\mathrm{W2cc}}\,^{(\star)}$
 \end_inset
 
  
@@ -1280,7 +1373,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{W2bb}}*$
+\begin_inset Formula $\beta_{\mathrm{W2bb}}\,^{(\star)}$
 \end_inset
 
  
@@ -1342,7 +1435,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{ZLightFlavor}}*$
+\begin_inset Formula $\beta_{\mathrm{ZLightFlavor}}\,^{(\star)}$
 \end_inset
 
  
@@ -1404,7 +1497,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{Zcc}}*$
+\begin_inset Formula $\beta_{\mathrm{Zcc}}\,^{(\star)}$
 \end_inset
 
  
@@ -1466,7 +1559,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{Zbb}}*$
+\begin_inset Formula $\beta_{\mathrm{Zbb}}\,^{(\star)}$
 \end_inset
 
  
@@ -1528,7 +1621,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{WW}}*$
+\begin_inset Formula $\beta_{\mathrm{WW}}\,^{(\star)}$
 \end_inset
 
  
@@ -1590,7 +1683,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{WZ}}*$
+\begin_inset Formula $\beta_{\mathrm{WZ}}\,^{(\star)}$
 \end_inset
 
  
@@ -1652,7 +1745,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{ZZ}}*$
+\begin_inset Formula $\beta_{\mathrm{ZZ}}\,^{(\star)}$
 \end_inset
 
  
@@ -1742,7 +1835,251 @@ Results from fit to
 \begin_inset Newline newline
 \end_inset
 
-* log-normal distributions as input have been used.
+
+\begin_inset Formula $\,^{(\star)}$
+\end_inset
+
+ log-normal distributions as input have been used.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/mTop_fit.ps-crop.pdf
+	lyxscale 50
+	width 8.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Top mass distribution after fit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/lightjet_eta.wl.ps-crop.pdf
+	lyxscale 50
+	width 6.7cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/lightjet_eta_fit.ps-crop.pdf
+	lyxscale 50
+	width 8.5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:basic-event-variables"
+
+\end_inset
+
+basic event variables before and after fit
 \end_layout
 
 \end_inset
