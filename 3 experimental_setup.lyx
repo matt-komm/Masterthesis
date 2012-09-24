@@ -181,13 +181,6 @@ frac{1}{cm^{2}s}}
 
 \end_inset
 
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "LHCmachine"
-
-\end_inset
-
  at 
 \begin_inset Formula $\sqrt{s}=$
 \end_inset
@@ -200,8 +193,15 @@ status open
 
 
 \backslash
-checkthis{????}
+nuu{2.76}{TeV/nucleon}
 \end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCmachine"
 
 \end_inset
 
@@ -652,7 +652,7 @@ The used coordinate system by CMS is as follows: The origin is the interaction
  upwards orthogonal to x and z.
  To reflect the cylindrical symmetry of the detector, one often uses instead
  the pseudorapidity 
-\begin_inset Formula $\eta=-\ln\left(\tan{\textstyle \frac{\theta}{2}}\right)$
+\begin_inset Formula $\eta=-\ln{\textstyle \left(\tan\frac{\theta}{2}\right)}$
 \end_inset
 
  of the azimuthal angle 
@@ -820,7 +820,7 @@ nuu{20<r<55}{cm}
 
 .
  With these components, the tracking system is able to reconstruct particle
- tracks even in the high density environment of heavy-ion collisions.
+ tracks even in the high particle density environment of heavy-ion collisions.
 \end_layout
 
 \begin_layout Paragraph*
@@ -884,19 +884,26 @@ The complete ECAL covers a pseudorapidity range of
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add energy resolution}
+Its energy resolution can be parameterized as
 \end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left(\frac{\sigma_{E}^{2}}{E}\right)=\left(\frac{2.8\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}+\left(\frac{41.5\,\mathrm{MeV}}{E}\right)^{2}+\left(0.3\%\right)^{2}
+\end{equation}
 
 \end_inset
 
+with the measured values from Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ecalperformance"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph*
@@ -945,19 +952,28 @@ The HCAL consists of brass as absorber material which has a short interaction
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add energy resolution}
+The HCAL in combination with the ECAL can measure hadrons with a resolution
+ of
 \end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left(\frac{\sigma_{E}}{E}\right)^{2}\approx\left(\frac{100\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}+\left(5\%\right)^{2}.
+\end{equation}
 
 \end_inset
 
+More about the HCAL performance and how it effects the missing transveral
+ energy resolution can be found in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hcalperformance"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Paragraph*
@@ -1090,7 +1106,7 @@ For preselection of around
 \end_inset
 
  interactions/sec at design luminosity a trigger system is used to single
- out the interesting interactions.
+ out the interesting bunch crossings.
  This lowers the data rate to 
 \begin_inset Formula $10^{2}$
 \end_inset
@@ -1267,7 +1283,7 @@ The Particle-Flow Algorithm
 \end_layout
 
 \begin_layout Standard
-The particle-flow (PF) algorithm aims to precisely identify particle types
+The Particle-Flow (PF) algorithm aims to precisely identify particle types
  and their momenta by exploiting all detector sub systems.
  It creates particle hypotheses within an event by combining information
  from charged-particle tracks, calorimetry hits and muon tracks.
@@ -1305,7 +1321,7 @@ One expects, that a particle causes a charged-particle track and/or hits
  several calorimeter clusters as well as one or none track in the muon system.
  All this information are linked to reconstruct each single observed particle
  while possible double counting has to be taken care of.
- The particle flow algorithm is also independent of the event complexity.
+ The Particle-Flow algorithm is also independent of the event complexity.
  It depends mainly on the granularity of the particle building blocks 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1391,7 +1407,7 @@ key "muonID"
 \end_layout
 
 \begin_layout Standard
-The particle-flow algorithm categorizes the muons further.
+The Particle-Flow algorithm categorizes the muons further.
  A muon is 
 \begin_inset Quotes eld
 \end_inset
@@ -1400,8 +1416,8 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
-, if additionally less than a 10% fraction of the muons transversal momentum
- in total has been detected in a cone of 
+, if less than a 10% fraction of the muons transversal momentum in total
+ has been detected additionally in a cone of 
 \begin_inset Formula $\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}<0.3$
 \end_inset
 
@@ -1448,7 +1464,7 @@ Missing Transversal Energy
 \end_layout
 
 \begin_layout Standard
-After the particle-flow reconstruction the missing transversal energy can
+After the Particle-Flow reconstruction the missing transversal energy can
  be calculated.
  Due to conversation of momentum, the net transversal momentum has to be
  zero after a collision.
@@ -1849,9 +1865,9 @@ es.
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-O(\vec{p})=\sum t_{i}\cdot p_{i}
-\]
+\begin{equation}
+O(\vec{p})=\sum_{i}t_{i}\cdot p_{i}
+\end{equation}
 
 \end_inset
 
@@ -1896,7 +1912,6 @@ key "THETA"
 \end_layout
 
 \begin_layout Standard
-Here, 
 \begin_inset ERT
 status open
 
@@ -1909,8 +1924,8 @@ name{THETA}
 
 \end_inset
 
- is used to produce toy samples for propagation of error and to obtain a
- data driven yield estimate through a fit.
+ is used in the analysis to produce toy samples for propagation of error
+ and to obtain a data driven yield estimate through a fit.
 \end_layout
 
 \begin_layout Subsection
@@ -1942,7 +1957,7 @@ name{ROOT}
 
 \end_inset
 
- is a large C++ class collection for various tasks.
+ is a large C++ framework for various tasks.
  It is used for data analyses, plotting, storing, and monitoring in many
  high energy physics experiments and analyses.
  For example, the main file format for data exchange in 
@@ -1979,20 +1994,6 @@ key "ROOT"
 \end_inset
 
 .
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{more.....!!!!!}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -2033,10 +2034,10 @@ name{TMVA}
 \end_layout
 
 \begin_layout Standard
-To setup a discriminator for classification, the classifier method is first
- trained and tested with simulated signal and background events.
- For evaluation, a statistical independent simulated samples are needed
- for a bias free comparison with actual data.
+To setup a discriminator for classification, the classifier algorithm is
+ first trained and tested with simulated signal and background events.
+ For evaluation, statistical independent simulated samples are needed for
+ a bias free comparison with actual data.
 \end_layout
 
 \begin_layout Standard
@@ -2108,13 +2109,13 @@ Boosted Decision Tree (BDT)
 \begin_layout Standard
 A decision tree tries to identify signal- or background-like phase spaces
  within the n-dimensional input variables space.
- This is performed by cutting sequentially on every variable to select a
+ This is performed by cutting sequentially on the variables to select a
  signal enhanced region.
  But a single trained decision tree can be very unstable due to statistical
  fluctuations in the training samples.
  Therefore, many decision trees are constructed.
  A stabilized discriminator is derived by a majority vote over all trees.
- Boosting increases the discriminator stability by applying additionally
+ Boosting increases the discriminator stability further by applying additionally
  weight factors for each decision tree based on its performance.
  The Boosted Decision Tree (BDT) discriminator can be written as
 \end_layout
@@ -2190,7 +2191,7 @@ name{AdaBoost}
 \end_inset
 
 Through the normalization to 
-\begin_inset Formula $\sum\alpha_{j}=\mathrm{const.}$
+\begin_inset Formula $\sum\alpha_{j}=\mathrm{const}$
 \end_inset
 
  the BDT discriminator ranges between 
@@ -2246,26 +2247,7 @@ name{PXL}
 \end_layout
 
 \begin_layout Standard
-The Visual Physics Analysis (VISPA) is a development environment for physics
- analyses.
- It utilizes the Physics eXtension Library (PXL), a C++ toolkit, for designing
- of modular analyses 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "VISPA"
-
-\end_inset
-
-.
- Within the software, the user can write C++ or Python modules an connect
- them graphically to create complex analysis logic.
- During runtime, data objects are passed along these connections and trigger
- methods within the modules where the user code is executed.
-\end_layout
-
-\begin_layout Standard
-Data objects are stored in the PXLIO file format.
- For 
+Visual Physics Analysis (
 \begin_inset ERT
 status open
 
@@ -2273,12 +2255,75 @@ status open
 
 
 \backslash
-checkthis{more......!!!}
+name{VISPA}
 \end_layout
 
 \end_inset
 
+) is a development environment for physics analyses.
+ It utilizes the Physics eXtension Library (
+\begin_inset ERT
+status open
 
+\begin_layout Plain Layout
+
+
+\backslash
+name{PXL}
+\end_layout
+
+\end_inset
+
+), a C++ toolkit, for designing of modular analyses 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "VISPA"
+
+\end_inset
+
+.
+ Within the software, the user can write C++ or Python modules and connect
+ them graphically to create complex analysis logic.
+ During runtime, data objects are passed along these connections and trigger
+ methods within the modules where the user code is executed.
+\end_layout
+
+\begin_layout Standard
+Data objects are stored in the PXLIO file format.
+ There are various convertes available to read Comma-Separated Values (CSV)
+ files, the Les Houches Event format and the data formats from the experiments
+ CMS, ATLAS, Pierre Auger, ILC besides many more.
+\end_layout
+
+\begin_layout Standard
+Through the multifaceted areas of application, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{VISPA}
+\end_layout
+
+\end_inset
+
+ was used during the analysis for generator validation, event selection,
+ MVA training and evaluation, and for coordination and analyzation of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{THETA}
+\end_layout
+
+\end_inset
+
+ runs and results.
 \end_layout
 
 \begin_layout Standard
