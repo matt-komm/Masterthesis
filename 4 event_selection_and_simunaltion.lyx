@@ -2955,7 +2955,7 @@ name{CMSSW}
 \end_inset
 
  framework.
- Subsequent tau decays were simulated by interfacing with the 
+ Subsequent tau decays is simulated by interfacing with the 
 \begin_inset ERT
 status open
 
@@ -3019,7 +3019,7 @@ Approximatly 2,000,000 events have been simulated for ten different coupling
 \begin_inset Formula $\mathrm{V_{L},\, V_{R},\, g_{L}}$
 \end_inset
 
-and 
+ and 
 \begin_inset Formula $\mathrm{g_{R}}$
 \end_inset
 
@@ -3035,7 +3035,7 @@ and
 \begin_inset Formula $\mathrm{g_{R}}$
 \end_inset
 
-coupling to including interference effects have been generated.
+ coupling to including interference effects have been generated.
  
 \end_layout
 
@@ -3084,7 +3084,7 @@ status open
 \begin_inset Graphics
 	filename plots/000_000_000_000_000_000_000_0001.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3100,7 +3100,7 @@ status open
 \begin_inset Graphics
 	filename plots/n100_000_100_000_000_000_000_0001.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3138,7 +3138,7 @@ status open
 \begin_inset Graphics
 	filename plots/000_000_000_000_000_000_000_0003.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3154,7 +3154,7 @@ status open
 \begin_inset Graphics
 	filename plots/n100_000_100_000_000_000_000_0003.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3192,7 +3192,7 @@ status open
 \begin_inset Graphics
 	filename plots/000_000_000_000_000_000_000_0005.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3208,7 +3208,7 @@ status open
 \begin_inset Graphics
 	filename plots/n100_000_100_000_000_000_000_0005.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3249,11 +3249,8 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
 Top quark spin asymmetries.
  
-\lang american
-
 \begin_inset ERT
 status open
 
@@ -3300,7 +3297,7 @@ status open
 \begin_inset Graphics
 	filename plots/000_000_000_000_000_000_000_0007.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3316,7 +3313,7 @@ status open
 \begin_inset Graphics
 	filename plots/n100_000_100_000_000_000_000_0007.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -3357,11 +3354,8 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
 W boson helicity fractions.
  
-\lang american
-
 \begin_inset ERT
 status open
 
@@ -5269,7 +5263,7 @@ nuu{7}{TeV}
 
 \end_inset
 
- recorded from the CMS detector is used.
+ recorded with the CMS detector is used.
  This correspondes to an integrated luminosity of 
 \begin_inset ERT
 status open
@@ -5284,8 +5278,7 @@ nuu{1165.595}{pb^{-1}}
 \end_inset
 
 .
- In table the required HTL triggers on the recorded data and run ranges
- are listed.
+ In table the required HTL triggers on the recorded data are listed.
 \end_layout
 
 \begin_layout Standard
@@ -5629,7 +5622,20 @@ reference "tab:The-used-datasets"
 
 \end_inset
 
- has been fired the muon needs to have:
+ has been fired the muon needs to have 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{reformulate!!}
+\end_layout
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Itemize
@@ -5641,7 +5647,7 @@ a transveral momentum of
 \end_layout
 
 \begin_layout Itemize
-be measured within a pseudorapidity range of 
+been measured within a pseudorapidity range of 
 \begin_inset Formula $|\eta|<2.1$
 \end_inset
 
@@ -5649,7 +5655,7 @@ be measured within a pseudorapidity range of
 \end_layout
 
 \begin_layout Itemize
-originates less than 
+originated less than 
 \begin_inset Formula $<0.02\,\mathrm{cm}$
 \end_inset
 
@@ -5800,12 +5806,12 @@ The undetected neutrino reveals itself in large missing energy.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathrm{T}}^{\mu}\cdot\left(1-\cos\theta\right)}.
+M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathrm{T}}^{\mu}\cdot\left(1-\cos\left(\phi_{\mu}-\phi_{E_{\mathrm{T}}^{\mathrm{miss}}}\right)\right)}.
 \end{equation}
 
 \end_inset
 
-The requirement reduces the QCD multijet background very strong.
+This requirement reduces the QCD multijet background very strongly.
 \end_layout
 
 \begin_layout Standard
@@ -5813,10 +5819,6 @@ The requirement reduces the QCD multijet background very strong.
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -5860,7 +5862,7 @@ Two PF jets which are constructed by the anti-
 \end_layout
 
 \begin_layout Standard
-For the event selection both jets needs to match the following:
+For the event selection both jets need to match the following:
 \end_layout
 
 \begin_layout Itemize
@@ -5880,7 +5882,7 @@ detected in a pseudorapidity range of
 \end_layout
 
 \begin_layout Itemize
-consists of more than one PF-object
+consist of more than one PF-object
 \end_layout
 
 \begin_layout Standard
@@ -5888,11 +5890,11 @@ For jets within the detector barrel (
 \begin_inset Formula $|\eta|<2.4$
 \end_inset
 
-), additional requirements have to apply:
+), additional requirements are applied:
 \end_layout
 
 \begin_layout Itemize
-the neutral and charged EM energy fraction are below 
+the neutral and charged EM energy fractions are below 
 \begin_inset Formula $<0.99$
 \end_inset
 
@@ -5900,7 +5902,7 @@ the neutral and charged EM energy fraction are below
 \end_layout
 
 \begin_layout Itemize
-the neutral hadron energy fraction are below 
+the neutral hadron energy fraction is below 
 \begin_inset Formula $<0.99$
 \end_inset
 
@@ -5934,7 +5936,7 @@ the charged multiplicity is larger than
 
 \begin_layout Standard
 To consider that a jet originates from a bottom quark the discriminator
- of the Track Counting High Purity 
+ of the Track Counting High Purity (
 \begin_inset ERT
 status open
 
@@ -5947,12 +5949,12 @@ name{TCHP}
 
 \end_inset
 
- algorithm needs to be larger than 
+) algorithm needs to be larger than 
 \begin_inset Formula $>3.41$
 \end_inset
 
 .
- The b-tagged jets has to be measured within the tracker (
+ The b-tagged jet has to be measured within the tracker (
 \begin_inset Formula $|\eta|<2.4$
 \end_inset
 
@@ -6601,31 +6603,6 @@ Data
 
 \end_layout
 
-\begin_layout Standard
-Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:basic-event-variables"
-
-\end_inset
-
- shows basic kinematic distributions after the event selection.
- For the single top t-channel process, the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
- sample is used.
-\end_layout
-
 \begin_layout Section
 Top Quark Reconstruction
 \end_layout
@@ -6635,6 +6612,21 @@ The reconstruction of the top quark is depicted in figure
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:The-top-quark-reco"
+
+\end_inset
+
+.
+ It shows an event view which is used as top quark hypothesis within the
+ analysis development environment 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+name{VISPA}
+\end_layout
 
 \end_inset
 
@@ -6687,11 +6679,174 @@ top quark event view
 
 \end_inset
 
+The neutrino momentum 
+\begin_inset Formula $p_{\nu,\, z}$
+\end_inset
+
+ along the beamline has to be reconstructed from the missing transversal
+ energy.
+ This is performed by exploiting the conservation of energy and momentum
+ at the 
+\begin_inset Formula $\mathrm{W}\mu\nu$
+\end_inset
+
+-vertex
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{\mathrm{W}}^{2}=\left(\begin{array}{c}
+E_{\mathrm{W}}\\
+\vec{p}_{\mathrm{W}}
+\end{array}\right)^{2}=\left[\left(\begin{array}{c}
+E_{\mu}\\
+\vec{p}_{\mu}
+\end{array}\right)+\left(\begin{array}{c}
+E_{\nu}\\
+\vec{p}_{\nu}
+\end{array}\right)\right]^{2}.\label{eq:neutrino-conservation}
+\end{equation}
+
+\end_inset
+
+By applying a W boson mass constrain of 
+\begin_inset Formula $m_{\mathrm{W}}=80.4\,\mathrm{GeV}$
+\end_inset
+
+, the equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:neutrino-conservation"
+
+\end_inset
+
+ can be solved with respect to 
+\begin_inset Formula $p_{\nu,\, z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the approximation of a massless muon and neutrino equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:neutrino-conservation"
+
+\end_inset
+
+ leads to 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{\mathrm{W}}^{2}=\underbrace{m_{\mu}^{2}+m_{\nu}^{2}}_{\approx0}+2\cdot\left(\begin{array}{c}
+E_{\mu}\\
+p_{\mu,\, x}\\
+p_{\mu,\, y}\\
+p_{\mu,\, z}
+\end{array}\right)\cdot\left(\begin{array}{c}
+E_{\nu}\\
+p_{\nu,\,\mathrm{T}}\cdot\cos\phi\\
+p_{\nu,\,\mathrm{T}}\cdot\sin\phi\\
+p_{\nu,\,\mathrm{z}}
+\end{array}\right).
+\end{equation}
+
+\end_inset
+
+After rearranging, two solutions are given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{\nu,\, z}^{1,\,2}=\frac{1}{E_{\mu}^{2}-p_{\mu,\, z}^{2}}\left(a\cdot p_{\mu,\, z}\pm E_{\mu}\sqrt{a^{2}-E_{\mu}^{2}\cdot p_{\nu,\,\mathrm{T}}^{2}+p_{\mu,\, z}^{2}\cdot p_{\nu,\,\mathrm{T}}^{2}}\right)
+\end{equation}
+
+\end_inset
+
+with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a=\frac{m_{\mathrm{W}}^{2}}{2}+p_{\nu,\,\mathrm{T}}\cdot p_{\mu,\,\mathrm{T}}\cdot\cos\left(\phi_{\mu}-\phi_{\nu}\right)+p_{\mu,\, z}\cdot p_{\nu,\, z}.
+\end{equation}
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-It shows an event view within the analysis development environment 
+A more detailed derivation of the 
+\begin_inset Formula $p_{\nu,\, z}$
+\end_inset
+
+ solution is given in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DKdiploma"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For the solutions, two cases can arise which has to be dealt with separatly:
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Formula $p_{\nu,\, z}^{1,\,2}$
+\end_inset
+
+ solutions are real.
+ Here it has been demonstrated that is correct to chose the solution with
+ the smaller absolute longitudinal momentum 
+\begin_inset Formula $p_{\nu,\, z}=\min\left(p_{\nu,\, z}^{1};\, p_{\nu,\, z}^{2}\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $60\%$
+\end_inset
+
+ of this case 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DKdiploma"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Formula $p_{\nu,\, z}^{1,\,2}$
+\end_inset
+
+ solutions are complex.
+ This case can happen due to mismeasurement of the missing transversal energy.
+ Furthermore, the W boson mass constrain assumes only on-shell W bosons
+ but the W boson can also be off-shell which yields in 
+\begin_inset Formula $36\%$
+\end_inset
+
+ of all cases a larger mass than the constrain 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PHDThesisKIT"
+
+\end_inset
+
+.
 \begin_inset ERT
 status open
 
@@ -6699,12 +6854,53 @@ status open
 
 
 \backslash
-name{VISPA}
+checkthis{check with AN}
 \end_layout
 
 \end_inset
 
- which is used as top quark hypothesis.
+ This is solved by varing 
+\begin_inset Formula $E_{\mathrm{T}}^{\mathrm{miss}}$
+\end_inset
+
+ until a real solution emerges.
+\end_layout
+
+\begin_layout Standard
+After the neutrino 
+\begin_inset Formula $p_{\nu,\, z}$
+\end_inset
+
+ solution, the top quark is reconstructed by adding the four-momenta of
+ the b-tagged jet, the muon, and the neutrino.
+ 
+\end_layout
+
+\begin_layout Standard
+An additional top quark hypothesis is obtained by requiring that the resulting
+ top mass is in the vicinity of 
+\begin_inset Formula $m_{\mathrm{t}}=172\,\mathrm{GeV}.$
+\end_inset
+
+ This exploits also the possiblity that the light jet maybe actual from
+ the top quark decay.
+ The resulting top quark is called 
+\begin_inset Quotes eld
+\end_inset
+
+best top
+\begin_inset Quotes erd
+\end_inset
+
+ and the used jet 
+\begin_inset Quotes eld
+\end_inset
+
+best jet
+\begin_inset Quotes erd
+\end_inset
+
+.
  
 \end_layout
 
@@ -6743,7 +6939,8 @@ name{POWHEG}
 
 \end_inset
 
- single top t-channel sample after the event selection and reconstruction.
+ single top t-channel sample after the event selection and top quark reconstruct
+ion.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6776,7 +6973,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_leading_jet_pT.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -6792,7 +6989,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_lightjet_eta.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -6830,7 +7027,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_muon_pT.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -6846,7 +7043,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_muon_eta.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -6884,7 +7081,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_mt_wboson.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 
@@ -6900,7 +7097,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_top_mass.ps-crop.pdf
 	lyxscale 10
-	width 7.5cm
+	width 8cm
 
 \end_inset
 

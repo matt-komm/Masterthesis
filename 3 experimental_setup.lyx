@@ -823,6 +823,22 @@ nuu{20<r<55}{cm}
  tracks even in the high particle density environment of heavy-ion collisions.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{ad resolution, look DK diploma thesis}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph*
 Electromagnetic calorimeter
 \end_layout
@@ -895,6 +911,26 @@ Its energy resolution can be parameterized as
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{look DK diploma thesis}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 with the measured values from Ref.
  
 \begin_inset CommandInset citation
@@ -964,6 +1000,26 @@ The HCAL in combination with the ECAL can measure hadrons with a resolution
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{look DK diploma thesis}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 More about the HCAL performance and how it effects the missing transveral
  energy resolution can be found in Ref.
  
