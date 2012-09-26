@@ -1441,7 +1441,10 @@ status open
 
 
 \backslash
-checkthis{need to add and describe what DR for tW means?}
+checkthis{need to add and describe what DR for tW means?, how works the
+ incl.
+ excl.
+ mixing? ref}
 \end_layout
 
 \end_inset
@@ -3069,7 +3072,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
@@ -3867,7 +3870,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.292\pm0.002$
+\begin_inset Formula $0.292$
 \end_inset
 
 
@@ -3879,7 +3882,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.679\pm0.003$
+\begin_inset Formula $0.679$
 \end_inset
 
 
@@ -4013,7 +4016,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.164\pm0.002$
+\begin_inset Formula $0.164$
 \end_inset
 
 
@@ -4025,7 +4028,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.665\pm0.002$
+\begin_inset Formula $0.665$
 \end_inset
 
 
@@ -4159,7 +4162,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.111\pm0.002$
+\begin_inset Formula $0.111$
 \end_inset
 
 
@@ -4171,7 +4174,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.338\pm0.003$
+\begin_inset Formula $0.338$
 \end_inset
 
 
@@ -4305,7 +4308,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.563\pm0.002$
+\begin_inset Formula $0.563$
 \end_inset
 
 
@@ -4317,7 +4320,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.417\pm0.002$
+\begin_inset Formula $0.417$
 \end_inset
 
 
@@ -4451,7 +4454,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.246\pm0.002$
+\begin_inset Formula $0.246$
 \end_inset
 
 
@@ -4463,7 +4466,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.667\pm0.002$
+\begin_inset Formula $0.667$
 \end_inset
 
 
@@ -4597,7 +4600,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.209\pm0.002$
+\begin_inset Formula $0.209$
 \end_inset
 
 
@@ -4609,7 +4612,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.514\pm0.003$
+\begin_inset Formula $0.514$
 \end_inset
 
 
@@ -4765,7 +4768,7 @@ w helicity fractions
 \begin_layout Plain Layout
 
 \color red
-\begin_inset Formula $0.040\pm0.001$
+\begin_inset Formula $0.040$
 \end_inset
 
 
@@ -4779,7 +4782,7 @@ w helicity fractions
 \begin_layout Plain Layout
 
 \color red
-\begin_inset Formula $0.917\pm0.002$
+\begin_inset Formula $0.917$
 \end_inset
 
 
@@ -4913,7 +4916,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.032\pm0.001$
+\begin_inset Formula $0.032$
 \end_inset
 
 
@@ -4925,7 +4928,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.659\pm0.002$
+\begin_inset Formula $0.659$
 \end_inset
 
 
@@ -5059,7 +5062,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.006\pm0.001$
+\begin_inset Formula $0.006$
 \end_inset
 
 
@@ -5071,7 +5074,7 @@ w helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.106\pm0.002$
+\begin_inset Formula $0.106$
 \end_inset
 
 
@@ -5227,7 +5230,7 @@ w helicity fractions
 \begin_layout Plain Layout
 
 \color red
-\begin_inset Formula $0.869\pm0.002$
+\begin_inset Formula $0.869$
 \end_inset
 
 
@@ -5241,7 +5244,7 @@ w helicity fractions
 \begin_layout Plain Layout
 
 \color red
-\begin_inset Formula $0.124\pm0.002$
+\begin_inset Formula $0.124$
 \end_inset
 
 
@@ -5623,8 +5626,8 @@ Event Selection
 \end_layout
 
 \begin_layout Standard
-To select single top t-channel events from the recorded data the following
- requirements have to be fullfilled:
+To select single top t-channel events from the recorded data and MC samples
+ the following requirements have to be fullfilled:
 \end_layout
 
 \begin_layout Paragraph*
@@ -6696,12 +6699,21 @@ top quark event view
 
 \end_inset
 
-The neutrino momentum 
+
+\end_layout
+
+\begin_layout Standard
+The neutrino escapes the detector and is therefore only indirect observed
+ through missing transversal energy 
+\begin_inset Formula $E_{\mathrm{T}}^{\mathrm{miss}}=p_{\nu,\,\mathrm{T}}$
+\end_inset
+
+.
+ Its momentum 
 \begin_inset Formula $p_{\nu,\, z}$
 \end_inset
 
- along the beamline has to be reconstructed from the missing transversal
- energy.
+ along the beamline is unknown and has to be calculated.
  This is performed by exploiting the conservation of energy and momentum
  at the 
 \begin_inset Formula $\mathrm{W}\mu\nu$
@@ -6746,7 +6758,7 @@ reference "eq:neutrino-conservation"
 \end_layout
 
 \begin_layout Standard
-In the approximation of a massless muon and neutrino equation 
+In the approximation of a massless muon and neutrino the equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:neutrino-conservation"
@@ -6796,10 +6808,6 @@ a=\frac{m_{\mathrm{W}}^{2}}{2}+p_{\nu,\,\mathrm{T}}\cdot p_{\mu,\,\mathrm{T}}\cd
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 A more detailed derivation of the 
 \begin_inset Formula $p_{\nu,\, z}$
 \end_inset
@@ -6856,7 +6864,7 @@ The
 \begin_inset Formula $36\%$
 \end_inset
 
- of all cases a larger mass than the constrain 
+ of all cases a larger W boson mass than the constrain 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PHDThesisKIT"
@@ -6977,14 +6985,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -6997,10 +7001,29 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7013,32 +7036,33 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(a)
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-(b)
+
 \end_layout
 
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7049,12 +7073,28 @@ status open
 \end_inset
 
 
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7067,32 +7107,33 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(c)
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
 
 \begin_layout Plain Layout
-(d)
+
 \end_layout
 
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7105,10 +7146,29 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7121,30 +7181,21 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(e)
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-(f)
+
 \end_layout
 
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -7240,6 +7291,10 @@ name{POWHEG}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

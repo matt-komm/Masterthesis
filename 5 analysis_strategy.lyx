@@ -117,6 +117,28 @@ The core of the analysis is the measurement of the top quark spin asymmetries.
  spin-analyzers (muon, b-tagged jet or neutrino) in the top quark rest frame.
 \end_layout
 
+\begin_layout Standard
+The analysis strategy can be divided into the following two steps will are
+ described in detail in this chapter:
+\end_layout
+
+\begin_layout Itemize
+Measurement of single the top t-channel differential 
+\begin_inset Formula ${\textstyle \frac{d\sigma}{d\cos\theta}}$
+\end_inset
+
+ distributions from data using multivariant analysis techniques.
+\end_layout
+
+\begin_layout Itemize
+Unfold the distributions to correct for reconstruction and detector effects.
+\end_layout
+
+\begin_layout Standard
+An induced bias can be quantified by testing the analysis strategy with
+ the generated anomalous coupling samples.
+\end_layout
+
 \begin_layout Section
 The Observables
 \end_layout
@@ -994,12 +1016,12 @@ x_{1}\\
 x_{2}
 \end{array}\right)\\
  & =\underbrace{1}_{D_{11}^{-1}}\cdot\frac{1}{2}\left(\begin{array}{c}
-x_{1}+x_{2}\\
-x_{1}+x_{2}
-\end{array}\right)+\underbrace{\frac{1}{\epsilon}}_{D_{22}^{-1}}\cdot\frac{1}{2}\underbrace{\left(\begin{array}{c}
-x_{1}-x_{2}\\
-x_{2}-x_{1}
-\end{array}\right)}_{\mathrm{anti\, correlation}}\label{eq:anticorr}
+1\\
+1
+\end{array}\right)\cdot\left(x_{1}+x_{2}\right)+\underbrace{\frac{1}{\epsilon}}_{D_{22}^{-1}}\cdot\frac{1}{2}\underbrace{\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)}_{\mathrm{anti\, correlation}}\cdot\left(x_{1}-x_{2}\right)\label{eq:anticorr}
 \end{align}
 
 \end_inset
@@ -1017,11 +1039,11 @@ reference "eq:anticorr"
 \end_inset
 
  induces an anticorrelation between 
-\begin_inset Formula $x_{1}$
+\begin_inset Formula $y_{1}$
 \end_inset
 
  and 
-\begin_inset Formula $x_{2}$
+\begin_inset Formula $y_{2}$
 \end_inset
 
 .
@@ -1030,12 +1052,18 @@ reference "eq:anticorr"
 \end_inset
 
  goes to zero, this leads to oscillations.
- Those dominate through the sorting of the SVDs the term multiplied by 
-\begin_inset Formula $D_{11}$
+ The oscillation term dominates through the sorting of the SVDs 
+\begin_inset Formula $D_{ii}>D_{i+1,\, i+1}$
+\end_inset
+
+ the first term in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:anticorr"
+
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -1051,10 +1079,69 @@ Regularization
 \end_layout
 
 \begin_layout Standard
+The simplest regularization method is realized by performing a singular
+ value decomposition of the response matrix and dropping a certain amount
+ of SVDs during the matrix inversion.
+ This method is often called 
+\begin_inset Quotes eld
+\end_inset
+
+SVD Unfolding
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The regularization can be referred to as a hard cut off 
+\begin_inset Formula $\tau<n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{check formular!!!}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/unregulaziedUnfolding.ps-crop.pdf
+	lyxscale 40
+	width 8cm
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -1065,10 +1152,6 @@ Unregularized correlations
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1084,6 +1167,74 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/estimateEps07.ps-crop.pdf
+	lyxscale 40
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/estimateEps95.ps-crop.pdf
+	lyxscale 40
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
 
 \end_layout
 
@@ -1119,6 +1270,102 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/matrix_spectator_lepton.ps-crop.pdf
+	lyxscale 40
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/matrix_spectator_bjet.ps-crop.pdf
+	lyxscale 40
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/matrix_spectator_neutrino.ps-crop.pdf
+	lyxscale 40
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
 
 \end_layout
 
