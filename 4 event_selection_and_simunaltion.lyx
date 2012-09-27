@@ -2991,7 +2991,7 @@ name{Pythia6}
  the detector response 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "FastSim"
+key "FastSim,CMStechnicalReport"
 
 \end_inset
 
@@ -7291,10 +7291,6 @@ name{POWHEG}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

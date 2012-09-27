@@ -222,7 +222,7 @@ ator chain.
 The acceleration of protons starts at the Linac2.
  This continues with the Proton Synchrotron Booster (PSB), the Proton Synchrotro
 n (PS), the Super Proton Synchrotron (SPS) and finally the protons are injected
- into the LHC at an energy of 
+ into the LHC at an energy per proton of 
 \begin_inset ERT
 status open
 
@@ -244,19 +244,6 @@ key "LHCmachine"
 
 .
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{referes to per proton energy}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -569,7 +556,7 @@ status open
 
 
 \backslash
-nuu{5.32}{fb^{-1}}
+nuu{5.57}{fb^{-1}}
 \end_layout
 
 \end_inset
@@ -582,21 +569,15 @@ status open
 
 
 \backslash
-nuu{5.37}{fb^{-1}}
+nuu{5.73}{fb^{-1}}
 \end_layout
 
 \end_inset
 
  for CMS 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add Ref}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCLumi"
 
 \end_inset
 
@@ -671,20 +652,9 @@ reference "fig:The-CMS-Experiment"
 
 \end_inset
 
- shows the CMS detector and its sub-systems 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{zähle alle componenten einmal kurz auf zum überblick}
-\end_layout
-
-\end_inset
-
-.
+ shows the CMS detector and its sub-systems which are mainly the inner tracker
+ (pixel and silicon tracker), the electromagnetic calorimeter, the hadron
+ calorimeter, the superconduction solenoid, and the muon detectors.
 \end_layout
 
 \begin_layout Standard
@@ -723,25 +693,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/CMS_3D.jpg
-	lyxscale 10
-	width 15cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{change picture or enhance quality}
-\end_layout
+	filename images/cms.pdf
+	lyxscale 20
+	width 16cm
 
 \end_inset
 
@@ -771,7 +725,7 @@ name "fig:The-CMS-Experiment"
 The CMS detector and its sub-systems 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "pic_cms_detector"
+key "CMStechnicalReport"
 
 \end_inset
 
@@ -890,7 +844,7 @@ status open
 
 
 \backslash
-checkthis{ad resolution, look DK diploma thesis}
+checkthis{add resolution, look DK diploma thesis}
 \end_layout
 
 \end_inset
@@ -964,7 +918,7 @@ Its energy resolution can be parameterized as
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left(\frac{\sigma_{E}^{2}}{E}\right)=\left(\frac{2.8\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}+\left(\frac{41.5\,\mathrm{MeV}}{E}\right)^{2}+\left(0.3\%\right)^{2}
+\left(\frac{\sigma_{E}^{2}}{E}\right)=\left(\frac{2.8\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}+\left(\frac{0.12\,\mathrm{GeV}}{E}\right)^{2}+\left(0.3\%\right)^{2}
 \end{equation}
 
 \end_inset
@@ -973,27 +927,9 @@ Its energy resolution can be parameterized as
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{look DK diploma thesis}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-with the measured values from Ref.
- 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "ecalperformance"
+key "cmsperformance"
 
 \end_inset
 
@@ -1062,22 +998,6 @@ The HCAL in combination with the ECAL can measure hadrons with a resolution
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{look DK diploma thesis}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 More about the HCAL performance and how it effects the missing transveral
  energy resolution can be found in Ref.
  
@@ -1091,7 +1011,7 @@ key "hcalperformance"
 \end_layout
 
 \begin_layout Paragraph*
-Magnet
+Solenoid coil
 \end_layout
 
 \begin_layout Standard
@@ -1593,18 +1513,18 @@ Missing Transversal Energy
 \end_layout
 
 \begin_layout Standard
-After the Particle-Flow reconstruction the missing transversal energy can
+After the Particle-Flow reconstruction, the missing transversal energy can
  be calculated.
- Due to conversation of momentum, the net transversal momentum has to be
- zero after a collision.
- Therefore by summing up all reconstructed particles and mirroring the azimuthal
- momentum two-vector one obtains the missing transversal energy.
+ Due to the conversation of momentum, the net transversal momentum has to
+ be zero after a collision.
+ Therefore by summing up all reconstructed particle's momenta and mirroring
+ the azimuthal momentum two-vector one obtains the missing transversal energy.
 \end_layout
 
 \begin_layout Standard
 Depending on the physics analysis, the missing transversal energy is often
- used to construct hypotheses about not directly measurable particles, like
- neutrinos or SUSY particles.
+ used to construct hypotheses about particles that cannot be detected directly
+ in CMS, like neutrinos or SUSY particles.
 \end_layout
 
 \begin_layout Subsection
@@ -1686,7 +1606,7 @@ Jet definition in different scenarios of additional particles
 \end_inset
 
 Jet definition in different scenarios of additional particles.
- The dark dotted gray ellipse shows the result, if not an infrared and collinear
+ The dark dotted gray ellipses show the result, if not an infrared and collinear
  safe algorithm is used.
 \end_layout
 
@@ -1709,9 +1629,9 @@ Soft gluons emitted from a parton during the hadronization produce additional
  particles with low momenta that should be clustered into the jet.
  However, low energetic particles originating from other interactions should
  be left out.
- Those may sum up and have a significantly wrong input to the jet.
- Suppressing this infrared accumulation by setting a minimum momentum threshold
- (
+ Those infrared accumulation may sum up and have a significantly wrong input
+ to the jet.
+ Suppressing this behavior by setting a minimum momentum threshold (
 \begin_inset Quotes eld
 \end_inset
 
@@ -1731,13 +1651,22 @@ In the CMS reconstruction, the anti-
 \end_inset
 
  algorithm is used.
+ It operates on 
+\begin_inset Quotes eld
+\end_inset
+
+proto-jets
+\begin_inset Quotes erd
+\end_inset
+
+ which are initially the reconstructed particles.
  Its core procedure is the iteratively calculation of the distances
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-d_{ij} & =\min\left(\frac{1}{p_{\mathrm{T,}\, i}^{2}},\,\frac{1}{p_{\mathrm{T,}\, j}^{2}}\right)\cdot\frac{\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}}{R^{2}}
+d_{ij} & =\min\left(\frac{1}{p_{\mathrm{T,}\, i}^{2}},\,\frac{1}{p_{\mathrm{T,}\, j}^{2}}\right)\cdot\frac{\Delta_{ij}}{R^{2}}
 \end{align}
 
 \end_inset
@@ -1753,22 +1682,6 @@ d_{i}=\frac{1}{p_{\mathrm{T,}\, i}^{2}}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{symbole und proto-jets erklären}
-\end_layout
-
-\end_inset
-
 between all proto-jets 
 \begin_inset Formula $i$
 \end_inset
@@ -1778,8 +1691,28 @@ between all proto-jets
 \end_inset
 
 .
- Proto-jets are initially the reconstructed particles.
- After the first calculation of the two distances, a proto-jet 
+ 
+\begin_inset Formula $\Delta_{ij}=\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}$
+\end_inset
+
+ denotes the distance in the 
+\begin_inset Formula $\eta\phi$
+\end_inset
+
+-plane between the two proto-jets and 
+\begin_inset Formula $p_{\mathrm{T}}$
+\end_inset
+
+ their transverse momenta.
+ After the first calculation of the two distances 
+\begin_inset Formula $d_{ij}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+, a proto-jet 
 \begin_inset Formula $i$
 \end_inset
 
@@ -1801,7 +1734,11 @@ between all proto-jets
 \begin_inset Formula $j$
 \end_inset
 
- are merged to a new proto-jet.
+ are merged to a new proto-jet by summing their four-momenta 
+\begin_inset Formula $p^{\mathrm{new}}=p^{i}+p^{j}$
+\end_inset
+
+.
  The algorithm continues until all proto-jets have been considered as jets.
  Hereby, the parameter 
 \begin_inset Formula $R$
@@ -1811,15 +1748,15 @@ between all proto-jets
 \end_layout
 
 \begin_layout Subsection
-Identification of Jet from b-Quarks
+Identification of Jets from b-Quarks
 \end_layout
 
 \begin_layout Standard
 Jet algorithms can not determine the original flavor of a hadronized quark.
  However, the relatively long decay time of B hadrons can be exploited for
- identifying jets which originate from bottom quarks.
- In a proton-proton collision, the hard interaction is often boosted against
- the lab frame.
+ identifying jets that originate from bottom quarks.
+ In a proton-proton collision, the hard interaction is often boosted with
+ respect to the lab frame.
  If a long-lived particle such as a B hadron is produced, it will fly a
  measurable distance away from the primary interaction vertex before decaying.
 \end_layout
@@ -1857,57 +1794,19 @@ For performing the analysis in this thesis, various software packages have
 \end_layout
 
 \begin_layout Subsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{CMSSW}
-\end_layout
-
-\end_inset
-
-
+CMS Software framework
 \end_layout
 
 \begin_layout Standard
-The CMS SoftWare (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{CMSSW}
-\end_layout
-
-\end_inset
-
-) framework provides a collection of software packages for simulation and
- reconstruction.
- The Event Data Model (EDM) acts as a common interface between the different
+The CMS software (CMSSW) framework provides a collection of software packages
+ for simulation and reconstruction.
+ The event data model (EDM) acts as a common interface between the different
  packages.
 \end_layout
 
 \begin_layout Standard
-A 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{CMSSW}
-\end_layout
-
-\end_inset
-
- job is configured by a script file which specifies the inputs and outputs
- as well as the intermediate analysis module chain.
+A CMSSW job is configured by a script file which specifies the inputs and
+ outputs as well as the intermediate analysis module chain.
  This script file is passed to the 
 \begin_inset Quotes eld
 \end_inset
@@ -1927,21 +1826,9 @@ key "CMSSW"
 \end_layout
 
 \begin_layout Standard
-For splitting and running large 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{CMSSW}
-\end_layout
-
-\end_inset
-
- jobs on the WLCG, the CMS Remote Analysis Builder (CRAB) provides an easy
- to use configuration and submission as well as job status tracking 
+For splitting and running large numbers of CMSSW jobs on the WLCG, the CMS
+ remote analysis builder (CRAB) provides a convenient configuration and
+ submission of jobs as well as status tracking 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "crab"
@@ -1952,7 +1839,9 @@ key "crab"
 \end_layout
 
 \begin_layout Standard
-For the analysis, the 
+For the analysis, the CMSSW version 4.2.8 has been used for the event reconstructi
+on, skimming and simulation.
+ 
 \begin_inset ERT
 status open
 
@@ -1960,47 +1849,23 @@ status open
 
 
 \backslash
-name{CMSSW}
+checkthis{find good refs - proceedings}
 \end_layout
 
 \end_inset
 
- version 4.2.8 has been used for event reconstruction, skimming and simulation.
+
 \end_layout
 
 \begin_layout Subsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{THETA}
-\end_layout
-
-\end_inset
-
-
+THETA
 \end_layout
 
 \begin_layout Standard
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{THETA}
-\end_layout
-
-\end_inset
-
- framework provides tools for template-based statistical modeling and inference.
- A model is defined by a set of histograms (templates), parameters and observabl
-es.
+The THETA framework provides tools for template-based statistical modeling
+ and inference.
+ A model is defined by a set of histograms (templates), parameters, and
+ observables.
  A simple observable 
 \begin_inset Formula $O$
 \end_inset
@@ -2011,7 +1876,7 @@ es.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-O(\vec{p})=\sum_{i}t_{i}\cdot p_{i}
+O(p_{1},\, p_{2},\ldots p_{n})=\sum_{i}t_{i}\cdot p_{i}
 \end{equation}
 
 \end_inset
@@ -2029,24 +1894,12 @@ with the templates
 \end_inset
 
 .
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{THETA}
-\end_layout
-
-\end_inset
-
- provides then various producers to obtain a statistical inference by comparing
- for example model with real data.
+ THETA provides then various producers to obtain a statistical inference
+ by e.g.
+ comparing models with real data.
  Producers are available to perform frequentist or Bayesian methods including
- maximum likelihood estimator, marginalization using Markov-Chain Monte-Carlo
- and many more 
+ maximum likelihood estimator (MLE), marginalization using markov-chain
+ monte-carlo (MCMC) besides others 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "THETA"
@@ -2057,81 +1910,18 @@ key "THETA"
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{THETA}
-\end_layout
-
-\end_inset
-
- is used in the analysis to produce toy samples for propagation of error
- and to obtain a data driven yield estimate through a fit.
+THETA is used in the analysis to produce toy samples for propagation of
+ error and to obtain a data driven yield estimate through a fit.
 \end_layout
 
 \begin_layout Subsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{ROOT}
-\end_layout
-
-\end_inset
-
-
+ROOT
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{ROOT}
-\end_layout
-
-\end_inset
-
- is a large C++ framework for various tasks.
+ROOT is a C++ framework for various tasks.
  It is used for data analyses, plotting, storing, and monitoring in many
- high energy physics experiments and analyses.
- For example, the main file format for data exchange in 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{CMSSW}
-\end_layout
-
-\end_inset
-
- is a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{ROOT}
-\end_layout
-
-\end_inset
-
- tree structure 
+ high energy physics experiments and analyses 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ROOT"
@@ -2139,50 +1929,28 @@ key "ROOT"
 \end_inset
 
 .
+ For example, the main file format for data exchange in CMSSW is a ROOT
+ tree structure.
 \end_layout
 
 \begin_layout Subsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{TMVA}
-\end_layout
-
-\end_inset
-
-
+Toolkit for Multivariate Data Analysis with ROOT
 \end_layout
 
 \begin_layout Standard
-The Toolkit for Multivariate Data Analysis with ROOT (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{TMVA}
-\end_layout
-
-\end_inset
-
-) is a C++ analysis framework.
+The Toolkit for Multivariate Data Analysis with ROOT (TMVA) is a C++ analysis
+ framework.
  It hosts various algorithms for multivariate classification.
- In High Energy Physics (HEP), such classifications in high dimensional
- spaces are often used for further discriminating between signal and background
- events after preselection.
+ In high energy physics, such classifications in high dimensional spaces
+ are often used to further discriminate between signal and background events
+ after preselection.
 \end_layout
 
 \begin_layout Standard
 To setup a discriminator for classification, the classifier algorithm is
  first trained and tested with simulated signal and background events.
  For evaluation, statistical independent simulated samples are needed for
- a bias free comparison with actual data.
+ a bias-free comparison with actual data.
 \end_layout
 
 \begin_layout Standard
@@ -2190,7 +1958,7 @@ The next paragraphs describe the
 \begin_inset Quotes eld
 \end_inset
 
-Projective likelihood estimator
+Projective Likelihood Estimator
 \begin_inset Quotes eld
 \end_inset
 
@@ -2202,11 +1970,11 @@ Boosted Decision and Regression Tree
 \begin_inset Quotes erd
 \end_inset
 
- algorithms which are applied in the analysis within this thesis.
+ algorithms, which are applied in the analysis.
 \end_layout
 
 \begin_layout Paragraph*
-Projective likelihood estimator
+Projective Likelihood Estimator
 \end_layout
 
 \begin_layout Standard
@@ -2243,8 +2011,8 @@ is defined.
 \begin_layout Standard
 This method has been chosen because it is not sensitive to correlations
  within the input variables.
- This is required to do not artificially alter the signal shape if cut on
- the classifier.
+ This is required in order not to artificially alter the signal shape if
+ the classifier is used to select a signal enhanced phase space.
 \end_layout
 
 \begin_layout Paragraph*
@@ -2260,7 +2028,7 @@ A decision tree tries to identify signal- or background-like phase spaces
  fluctuations in the training samples.
  Therefore, many decision trees are constructed.
  A stabilized discriminator is derived by a majority vote over all trees.
- Boosting increases the discriminator stability further by applying additionally
+ Boosting increases the discriminator stability further by applying additional
  weight factors for each decision tree based on its performance.
  The Boosted Decision Tree (BDT) discriminator can be written as
 \end_layout
@@ -2303,20 +2071,7 @@ where
 \end_layout
 
 \begin_layout Standard
-The used 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{AdaBoost}
-\end_layout
-
-\end_inset
-
- algorithm, calculates the weights 
+The used AdaBoost algorithm, calculates the weights 
 \begin_inset Formula $\alpha_{j}$
 \end_inset
 
@@ -2358,68 +2113,19 @@ key "TMVAGuide"
 \end_layout
 
 \begin_layout Standard
-The BDT has been chosen for its stability and high discriminating performance
+The BDT has been chosen for its stability and high discriminating performance,
  which exploits also correlations between the input variables.
 \end_layout
 
 \begin_layout Subsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{VISPA}
-\end_layout
-
-\end_inset
-
- and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{PXL}
-\end_layout
-
-\end_inset
-
-
+VISPA and PXL
 \end_layout
 
 \begin_layout Standard
-Visual Physics Analysis (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{VISPA}
-\end_layout
-
-\end_inset
-
-) is a development environment for physics analyses.
- It utilizes the Physics eXtension Library (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{PXL}
-\end_layout
-
-\end_inset
-
-), a C++ toolkit, for designing of modular analyses 
+Visual Physics Analysis (VISPA) is a development environment for physics
+ analyses.
+ It utilizes the Physics eXtension Library (PXL), a C++ toolkit, for designing
+ of modular analyses 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "VISPA"
@@ -2428,7 +2134,7 @@ key "VISPA"
 
 .
  Within the software, the user can write C++ or Python modules and connect
- them graphically to create complex analysis logic.
+ them graphically to create a complex analysis logic.
  During runtime, data objects are passed along these connections and trigger
  methods within the modules where the user code is executed.
 \end_layout
@@ -2437,37 +2143,13 @@ key "VISPA"
 Data objects are stored in the PXLIO file format.
  There are various convertes available to read Comma-Separated Values (CSV)
  files, the Les Houches Event format and the data formats from the experiments
- CMS, ATLAS, Pierre Auger, ILC besides many more.
+ CMS, ATLAS, Pierre Auger, and ILC besides others.
 \end_layout
 
 \begin_layout Standard
-Through the multifaceted areas of application, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{VISPA}
-\end_layout
-
-\end_inset
-
- was used during the analysis for generator validation, event selection,
- MVA training and evaluation, and for coordination and analyzation of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{THETA}
-\end_layout
-
-\end_inset
-
+Through the multifaceted areas of application, VISPA was used during the
+ analysis for generator validation, event selection, multivariante classificatio
+n training and evaluation, and for coordination and analyzation of THETA
  runs and results.
 \end_layout
 
