@@ -153,7 +153,7 @@ status open
 
 
 \backslash
-nuu{10^{32}}{
+nuu{10^{34}}{
 \backslash
 frac{1}{cm^{2}s}}
 \end_layout
@@ -193,7 +193,7 @@ status open
 
 
 \backslash
-nuu{2.76}{TeV/nucleon}
+nuu{2.76}{TeV}
 \end_layout
 
 \end_inset
@@ -213,16 +213,16 @@ reference "fig:The-CERN-accelerator"
 
 \end_inset
 
- shows the accelerator complex with the LHC, its experiments and the additional
- accelerators.
+ shows the accelerator complex with the LHC, its experiments and the pre-acceler
+ator chain.
  
 \end_layout
 
 \begin_layout Standard
 The acceleration of protons starts at the Linac2.
  This continues with the Proton Synchrotron Booster (PSB), the Proton Synchrotro
-n (PS), the Super Proton Synchrotron (SPS) and finally with an energy of
- 
+n (PS), the Super Proton Synchrotron (SPS) and finally the protons are injected
+ into the LHC at an energy of 
 \begin_inset ERT
 status open
 
@@ -235,7 +235,7 @@ nuu{450}{GeV}
 
 \end_inset
 
- the protons are injected into the LHC 
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "LHCmachine"
@@ -243,6 +243,20 @@ key "LHCmachine"
 \end_inset
 
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{referes to per proton energy}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -300,8 +314,8 @@ key "pic_cern_acc_complex"
 
 \end_inset
 
-After filling the LHC ring, the proton beams consists maximally of 2808
- bunches with a spacing of 
+After filling the LHC ring, the proton beams consist maximally of 2808 bunches
+ with a spacing of 
 \begin_inset ERT
 status open
 
@@ -397,8 +411,8 @@ nuu{8.33}{T}
  Magnets for both beams are integrated into one cold mass inside the cryostats
  (“twin-bore” design).
  1232 dipole magnets are needed for deflection.
- Additionally, around 450 quadrupole magnets for focusing and approximately
- 4800 magnets for orbit correction are installed.
+ Additionally, around 450 quadrupole magnets are installed for focusing
+ and approximately 4800 magnets are installed for orbit correction .
 \end_layout
 
 \begin_layout Standard
@@ -489,8 +503,8 @@ ALICE (A Large Ion Collider Experiment) is a detector for studying heavy-ion
 
 \begin_layout Itemize
 ATLAS is a general purpose detector with a special donut-shaped magnet system.
- Its physics program ranges from Higgs to SUSY and extra dimensions besides
- others.
+ Its scientific program covers the physics of the Higgs boson, super symmetry
+ and extra dimensions besides others.
 \end_layout
 
 \begin_layout Itemize
@@ -506,8 +520,9 @@ LHC-b (Large Hadron Collider beauty Experiment) has a forward sub-detector
 \end_layout
 
 \begin_layout Standard
-The first beams at injection energy were successfully circulating on 20th
- November 2009.
+After a breakdown during the first tests in September 2008, the full operation
+ started again on 20th November 2009 with successful circulating beams at
+ injection energy.
  In March 2010 the targeted beam energy of 
 \begin_inset ERT
 status open
@@ -572,7 +587,20 @@ nuu{5.37}{fb^{-1}}
 
 \end_inset
 
- for CMS.
+ for CMS 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add Ref}
+\end_layout
+
+\end_inset
+
+.
  In 2012 the beam energy has been raised to 
 \begin_inset ERT
 status open
@@ -595,10 +623,10 @@ The CMS Experiment
 
 \begin_layout Standard
 The Compact Muon Solenoid (CMS) is a general-purpose detector developed
- to record the proton-proton collisions at the high luminosity the LHC is
- providing.
+ to record the proton-proton collisions at the high luminosity that the
+ LHC provides.
  The physics program of the CMS collaboration involves the search for the
- Higgs boson and the detection or exclusion of supersymmetric particles
+ Higgs boson and the discovery or exclusion of supersymmetric particles
  (SUSY), new heavy vector bosons as well as extra dimensions.
  Besides that, precision measurements of the SM are performed like studies
  of QCD, electroweak and top quark physics.
@@ -607,7 +635,9 @@ The Compact Muon Solenoid (CMS) is a general-purpose detector developed
 \end_layout
 
 \begin_layout Standard
-The CMS detector is 
+The CMS detector has been designed with a cylindrical symmetry around the
+ beam pipe.
+ It is 
 \begin_inset ERT
 status open
 
@@ -641,12 +671,25 @@ reference "fig:The-CMS-Experiment"
 
 \end_inset
 
- shows the CMS detector and its sub-systems.
+ shows the CMS detector and its sub-systems 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{zähle alle componenten einmal kurz auf zum überblick}
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-The used coordinate system by CMS is as follows: The origin is the interaction
- point (IP).
+CMS uses the following coordinate system.
+ The interaction point (IP) is the origin.
  The z-axis matches the beamline.
  The x-axis points towards the center of the LHC ring and the y-axis points
  upwards orthogonal to x and z.
@@ -655,15 +698,15 @@ The used coordinate system by CMS is as follows: The origin is the interaction
 \begin_inset Formula $\eta=-\ln{\textstyle \left(\tan\frac{\theta}{2}\right)}$
 \end_inset
 
- of the azimuthal angle 
+ with the azimuthal angle 
 \begin_inset Formula $\theta$
 \end_inset
 
- between the z-axis and the xy plane, and the polar angle 
+ between the z-axis and the xy-plane, and the polar angle 
 \begin_inset Formula $\phi$
 \end_inset
 
- inside the xy plane.
+ inside the xy-plane.
 \end_layout
 
 \begin_layout Standard
@@ -683,6 +726,22 @@ status open
 	filename images/CMS_3D.jpg
 	lyxscale 10
 	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{change picture or enhance quality}
+\end_layout
 
 \end_inset
 
@@ -769,8 +828,8 @@ nuu{110}{cm}
 \end_layout
 
 \begin_layout Standard
-The system itself is divided into three regions based on the expected particle
- flux at the high luminosity.
+The system itself is divided into three regions.
+ This is due to the expected particle flux which decreases radially.
  At 
 \begin_inset Formula $r\approx$
 \end_inset
@@ -850,8 +909,7 @@ The electromagnetic calorimeter (ECAL) is composed out of lead tungstate
 \end_inset
 
 ) scintillating crystals.
- The crystal material had been chosen for its fast response time (within
- 
+ The crystal material was chosen due to its fast response time (within 
 \begin_inset ERT
 status open
 
@@ -882,8 +940,8 @@ nuu{10}{Mrad}
  7324 are placed in each of the two endcaps.
  Due to the crystals rather low light yield, photodetectors with intrinsic
  gain had to be applied.
- In the barrel, silicon Avalanche PhotoDiodes (APDs) and in the endcaps,
- Vacuum PhotoTriodes (VPTs) are used for amplification.
+ In the barrel, silicon avalanche photodiodes (APDs) and in the endcaps,
+ vacuum phototriodes (VPTs) are used for amplification.
 \end_layout
 
 \begin_layout Standard
@@ -947,28 +1005,28 @@ Hadron calorimeter
 \end_layout
 
 \begin_layout Standard
-The hadronic calorimeter (HCAL) surrounds the the ECAL system.
+The hadron calorimeter (HCAL) surrounds the the ECAL system.
  It is divided into four parts: 
 \end_layout
 
 \begin_layout Standard
-The Hadron Barrel (HB) is installed inside the magnetic coil, which covers
+The hadron barrel (HB) is installed inside the magnetic coil, which covers
  a pseudorapidity range of 
 \begin_inset Formula $\left|\eta\right|\leq1.4$
 \end_inset
 
 .
- The Hadron Outer (HO) is located at the outer vacuum tank of the coil.
+ The hadron outer (HO) is located at the outer vacuum tank of the coil.
  It has a range of 
 \begin_inset Formula $\left|\eta\right|\leq1.26$
 \end_inset
 
 .
- The Hadron Endcap (HE) has a coverage of 
+ The hadron endcap (HE) has a coverage of 
 \begin_inset Formula $1.3\leq\left|\eta\right|\leq3.0$
 \end_inset
 
- and the Hadron Forward (HF) can measure in a pseudorapidity range of 
+ and the hadron forward (HF) can measure in a pseudorapidity range of 
 \begin_inset Formula $3.0\leq\left|\eta\right|\leq5.0$
 \end_inset
 
@@ -978,13 +1036,13 @@ The Hadron Barrel (HB) is installed inside the magnetic coil, which covers
 \begin_layout Standard
 The HCAL consists of brass as absorber material which has a short interaction
  length.
- It provides a good particle containment which is needed for the detection
+ It provides a good particle containment, which is needed for the detection
  of missing transverse energy.
  To maximize the absorber space inside the barrel, plastic scintillator
- titles with embedded WaveLength-Shifting (WLS) fibers are used as active
+ tiles with embedded wavelength-shifting (WLS) fibers are used as active
  medium.
- Those require only a minimum of space to carry the light to the readout
- system of multi-channel Hybrid PhotoDiodes (HPDs).
+ They require only a minimum of space to carry the light to the readout
+ system of multi-channel hybrid photodiodes (HPDs).
 \end_layout
 
 \begin_layout Standard
@@ -1077,7 +1135,7 @@ nuu{4}{T}
 
 \end_inset
 
-which can unambiguous determine the charge of a muon up to 
+which can unambiguously determine the charge of a muon up to 
 \begin_inset Formula $p=$
 \end_inset
 
@@ -1128,7 +1186,7 @@ full system
 \begin_inset Quotes erd
 \end_inset
 
- which leads to a precise muon resolution over a wide momentum range.
+, which leads to a precise muon resolution over a wide momentum range.
 \end_layout
 
 \begin_layout Standard
@@ -1140,7 +1198,8 @@ The muon system itself consists of three types of gaseous detectors to cover
 
  where the magnetic field and neutron background is low.
  In the two endcaps, Cathode Strip Chambers (CSCs) are used.
- These can operate in presents of the high magnetic field and neutron background.
+ These can operate in the presence of the high magnetic field and neutron
+ background.
  The endcaps cover a region up to 
 \begin_inset Formula $\left|\eta\right|\leq2.4$
 \end_inset
@@ -1161,10 +1220,10 @@ For preselection of around
 \begin_inset Formula $10^{9}$
 \end_inset
 
- interactions/sec at design luminosity a trigger system is used to single
- out the interesting bunch crossings.
+ interactions per second at design luminosity a trigger system is used to
+ single out the interesting bunch crossings.
  This lowers the data rate to 
-\begin_inset Formula $10^{2}$
+\begin_inset Formula $\approx10^{2}$
 \end_inset
 
  crossing/sec.
@@ -1252,10 +1311,10 @@ nuu{40}{MHz}
 \end_inset
 
  to reach a decision.
- The used relatively simple logic needs to be executed very fast and is
- therefore implemented into custom Application Specific Integrated Circuits
- (ASICs), Field Programmable Gate Arrays (FPGAs) and Programmable Logic
- Devices (PLDs) amongst others.
+ The relatively simple logic needs to be executed very fast and is therefore
+ implemented into custom Application Specific Integrated Circuits (ASICs),
+ Field Programmable Gate Arrays (FPGAs) and Programmable Logic Devices (PLDs)
+ amongst others.
 \end_layout
 
 \begin_layout Standard
@@ -1273,8 +1332,8 @@ nuu{1.5}{MB}
 \end_inset
 
  and is transferred to the processor farm.
- Here, the more complex High Level Trigger (HLT) software decides the storing
- of events.
+ Here, the more complex High Level Trigger (HLT) software decides on the
+ storing of events.
  By reconstructing the full event data which uses all detector sub systems,
  it further singles out interesting events and reduces the rate from 
 \begin_inset ERT
@@ -1346,8 +1405,8 @@ The Particle-Flow (PF) algorithm aims to precisely identify particle types
 \end_layout
 
 \begin_layout Standard
-The algorithm starts with the tracker information by single out first tracks
- with very tight criteria originating closely from the IP.
+The algorithm starts with the tracker information by first singleing out
+ tracks with very tight criteria originating closely from the IP.
  On the remaining tracks, iteratively looser criteria are applied for selection.
  In the calorimeters, hits are clustered.
  This is performed by finding cells with high energy maxima (
@@ -1367,14 +1426,14 @@ topological clusters
 \begin_inset Quotes erd
 \end_inset
 
- are constructed by combining with adjacent cells which are over a certain
- energy threshold.
+ are constructed by combining the seeds with adjacent cells which are over
+ a certain energy threshold.
  
 \end_layout
 
 \begin_layout Standard
-One expects, that a particle causes a charged-particle track and/or hits
- several calorimeter clusters as well as one or none track in the muon system.
+One expects that a particle causes a charged-particle track and/or hits
+ several calorimeter clusters as well as one or no hit in the muon system.
  All this information are linked to reconstruct each single observed particle
  while possible double counting has to be taken care of.
  The Particle-Flow algorithm is also independent of the event complexity.
@@ -1451,8 +1510,8 @@ Standalone-Muon track only
 
  is claimed, if both previous described methods fail.
  This is the case if the muon is observed only in the muon system.
- Due to the high tracker efficiency, those muons are often originating from
- cosmic-rays and not from an interaction at the IP 
+ Due to the high tracker efficiency, those muons originate often from cosmic-ray
+s and not from an interaction at the IP 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "muonID"
@@ -1472,13 +1531,13 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
-, if less than a 10% fraction of the muons transversal momentum in total
- has been detected additionally in a cone of 
+, if additionally less than a 10% fraction of the muons transversal momentum
+ in total has been detected in a cone of 
 \begin_inset Formula $\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}<0.3$
 \end_inset
 
  around the muon.
- The none-
+ The non-
 \begin_inset Quotes erd
 \end_inset
 
@@ -1486,7 +1545,7 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
- muons are then found in the vicinity of hadronic activity.
+ muons are in the vicinity of hadronic activity.
  
 \begin_inset Quotes eld
 \end_inset
@@ -1513,6 +1572,20 @@ key "pfmuon"
 \end_inset
 
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{umformulieren, klarer!}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1547,7 +1620,7 @@ A jet is a group of particles originating from hadronization of gluons or
 \end_layout
 
 \begin_layout Standard
-Nowadays, the main used jet algorithms are the 
+Nowadays, the mainly used jet algorithms are the 
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
@@ -1563,7 +1636,7 @@ key "antiKT,siscone"
 \end_inset
 
 .
- Each is considered infrared and collinear safe.
+ Each one is considered infrared and collinear safe.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1613,8 +1686,8 @@ Jet definition in different scenarios of additional particles
 \end_inset
 
 Jet definition in different scenarios of additional particles.
- The dark dotted gray eclipse shows the result, if not a infrared and collinear
- algorithm is used.
+ The dark dotted gray ellipse shows the result, if not an infrared and collinear
+ safe algorithm is used.
 \end_layout
 
 \end_inset
@@ -1632,10 +1705,10 @@ Jet definition in different scenarios of additional particles.
 \end_layout
 
 \begin_layout Standard
-Soft gluons emitted from a parton during the hadronization produces additionally
- particles with low momenta that should not be left out of the jet construction.
+Soft gluons emitted from a parton during the hadronization produce additional
+ particles with low momenta that should be clustered into the jet.
  However, low energetic particles originating from other interactions should
- not be clustered.
+ be left out.
  Those may sum up and have a significantly wrong input to the jet.
  Suppressing this infrared accumulation by setting a minimum momentum threshold
  (
@@ -1653,7 +1726,7 @@ seed
 \end_layout
 
 \begin_layout Standard
-In the reconstruction by CMS, the anti-
+In the CMS reconstruction, the anti-
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
@@ -1677,6 +1750,22 @@ and
 \begin{equation}
 d_{i}=\frac{1}{p_{\mathrm{T,}\, i}^{2}}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{symbole und proto-jets erklären}
+\end_layout
 
 \end_inset
 
