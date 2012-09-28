@@ -223,72 +223,44 @@ reference "tab:The-background-samples"
 
 .
  Simulated events from the MC generators 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
+MadGraph
+\lang american
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "madgraph"
 
 \end_inset
 
-, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
+, Powheg 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "powheg"
 
 \end_inset
 
  and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
+Pythia6 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pythia6"
 
 \end_inset
 
+
+\lang american
  are subjected to a hardonization simulation by interfacing with 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
-
-\end_inset
-
+Pythia6
+\lang american
 .
- Then, after passing a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Geant4}
-\end_layout
+ Then, after passing a Geant4-based 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "geant4"
 
 \end_inset
 
--based simulation of the CMS detector, the resulting events are reconstructed
+ simulation of the CMS detector, the resulting events are reconstructed
  and can be compared to recorded data.
 \end_layout
 
@@ -367,19 +339,8 @@ single top quark t-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
-
+Powheg
 \end_layout
 
 \end_inset
@@ -427,19 +388,8 @@ single top quark t-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
-
+Powheg
 \end_layout
 
 \end_inset
@@ -487,19 +437,8 @@ single top quark s-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
-
+Powheg
 \end_layout
 
 \end_inset
@@ -547,19 +486,8 @@ single top quark s-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
-
+Powheg
 \end_layout
 
 \end_inset
@@ -607,19 +535,8 @@ single top quark tW-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
-
+Powheg
 \end_layout
 
 \end_inset
@@ -667,19 +584,8 @@ single top quark tW-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
-
+Powheg
 \end_layout
 
 \end_inset
@@ -727,19 +633,7 @@ QCD multijet (
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
-
-\end_inset
-
-
+Pythia6
 \end_layout
 
 \end_inset
@@ -786,19 +680,8 @@ name{Pythia6}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
-
-\end_inset
-
-
+MadGraph
 \end_layout
 
 \end_inset
@@ -845,19 +728,8 @@ name{MadGraph}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
-
-\end_inset
-
-
+MadGraph
 \end_layout
 
 \end_inset
@@ -904,19 +776,8 @@ name{MadGraph}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
-
-\end_inset
-
-
+MadGraph
 \end_layout
 
 \end_inset
@@ -963,19 +824,8 @@ name{MadGraph}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
-
-\end_inset
-
-
+MadGraph
 \end_layout
 
 \end_inset
@@ -1022,19 +872,8 @@ name{MadGraph}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
-
-\end_inset
-
-
+MadGraph
 \end_layout
 
 \end_inset
@@ -1081,19 +920,8 @@ name{MadGraph}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
-
-\end_inset
-
-
+MadGraph
 \end_layout
 
 \end_inset
@@ -1140,19 +968,8 @@ name{MadGraph}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-name{MadGraph}
-\end_layout
-
-\end_inset
-
-
+MadGraph
 \end_layout
 
 \end_inset
@@ -1199,19 +1016,7 @@ name{MadGraph}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
-
-\end_inset
-
-
+Pythia6
 \end_layout
 
 \end_inset
@@ -1258,19 +1063,7 @@ name{Pythia6}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
-
-\end_inset
-
-
+Pythia6
 \end_layout
 
 \end_inset
@@ -1317,19 +1110,7 @@ name{Pythia6}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
-
-\end_inset
-
-
+Pythia6
 \end_layout
 
 \end_inset
@@ -1395,18 +1176,8 @@ The simulated SM samples.
 \end_inset
 
  Cross section has been caculated by 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
-
-\end_inset
-
+Pythia6
+\lang american
 .
 \begin_inset Formula $^{(\star\star)}$
 \end_inset
@@ -1514,20 +1285,7 @@ W+light flavor
 status open
 
 \begin_layout Plain Layout
-Simulated Signal Samples with 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
-
+Simulated Signal Samples with WHIZARD
 \end_layout
 
 \end_inset
@@ -1536,37 +1294,14 @@ Simulated Signal Events
 \begin_inset Newline newline
 \end_inset
 
-with 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
-
+with WHIZARD
 \end_layout
 
 \begin_layout Standard
 For simulation of single top quark production with anomalous couplings the
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
+WHIZARD
+\lang american
  event generator is used.
  It provides a model called 
 \begin_inset Quotes eld
@@ -1626,38 +1361,12 @@ name "tab:The-simulated-processes"
 status collapsed
 
 \begin_layout Plain Layout
-The simulated processes with 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
+The simulated processes with WHIZARD
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-The simulated processes with 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
-.
+The simulated processes with WHIZARD.
  
 \begin_inset Formula $\mathrm{l^{-},\, l^{+}}$
 \end_inset
@@ -2927,38 +2636,26 @@ Due to the trivial CKM matrix implementation within the chosen model, their
 
 -vertices, where the quarks are not from the same quark generation.
  The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
- generator automatically mixes each defined process with a certain fraction
+WHIZARD 
+\lang american
+generator automatically mixes each defined process with a certain fraction
  according to the internally caculated cross sections into one sample.
 \end_layout
 
 \begin_layout Standard
-The next steps in the sample generation are performed with the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{CMSSW}
-\end_layout
-
-\end_inset
-
- framework.
+The next steps in the sample generation are performed with the CMSSW framework.
  Subsequent tau decays is simulated by interfacing with the 
+Tauola
+\lang american
+ Monte-Carlo generator 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tauola"
+
+\end_inset
+
+.
+ 
 \begin_inset ERT
 status open
 
@@ -2966,25 +2663,14 @@ status open
 
 
 \backslash
-name{Tauola}
+checkthis{add refs for MC generators}
 \end_layout
 
 \end_inset
 
- Monte-Carlo generator.
  Hadronization is peformed with 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{Pythia6}
-\end_layout
-
-\end_inset
-
+Pythia6
+\lang american
 .
  For detector simulation and reconstruction, the Fast Simulation package
  is applied which provides a 100 - 1000 faster simulation by approximating
@@ -3271,18 +2957,8 @@ Generated
 
  distribution for the lepton in the spectator basis.
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
+WHIZARD
+\lang american
  SM sample (a) compared to a right-handed anomalous coupling scenario (b).
 \end_layout
 
@@ -3379,20 +3055,8 @@ status open
 
 \begin_layout Plain Layout
 Generated W boson helicity fractions.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
- SM sample (a) compared to a right-handed anomalous coupling scenario (b).
+ WHIZARD SM sample (a) compared to a right-handed anomalous coupling scenario
+ (b).
 \end_layout
 
 \end_inset
@@ -5271,30 +4935,15 @@ Datasets
 
 \begin_layout Standard
 For the analysis, data from the first half of the 2011 run at 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{7}{TeV}
-\end_layout
-
+\begin_inset Formula $7\,\mathrm{TeV}$
 \end_inset
 
+
+\lang american
  recorded with the CMS detector is used.
  This correspondes to an integrated luminosity of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1165.595}{pb^{-1}}
-\end_layout
-
+\begin_inset Formula $1165.595\,\mathrm{pb^{-1}}$
 \end_inset
 
 .
@@ -5339,23 +4988,7 @@ integrated luminosity
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{HLT
-\backslash
-_IsoMu17
-\backslash
-_v5}
-\end_layout
-
-\end_inset
-
-
+HLT_IsoMu17_v5
 \end_layout
 
 \end_inset
@@ -5378,23 +5011,7 @@ _v5}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{HLT
-\backslash
-_IsoMu17
-\backslash
-_v6}
-\end_layout
-
-\end_inset
-
-
+HLT_IsoMu17_v6
 \end_layout
 
 \end_inset
@@ -5417,23 +5034,7 @@ _v6}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{HLT
-\backslash
-_IsoMu17
-\backslash
-_v8}
-\end_layout
-
-\end_inset
-
-
+HLT_IsoMu17_v8
 \end_layout
 
 \end_inset
@@ -5456,23 +5057,7 @@ _v8}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{HLT
-\backslash
-_IsoMu17
-\backslash
-_v9}
-\end_layout
-
-\end_inset
-
-
+HLT_IsoMu17_v9
 \end_layout
 
 \end_inset
@@ -5495,23 +5080,8 @@ _v9}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{HLT
-\backslash
-_IsoMu17
-\backslash
-_v10}
-\end_layout
-
-\end_inset
-
-
+HLT_IsoMu17_v
+10
 \end_layout
 
 \end_inset
@@ -5534,23 +5104,7 @@ _v10}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{HLT
-\backslash
-_IsoMu17
-\backslash
-_v11}
-\end_layout
-
-\end_inset
-
-
+HLT_IsoMu17_v11
 \end_layout
 
 \end_inset
@@ -5956,20 +5510,8 @@ the charged multiplicity is larger than
 
 \begin_layout Standard
 To consider that a jet originates from a bottom quark the discriminator
- of the Track Counting High Purity (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{TCHP}
-\end_layout
-
-\end_inset
-
-) algorithm needs to be larger than 
+ of the Track Counting High Purity (TCHP) algorithm needs to be larger than
+ 
 \begin_inset Formula $>3.41$
 \end_inset
 
@@ -6637,20 +6179,7 @@ reference "fig:The-top-quark-reco"
 
 .
  It shows an event view which is used as top quark hypothesis within the
- analysis development environment 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{VISPA}
-\end_layout
-
-\end_inset
-
-.
+ analysis development environment VISPA.
 \end_layout
 
 \begin_layout Standard
@@ -6934,38 +6463,12 @@ Validation
 \end_layout
 
 \begin_layout Standard
-For the validation of the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
- prediction, the SM coupling scenario (
+For the validation of the WHIZARD prediction, the SM coupling scenario (
 \begin_inset Formula $\mathrm{V_{L}}=1,\,\mathrm{V_{R}}=\mathrm{g_{L}}=\mathrm{g_{R}}=0$
 \end_inset
 
-) is compared to the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
- single top t-channel sample after the event selection and top quark reconstruct
-ion.
+) is compared to the Powheg single top t-channel sample after the event
+ selection and top quark reconstruction.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7059,10 +6562,6 @@ status collapsed
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7217,65 +6716,14 @@ name "fig:whizard-SM-and-powheg"
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
+WHIZARD SM and Powheg comparison
 \end_layout
 
 \end_inset
 
- SM and Powheg comparison
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
- SM and Powheg comparison in kinematic variables related to the single top
- t-channel production.
- The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
- sample is normalized to the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{POWHEG}
-\end_layout
-
-\end_inset
-
- prediction.
+WHIZARD SM and Powheg comparison in kinematic variables related to the single
+ top t-channel production.
+ The WHIZARD sample is normalized to the Powheg prediction.
  (a): The transveral momentum of the leading jet.
  (b): The pseudorapidity of the light jet.
  (c): The transveral momentum of the muon.
