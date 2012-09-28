@@ -111,91 +111,26 @@ The Large Hadron Collider
 The Large Hadron Collider (LHC) is a proton-proton storage ring at the European
  Organization for Nuclear Research (CERN) in Geneva, Switzerland.
  It is build underground and has a circumference of approximately 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{27}{km}
-\end_layout
-
+\begin_inset Formula $27\,\mathrm{km}$
 \end_inset
 
 .
- The performance goal is a center of mass energy of 
-\begin_inset Formula $\sqrt{s}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{14}{TeV}
-\end_layout
-
+ The performance goal is a center-of-mass energy of 
+\begin_inset Formula $\sqrt{s}=14\,\mathrm{TeV}$
 \end_inset
 
  at a luminosity of 
-\begin_inset Formula $L=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{10^{34}}{
-\backslash
-frac{1}{cm^{2}s}}
-\end_layout
-
+\begin_inset Formula $L=10^{34}\,{\textstyle \frac{1}{\mathrm{cm^{2}s}}}$
 \end_inset
 
 .
  The proton beams can also be switched to ion beams.
  Here, the aimed peak luminosity is 
-\begin_inset Formula $L=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{10^{27}}{
-\backslash
-frac{1}{cm^{2}s}}
-\end_layout
-
+\begin_inset Formula $L=10^{27}\,{\textstyle \frac{1}{\mathrm{cm^{2}s}}}$
 \end_inset
 
  at 
-\begin_inset Formula $\sqrt{s}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{2.76}{TeV}
-\end_layout
-
+\begin_inset Formula $\sqrt{s}=2.76\,\mathrm{TeV}$
 \end_inset
 
  
@@ -221,20 +156,14 @@ ator chain.
 \begin_layout Standard
 The acceleration of protons starts at the Linac2.
  This continues with the Proton Synchrotron Booster (PSB), the Proton Synchrotro
-n (PS), the Super Proton Synchrotron (SPS) and finally the protons are injected
- into the LHC at an energy per proton of 
-\begin_inset ERT
-status open
+n (PS), the Super Proton Synchrotron (SPS), and finally the protons are
+ injected into the LHC at an energy per proton of 
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{450}{GeV}
-\end_layout
-
+\begin_inset Formula $450\,\mathrm{GeV}$
 \end_inset
 
+
+\lang american
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -303,95 +232,41 @@ key "pic_cern_acc_complex"
 
 After filling the LHC ring, the proton beams consist maximally of 2808 bunches
  with a spacing of 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{25}{ns}
-\end_layout
-
+\begin_inset Formula $25\,\mathrm{ns}$
 \end_inset
 
+
+\lang american
  between them.
  With 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1.15
-\backslash
-cdot 10^{11}}{}
-\end_layout
-
+\begin_inset Formula $1.15\cdot10^{11}$
 \end_inset
 
+
+\lang american
  protons per bunch, the current per beam is 
-\begin_inset Formula $I=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{0.58}{A}
-\end_layout
-
+\begin_inset Formula $I=0.58\,\mathrm{A}$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-For deflecting and focusing the beams a magnet system of NbTi superconductors
- is used.
+A magnet system of NbTi superconductors is used for deflection and focusing
+ of the beams.
  Superfluid helium cools the superconductors down to 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1.9}{K}
-\end_layout
-
+\begin_inset Formula $1.9\,\mathrm{K}$
 \end_inset
 
 .
  This allows the dipole magnets to be driven with a current of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{11850}{A}
-\end_layout
-
+\begin_inset Formula $11850\,\mathrm{A}$
 \end_inset
 
  which produce a magnet field of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{8.33}{T}
-\end_layout
-
+\begin_inset Formula $8.33\,\mathrm{T}$
 \end_inset
 
 .
@@ -404,71 +279,35 @@ nuu{8.33}{T}
 
 \begin_layout Standard
 For accelerating, a superconducting cavity system operating at 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{400}{MHz}
-\end_layout
-
+\begin_inset Formula $400\,\mathrm{MHz}$
 \end_inset
 
  is used.
  The beams will gain 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{485}{keV}
-\end_layout
-
+\begin_inset Formula $485\,\mathrm{keV}$
 \end_inset
 
+
+\lang american
  per turn which yields an acceleration time from injection energy at 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{450}{GeV}
-\end_layout
-
+\begin_inset Formula $450\,\mathrm{GeV}$
 \end_inset
 
+
+\lang american
  to 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{7}{TeV}
-\end_layout
-
+\begin_inset Formula $7\,\mathrm{TeV}$
 \end_inset
 
  per beam of around 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{20}{min}
-\end_layout
-
+\begin_inset Formula $20\,\mathrm{min}$
 \end_inset
 
+
+\lang american
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -508,19 +347,10 @@ LHC-b (Large Hadron Collider beauty Experiment) has a forward sub-detector
 
 \begin_layout Standard
 After a breakdown during the first tests in September 2008, the full operation
- started again on 20th November 2009 with successful circulating beams at
- injection energy.
+ started on 20th November 2009 with successful circulating beams at injection
+ energy.
  In March 2010 the targeted beam energy of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{3.5}{TeV}
-\end_layout
-
+\begin_inset Formula $3.5\,\mathrm{TeV}$
 \end_inset
 
  for the first run period of 2010 had been established 
@@ -532,46 +362,15 @@ key "pressLHCrecord"
 
 .
  The proton-proton run program at 
-\begin_inset Formula $\sqrt{s}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{7}{TeV}
-\end_layout
-
+\begin_inset Formula $\sqrt{s}=7\,\mathrm{TeV}$
 \end_inset
 
  finished 2011 with a delivered integrated luminosity of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{5.57}{fb^{-1}}
-\end_layout
-
+\begin_inset Formula $5.57\,\mathrm{fb^{-1}}$
 \end_inset
 
  for ATLAS and 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{5.73}{fb^{-1}}
-\end_layout
-
+\begin_inset Formula $5.73\,\mathrm{fb^{-1}}$
 \end_inset
 
  for CMS 
@@ -582,19 +381,13 @@ key "LHCLumi"
 \end_inset
 
 .
- In 2012 the beam energy has been raised to 
-\begin_inset ERT
-status open
+ In 2012 the center-of-mass energy has been raised to 
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{4}{TeV}
-\end_layout
-
+\begin_inset Formula $\sqrt{s}=4\,\mathrm{TeV}$
 \end_inset
 
+
+\lang american
 .
 \end_layout
 
@@ -619,29 +412,11 @@ The Compact Muon Solenoid (CMS) is a general-purpose detector developed
 The CMS detector has been designed with a cylindrical symmetry around the
  beam pipe.
  It is 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{21.5}{m}
-\end_layout
-
+\begin_inset Formula $21.5\,\mathrm{m}$
 \end_inset
 
  long and has a diameter of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{14.6}{m}
-\end_layout
-
+\begin_inset Formula $14.6\,\mathrm{m}$
 \end_inset
 
 .
@@ -749,33 +524,14 @@ Inner tracking system
 \begin_layout Standard
 Around the IP, the tracking system is placed.
  It is 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{540}{cm}
-\end_layout
-
+\begin_inset Formula $540\,\mathrm{cm}$
 \end_inset
 
+
+\lang american
  long and has an outer radius of 
-\begin_inset Formula $r=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{110}{cm}
-\end_layout
-
+\begin_inset Formula $r=110\,\mathrm{cm}$
 \end_inset
 
 .
@@ -785,20 +541,7 @@ nuu{110}{cm}
 The system itself is divided into three regions.
  This is due to the expected particle flux which decreases radially.
  At 
-\begin_inset Formula $r\approx$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{10}{cm}
-\end_layout
-
+\begin_inset Formula $r\approx10\,\mathrm{cm}$
 \end_inset
 
  pixel detectors are placed with a size of 
@@ -807,16 +550,7 @@ nuu{10}{cm}
 
 .
  In the next region around 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{20<r<55}{cm}
-\end_layout
-
+\begin_inset Formula $20<r<55\,\mathrm{cm}$
 \end_inset
 
  silicon microstrip detectors can be used due to the lower particle flux.
@@ -836,22 +570,6 @@ nuu{20<r<55}{cm}
  tracks even in the high particle density environment of heavy-ion collisions.
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add resolution, look DK diploma thesis??}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Paragraph*
 Electromagnetic calorimeter
 \end_layout
@@ -864,29 +582,11 @@ The electromagnetic calorimeter (ECAL) is composed out of lead tungstate
 
 ) scintillating crystals.
  The crystal material was chosen due to its fast response time (within 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{25}{ns}
-\end_layout
-
+\begin_inset Formula $25\,\mathrm{\mathrm{ns}}$
 \end_inset
 
 ) and radiation hardness (up to 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{10}{Mrad}
-\end_layout
-
+\begin_inset Formula $10\,\mathrm{Mrad}$
 \end_inset
 
 ).
@@ -918,7 +618,7 @@ Its energy resolution can be parameterized as
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left(\frac{\sigma_{E}^{2}}{E}\right)=\left(\frac{2.8\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}+\left(\frac{0.12\,\mathrm{GeV}}{E}\right)^{2}+\left(0.3\%\right)^{2}
+\left(\frac{\sigma_{E}^{2}}{E}\right)=\underbrace{\left(\frac{2.8\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}}_{\mathrm{stochastic\, term}}+\underbrace{\left(\frac{0.12\,\mathrm{GeV}}{E}\right)^{2}}_{\mathrm{noise\, term}}+\underbrace{\left(0.3\%\right)^{2}}_{\mathrm{constant\, term}}
 \end{equation}
 
 \end_inset
@@ -1018,31 +718,16 @@ Solenoid coil
 A large superconducting solenoid coil for bending of charged particles is
  used.
  Supplied with a current of 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{19.5}{kA}
-\end_layout
-
+\begin_inset Formula $19.5\,\mathrm{kA}$
 \end_inset
 
 , it generates a field of 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{4}{T}
-\end_layout
-
+\begin_inset Formula $4\,\mathrm{T}$
 \end_inset
 
+
+\lang american
  at the IP .
  This provides a momentum resolution of
 \end_layout
@@ -1056,20 +741,7 @@ nuu{4}{T}
 \end_inset
 
 which can unambiguously determine the charge of a muon up to 
-\begin_inset Formula $p=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1}{TeV}
-\end_layout
-
+\begin_inset Formula $p=1\,\mathrm{TeV}$
 \end_inset
 
 .
@@ -1081,20 +753,11 @@ Muon system
 
 \begin_layout Standard
 Muons originating from the IP are measured at three points.
- First with the inner tracker, then after the coil and finally in the return
- flux of the magnetic field.
+ First with the inner tracker, then after the coil and finally in the outer
+ magnetic field.
  The inner tracker can only measure muon momenta with a good resolution
  up to round 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{200}{GeV}
-\end_layout
-
+\begin_inset Formula $200\,\mathrm{GeV}$
 \end_inset
 
 .
@@ -1206,18 +869,12 @@ The CMS trigger system.
 
 \begin_layout Standard
 Starting at a bunch crossing rate of 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{40}{MHz}
-\end_layout
-
+\begin_inset Formula $40\,\mathrm{MHz}$
 \end_inset
 
+
+\lang american
 , the detector data is first written into a buffer.
  Within 
 \begin_inset Formula $3.2\,\mu\mathrm{s}$
@@ -1240,48 +897,27 @@ nuu{40}{MHz}
 \begin_layout Standard
 After passing the Level-1 trigger, the complete event in the buffer has
  a size of about 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1.5}{MB}
-\end_layout
-
+\begin_inset Formula $1.5\,\mathrm{MB}$
 \end_inset
 
+
+\lang american
  and is transferred to the processor farm.
  Here, the more complex High Level Trigger (HLT) software decides on the
  storing of events.
  By reconstructing the full event data which uses all detector sub systems,
  it further singles out interesting events and reduces the rate from 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{100}{kHz}
-\end_layout
-
+\begin_inset Formula $100\,\mathrm{kHz}$
 \end_inset
 
  down to approximately 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{100}{Hz}
-\end_layout
-
+\begin_inset Formula $100\,\mathrm{Hz}$
 \end_inset
 
+
+\lang american
 .
  
 \end_layout
@@ -1358,7 +994,7 @@ topological clusters
 
 \begin_layout Standard
 One expects that a particle causes a charged-particle track and/or hits
- several calorimeter clusters as well as one or no hit in the muon system.
+ several calorimeter clusters as well as one or no track in the muon system.
  All this information are linked to reconstruct each single observed particle
  while possible double counting has to be taken care of.
  The Particle-Flow algorithm is also independent of the event complexity.
@@ -1409,18 +1045,12 @@ Global Muon
  data.
  This combination method improves the muon momentum resolution above a transvers
 e momentum of 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{200}{GeV}
-\end_layout
-
+\begin_inset Formula $200\,\mathrm{GeV}$
 \end_inset
 
+
+\lang american
 .
 \end_layout
 
@@ -1462,15 +1092,7 @@ isolated
 \end_inset
 
  around the muon.
- The non-
-\begin_inset Quotes erd
-\end_inset
-
-isolated
-\begin_inset Quotes erd
-\end_inset
-
- muons are then found in the vicinity of hadronic activity.
+ The remaining muons are then in the vicinity of hadronic activity.
  From those, 
 \begin_inset Quotes eld
 \end_inset
@@ -1831,21 +1453,7 @@ key "crab"
 
 \begin_layout Standard
 For the analysis, the CMSSW version 4.2.8 has been used for the event reconstructi
-on, skimming and simulation.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{find good refs - proceedings}
-\end_layout
-
-\end_inset
-
-
+on, selection and simulation.
 \end_layout
 
 \begin_layout Subsection
@@ -2002,7 +1610,7 @@ is defined.
 \begin_layout Standard
 This method has been chosen because it is not sensitive to correlations
  within the input variables.
- This is required in order not to artificially alter the signal shape if
+ This is required in order to not alter artificially the signal shape if
  the classifier is used to select a signal enhanced phase space.
 \end_layout
 

@@ -3031,23 +3031,37 @@ key "peskin"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathcal{L}\rightarrow\mathcal{L}_{\mathrm{eff}}=\sum_{j}\frac{v^{2}}{\Lambda^{2}}C_{j}\cdot\mathcal{O}_{j}+\ldots
+\mathcal{L}\rightarrow\mathcal{L}_{\mathrm{eff}}=\mathcal{L}_{\mathrm{SM}}+\sum_{\mathrm{d}>4,\, j}\frac{C_{j}^{(\mathrm{d})}}{\Lambda^{\mathrm{d}-4}}\cdot\mathcal{O}_{j}^{(\mathrm{d})}+\mathrm{h.c.}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $v$
+\begin_inset Formula $\mathrm{d}$
 \end_inset
 
- denotes the vacuum expectation value of the Higgs potential 
+ denotes the 
+\begin_inset Quotes eld
+\end_inset
+
+mass dimension
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "AS-minimalset"
+key "AS-minimalset,revisitanomcouplings"
 
 \end_inset
 
 .
+ For 
+\begin_inset Formula $\mathrm{d}=6$
+\end_inset
+
+ this leads to leading order contributions to the SM with anomalous top
+ quark couplings.
  In the case of the top quark, the SM Lagrangian density 
 \end_layout
 
