@@ -844,7 +844,7 @@ status open
 
 
 \backslash
-checkthis{add resolution, look DK diploma thesis}
+checkthis{add resolution, look DK diploma thesis??}
 \end_layout
 
 \end_inset
@@ -1146,7 +1146,7 @@ For preselection of around
 \begin_inset Formula $\approx10^{2}$
 \end_inset
 
- crossing/sec.
+ crossing per second.
  At this rate, it is possible to store the data on archival media.
  In Figure 
 \begin_inset CommandInset ref
@@ -1225,20 +1225,21 @@ nuu{40}{MHz}
 
  all data is collected from the the sub systems and a decision has to be
  made whether to keep or reject the event.
- By using only the readout from the calorimetry and muon systems, the Level-1
- (LV1) trigger has less than 
+ The Level-1 (LV1) trigger operates in parallel to the buffering.
+ It reaches a decision within 
 \begin_inset Formula $1\,\mu\mathrm{s}$
 \end_inset
 
- to reach a decision.
- The relatively simple logic needs to be executed very fast and is therefore
+ by using only the calorimetry and muon system readouts.
+ The logic behind the decision needs to be executed very fast and is therefore
  implemented into custom Application Specific Integrated Circuits (ASICs),
  Field Programmable Gate Arrays (FPGAs) and Programmable Logic Devices (PLDs)
  amongst others.
 \end_layout
 
 \begin_layout Standard
-After passing the Level-1 trigger, the event has a size of about 
+After passing the Level-1 trigger, the complete event in the buffer has
+ a size of about 
 \begin_inset ERT
 status open
 
@@ -1282,7 +1283,11 @@ nuu{100}{Hz}
 \end_inset
 
 .
- The recorded data is stored at the 
+ 
+\end_layout
+
+\begin_layout Standard
+The recorded data is stored at the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1403,7 +1408,7 @@ Global Muon
  is reconstructed through a fit to the inner tracker and the muon system
  data.
  This combination method improves the muon momentum resolution above a transvers
-al momentum of 
+e momentum of 
 \begin_inset ERT
 status open
 
@@ -1443,7 +1448,7 @@ key "muonID"
 
 \begin_layout Standard
 The Particle-Flow algorithm categorizes the muons further.
- A muon is 
+ A muon is labeled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1451,8 +1456,8 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
-, if additionally less than a 10% fraction of the muons transversal momentum
- in total has been detected in a cone of 
+, if additionally less than a 10% fraction of the muon's transverse momentum
+ has been detected in a cone of 
 \begin_inset Formula $\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}<0.3$
 \end_inset
 
@@ -1465,8 +1470,8 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
- muons are in the vicinity of hadronic activity.
- 
+ muons are then found in the vicinity of hadronic activity.
+ From those, 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1492,37 +1497,23 @@ key "pfmuon"
 \end_inset
 
 .
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{umformulieren, klarer!}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
-Missing Transversal Energy
+Missing transverse Energy
 \end_layout
 
 \begin_layout Standard
-After the Particle-Flow reconstruction, the missing transversal energy can
+After the Particle-Flow reconstruction, the missing transverse energy can
  be calculated.
- Due to the conversation of momentum, the net transversal momentum has to
+ Due to the conversation of momentum, the net transverse momentum has to
  be zero after a collision.
  Therefore by summing up all reconstructed particle's momenta and mirroring
- the azimuthal momentum two-vector one obtains the missing transversal energy.
+ the azimuthal momentum two-vector one obtains the missing transverse energy.
 \end_layout
 
 \begin_layout Standard
-Depending on the physics analysis, the missing transversal energy is often
+Depending on the physics analysis, the missing transverse energy is often
  used to construct hypotheses about particles that cannot be detected directly
  in CMS, like neutrinos or SUSY particles.
 \end_layout
@@ -2186,7 +2177,7 @@ value{part}<1
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "references"
-options "amsplain"
+options "siam"
 
 \end_inset
 

@@ -5809,13 +5809,13 @@ loose
 \end_layout
 
 \begin_layout Paragraph*
-Missing transversal energy
+Missing transverse energy
 \end_layout
 
 \begin_layout Standard
 The undetected neutrino reveals itself in large missing energy.
- Events are selected if the missing transversal energy combined with the
- muon leads to a transversal W boson mass above 
+ Events are selected if the missing transverse energy combined with the
+ muon leads to a transverse W boson mass above 
 \begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
 \end_inset
 
@@ -5886,7 +5886,7 @@ For the event selection both jets need to match the following:
 \end_layout
 
 \begin_layout Itemize
-a transversal momentum of 
+a transverse momentum of 
 \begin_inset Formula $p_{\mathrm{T}}>30\,\mathrm{GeV}$
 \end_inset
 
@@ -6704,7 +6704,7 @@ top quark event view
 
 \begin_layout Standard
 The neutrino escapes the detector and is therefore only indirect observed
- through missing transversal energy 
+ through missing transverse energy 
 \begin_inset Formula $E_{\mathrm{T}}^{\mathrm{miss}}=p_{\nu,\,\mathrm{T}}$
 \end_inset
 
@@ -6858,7 +6858,7 @@ The
 \end_inset
 
  solutions are complex.
- This case can happen due to mismeasurement of the missing transversal energy.
+ This case can happen due to mismeasurement of the missing transverse energy.
  Furthermore, the W boson mass constrain assumes only on-shell W bosons
  but the W boson can also be off-shell which yields in 
 \begin_inset Formula $36\%$
@@ -7280,7 +7280,7 @@ name{POWHEG}
  (b): The pseudorapidity of the light jet.
  (c): The transveral momentum of the muon.
  (d): The pseudorapidity of the muon.
- (e): The transversal W boson mass before the neutrino solution.
+ (e): The transverse W boson mass before the neutrino solution.
  (f): The reconstructed top quark mass.
 \end_layout
 
@@ -7331,7 +7331,7 @@ value{part}<1
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "references"
-options "amsplain"
+options "siam"
 
 \end_inset
 

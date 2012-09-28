@@ -2923,7 +2923,7 @@ value{part}<1
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "references"
-options "amsplain"
+options "siam"
 
 \end_inset
 

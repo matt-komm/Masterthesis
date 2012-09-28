@@ -146,7 +146,7 @@ FUNCTION {emphasize}
 FUNCTION {scapify}
 { duplicate$ empty$
     { pop$ "" }
-    { "{\sc " swap$ * "}" * }
+    { "{ " swap$ * "}" * }
   if$
 }
 
