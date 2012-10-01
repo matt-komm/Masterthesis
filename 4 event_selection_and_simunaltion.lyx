@@ -132,6 +132,20 @@ reference "fig:The-signature-of-tchannel-top-prod"
 \end_inset
 
  shows how this is derived from the Feynman diagram.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{better introduction}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +228,8 @@ The Simulated SM Samples
 \end_layout
 
 \begin_layout Standard
-The used SM samples are listed in Table 
+The used SM samples for signal and background processes are listed in Table
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:The-background-samples"
@@ -222,10 +237,7 @@ reference "tab:The-background-samples"
 \end_inset
 
 .
- Simulated events from the MC generators 
-MadGraph
-\lang american
- 
+ Simulated events from the MC generators MadGraph 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "madgraph"
@@ -239,21 +251,15 @@ key "powheg"
 
 \end_inset
 
- and 
-Pythia6 
+ and Pythia6 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "pythia6"
 
 \end_inset
 
-
-\lang american
- are subjected to a hardonization simulation by interfacing with 
-Pythia6
-\lang american
-.
- Then, after passing a Geant4-based 
+ are subjected to a hardonization simulation by interfacing with Pythia6.
+ Then, after passing a Geant4-based
 \begin_inset CommandInset citation
 LatexCommand cite
 key "geant4"
@@ -339,7 +345,6 @@ single top quark t-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 Powheg
 \end_layout
 
@@ -388,7 +393,6 @@ single top quark t-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 Powheg
 \end_layout
 
@@ -437,7 +441,6 @@ single top quark s-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 Powheg
 \end_layout
 
@@ -486,7 +489,6 @@ single top quark s-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 Powheg
 \end_layout
 
@@ -535,7 +537,6 @@ single top quark tW-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 Powheg
 \end_layout
 
@@ -584,7 +585,6 @@ single top quark tW-channel
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 Powheg
 \end_layout
 
@@ -680,7 +680,6 @@ Pythia6
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 MadGraph
 \end_layout
 
@@ -728,7 +727,6 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 MadGraph
 \end_layout
 
@@ -776,7 +774,6 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 MadGraph
 \end_layout
 
@@ -824,7 +821,6 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 MadGraph
 \end_layout
 
@@ -872,7 +868,6 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 MadGraph
 \end_layout
 
@@ -920,7 +915,6 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 MadGraph
 \end_layout
 
@@ -968,7 +962,6 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-
 MadGraph
 \end_layout
 
@@ -1175,10 +1168,7 @@ The simulated SM samples.
 \begin_inset Formula $^{(\star)}$
 \end_inset
 
- Cross section has been caculated by 
-Pythia6
-\lang american
-.
+ Cross section has been caculated by Pythia6.
 \begin_inset Formula $^{(\star\star)}$
 \end_inset
 
@@ -1224,9 +1214,10 @@ checkthis{need to add and describe what DR for tW means?, how works the
 \end_layout
 
 \begin_layout Standard
-To account for the low MC statistic after event selection the inclusive
- W+jets sample has been enriched in statistic by adding exclusive contributions
- from the one to four additional jet phase spaces.
+The inclusive W+jets sample has been enriched in statistic to account for
+ the low MC events after the event selection.
+ This is performed by adding exclusive contributions from the W boson plus
+ one to four additional jet phase spaces.
  Furthermore, the samples are mainly dominated by light flavored jets (
 \begin_inset Quotes eld
 \end_inset
@@ -1239,12 +1230,24 @@ light
 \begin_inset Formula $\mathrm{u,\, d,\, s}$
 \end_inset
 
-).
+ quarks).
  The signal selection requires however a b-tagged jet which selects the
- statistically low heavy flavor content from this background events.
+ statistically low heavy flavor content (
+\begin_inset Quotes eld
+\end_inset
+
+heavy
+\begin_inset Quotes erd
+\end_inset
+
+=
+\begin_inset Formula $\mathrm{c,\, b}$
+\end_inset
+
+ quarks) from this background events.
  To gain confidence into the flavor contributions after merging the inclusive
  and exclusive samples, the generated events are sorted into the following
- three categories due to their flavor content:
+ three categories due to their generated flavor content:
 \end_layout
 
 \begin_layout Itemize
@@ -1298,12 +1301,9 @@ with WHIZARD
 \end_layout
 
 \begin_layout Standard
-For simulation of single top quark production with anomalous couplings the
- 
-WHIZARD
-\lang american
- event generator is used.
- It provides a model called 
+The WHIZARD event generator is used for the simulation of single top quark
+ production with anomalous couplings.
+ The generator provides a model called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1335,9 +1335,16 @@ reference "tab:The-simulated-processes"
 \end_inset
 
 .
- From all possible leading order processes between the specified initial
- and the final state particles are those picted where the top quark is produced
+ The notation follows the summing rule of WHIZARD.
+ One process is defined by selecting one particle from each of the comma
+ separated lists.
+ The internal O'Mega matrix element generator creates all possible leading
+ order processes between the inital and final state by checking all particle
+ combinations if the obey the conservation laws.
+ From those only the processes are generated where the top quark is produced
  in resonance.
+ This is peformed by requiring that the last three particles in the final
+ state are originating from a top quark decay.
 \end_layout
 
 \begin_layout Standard
@@ -2635,19 +2642,15 @@ Due to the trivial CKM matrix implementation within the chosen model, their
 \end_inset
 
 -vertices, where the quarks are not from the same quark generation.
- The 
-WHIZARD 
-\lang american
-generator automatically mixes each defined process with a certain fraction
- according to the internally caculated cross sections into one sample.
+ The WHIZARD generator automatically mixes each defined process with a certain
+ fraction according to the internally caculated cross sections into one
+ sample.
 \end_layout
 
 \begin_layout Standard
 The next steps in the sample generation are performed with the CMSSW framework.
- Subsequent tau decays is simulated by interfacing with the 
-Tauola
-\lang american
- Monte-Carlo generator 
+ Subsequent tau decays are simulated by interfacing with the Tauola Monte-Carlo
+ generator 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "tauola"
@@ -2655,26 +2658,10 @@ key "tauola"
 \end_inset
 
 .
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add refs for MC generators}
-\end_layout
-
-\end_inset
-
- Hadronization is peformed with 
-Pythia6
-\lang american
-.
- For detector simulation and reconstruction, the Fast Simulation package
- is applied which provides a 100 - 1000 faster simulation by approximating
- the detector response 
+ Hadronization is peformed with Pythia6.
+ The Fast Simulation package is applied for the simulation of the detector,
+ which provides a 100 - 1000 faster simulation by approximating the detector
+ response 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "FastSim,CMStechnicalReport"
@@ -2716,7 +2703,7 @@ Approximatly 2,000,000 events have been simulated for ten different coupling
 \begin_inset Formula $\mathrm{V_{L}}=1$
 \end_inset
 
- and one additional 
+ plus one additional 
 \begin_inset Formula $\mathrm{V_{R},\, g_{L}}$
 \end_inset
 
@@ -2725,14 +2712,14 @@ Approximatly 2,000,000 events have been simulated for ten different coupling
 \end_inset
 
  coupling to including interference effects have been generated.
- 
+ Together with the SM couplings, ten samples where generated in total.
 \end_layout
 
 \begin_layout Standard
 The scope of the analysis does not involve coupling scenarios with complex
  phases.
- Their bias could be evaluated by many more additional samples from the
- eight dimensional coupling space which is span by 
+ Their bias has to be evaluated by more additional samples from the eight
+ dimensional coupling space which is span by 
 \begin_inset Formula $\mathrm{V_{L},\, V_{R},\, g_{L}}$
 \end_inset
 
@@ -2753,6 +2740,74 @@ Results
 \end_layout
 
 \begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Generated--distributions"
+
+\end_inset
+
+ shows the shape differences between two WHIZARD samples due to anomalous
+ couplings on generation level.
+ From the generated events the final states with a muon from the W boson
+ decay are selected here.
+ The predicted distribution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}\sigma}{\sigma\cdot\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}=\frac{1}{2}\left(1+\rho_{\mathrm{B}}\cdot c_{X}\cdot\cos\theta_{\mathrm{B,\, X}}\right),\qquad\cos\theta_{\mathrm{B,\, X}}=\frac{\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}}{\left|\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}\right|}
+\]
+
+\end_inset
+
+and the asymmetry
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A_{\mathrm{X}}^{\mathrm{B}}=\frac{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)-N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)+N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}=\frac{1}{2}\rho_{\mathrm{B}}\cdot c_{\mathrm{X}}\left(\mathrm{V_{L},\, V_{R},\, g_{L},\, g_{R}}\right)
+\]
+
+\end_inset
+
+is shown for the muon, bottom quark and neutrino as spin-analyzer 
+\begin_inset Formula $\mathrm{X}$
+\end_inset
+
+ in the spectator basis 
+\begin_inset Formula $\mathrm{B}$
+\end_inset
+
+ for the SM coupling case (
+\begin_inset Formula $\mathrm{V_{L}}=1,\,\mathrm{V_{R}=g_{L}=g_{R}=0}$
+\end_inset
+
+) on the left and for a pure right-handed coupling case (
+\begin_inset Formula $\mathrm{V_{L}=0,\, V_{R}=1},\,\mathrm{g_{L}=g_{R}=0}$
+\end_inset
+
+) on the right.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{plot here on generator level some basic kinematics, cosTheta,
+ Whel for 3-5 couplings in one plot!}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -2760,14 +2815,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2780,10 +2831,29 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2796,32 +2866,33 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(a)
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
 
 \begin_layout Plain Layout
-(b)
+
 \end_layout
 
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2834,10 +2905,29 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2850,32 +2940,33 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(c)
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
 
 \begin_layout Plain Layout
-(d)
+
 \end_layout
 
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2888,10 +2979,29 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2904,30 +3014,21 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(e)
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-(f)
+
 \end_layout
 
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -2951,15 +3052,20 @@ Generated
 
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Generated--distributions"
+
+\end_inset
+
 Generated 
 \begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta}}$
 \end_inset
 
  distribution for the lepton in the spectator basis.
- 
-WHIZARD
-\lang american
- SM sample (a) compared to a right-handed anomalous coupling scenario (b).
+ WHIZARD SM sample (a, c, e) compared to a pure right-handed anomalous coupling
+ scenario (b, d, f).
 \end_layout
 
 \end_inset
@@ -2969,6 +3075,19 @@ WHIZARD
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+This demonstrates 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{weiter......}
 \end_layout
 
 \end_inset
@@ -2984,14 +3103,14 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3004,10 +3123,33 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3018,32 +3160,20 @@ status open
 \end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(a)
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
 
 \begin_layout Plain Layout
-(b)
-\end_layout
 
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+\end_layout
 
 \end_inset
 
@@ -3070,6 +3200,18 @@ Generated W boson helicity fractions.
 \end_layout
 
 \begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-generated-coupling"
+
+\end_inset
+
+ summarizes the asymmetries and W boson helicity fractions of the generated
+ WHIZARD samples for the ten different coupling scenarios.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -3085,6 +3227,13 @@ status open
 \begin_layout Plain Layout
 The generated coupling scenarios
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-generated-coupling"
 
 \end_inset
 
@@ -4935,12 +5084,9 @@ Datasets
 
 \begin_layout Standard
 For the analysis, data from the first half of the 2011 run at 
-
 \begin_inset Formula $7\,\mathrm{TeV}$
 \end_inset
 
-
-\lang american
  recorded with the CMS detector is used.
  This correspondes to an integrated luminosity of 
 \begin_inset Formula $1165.595\,\mathrm{pb^{-1}}$
@@ -5080,8 +5226,7 @@ HLT_IsoMu17_v9
 \begin_inset Text
 
 \begin_layout Plain Layout
-HLT_IsoMu17_v
-10
+HLT_IsoMu17_v10
 \end_layout
 
 \end_inset
@@ -5180,8 +5325,15 @@ Event Selection
 \end_layout
 
 \begin_layout Standard
+The analysis concentrates only on the processes where the W boson decays
+ into a muon and neutrino because this channel can be measured more precisely
+ than the decay into an electron or tau plus neutrino.
+ 
+\end_layout
+
+\begin_layout Standard
 To select single top t-channel events from the recorded data and MC samples
- the following requirements have to be fullfilled:
+ the following lists of requirements have to be fullfilled by an event:
 \end_layout
 
 \begin_layout Paragraph*
@@ -5196,20 +5348,7 @@ reference "tab:The-used-datasets"
 
 \end_inset
 
- has been fired the muon needs to have 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{reformulate!!}
-\end_layout
-
-\end_inset
-
-:
+ has been fired the muon needs to fullfill the following:
 \end_layout
 
 \begin_layout Itemize
@@ -5221,7 +5360,7 @@ a transveral momentum of
 \end_layout
 
 \begin_layout Itemize
-been measured within a pseudorapidity range of 
+measured within a pseudorapidity range of 
 \begin_inset Formula $|\eta|<2.1$
 \end_inset
 
@@ -5270,7 +5409,7 @@ tight
 
 \begin_layout Itemize
 more that 
-\begin_inset Formula $<10$
+\begin_inset Formula $>10$
 \end_inset
 
  hits in the silicon part of the inner tracker
@@ -5388,39 +5527,12 @@ M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathr
 This requirement reduces the QCD multijet background very strongly.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-MTW QCD reduction.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Paragraph*
 Jets
 \end_layout
 
 \begin_layout Standard
-Two PF jets which are constructed by the anti-
+Two PF jets are required which are reconstructed by the anti-
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
@@ -5428,7 +5540,7 @@ Two PF jets which are constructed by the anti-
 \begin_inset Formula $R=0.5$
 \end_inset
 
- are required.
+.
  The light jet originates from the quark which recoils against the W boson.
  Therefore single top t-channel processes involves often at least one very
  forward jet.
@@ -5516,7 +5628,7 @@ To consider that a jet originates from a bottom quark the discriminator
 \end_inset
 
 .
- The b-tagged jet has to be measured within the tracker (
+ This b-tagged jet has to be measured within the tracker (
 \begin_inset Formula $|\eta|<2.4$
 \end_inset
 
@@ -5524,14 +5636,19 @@ To consider that a jet originates from a bottom quark the discriminator
 \end_layout
 
 \begin_layout Standard
-After applying all described cuts table 
+After selecting events which match all described criteria, table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Cutflow"
 
 \end_inset
 
- lists the obtained event yields from data and MC.
+ lists the number of data events and the obtained event yields from the
+ MC samples for the integrated luminosity of 
+\begin_inset Formula $1165.60\,\mathrm{pb^{-1}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6362,8 +6479,8 @@ The
 \end_inset
 
  solutions are real.
- Here it has been demonstrated that is correct to chose the solution with
- the smaller absolute longitudinal momentum 
+ Here it has been demonstrated that it is correct to chose the solution
+ with the smaller absolute longitudinal momentum 
 \begin_inset Formula $p_{\nu,\, z}=\min\left(p_{\nu,\, z}^{1};\, p_{\nu,\, z}^{2}\right)$
 \end_inset
 
@@ -6413,7 +6530,7 @@ checkthis{check with AN}
 
 \end_inset
 
- This is solved by varing 
+ This case is solved by varing 
 \begin_inset Formula $E_{\mathrm{T}}^{\mathrm{miss}}$
 \end_inset
 
@@ -6425,13 +6542,13 @@ After the neutrino
 \begin_inset Formula $p_{\nu,\, z}$
 \end_inset
 
- solution, the top quark is reconstructed by adding the four-momenta of
- the b-tagged jet, the muon, and the neutrino.
+ solution is calculated, the top quark is reconstructed by adding the four-momen
+ta of the b-tagged jet, the muon, and the neutrino.
  
 \end_layout
 
 \begin_layout Standard
-An additional top quark hypothesis is obtained by requiring that the resulting
+A second top quark hypothesis is obtained by requiring that the resulting
  top mass is in the vicinity of 
 \begin_inset Formula $m_{\mathrm{t}}=172\,\mathrm{GeV}.$
 \end_inset
@@ -6478,6 +6595,20 @@ reference "fig:whizard-SM-and-powheg"
 
  shows kinematic distributions in variables related to the single top quark
  production process.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{redo plots, linestyle!!! and legend}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

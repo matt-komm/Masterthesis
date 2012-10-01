@@ -131,12 +131,13 @@ Measurement of single the top t-channel differential
 \end_layout
 
 \begin_layout Itemize
-Unfold the distributions to correct for reconstruction and detector effects.
+Unfolding of the distributions to correct for reconstruction and detector
+ effects.
 \end_layout
 
 \begin_layout Standard
-An induced bias can be quantified by testing the analysis strategy with
- the generated anomalous coupling samples.
+A cross check is performed by testing the analysis strategy with the generated
+ anomalous coupling samples.
 \end_layout
 
 \begin_layout Section
@@ -200,7 +201,7 @@ Discrimination of Signal and Background
 \end_layout
 
 \begin_layout Standard
-For multivariant analyses (MVA), input variables have to be pict from the
+For multivariant classification, input variables have to be pict from the
  event kinematics.
  The choice for a certain variable is often made according to its significance
  within the multivariant training phase.
@@ -209,10 +210,12 @@ For multivariant analyses (MVA), input variables have to be pict from the
 \end_layout
 
 \begin_layout Standard
-For this analyses it is crucial to minimalize the influence on the shape
- of the observables after a cut on a discriminator.
- This requirement can be matched by choosing the most independent variables
- which have no correlation to the observables.
+For this analyses it is crucial to minimalize the bias on the shape of the
+ observables after a discriminator is applied.
+ This requirement can be met by choosing non-correlated variables which
+ maybe independent to the observables.
+ The actual influence however is investigated by the anomalous coupling
+ samples.
 \end_layout
 
 \begin_layout Subsection
@@ -220,7 +223,7 @@ Choice of Independent Variables
 \end_layout
 
 \begin_layout Standard
-One way of estimating a dependence between two variables is provided by
+One way of estimating a correlation between two variables is provided by
  the Pearson product-moment correlation coefficient.
  It is calculated between the variables 
 \begin_inset Formula $x$
@@ -312,15 +315,16 @@ First, the distributions of
 \begin_inset Formula $(x,\, y)$
 \end_inset
 
- pairs this can be done by sorting each 
-\begin_inset Formula $x_{i}$
+ pairs this can be done by sorting 
+\begin_inset Formula $\vec{x}=(x_{1},\ldots x_{N})$
 \end_inset
 
  and 
-\begin_inset Formula $y_{i}$
+\begin_inset Formula $\vec{y}=(y_{1},\ldots y_{N})$
 \end_inset
 
- independently and reasigning
+ independently and reasigning their values according to the positions after
+ the sorting
 \end_layout
 
 \begin_layout Standard
@@ -425,8 +429,7 @@ Confidence was gained in the algorithm as it first suggested the
  angles of all particles which are expected to be independent to any other
  kinematic variable due to the detector geometry.
  But these angles do not support any discrimination power between signal
- and background processes and are therefore neglected in the MVA variable
- choice.
+ and background processes and are therefore neglected in the variable choice.
 \end_layout
 
 \begin_layout Standard
@@ -492,10 +495,6 @@ ator with a high background suppression which uses many variables is made.
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -564,6 +563,13 @@ Likelihood ROC curves
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/BDT_ROC_selection.ps-crop.pdf
+	lyxscale 30
+	width 8cm
+
+\end_inset
+
 
 \end_layout
 
@@ -573,6 +579,13 @@ Likelihood ROC curves
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/Likelihood_ROC_selection.ps-crop.pdf
+	lyxscale 30
+	width 8cm
+
+\end_inset
+
 
 \end_layout
 
@@ -623,8 +636,7 @@ After event selection and an additional cut on a MVA discriminator a single
 \end_inset
 
 -shape.
- Unfolding is a method to correct these effects from a measured distribution
- .
+ Unfolding is a method to correct these effects from a measured distribution.
 \end_layout
 
 \begin_layout Subsection
