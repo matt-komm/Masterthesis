@@ -2767,8 +2767,8 @@ reference "fig:Generated--distributions"
 \begin_inset Formula $\mathrm{V_{L}}=1,\,\mathrm{V_{R}=g_{L}=g_{R}=0}$
 \end_inset
 
-) is highlighted as bold black line and the anomalous coupling scenarios
- as drawn as colored dashed lines.
+) is highlighted as bold black line and the selection of anomalous coupling
+ scenarios are drawn as colored lines.
 \end_layout
 
 \begin_layout Standard
@@ -2952,7 +2952,7 @@ reference "fig:Generated-W-boson"
 .
  From that the W boson helicity fractions can be obtained.
  Those however are not the scope of this analysis but are calculated here
- as a cross check to compare with the analytical prediction.
+ as a cross check to compare with the theoretical prediction.
 \end_layout
 
 \begin_layout Standard
@@ -2999,7 +2999,7 @@ The resulting
 
 The resulting W boson helicity fractions.
  WHIZARD SM sample (bold black line) compared to a selection of anomalous
- coupling scenarios (colored dashed lines).
+ coupling scenarios (colored lines).
 \end_layout
 
 \end_inset
@@ -5955,7 +5955,7 @@ W boson helicity fractions
 
 \end_inset
 
-The W boson helicity fractions are compatible with the analytical prediction.
+The W boson helicity fractions are compatible with the theoretical prediction.
 \end_layout
 
 \begin_layout Section
@@ -6231,7 +6231,7 @@ Event Selection
 
 \begin_layout Standard
 To select single top t-channel events from the recorded data and MC samples
- the following lists of requirements have to be fullfilled by an event:
+ the following lists of requirements have to be matched:
 \end_layout
 
 \begin_layout Paragraph*
@@ -6411,18 +6411,81 @@ The undetected neutrino reveals itself in large missing energy.
 \end_inset
 
 .
- The calculation is peformed by using
+ The transverse W boson mass can be calculated from the transverse energy
+ of the muon 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $E_{\mathrm{T}}^{\mu}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang american
+ and the missing transverse energy 
+\begin_inset Formula $E_{\mathrm{T}}^{\mathrm{miss}}$
+\end_inset
+
+ by
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathrm{T}}^{\mu}\cdot\left(1-\cos\left(\phi_{\mu}-\phi_{E_{\mathrm{T}}^{\mathrm{miss}}}\right)\right)}.
+M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathrm{T}}^{\mu}\cdot\left(1-\cos\Delta\phi(\mu,E_{\mathrm{T}}^{\mathrm{miss}})\right)}.
 \end{equation}
 
 \end_inset
 
-This requirement reduces the QCD multijet background very strongly.
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta\phi(\mu,E_{\mathrm{T}}^{\mathrm{miss}})=|\phi_{\mu}-\phi_{E_{\mathrm{T}}^{\mathrm{miss}}}|$
+\end_inset
+
+ denotes the difference of the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ angles in the xy-plane.
+ This requirement reduces the QCD multijet background very strongly.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{plot QCD here or later -> do not consider QCD further -> systematic}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
