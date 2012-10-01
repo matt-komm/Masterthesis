@@ -119,42 +119,18 @@ key "topQuarkObservation"
  the coupling structure of the top quark.
  Here the Standard Model of Particle Physics (SM) predicts that only left-handed
  top quarks (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-particle{t}
-\end_layout
-
+\begin_inset Formula $\mathrm{t}$
 \end_inset
 
-) couple to the w-boson (
-\begin_inset ERT
-status open
+) couple to the W boson (
 
-\begin_layout Plain Layout
-
-
-\backslash
-particle{W}
-\end_layout
-
+\begin_inset Formula $\mathrm{W}$
 \end_inset
 
+
+\lang american
 ) and the bottom quark (
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-particle{b}
-\end_layout
-
+\begin_inset Formula $\mathrm{b}$
 \end_inset
 
 ).
@@ -175,37 +151,16 @@ axialvector
 \end_inset
 
  (V-A) structure.
- With the start of data taking at the Large Hadron Collider in 2010
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{year correct?}
-\end_layout
-
-\end_inset
-
-(CERN) in Geneva, Switzerland, more data about the top quark is provided
- to investigate further into this area.
+ With the start of data taking at the Large Hadron Collider in 2010 (CERN)
+ in Geneva, Switzerland, more data about the top quark is provided to investigat
+e further into this area.
 \end_layout
 
 \begin_layout Standard
 In my thesis, I present the means, strategy and result of the top spin asymmetri
 es measurement.
  These asymmetries are sensitive to the structure of the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-particle{Wtb}
-\end_layout
-
+\begin_inset Formula $\mathrm{Wtb}$
 \end_inset
 
 -vertex coupling.
@@ -245,20 +200,7 @@ natural
 
 \begin_layout Itemize
 for the speed of light: 
-\begin_inset Formula $c=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1}{}
-\end_layout
-
+\begin_inset Formula $c=1$
 \end_inset
 
 
@@ -266,20 +208,7 @@ nuu{1}{}
 
 \begin_layout Itemize
 for the Planck constant: 
-\begin_inset Formula $\hbar=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1}{}
-\end_layout
-
+\begin_inset Formula $\hbar=1$
 \end_inset
 
 
@@ -287,20 +216,7 @@ nuu{1}{}
 
 \begin_layout Itemize
 for the electric permittivity: 
-\begin_inset Formula $\epsilon_{0}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1}{}
-\end_layout
-
+\begin_inset Formula $\epsilon_{0}=1$
 \end_inset
 
 
@@ -312,20 +228,7 @@ which changes amongst others the following basic SI units to
 
 \begin_layout Itemize
 mass 
-\begin_inset Formula $[m]=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{}{GeV}
-\end_layout
-
+\begin_inset Formula $[m]=\mathrm{GeV}$
 \end_inset
 
 
@@ -333,20 +236,7 @@ nuu{}{GeV}
 
 \begin_layout Itemize
 time 
-\begin_inset Formula $[t]=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{}{1/GeV}
-\end_layout
-
+\begin_inset Formula $[t]={\textstyle \frac{1}{\mathrm{GeV}}}$
 \end_inset
 
 
@@ -354,20 +244,7 @@ nuu{}{1/GeV}
 
 \begin_layout Itemize
 length 
-\begin_inset Formula $[s]=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{}{1/GeV}
-\end_layout
-
+\begin_inset Formula $[s]={\textstyle \frac{1}{\mathrm{GeV}}}$
 \end_inset
 
 

@@ -2740,40 +2740,14 @@ Results
 \end_layout
 
 \begin_layout Standard
-Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Generated--distributions"
-
+From the generated samples the events are selected for comparison where
+ the W boson decays into a muon and neutrino.
+ The resulting 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
 
- shows the shape differences between two WHIZARD samples due to anomalous
- couplings on generation level.
- From the generated events the final states with a muon from the W boson
- decay are selected here.
- The predicted distribution
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{\mathrm{d}\sigma}{\sigma\cdot\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}=\frac{1}{2}\left(1+\rho_{\mathrm{B}}\cdot c_{X}\cdot\cos\theta_{\mathrm{B,\, X}}\right),\qquad\cos\theta_{\mathrm{B,\, X}}=\frac{\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}}{\left|\vec{p}_{\mathrm{B}}^{\mathrm{(top)}}\right|\left|\cdot\vec{p}_{\mathrm{X}}^{\mathrm{(top)}}\right|}
-\]
-
-\end_inset
-
-and the asymmetry
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-A_{\mathrm{X}}^{\mathrm{B}}=\frac{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)-N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)+N\left(\cos\theta_{\mathrm{B,\, X}}<0\right)}=\frac{1}{2}\rho_{\mathrm{B}}\cdot c_{\mathrm{X}}\left(\mathrm{V_{L},\, V_{R},\, g_{L},\, g_{R}}\right)
-\]
-
-\end_inset
-
-is shown for the muon, bottom quark and neutrino as spin-analyzer 
+ distributions for the muon, bottom quark and neutrino as spin-analyzer
+ 
 \begin_inset Formula $\mathrm{X}$
 \end_inset
 
@@ -2781,30 +2755,20 @@ is shown for the muon, bottom quark and neutrino as spin-analyzer
 \begin_inset Formula $\mathrm{B}$
 \end_inset
 
- for the SM coupling case (
+ are shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Generated--distributions"
+
+\end_inset
+
+.
+ The SM coupling case (
 \begin_inset Formula $\mathrm{V_{L}}=1,\,\mathrm{V_{R}=g_{L}=g_{R}=0}$
 \end_inset
 
-) on the left and for a pure right-handed coupling case (
-\begin_inset Formula $\mathrm{V_{L}=0,\, V_{R}=1},\,\mathrm{g_{L}=g_{R}=0}$
-\end_inset
-
-) on the right.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{plot here on generator level some basic kinematics, cosTheta,
- Whel for 3-5 couplings in one plot!}
-\end_layout
-
-\end_inset
-
-
+) is highlighted as bold black line and the anomalous coupling scenarios
+ as drawn as colored dashed lines.
 \end_layout
 
 \begin_layout Standard
@@ -2822,9 +2786,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/000_000_000_000_000_000_000_0001.wl.ps-crop.pdf
+	filename plots/whizard_gen_cos_spectator_lepton.wl.ps-crop.pdf
 	lyxscale 10
-	width 7.1cm
+	height 5.6cm
 
 \end_inset
 
@@ -2843,10 +2807,6 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2857,83 +2817,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/n100_000_100_000_000_000_000_0001.ps-crop.pdf
+	filename plots/whizard_gen_cos_spectator_bjet.wl.ps-crop.pdf
 	lyxscale 10
-	width 8.2cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/000_000_000_000_000_000_000_0003.wl.ps-crop.pdf
-	lyxscale 10
-	width 7.1cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/n100_000_100_000_000_000_000_0003.ps-crop.pdf
-	lyxscale 10
-	width 8.2cm
+	height 5.6cm
 
 \end_inset
 
@@ -2970,44 +2856,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/000_000_000_000_000_000_000_0005.wl.ps-crop.pdf
+	filename plots/whizard_gen_cos_spectator_neutrino.ps-crop.pdf
 	lyxscale 10
-	width 7.1cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/n100_000_100_000_000_000_000_0005.ps-crop.pdf
-	lyxscale 10
-	width 8.2cm
+	height 5.6cm
 
 \end_inset
 
@@ -3043,11 +2894,11 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-Generated 
-\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta}}$
+The resulting 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
 
--distribution for the lepton in the spectator basis.
+ distributions for the lepton, bottom quark, and neutrino.
 \end_layout
 
 \end_inset
@@ -3059,13 +2910,12 @@ name "fig:Generated--distributions"
 
 \end_inset
 
-Generated 
-\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta}}$
+The resulting 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
 
- distribution for the lepton in the spectator basis.
- WHIZARD SM sample (a, c, e) compared to a pure right-handed anomalous coupling
- scenario (b, d, f).
+ distributions for the lepton (a), bottom quark (b), and neutrino (c) in
+ the spectator basis for different coupling scenarios.
 \end_layout
 
 \end_inset
@@ -3079,20 +2929,30 @@ Generated
 
 \end_inset
 
-This demonstrates 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{weiter......}
+This demonstrates that the effect of anomalous couplings can have a significant
+ impact on the distributions.
+ Also some coupling scenarios yield only shape differences for one or two
+ of the three spin analyzers.
+ Thus it is crutial to measure all three distributions and their related
+ asymmetries to obtain an insight into possible realized anomalous couplings.
 \end_layout
+
+\begin_layout Standard
+Another distribution which is influenced by the anomalous couplings is 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos^{\star}}}$
+\end_inset
+
+ which is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Generated-W-boson"
 
 \end_inset
 
-
+.
+ From that the W boson helicity fractions can be obtained.
+ Those however are not the scope of this analysis but are calculated here
+ as a cross check to compare with the analytical prediction.
 \end_layout
 
 \begin_layout Standard
@@ -3103,20 +2963,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/000_000_000_000_000_000_000_0007.ps-crop.pdf
+	filename plots/whizard_gen_cos_w_helicity_generator.ps-crop.pdf
 	lyxscale 10
-	width 8cm
+	height 5.6cm
 
 \end_inset
 
@@ -3127,66 +2977,29 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Generated-W-boson"
 
 \end_inset
 
 
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+\begin_inset Argument
+status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/n100_000_100_000_000_000_000_0007.ps-crop.pdf
-	lyxscale 10
-	width 8cm
-
+The resulting 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos^{\star}}}$
 \end_inset
 
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
+ distributions.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Generated W boson helicity fractions.
- WHIZARD SM sample (a) compared to a right-handed anomalous coupling scenario
- (b).
+The resulting W boson helicity fractions.
+ WHIZARD SM sample (bold black line) compared to a selection of anomalous
+ coupling scenarios (colored dashed lines).
 \end_layout
 
 \end_inset
@@ -3196,10 +3009,6 @@ Generated W boson helicity fractions.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3209,6 +3018,17 @@ reference "tab:The-generated-coupling"
 
  summarizes the asymmetries and W boson helicity fractions of the generated
  WHIZARD samples for the ten different coupling scenarios.
+ The W boson helicity fractions have been estimated by a binned fit in 
+\begin_inset Formula $\cos\theta^{\star}$
+\end_inset
+
+.
+ The statistical uncertainty for the asymmetries and W boson helicity fractions
+ is below 
+\begin_inset Formula $\lesssim0.004$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3225,7 +3045,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-The generated coupling scenarios
+The resulting top quark spin asymmetries and W boson helicity fractions.
 \end_layout
 
 \end_inset
@@ -3237,47 +3057,7 @@ name "tab:The-generated-coupling"
 
 \end_inset
 
-The generated coupling scenarios.
- The w helicity fractions and their uncertainties were taken from a binned
- fit in 
-\begin_inset Formula $\cos\theta^{\star}$
-\end_inset
-
-.
- The statistical uncertainties on the asymmetries are per definition always
- 
-\begin_inset Formula $\sqrt{3/(4\cdot N)}\leq A_{i}\leq\sqrt{1/N}=0.002$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{füge herleitung für formel hinzu.
- checke generierte muon zahlen!}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{A-beaml>A-spec!!!!}
+The resulting top quark spin asymmetries and W boson helicity fractions.
 \end_layout
 
 \end_inset
@@ -3288,7 +3068,7 @@ checkthis{A-beaml>A-spec!!!!}
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="12">
+<lyxtabular version="3" rows="22" columns="12">
 <features rotate="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -3343,7 +3123,7 @@ coupling
 \begin_inset Text
 
 \begin_layout Plain Layout
-top spin asymmetries
+top quark spin asymmetries
 \end_layout
 
 \end_inset
@@ -3397,7 +3177,7 @@ top spin asymmetries
 \begin_inset Text
 
 \begin_layout Plain Layout
-w helicity fractions
+W boson helicity fractions
 \end_layout
 
 \end_inset
@@ -3559,7 +3339,7 @@ w helicity fractions
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3571,7 +3351,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3583,7 +3363,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3595,7 +3375,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3607,7 +3387,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="decimal" valignment="top" usebox="none">
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3619,7 +3399,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="decimal" valignment="top" usebox="none">
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3631,7 +3411,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="decimal" valignment="top" usebox="none">
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3643,7 +3423,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="decimal" valignment="top" usebox="none">
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3655,7 +3435,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="decimal" valignment="top" usebox="none">
+<cell alignment="decimal" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3667,7 +3447,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="decimal" valignment="top" rightline="true" usebox="none">
+<cell alignment="decimal" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3679,7 +3459,7 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3691,13 +3471,123 @@ w helicity fractions
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $0.679$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3851,6 +3741,116 @@ w helicity fractions
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -3990,6 +3990,116 @@ w helicity fractions
 \begin_inset Formula $0.338$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4143,6 +4253,116 @@ w helicity fractions
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4289,6 +4509,116 @@ w helicity fractions
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4428,6 +4758,116 @@ w helicity fractions
 \begin_inset Formula $0.514$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4605,6 +5045,116 @@ w helicity fractions
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4751,6 +5301,116 @@ w helicity fractions
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4890,6 +5550,116 @@ w helicity fractions
 \begin_inset Formula $0.106$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5066,6 +5836,116 @@ w helicity fractions
 \end_inset
 </cell>
 </row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
 </lyxtabular>
 
 \end_inset
@@ -5075,7 +5955,7 @@ w helicity fractions
 
 \end_inset
 
-
+The W boson helicity fractions are compatible with the analytical prediction.
 \end_layout
 
 \begin_layout Section
@@ -5083,17 +5963,42 @@ Datasets
 \end_layout
 
 \begin_layout Standard
-For the analysis, data from the first half of the 2011 run at 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{position for muon channel selection}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The analysis concentrates only on the processes where the W boson decays
+ into a muon and neutrino because this channel can be measured more precisely
+ than the decay into an electron or tau plus neutrino.
+ 
+\end_layout
+
+\begin_layout Standard
+For the analysis, the data is used from the first half of the 2011 run at
+ 
 \begin_inset Formula $7\,\mathrm{TeV}$
 \end_inset
 
- recorded with the CMS detector is used.
+.
  This correspondes to an integrated luminosity of 
 \begin_inset Formula $1165.595\,\mathrm{pb^{-1}}$
 \end_inset
 
 .
- In table the required HTL triggers on the recorded data are listed.
+ Table lists the required HTL triggers for the selection of muon events
+ from the recorded data.
 \end_layout
 
 \begin_layout Standard
@@ -5322,13 +6227,6 @@ The used triggers and corresponding luminosities for the analysis.
 
 \begin_layout Section
 Event Selection
-\end_layout
-
-\begin_layout Standard
-The analysis concentrates only on the processes where the W boson decays
- into a muon and neutrino because this channel can be measured more precisely
- than the decay into an electron or tau plus neutrino.
- 
 \end_layout
 
 \begin_layout Standard
@@ -5643,7 +6541,7 @@ reference "tab:Cutflow"
 
 \end_inset
 
- lists the number of data events and the obtained event yields from the
+ lists the number of data events and the predicted event yields from the
  MC samples for the integrated luminosity of 
 \begin_inset Formula $1165.60\,\mathrm{pb^{-1}}$
 \end_inset
@@ -5667,7 +6565,7 @@ name "tab:Cutflow"
 
 \end_inset
 
-Event yields of data and MC after selection.
+Event yields of data and MC samples after event selection.
 \end_layout
 
 \end_inset
@@ -6596,19 +7494,6 @@ reference "fig:whizard-SM-and-powheg"
  shows kinematic distributions in variables related to the single top quark
  production process.
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{redo plots, linestyle!!! and legend}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6626,9 +7511,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/compare_leading_jet_pT.ps-crop.pdf
+	filename plots/compare_leading_jet_pT.wl.ps-crop.pdf
 	lyxscale 10
-	width 8cm
+	height 5.5cm
 
 \end_inset
 
@@ -6663,7 +7548,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/compare_lightjet_eta.ps-crop.pdf
 	lyxscale 10
-	width 8cm
+	height 5.5cm
 
 \end_inset
 
@@ -6696,9 +7581,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/compare_muon_pT.ps-crop.pdf
+	filename plots/compare_muon_pT.wl.ps-crop.pdf
 	lyxscale 10
-	width 8cm
+	height 5.5cm
 
 \end_inset
 
@@ -6730,7 +7615,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/compare_muon_eta.ps-crop.pdf
 	lyxscale 10
-	width 8cm
+	height 5.5cm
 
 \end_inset
 
@@ -6767,9 +7652,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/compare_mt_wboson.ps-crop.pdf
+	filename plots/compare_mt_wboson.wl.ps-crop.pdf
 	lyxscale 10
-	width 8cm
+	height 5.5cm
 
 \end_inset
 
@@ -6804,7 +7689,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/compare_top_mass.ps-crop.pdf
 	lyxscale 10
-	width 8cm
+	height 5.5cm
 
 \end_inset
 
@@ -6854,13 +7739,243 @@ WHIZARD SM and Powheg comparison
 
 WHIZARD SM and Powheg comparison in kinematic variables related to the single
  top t-channel production.
- The WHIZARD sample is normalized to the Powheg prediction.
  (a): The transveral momentum of the leading jet.
  (b): The pseudorapidity of the light jet.
  (c): The transveral momentum of the muon.
  (d): The pseudorapidity of the muon.
  (e): The transverse W boson mass before the neutrino solution.
  (f): The reconstructed top quark mass.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/compare_cos_theta_spectator_lepton.wl.ps-crop.pdf
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/compare_cos_theta_beamline_lepton.ps-crop.pdf
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/compare_cos_theta_spectator_bjet.wl.ps-crop.pdf
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/compare_cos_theta_beamline_bjet.ps-crop.pdf
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/compare_cos_theta_spectator_neutrino.wl.ps-crop.pdf
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/compare_cos_theta_beamline_neutrino.ps-crop.pdf
+	lyxscale 10
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+WHIZARD SM and Powheg comparison
+\end_layout
+
+\end_inset
+
+WHIZARD SM and Powheg comparison in 
+\begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
