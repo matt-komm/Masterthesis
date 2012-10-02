@@ -297,16 +297,7 @@ electron
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{0.511}{MeV}
-\end_layout
-
+\begin_inset Formula $0.511\,\mathrm{MeV}$
 \end_inset
 
 
@@ -371,16 +362,7 @@ electron neutrino
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{<2.05}{eV}
-\end_layout
-
+\begin_inset Formula $<2.05\,\mathrm{eV}$
 \end_inset
 
 
@@ -445,16 +427,7 @@ muon
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{105.66}{MeV}
-\end_layout
-
+\begin_inset Formula $105.66\,\mathrm{MeV}$
 \end_inset
 
 
@@ -519,16 +492,7 @@ muon neutrino
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{<0.19}{MeV}
-\end_layout
-
+\begin_inset Formula $<0.19\,\mathrm{MeV}$
 \end_inset
 
 
@@ -593,16 +557,7 @@ tau
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1.777}{GeV}
-\end_layout
-
+\begin_inset Formula $1.777\,\mathrm{GeV}$
 \end_inset
 
 
@@ -667,16 +622,7 @@ tau neutrino
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{<18.2}{MeV}
-\end_layout
-
+\begin_inset Formula $<18.2\,\mathrm{MeV}$
 \end_inset
 
 
@@ -756,18 +702,12 @@ key "pdg"
 
 .
  Due to non-perturbative effects of QCD at an energy scale 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{<1}{GeV}
-\end_layout
-
+\begin_inset Formula $<1\,\mathrm{GeV}$
 \end_inset
 
+
+\lang american
 , only the top quark mass results from a direct measurement.
 \end_layout
 
@@ -878,16 +818,8 @@ up
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{2.3^{+0.7}_{-0.5}}{MeV}
-\end_layout
-
+\begin_inset Formula $2.3_{-0.5}^{+0.7}\,\mathrm{MeV}$
 \end_inset
 
 
@@ -952,16 +884,7 @@ down
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{4.8^{+0.7}_{-0.3}}{MeV}
-\end_layout
-
+\begin_inset Formula $4.8_{-0.3}^{+0.7}\,\mathrm{MeV}$
 \end_inset
 
 
@@ -1026,18 +949,7 @@ charm
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{1.275
-\backslash
-pm 0.025}{GeV}
-\end_layout
-
+\begin_inset Formula $1.275\pm0.025\,\mathrm{GeV}$
 \end_inset
 
 
@@ -1102,18 +1014,7 @@ strange
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{95
-\backslash
-pm 5}{MeV}
-\end_layout
-
+\begin_inset Formula $95\pm5\,\mathrm{MeV}$
 \end_inset
 
 
@@ -1178,20 +1079,7 @@ top
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{173.5
-\backslash
-pm 0.6 
-\backslash
-pm 0.8}{GeV}
-\end_layout
-
+\begin_inset Formula $173.5\pm0.6\pm0.8\,\mathrm{GeV}$
 \end_inset
 
 
@@ -1256,18 +1144,8 @@ bottom
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{4.18
-\backslash
-pm 0.03}{GeV}
-\end_layout
-
+\begin_inset Formula $4.18\pm0.03\,\mathrm{GeV}$
 \end_inset
 
 
@@ -1485,18 +1363,7 @@ weak
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{80.385 
-\backslash
-pm 0.015}{GeV}
-\end_layout
-
+\begin_inset Formula $80.385\pm0.015\,\mathrm{GeV}$
 \end_inset
 
 
@@ -1540,18 +1407,8 @@ pm 0.015}{GeV}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{91.188 
-\backslash
-pm 0.002}{GeV}
-\end_layout
-
+\begin_inset Formula $91.188\pm0.002\,\mathrm{GeV}$
 \end_inset
 
 
@@ -2446,20 +2303,7 @@ key "topQuarkObservation"
 
 .
  It has by far the highest mass of 
-\begin_inset Formula $m_{\mathrm{t}}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{173.5}{GeV}
-\end_layout
-
+\begin_inset Formula $m_{\mathrm{t}}=173.5\,\mathrm{GeV}$
 \end_inset
 
  amongst all quarks.
@@ -2781,20 +2625,7 @@ Measuring the top quark production cross sections and its properties is
  essential for understanding the electroweak symmetry breaking, since the
  top quark mass is in the vicinity of the Higgs potential vacuum expectation
  value 
-\begin_inset Formula $v={\textstyle (\sqrt{2}G_{\mathrm{F}})^{-1/2}}\approx$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{246.22}{GeV}
-\end_layout
-
+\begin_inset Formula $v={\textstyle (\sqrt{2}G_{\mathrm{F}})^{-1/2}}\approx246.22\,\mathrm{GeV}$
 \end_inset
 
 
@@ -2849,20 +2680,7 @@ Top quark cross sections.
 
 Top quark cross sections.
  The cross sections are calculated for proton-proton collision at 
-\begin_inset Formula $\sqrt{s}$
-\end_inset
-
-=
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{7}{TeV}
-\end_layout
-
+\begin_inset Formula $\sqrt{s}=7\,\mathrm{TeV}$
 \end_inset
 
  in NNLO approximation.
@@ -2898,20 +2716,7 @@ nuu{7}{TeV}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{163^{+4}_{-8}
-\backslash
-mathrm{(scale)}^{+9}_{-9}
-\backslash
-mathrm{(pdf)}}{pb}
-\end_layout
-
+\begin_inset Formula $163_{-8}^{+4}\mathrm{(scale)}_{-9}^{+9}\mathrm{(pdf)}\,\mathrm{pb}$
 \end_inset
 
 
@@ -2952,20 +2757,7 @@ key "ttbar-xsec"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{64.57^{+2.09}_{-0.71}
-\backslash
-mathrm{(scale)}^{+1.51}_{-1.74}
-\backslash
-mathrm{(pdf)}}{pb}
-\end_layout
-
+\begin_inset Formula $64.57_{-0.71}^{+2.09}\mathrm{(scale)}_{-1.74}^{+1.51}\mbox{\mathrm{(pdf)}}\,\mathrm{pb}$
 \end_inset
 
 
@@ -3006,22 +2798,7 @@ key "toptch-xsec"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{4.63
-\backslash
-pm 0.07 
-\backslash
-mathrm{(scale)}^{+0.19}_{-0.17}
-\backslash
-mathrm{(pdf)}}{pb}
-\end_layout
-
+\begin_inset Formula $4.63\pm0.07\mathrm{(scale)}_{-0.17}^{+0.19}\mathrm{(pdf)}\,\mathrm{pb}$
 \end_inset
 
 
@@ -3062,22 +2839,7 @@ key "topsch-xsec"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{15.74
-\backslash
-pm 0.40 
-\backslash
-mathrm{(scale)}^{+1.10}_{-1.14}
-\backslash
-mathrm{(pdf)}}{pb}
-\end_layout
-
+\begin_inset Formula $15.74\pm0.40\mathrm{(scale)}_{-1.14}^{+1.10}\mathrm{(pdf)}\,\mathrm{pb}$
 \end_inset
 
 
@@ -3448,82 +3210,22 @@ denotes the degree of how much the top spin actually coincide with the direction
 
 .
  Here the spectator basis yields an expected polarization of 
-\begin_inset Formula $\rho_{\mathrm{spec.}}^{\mathrm{t}}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{99}{
-\backslash
-%}
-\end_layout
-
+\begin_inset Formula $\rho_{\mathrm{spec.}}^{\mathrm{t}}=99\,\%$
 \end_inset
 
  and 
-\begin_inset Formula $\rho_{\mathrm{spec.}}^{\bar{\mathrm{t}}}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{-96}{
-\backslash
-%}
-\end_layout
-
+\begin_inset Formula $\rho_{\mathrm{spec.}}^{\bar{\mathrm{t}}}=-96\,\%$
 \end_inset
 
 .
  Another basis with high polarization can be constructed by projecting the
  spectator quark along the beamline.
  Here, the polarizations are 
-\begin_inset Formula $\rho_{\mathrm{bml.}}^{\mathrm{t}}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{96}{
-\backslash
-%}
-\end_layout
-
+\begin_inset Formula $\rho_{\mathrm{bml.}}^{\mathrm{t}}=96\,\%$
 \end_inset
 
  and 
-\begin_inset Formula $\rho_{\mathrm{bml.}}^{\bar{\mathrm{t}}}=$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{-97}{
-\backslash
-%}
-\end_layout
-
+\begin_inset Formula $\rho_{\mathrm{bml.}}^{\bar{\mathrm{t}}}=-97\,\%$
 \end_inset
 
  
@@ -4136,69 +3838,18 @@ In the context of the effective SM extension, the analysis of the top quark
 \end_layout
 
 \begin_layout Section
-The 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
- Monte Carlo Generator
+The WHIZARD Monte Carlo Generator
 \end_layout
 
 \begin_layout Standard
-To simulate events with anomalous top quark couplings, the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
- Monte Carlo generator is used.
+To simulate events with anomalous top quark couplings, the WHIZARD Monte
+ Carlo generator is used.
  It has been designed for efficient calculation and simulation of multi-particle
  scattering.
  Matrix elements for leading order processes are automatically generated
- as needed by the integrated 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{O'Mega}
-\end_layout
-
-\end_inset
-
- matrix element generator.
+ as needed by the integrated O'Mega matrix element generator.
  The steering is performed through a script file written in the domain-specific
- language 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{SINADRIN}
-\end_layout
-
-\end_inset
-
-.
+ language SINDARIN.
 \end_layout
 
 \begin_layout Standard

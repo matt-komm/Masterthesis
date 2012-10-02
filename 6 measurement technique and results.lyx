@@ -139,18 +139,8 @@ status open
 
 \begin_layout Plain Layout
 N-vertex distribution for 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-name{WHIZARD}
-\end_layout
-
-\end_inset
-
+WHIZARD
+\lang american
  and Powheg
 \end_layout
 
