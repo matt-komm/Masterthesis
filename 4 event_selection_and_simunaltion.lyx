@@ -117,9 +117,10 @@ Simulation
 \end_layout
 
 \begin_layout Standard
-Monte-Carlo (MC) events have been simulated for comparison with data.
- Also background processes with the same signature as the single top production
- needs to be included in the analysis.
+Single top quark t-channel events have been simulated for comparison with
+ data.
+ Also background processes with the same signature need to be included in
+ the analysis.
  The signature of the single top t-channel production with leptonic W boson
  decay (signal process) involves two jets, where one is required as b-tagged
  jet, a lepton and missing transveral energy (MET) through the escaping
@@ -132,20 +133,6 @@ reference "fig:The-signature-of-tchannel-top-prod"
 \end_inset
 
  shows how this is derived from the Feynman diagram.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{better introduction}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -200,9 +187,9 @@ The signature of single top t-channel production with leptonic W boson decay.
 
 \end_inset
 
-The signature includes also an additional jet with a b-tagged, but it is
- mostly not observed due to the detector acceptance.
- The 
+The signature includes also a second jet with a b-tag, but it mostly escapes
+ the detector acceptance and is therefore not observed.
+ The jet without a b-tag is referred to as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -210,8 +197,17 @@ light
 \begin_inset Quotes erd
 \end_inset
 
- jet is also called spectator jet because it is not involved in the hard
- interaction at the 
+ jet.
+ Additionally it is often labeled 
+\begin_inset Quotes eld
+\end_inset
+
+spectator
+\begin_inset Quotes erd
+\end_inset
+
+ jet because the quark from which the jet originates is not involved in
+ the interaction at the 
 \begin_inset Formula $\mathrm{Wtb}$
 \end_inset
 
@@ -219,8 +215,14 @@ light
 \end_layout
 
 \begin_layout Standard
-The next sections will describe the used MC samples for signal and background
- simulation.
+The analysis within this thesis concentrates only on the processes where
+ the W boson decays into a muon and neutrino because this channel can be
+ measured more precisely and efficiently than the decay into an electron
+ or tau plus neutrino.
+\end_layout
+
+\begin_layout Standard
+The next sections will describe the simulated samples as well as the datasets.
 \end_layout
 
 \begin_layout Section
@@ -228,8 +230,8 @@ The Simulated SM Samples
 \end_layout
 
 \begin_layout Standard
-The used SM samples for signal and background processes are listed in Table
- 
+The used Standard Model samples for signal and background processes are
+ listed in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:The-background-samples"
@@ -237,7 +239,7 @@ reference "tab:The-background-samples"
 \end_inset
 
 .
- Simulated events from the MC generators MadGraph 
+ Simulated events from the Monte-Carlo (MC) generators MadGraph 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "madgraph"
@@ -1214,10 +1216,14 @@ checkthis{need to add and describe what DR for tW means?, how works the
 \end_layout
 
 \begin_layout Standard
-The inclusive W+jets sample has been enriched in statistic to account for
- the low MC events after the event selection.
+The inclusive 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ sample is enriched in statistic to account for the low MC events after
+ the event selection.
  This is performed by adding exclusive contributions from the W boson plus
- one to four additional jet phase spaces.
+ one to four additional jet events.
  Furthermore, the samples are mainly dominated by light flavored jets (
 \begin_inset Quotes eld
 \end_inset
@@ -1244,7 +1250,7 @@ heavy
 \begin_inset Formula $\mathrm{c,\, b}$
 \end_inset
 
- quarks) from this background events.
+ quarks) from this background processes.
  To gain confidence into the flavor contributions after merging the inclusive
  and exclusive samples, the generated events are sorted into the following
  three categories due to their generated flavor content:
@@ -1283,6 +1289,14 @@ W+light flavor
  are all other events with no bottom or charm quark.
 \end_layout
 
+\begin_layout Standard
+This splitting is also performed for the 
+\begin_inset Formula $\mathrm{Z}/\gamma^{\star}(\rightarrow\mathrm{l}^{+}\mathrm{l}^{-})+\mathrm{jets}$
+\end_inset
+
+ sample.
+\end_layout
+
 \begin_layout Section
 \begin_inset Argument
 status open
@@ -1302,7 +1316,7 @@ with WHIZARD
 
 \begin_layout Standard
 The WHIZARD event generator is used for the simulation of single top quark
- production with anomalous couplings.
+ t-channel events with anomalous couplings.
  The generator provides a model called 
 \begin_inset Quotes eld
 \end_inset
@@ -1327,7 +1341,8 @@ Sample Generation
 \end_layout
 
 \begin_layout Standard
-The generated processes are listed in table 
+The generated processes which contribute to the signal process are listed
+ in table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:The-simulated-processes"
@@ -1340,11 +1355,11 @@ reference "tab:The-simulated-processes"
  separated lists.
  The internal O'Mega matrix element generator creates all possible leading
  order processes between the inital and final state by checking all particle
- combinations if the obey the conservation laws.
+ combinations if they obey the conservation laws.
  From those only the processes are generated where the top quark is produced
  in resonance.
  This is peformed by requiring that the last three particles in the final
- state are originating from a top quark decay.
+ state are originating from a decaying top quark.
 \end_layout
 
 \begin_layout Standard
@@ -2641,14 +2656,14 @@ Due to the trivial CKM matrix implementation within the chosen model, their
 \begin_inset Formula $\mathrm{Wqq}^{\prime}$
 \end_inset
 
--vertices, where the quarks are not from the same quark generation.
+-vertices, where the quarks are not from the same generation.
  The WHIZARD generator automatically mixes each defined process with a certain
  fraction according to the internally caculated cross sections into one
  sample.
 \end_layout
 
 \begin_layout Standard
-The next steps in the sample generation are performed with the CMSSW framework.
+The next steps in the simulation are performed with the CMSSW framework.
  Subsequent tau decays are simulated by interfacing with the Tauola Monte-Carlo
  generator 
 \begin_inset CommandInset citation
@@ -2677,7 +2692,7 @@ status open
 
 
 \backslash
-checkthis{what about pileup conditions?}
+checkthis{what about pileup conditions?, pdfs, pythia parameters, alpha_s}
 \end_layout
 
 \end_inset
@@ -2699,7 +2714,9 @@ Approximatly 2,000,000 events have been simulated for ten different coupling
 \begin_inset Formula $\mathrm{g_{R}}$
 \end_inset
 
- couplings and six samples with mixes of 
+ couplings were generated.
+ To including interference effects additionally six samples were generated
+ with mixes of 
 \begin_inset Formula $\mathrm{V_{L}}=1$
 \end_inset
 
@@ -2711,8 +2728,8 @@ Approximatly 2,000,000 events have been simulated for ten different coupling
 \begin_inset Formula $\mathrm{g_{R}}$
 \end_inset
 
- coupling to including interference effects have been generated.
- Together with the SM couplings, ten samples where generated in total.
+ coupling.
+ Together with the SM couplings, ten samples are generated in total.
 \end_layout
 
 \begin_layout Standard
@@ -2767,8 +2784,9 @@ reference "fig:Generated--distributions"
 \begin_inset Formula $\mathrm{V_{L}}=1,\,\mathrm{V_{R}=g_{L}=g_{R}=0}$
 \end_inset
 
-) is highlighted as bold black line and the selection of anomalous coupling
+) is highlighted as bold black line and a selection of anomalous coupling
  scenarios are drawn as colored lines.
+ The legend displays only the couplings which are non-zero.
 \end_layout
 
 \begin_layout Standard
@@ -2929,12 +2947,17 @@ The resulting
 
 \end_inset
 
-This demonstrates that the effect of anomalous couplings can have a significant
- impact on the distributions.
+
+\end_layout
+
+\begin_layout Standard
+The distributions demonstrate that the effect of anomalous couplings can
+ have a significant impact.
  Also some coupling scenarios yield only shape differences for one or two
  of the three spin analyzers.
  Thus it is crutial to measure all three distributions and their related
- asymmetries to obtain an insight into possible realized anomalous couplings.
+ top quark spin asymmetries to obtain an insight into possible realized
+ anomalous couplings.
 \end_layout
 
 \begin_layout Standard
@@ -2952,7 +2975,7 @@ reference "fig:Generated-W-boson"
 .
  From that the W boson helicity fractions can be obtained.
  Those however are not the scope of this analysis but are calculated here
- as a cross check to compare with the theoretical prediction.
+ as a cross check for comparison with the theoretical prediction.
 \end_layout
 
 \begin_layout Standard
@@ -3016,8 +3039,8 @@ reference "tab:The-generated-coupling"
 
 \end_inset
 
- summarizes the asymmetries and W boson helicity fractions of the generated
- WHIZARD samples for the ten different coupling scenarios.
+ summarizes the found top quark spin asymmetries and W boson helicity fractions
+ of the generated WHIZARD samples for the ten different coupling scenarios.
  The W boson helicity fractions have been estimated by a binned fit in 
 \begin_inset Formula $\cos\theta^{\star}$
 \end_inset
@@ -5955,34 +5978,44 @@ W boson helicity fractions
 
 \end_inset
 
-The W boson helicity fractions are compatible with the theoretical prediction.
+The W boson helicity fractions are compatible with the theoretical prediction
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wbeyond"
+
+\end_inset
+
+.
+ However the top quark spin asymmetries agree only for the Standard Model
+ coupling case with the prediction.
+ This disagreement is under investigation with the WHIZARD developers.
+ Furthermore, the samples with the couplings 
+\begin_inset Formula $\mathrm{V_{L}=1.0,\, V_{R}=0.0,\, g_{L}=0.0,\, g_{R}=0.5}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{V_{L}=0.0,\, V_{R}=0.0,\, g_{L}=0.0,\, g_{R}=1.0}$
+\end_inset
+
+ yield an unexpected significant higher polarisation 
+\begin_inset Formula $\rho$
+\end_inset
+
+ in the beamline basis as in the spectator basis.
+ This feature is very contradicting to the theory and those two samples
+ are therefore excluded from the analysis.
+\end_layout
+
+\begin_layout Standard
+During the analysis, the WHIZARD samples are only used to estimate a bias
+ within the analysis procedure.
+ Therefore, the influence on the measurement by using those samples anyway
+ is marginal.
 \end_layout
 
 \begin_layout Section
 Datasets
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{position for muon channel selection}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The analysis concentrates only on the processes where the W boson decays
- into a muon and neutrino because this channel can be measured more precisely
- than the decay into an electron or tau plus neutrino.
- 
 \end_layout
 
 \begin_layout Standard

@@ -198,8 +198,9 @@ key "pdg"
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="5">
+<lyxtabular version="3" rows="7" columns="6">
 <features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
@@ -207,6 +208,15 @@ key "pdg"
 <column alignment="left" valignment="top" width="0">
 <row>
 <cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+generation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -253,7 +263,16 @@ interactions
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -262,7 +281,7 @@ electron
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -274,7 +293,7 @@ electron
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -295,7 +314,7 @@ nuu{0.511}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -307,7 +326,7 @@ nuu{0.511}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -318,7 +337,90 @@ EM, weak
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+electron neutrino
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu\mathrm{_{e}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{<2.05}{eV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+weak
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -383,7 +485,90 @@ EM, weak
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+muon neutrino
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nu_{\mu}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nuu{<0.19}{MeV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+weak
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -448,137 +633,16 @@ EM, weak
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-electron neutrino
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\nu\mathrm{_{e}}$
-\end_inset
-
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{<2.05}{eV}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-EM, weak
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-muon neutrino
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\nu_{\mu}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-nuu{<0.19}{MeV}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-EM, weak
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -636,7 +700,7 @@ nuu{<18.2}{MeV}
 \begin_inset Text
 
 \begin_layout Plain Layout
-EM, weak
+weak
 \end_layout
 
 \end_inset
@@ -715,8 +779,9 @@ nuu{<1}{GeV}
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="5">
+<lyxtabular version="3" rows="7" columns="6">
 <features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
@@ -724,6 +789,15 @@ nuu{<1}{GeV}
 <column alignment="left" valignment="top" width="0">
 <row>
 <cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+generation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -770,7 +844,16 @@ interactions
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -779,7 +862,7 @@ up
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -791,7 +874,7 @@ up
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -812,7 +895,7 @@ nuu{2.3^{+0.7}_{-0.5}}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -824,7 +907,7 @@ nuu{2.3^{+0.7}_{-0.5}}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -835,7 +918,16 @@ EM, weak, strong
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -844,7 +936,7 @@ down
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -856,7 +948,7 @@ down
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -877,7 +969,7 @@ nuu{4.8^{+0.7}_{-0.3}}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -889,7 +981,7 @@ nuu{4.8^{+0.7}_{-0.3}}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -900,7 +992,16 @@ EM, weak, strong
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -967,7 +1068,16 @@ EM, weak, strong
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -976,7 +1086,7 @@ strange
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -988,7 +1098,7 @@ strange
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1011,7 +1121,7 @@ pm 5}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1023,7 +1133,7 @@ pm 5}{MeV}
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1034,7 +1144,16 @@ EM, weak, strong
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1103,7 +1222,16 @@ EM, weak, strong
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
