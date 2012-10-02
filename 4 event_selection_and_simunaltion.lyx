@@ -1197,6 +1197,39 @@ key "WZxsec"
 \end_layout
 
 \begin_layout Standard
+There are two ways to theoretically define the 
+\begin_inset Quotes eld
+\end_inset
+
+single top quark tW-channel
+\begin_inset Quotes erd
+\end_inset
+
+ process: diagram removal (DR) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tWdr"
+
+\end_inset
+
+, and diagram substraction (DS) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tWds"
+
+\end_inset
+
+.
+ This ambiguity is due to the methodology how the interference effects with
+ the 
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+ production in next to leading order are treated.
+ In the analysis, the diagram removal samples are used.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1204,8 +1237,7 @@ status open
 
 
 \backslash
-checkthis{need to add and describe what DR for tW means?, how works the
- incl.
+checkthis{how works the incl.
  excl.
  mixing? ref}
 \end_layout
@@ -2759,6 +2791,45 @@ Results
 \begin_layout Standard
 From the generated samples the events are selected for comparison where
  the W boson decays into a muon and neutrino.
+ The angles 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang american
+ between the spin bases 
+\begin_inset Formula $\mathrm{B}$
+\end_inset
+
+ and the spin analyzers 
+\begin_inset Formula $\mathrm{X}$
+\end_inset
+
+ are observables for the anomalous couplings.
  The resulting 
 \begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
@@ -2806,7 +2877,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/whizard_gen_cos_spectator_lepton.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.6cm
+	height 5.8cm
 
 \end_inset
 
@@ -2837,7 +2908,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/whizard_gen_cos_spectator_bjet.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.6cm
+	height 5.8cm
 
 \end_inset
 
@@ -2876,7 +2947,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/whizard_gen_cos_spectator_neutrino.ps-crop.pdf
 	lyxscale 10
-	height 5.6cm
+	height 5.8cm
 
 \end_inset
 
@@ -2952,10 +3023,21 @@ The resulting
 
 \begin_layout Standard
 The distributions demonstrate that the effect of anomalous couplings can
- have a significant impact.
+ have a significant impact in those observables.
  Also some coupling scenarios yield only shape differences for one or two
  of the three spin analyzers.
- Thus it is crutial to measure all three distributions and their related
+ This is e.g.
+ the case for the two scenarios with 
+\begin_inset Formula $\mathrm{V_{L}=0,\, V_{R}=1,\, g_{L}=g_{R}=0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{V_{L}=V=g_{L}=0,\, g_{R}=1}$
+\end_inset
+
+ which differ for the bottom quark and the neutrino spin analyzer in shape
+ but not for the muon.
+ Thus it is crucial to measure all three distributions and their related
  top quark spin asymmetries to obtain an insight into possible realized
  anomalous couplings.
 \end_layout
@@ -2965,6 +3047,12 @@ Another distribution which is influenced by the anomalous couplings is
 \begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos^{\star}}}$
 \end_inset
 
+ where 
+\begin_inset Formula $\cos\theta^{\star}$
+\end_inset
+
+ is the angle between the W boson in the top quark rest frame and the muon
+ in the W boson rest frame.
  which is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2989,7 +3077,7 @@ status open
 \begin_inset Graphics
 	filename plots/whizard_gen_cos_w_helicity_generator.ps-crop.pdf
 	lyxscale 10
-	height 5.6cm
+	height 5.8cm
 
 \end_inset
 
@@ -3065,7 +3153,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The resulting top quark spin asymmetries and W boson helicity fractions.
@@ -3083,6 +3171,13 @@ name "tab:The-generated-coupling"
 The resulting top quark spin asymmetries and W boson helicity fractions.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
 \end_inset
 
 
@@ -5976,8 +6071,19 @@ W boson helicity fractions
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset VSpace 0.5cm
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The W boson helicity fractions are compatible with the theoretical prediction
  
 \begin_inset CommandInset citation
@@ -5988,7 +6094,7 @@ key "Wbeyond"
 
 .
  However the top quark spin asymmetries agree only for the Standard Model
- coupling case with the prediction.
+ coupling case with the theory.
  This disagreement is under investigation with the WHIZARD developers.
  Furthermore, the samples with the couplings 
 \begin_inset Formula $\mathrm{V_{L}=1.0,\, V_{R}=0.0,\, g_{L}=0.0,\, g_{R}=0.5}$
@@ -6019,13 +6125,12 @@ Datasets
 \end_layout
 
 \begin_layout Standard
-For the analysis, the data is used from the first half of the 2011 run at
- 
+The data from the first half of the 2011 run at 
 \begin_inset Formula $7\,\mathrm{TeV}$
 \end_inset
 
-.
- This correspondes to an integrated luminosity of 
+ is analyzed.
+ It correspondes to an integrated luminosity of 
 \begin_inset Formula $1165.595\,\mathrm{pb^{-1}}$
 \end_inset
 
@@ -6264,7 +6369,7 @@ Event Selection
 
 \begin_layout Standard
 To select single top t-channel events from the recorded data and MC samples
- the following lists of requirements have to be matched:
+ the following lists of requirements have to apply:
 \end_layout
 
 \begin_layout Paragraph*
@@ -6279,7 +6384,7 @@ reference "tab:The-used-datasets"
 
 \end_inset
 
- has been fired the muon needs to fullfill the following:
+ is fired the muon needs to fullfill the following:
 \end_layout
 
 \begin_layout Itemize
@@ -6438,8 +6543,8 @@ Missing transverse energy
 
 \begin_layout Standard
 The undetected neutrino reveals itself in large missing energy.
- Events are selected if the missing transverse energy combined with the
- muon leads to a transverse W boson mass above 
+ Events are selected if the missing transverse energy in combination with
+ the muon leads to a transverse W boson mass above 
 \begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
 \end_inset
 
@@ -6491,9 +6596,6 @@ M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathr
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $\Delta\phi(\mu,E_{\mathrm{T}}^{\mathrm{miss}})=|\phi_{\mu}-\phi_{E_{\mathrm{T}}^{\mathrm{miss}}}|$
 \end_inset
 
@@ -6502,23 +6604,6 @@ M_{\mathrm{T}}^{\mathrm{W}}=\sqrt{2\cdot E_{\mathrm{T}}^{\mathrm{miss}}E_{\mathr
 \end_inset
 
  angles in the xy-plane.
- This requirement reduces the QCD multijet background very strongly.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{plot QCD here or later -> do not consider QCD further -> systematic}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Paragraph*
@@ -6536,7 +6621,7 @@ Two PF jets are required which are reconstructed by the anti-
 
 .
  The light jet originates from the quark which recoils against the W boson.
- Therefore single top t-channel processes involves often at least one very
+ Therefore single top t-channel processes involve often at least one very
  forward jet.
  
 \end_layout
@@ -6615,9 +6700,8 @@ the charged multiplicity is larger than
 \end_layout
 
 \begin_layout Standard
-To consider that a jet originates from a bottom quark the discriminator
- of the Track Counting High Purity (TCHP) algorithm needs to be larger than
- 
+To consider a jet as b-tagged the discriminator of the Track Counting High
+ Purity (TCHP) algorithm has to be larger than 
 \begin_inset Formula $>3.41$
 \end_inset
 
@@ -6672,11 +6756,8 @@ Event yields of data and MC samples after event selection.
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="5">
+<lyxtabular version="3" rows="21" columns="2">
 <features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <row>
@@ -6684,7 +6765,11 @@ Event yields of data and MC samples after event selection.
 \begin_inset Text
 
 \begin_layout Plain Layout
-tChannelTop 
+single top quark t-channel 
+\begin_inset Formula $(\mathrm{t}\rightarrow\mu\mathrm{+X})$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6701,12 +6786,14 @@ tChannelTop
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset space \hspace{}
-\length 1cm
+single top quark t-channel 
+\begin_inset Formula $(\bar{\mathrm{t}}\rightarrow\mu\mathrm{+X})$
 \end_inset
 
 
@@ -6718,7 +6805,239 @@ tChannelTop
 \begin_inset Text
 
 \begin_layout Plain Layout
-W2LightFlavor 
+\begin_inset Formula $244.66\pm1.68$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark t-channel 
+\begin_inset Formula $(\mathrm{t}\rightarrow\tau\mathrm{+X})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $15.25\pm0.41$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark t-channel 
+\begin_inset Formula $(\bar{\mathrm{t}}\rightarrow\tau\mathrm{+X})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $8.53\pm0.31$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark s-channel 
+\begin_inset Formula $(\mathrm{t})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $35.41\pm0.56$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark s-channel 
+\begin_inset Formula $(\bar{\mathrm{t}})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $16.67\pm0.35$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark tW-channel 
+\begin_inset Formula $(\mathrm{t})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $81.57\pm0.89$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top quark tW-channel 
+\begin_inset Formula $(\bar{\mathrm{t}})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $80.49\pm0.88$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $994.98\pm5.85$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+QCD multijet (
+\begin_inset Formula $\mu$
+\end_inset
+
+ enriched)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $67.78\pm25.62$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{light\, flavor}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6737,41 +7056,14 @@ W2LightFlavor
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-tChannelAntiTop 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $244.66\pm1.68$
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{bX}$
 \end_inset
 
  
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-W2bb 
 \end_layout
 
 \end_inset
@@ -6790,41 +7082,14 @@ W2bb
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-tChannelToptau 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $15.25\pm0.41$
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{cX}$
 \end_inset
 
  
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-W2cc 
 \end_layout
 
 \end_inset
@@ -6843,41 +7108,14 @@ W2cc
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-tChannelAntiToptau 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $8.53\pm0.31$
+\begin_inset Formula $\mathrm{Z}/\gamma^{\star}(\rightarrow\mathrm{l}^{+}\mathrm{l}^{-})+\mathrm{light\, flavor}$
 \end_inset
 
- 
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ZLightFlavor 
 \end_layout
 
 \end_inset
@@ -6896,41 +7134,14 @@ ZLightFlavor
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-sChannelTop 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $35.41\pm0.56$
+\begin_inset Formula $\mathrm{Z}/\gamma^{\star}(\rightarrow\mathrm{l}^{+}\mathrm{l}^{-})+\mathrm{cX}$
 \end_inset
 
- 
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Zcc 
 \end_layout
 
 \end_inset
@@ -6949,41 +7160,14 @@ Zcc
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-sChannelAntiTop 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $16.67\pm0.35$
+\begin_inset Formula $\mathrm{Z}/\gamma^{\star}(\rightarrow\mathrm{l}^{+}\mathrm{l}^{-})+\mathrm{bX}$
 \end_inset
 
- 
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Zbb 
 \end_layout
 
 \end_inset
@@ -7002,41 +7186,14 @@ Zbb
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-tWChannelDRTop 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $81.57\pm0.89$
+\begin_inset Formula $\mathrm{WW}$
 \end_inset
 
- 
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-WW 
 \end_layout
 
 \end_inset
@@ -7055,41 +7212,14 @@ WW
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-tWChannelDRAntiTop 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $80.49\pm0.88$
+\begin_inset Formula $\mathrm{WZ}$
 \end_inset
 
- 
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-WZ 
 \end_layout
 
 \end_inset
@@ -7108,41 +7238,14 @@ WZ
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-TTJets 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $994.98\pm5.85$
+\begin_inset Formula $\mathrm{ZZ}$
 \end_inset
 
- 
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ZZ 
 \end_layout
 
 \end_inset
@@ -7182,33 +7285,6 @@ Total MC
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 </row>
 <row>
 <cell alignment="left" valignment="top" usebox="none">
@@ -7232,33 +7308,6 @@ Data
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 </row>
 </lyxtabular>
 
@@ -7268,12 +7317,32 @@ Data
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
 
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{recalculate error with QCD}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+The simulated single top t-channel events which pass the event selection
+ are not entirely from the direct W boson decay into a muon and neutrino.
+ There are extra events which contain processes where the W boson decays
+ into a tau and a neutrino.
+ Then the tau decays further into a muon and a second neutrino.
+ In that decay chain the spin information of the top quark is lost due to
+ the unkown relative directions of two escaping neutrinos.
+ Therefore those events have to be considered as an additional background
+ contribution.
 \end_layout
 
 \begin_layout Section
@@ -7512,18 +7581,6 @@ key "PHDThesisKIT"
 \end_inset
 
 .
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{check with AN}
-\end_layout
-
-\end_inset
-
  This case is solved by varing 
 \begin_inset Formula $E_{\mathrm{T}}^{\mathrm{miss}}$
 \end_inset
@@ -7593,23 +7650,41 @@ reference "fig:whizard-SM-and-powheg"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+afterpage{
+\backslash
+clearpage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
 \begin_inset Graphics
 	filename plots/compare_leading_jet_pT.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.7cm
 
 \end_inset
 
@@ -7638,13 +7713,13 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename plots/compare_lightjet_eta.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7673,13 +7748,13 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename plots/compare_muon_pT.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7705,13 +7780,13 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename plots/compare_muon_eta.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7744,13 +7819,13 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename plots/compare_mt_wboson.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7779,13 +7854,13 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename plots/compare_top_mass.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7833,11 +7908,10 @@ WHIZARD SM and Powheg comparison
 
 \end_inset
 
-WHIZARD SM and Powheg comparison in kinematic variables related to the single
- top t-channel production.
- (a): The transveral momentum of the leading jet.
+WHIZARD SM and Powheg comparison in kinematic variables.
+ (a): The transverse momentum of the leading jet.
  (b): The pseudorapidity of the light jet.
- (c): The transveral momentum of the muon.
+ (c): The transverse momentum of the muon.
  (d): The pseudorapidity of the muon.
  (e): The transverse W boson mass before the neutrino solution.
  (f): The reconstructed top quark mass.
@@ -7870,7 +7944,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_cos_theta_spectator_lepton.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7901,7 +7975,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_cos_theta_beamline_lepton.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7936,7 +8010,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_cos_theta_spectator_bjet.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7964,7 +8038,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_cos_theta_beamline_bjet.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -7999,7 +8073,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_cos_theta_spectator_neutrino.wl.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 
@@ -8030,7 +8104,7 @@ status open
 \begin_inset Graphics
 	filename plots/compare_cos_theta_beamline_neutrino.ps-crop.pdf
 	lyxscale 10
-	height 5.5cm
+	height 5.8cm
 
 \end_inset
 

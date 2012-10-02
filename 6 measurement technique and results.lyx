@@ -120,6 +120,22 @@ and Results
 Systematic Uncertainties
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{plot QCD here or later -> do not consider QCD further -> systematic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Sources
 \end_layout
@@ -138,10 +154,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-N-vertex distribution for 
-WHIZARD
-\lang american
- and Powheg
+N-vertex distribution for WHIZARD and Powheg
 \end_layout
 
 \end_inset
