@@ -644,40 +644,56 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{check hole section if x->true, y->measured!}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Suppose a true distribution 
-\begin_inset Formula $f(y)$
+\begin_inset Formula $f(x)$
 \end_inset
 
  leads to a measured distribution 
-\begin_inset Formula $g(x)$
+\begin_inset Formula $g(y)$
 \end_inset
 
  due to smearing, finite resolution and acceptance effects.
  This can be model by 
 \begin_inset Formula 
 \begin{equation}
-g(x)=\int f(y)A(x,\, y)\mathrm{d}y\label{eq:folding-integral}
+g(y)=\int f(x)A(y,\, x)\mathrm{d}x\label{eq:folding-integral}
 \end{equation}
 
 \end_inset
 
 which is called a Fredholm integral equation of the first kind.
  The function 
-\begin_inset Formula $A(x,\, y)$
+\begin_inset Formula $A(y,\, x)$
 \end_inset
 
  encodes the behavior of the detector for a transformation 
-\begin_inset Formula $y\rightarrow x$
+\begin_inset Formula $x\rightarrow y$
 \end_inset
 
  which may even include non-linear responses.
  One is then interested in solving this equation to obtain the true distribution
  
-\begin_inset Formula $f(y)$
+\begin_inset Formula $f(x)$
 \end_inset
 
  from the measured one 
-\begin_inset Formula $g(x)$
+\begin_inset Formula $g(y)$
 \end_inset
 
 .
@@ -697,17 +713,17 @@ reference "eq:folding-integral"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{x}=A\cdot\vec{y},\label{eq:unfolding}
+\vec{y}=A\cdot\vec{x},\label{eq:unfolding}
 \end{equation}
 
 \end_inset
 
 where the vectors 
-\begin_inset Formula $\vec{x}$
+\begin_inset Formula $\vec{y}$
 \end_inset
 
  and 
-\begin_inset Formula $\vec{y}$
+\begin_inset Formula $\vec{x}$
 \end_inset
 
  are the measured and the true binned distributions.
@@ -764,7 +780,7 @@ reference "eq:unfolding"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{y}=A^{-1}\vec{x}.
+\vec{x}=A^{-1}\vec{y}.
 \end{equation}
 
 \end_inset
@@ -1014,7 +1030,7 @@ The SVD decomposition applied to
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\vec{y} & =\underbrace{\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+\vec{x} & =\underbrace{\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
 1 & 1\\
 1 & -1
 \end{array}\right)}_{=U^{-1}}\cdot\underbrace{\left(\begin{array}{cc}
@@ -1024,16 +1040,16 @@ The SVD decomposition applied to
 1 & 1\\
 1 & -1
 \end{array}\right)}_{=V^{-1}}\cdot\left(\begin{array}{c}
-x_{1}\\
-x_{2}
+y_{1}\\
+y_{2}
 \end{array}\right)\\
  & =\underbrace{1}_{D_{11}^{-1}}\cdot\frac{1}{2}\left(\begin{array}{c}
 1\\
 1
-\end{array}\right)\cdot\left(x_{1}+x_{2}\right)+\underbrace{\frac{1}{\epsilon}}_{D_{22}^{-1}}\cdot\frac{1}{2}\underbrace{\left(\begin{array}{c}
+\end{array}\right)\cdot\left(y_{1}+y_{2}\right)+\underbrace{\frac{1}{\epsilon}}_{D_{22}^{-1}}\cdot\frac{1}{2}\underbrace{\left(\begin{array}{c}
 1\\
 -1
-\end{array}\right)}_{\mathrm{anti\, correlation}}\cdot\left(x_{1}-x_{2}\right)\label{eq:anticorr}
+\end{array}\right)}_{\mathrm{anti\, correlation}}\cdot\left(y_{1}-y_{2}\right)\label{eq:anticorr}
 \end{align}
 
 \end_inset
@@ -1051,11 +1067,11 @@ reference "eq:anticorr"
 \end_inset
 
  induces an anticorrelation between 
-\begin_inset Formula $y_{1}$
+\begin_inset Formula $x_{1}$
 \end_inset
 
  and 
-\begin_inset Formula $y_{2}$
+\begin_inset Formula $x_{2}$
 \end_inset
 
 .
@@ -1113,7 +1129,7 @@ SVD Unfolding
 \begin_layout Standard
 \begin_inset Formula 
 \[
-y_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right)
+x_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right)
 \]
 
 \end_inset
@@ -1131,6 +1147,28 @@ status open
 \backslash
 checkthis{check formular!!!}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another regularization method can be performed by suppressing large fluctuations
+ explicitly through a 
+\begin_inset Formula $\chi^{2}-\mathrm{fit}$
+\end_inset
+
+.
+ The unfolded distribution is found by maximizing the minimizing the function
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\chi^{2}=\left(y-Ax\right)^{\mathrm{T}}\cdot V_{yy}^{-1}\cdot\left(y-Ax\right)+\tau^{2}
+\]
 
 \end_inset
 
