@@ -116,6 +116,14 @@ Measurement Technique
 and Results
 \end_layout
 
+\begin_layout Standard
+Before the top quark spin asymmetries can be measured from data the influence
+ of systematic uncertainties has to be investigated.
+ These can be divided into theoretical uncertainties and uncertainties which
+ arise due to the measurement behavior of the CMS detector and the reconstructio
+n accuracy.
+\end_layout
+
 \begin_layout Section
 Systematic Uncertainties
 \end_layout
@@ -141,14 +149,107 @@ Sources
 \end_layout
 
 \begin_layout Standard
+All considered source of systematic uncertainties are described in the following
+:
+\end_layout
+
+\begin_layout Paragraph*
+Cross section uncertainties
+\end_layout
+
+\begin_layout Standard
+Each of the simulated processes have been asigned with a certain weight
+ which scales its yield according to the theoretical cross section.
+ To account for uncertainties on the cross section and Monte-Carlo modeling
+ the following variations in the yields are applied:
+\end_layout
+
+\begin_layout Itemize
+The single top quark t-channel cross section including the W boson decay
+ into tau and neutrino is varied by 
+\begin_inset Formula $\pm10\,\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The single top quark s-channel and tW-channel cross sections are each varied
+ 
+\begin_inset Formula $\pm30\,\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\pm15\,\%$
+\end_inset
+
+ variation is used for the 
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+ cross section.
+\end_layout
+
+\begin_layout Itemize
+The contributions from the Drell-Yan processes 
+\end_layout
+
+\begin_layout Paragraph*
+Jet energy scale
+\end_layout
+
+\begin_layout Standard
+fgdf
+\end_layout
+
+\begin_layout Paragraph*
+Jet energy resolution
+\end_layout
+
+\begin_layout Standard
+fghfh
+\end_layout
+
+\begin_layout Paragraph*
+B-tagging uncertainty
+\end_layout
+
+\begin_layout Standard
+vhjbhj
+\end_layout
+
+\begin_layout Paragraph*
+Mis-tagging uncertainty
+\end_layout
+
+\begin_layout Standard
+cghcgh
+\end_layout
+
+\begin_layout Paragraph*
+Unclustered energy
+\end_layout
+
+\begin_layout Standard
+fgsdgf
+\end_layout
+
+\begin_layout Paragraph*
+Pileup uncertainty
+\end_layout
+
+\begin_layout Standard
+hjghjg
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -165,6 +266,34 @@ N-vertex distribution for WHIZARD and Powheg
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+W+jets modeling
+\end_layout
+
+\begin_layout Standard
+fgdgf
+\end_layout
+
+\begin_layout Paragraph*
+Trigger efficiency
+\end_layout
+
+\begin_layout Standard
+fgfghf
+\end_layout
+
+\begin_layout Paragraph*
+Luminosity
+\end_layout
+
+\begin_layout Standard
+fdgfgd
+\end_layout
+
+\begin_layout Standard
+Implemented as nuciance parameter, log-normal dist.
 \end_layout
 
 \begin_layout Subsection
