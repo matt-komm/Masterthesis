@@ -129,19 +129,78 @@ Systematic Uncertainties
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
+The contribution of the QCD Multijet background after the event selection
+ can be investigated from the distribution of the transverse W boson mass
+ 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}$
+\end_inset
+
+ which is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:QCD-transverse-W"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/mtw.ps-crop.pdf
+	lyxscale 30
+	width 10cm
+
+\end_inset
 
 
-\backslash
-checkthis{plot QCD here or later -> do not consider QCD further -> systematic}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:QCD-transverse-W"
+
+\end_inset
+
+QCD transverse W boson mass
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After the selection requirement of 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
+\end_inset
+
+ the remain of this background simulation contains only very few Monte-Carlo
+ events.
+ Those will lead to large unphysical modelling uncertainties within the
+ statistical evaluation.
+ The shape modeling of the other processes with respect to 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}$
+\end_inset
+
+ after the event selection is however reasonable enough to exclude the contribut
+ions from this background.
 \end_layout
 
 \begin_layout Subsection
@@ -149,52 +208,8 @@ Sources
 \end_layout
 
 \begin_layout Standard
-All considered source of systematic uncertainties are described in the following
-:
-\end_layout
-
-\begin_layout Paragraph*
-Cross section uncertainties
-\end_layout
-
-\begin_layout Standard
-Each of the simulated processes have been asigned with a certain weight
- which scales its yield according to the theoretical cross section.
- To account for uncertainties on the cross section and Monte-Carlo modeling
- the following variations in the yields are applied:
-\end_layout
-
-\begin_layout Itemize
-The single top quark t-channel cross section including the W boson decay
- into tau and neutrino is varied by 
-\begin_inset Formula $\pm10\,\%$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-The single top quark s-channel and tW-channel cross sections are each varied
- 
-\begin_inset Formula $\pm30\,\%$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\pm15\,\%$
-\end_inset
-
- variation is used for the 
-\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
-\end_inset
-
- cross section.
-\end_layout
-
-\begin_layout Itemize
-The contributions from the Drell-Yan processes 
+The considered source of systematic uncertainties which are applied on the
+ MC samples are described in the following:
 \end_layout
 
 \begin_layout Paragraph*
@@ -202,7 +217,40 @@ Jet energy scale
 \end_layout
 
 \begin_layout Standard
-fgdf
+The energy measurement of particles with the CMS detector is mainly peformed
+ with the calorimeters.
+ It involves the translation of the calorimeter's readout into the actual
+ deposited energy by a particle.
+ The energy of a jet is then constructed by a jet algorithm.
+ This intrinsically utilizes the translation and depends therefore on its
+ accuray.
+ Furthermore, the translation depends also on the measured pseudorapidity
+ 
+\begin_inset Formula $\eta$
+\end_inset
+
+ through the calorimeter geometry and on the transvese momentum 
+\begin_inset Formula $p_{\mathrm{T}}$
+\end_inset
+
+ of a jet.
+ The resulting jet energy scale (JES) combines those effects into correction
+ factors 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JESsource"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The JES and its uncertainty is included into the analysis by varing the
+ four-momenta of all measured jets.
+ After that, the missing transverse energy is recalculated.
+ It depends on the vector sum of all reconstructed particle momenta and
+ receives therefore also an uncertainty from this source.
 \end_layout
 
 \begin_layout Paragraph*
@@ -210,23 +258,871 @@ Jet energy resolution
 \end_layout
 
 \begin_layout Standard
-fghfh
-\end_layout
+This systematic accounts for the smearing effects in the measurement of
+ the jet energy and momentum by the detector.
+ It is included into the analysis by varing the reconstructed energy and
+ momentum of a jet against its generated energy and momentum 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JERsource"
 
-\begin_layout Paragraph*
-B-tagging uncertainty
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-vhjbhj
-\end_layout
+The variations in resolution 
+\begin_inset Formula $\mathrm{res}(\eta)$
+\end_inset
 
-\begin_layout Paragraph*
-Mis-tagging uncertainty
+ depends on the pseudorapidity of the jet.
+ Scale factors 
+\begin_inset Formula $\mathrm{SF}(\eta,\, p_{\mathrm{T}})$
+\end_inset
+
+ are applied by
 \end_layout
 
 \begin_layout Standard
-cghcgh
+\begin_inset Formula 
+\begin{equation}
+p_{\mathrm{Jet}}^{\prime\mathrm{reco}}=p_{\mathrm{Jet}}^{\mathrm{reco}}\cdot\underbrace{\left(1+\frac{(p_{\mathrm{Jet,\, T}}^{\mathrm{reco}}-p_{\mathrm{Jet,\, T}}^{\mathrm{gen}})\cdot\mathrm{res}(\eta)}{p_{\mathrm{Jet,\, T}}^{\mathrm{reco}}}\right)}_{=\mathrm{SF}(\eta,\, p_{\mathrm{T}})},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $p_{\mathrm{Jet}}^{\mathrm{reco}}$
+\end_inset
+
+ denotes the four-momenta before and 
+\begin_inset Formula $p_{\mathrm{Jet}}^{\prime\mathrm{reco}}$
+\end_inset
+
+ after the smearing.
+\end_layout
+
+\begin_layout Standard
+Then, the missing transverse energy is also recalculated.
+\end_layout
+
+\begin_layout Paragraph*
+B-tagging and mis-tagging uncertainty
+\end_layout
+
+\begin_layout Standard
+The used b-tagging algorithm (TCHP) comes with a tagging efficiency that
+ states how often a b-tagged jet is correctly identified 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BTAGsource"
+
+\end_inset
+
+.
+ The single top quark t-channel signature requires two jets.
+ This leads to a total of six possibilities that an event with none, one
+ or two b-tagged jets can end up in the same or another b-tag category due
+ to mis-identification.
+ For a generic b-tagging efficiency 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ the table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-scale-factors"
+
+\end_inset
+
+ lists these permutations and their probabilities.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-scale-factors"
+
+\end_inset
+
+The scale factors for the b-tagging efficiency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="11">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+after b-tagging efficiency
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 b-tag
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 b-tag (signal)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 b-tags
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+before
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 b-tag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b-tagging
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 b-tag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(1-\epsilon)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+efficiency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 b-tags
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(1-\epsilon)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(1-\epsilon)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(1-\epsilon)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsilon\,\cdot2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.4cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The signal selection requires events with exactly one jet with a b-tag.
+ Such selected events have a probability of 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ to come from a simulated event where the jet has actually originated from
+ a bottom quark.
+ But events can be selected as well where both jets originated from a bottom
+ quark.
+ Those events have a probability of 
+\begin_inset Formula $(1-\epsilon)\cdot\epsilon\cdot2$
+\end_inset
+
+ to be measured with only one b-tagged jet due to the possibility that the
+ second jet is mis-tagged.
+\end_layout
+
+\begin_layout Standard
+To account for those effects, the MC events are duplicated and allowed to
+ migrate into the different b-tag categories.
+ Their weight is adjusted to include the corresponding probabilities.
+ The b-tagging efficiency depends furthermore on the jet's transverse momentum
+ which was measured in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BTAGsource"
+
+\end_inset
+
+.
+ Additionally there are also b-tagging efficiencies considered for wrong
+ tagged jets which originate from up, down, strange, or charm quarks.
+\end_layout
+
+\begin_layout Standard
+By varing the efficiencies within their measured uncertainties the migration
+ of events between the b-tag categories is influenced.
+ This produces changes in the MC sample yields and shapes after the signal
+ selection if events with exactly one b-tagged jet are singled out.
 \end_layout
 
 \begin_layout Paragraph*
@@ -234,7 +1130,54 @@ Unclustered energy
 \end_layout
 
 \begin_layout Standard
-fgsdgf
+During a hard interaction, the remanents of the proton produce additional
+ particles that are referred to as 
+\begin_inset Quotes eld
+\end_inset
+
+underlying
+\begin_inset Quotes erd
+\end_inset
+
+ event.
+ These particles can lead to unclustered energy within the calorimeters.
+ Monte-Carlo generator developers use measurements of those effect to tune
+ the generator modeling, e.g.
+ in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pythiaTune"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+An uncertainty of the unclusterd energy modeling is considered in the analysis.
+ This influences the missing transverse energy which is varied by 
+\begin_inset Formula $\pm10\,\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{how does this really work??}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
@@ -242,7 +1185,22 @@ Pileup uncertainty
 \end_layout
 
 \begin_layout Standard
-hjghjg
+Multiple interactions can occure in a proton bunch crossing that lead to
+ particles originating from additional vertices.
+ During the MC simulation, a uniform distribution with up to 10 vertices
+ has been assumed.
+ This needs to be reweighted to the estimated number of vertices from data.
+ The estimation from data is however influenced by the total proton-proton
+ cross section and its uncertainty of 
+\begin_inset Formula $\sigma_{\mathrm{pp\rightarrow X}}=$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This smears the true 
 \end_layout
 
 \begin_layout Standard
@@ -292,8 +1250,143 @@ Luminosity
 fdgfgd
 \end_layout
 
+\begin_layout Paragraph*
+Cross section uncertainties
+\end_layout
+
 \begin_layout Standard
-Implemented as nuciance parameter, log-normal dist.
+Each of the simulated processes have been asigned with a certain weight
+ which scales its yield according to the theoretical cross section.
+ To account for uncertainties on the cross section and Monte-Carlo modeling
+ the following variations in the yields are applied:
+\end_layout
+
+\begin_layout Itemize
+The single top quark t-channel cross section including the W boson decay
+ into tau and neutrino is varied by 
+\begin_inset Formula $\pm10\,\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The single top quark s-channel and tW-channel cross sections are each varied
+ 
+\begin_inset Formula $\pm30\,\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\pm15\,\%$
+\end_inset
+
+ variation is used for the 
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+ cross section.
+\end_layout
+
+\begin_layout Itemize
+The contributions from the 
+\begin_inset Quotes eld
+\end_inset
+
+Z+light flavor
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Z+bX
+\begin_inset Quotes erd
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+Z+cX
+\begin_inset Quotes erd
+\end_inset
+
+ samples are independently varied in cross section by 
+\begin_inset Formula $\pm30\,\%$
+\end_inset
+
+ to account also for the modeling uncertainty of their branching ratios.
+\end_layout
+
+\begin_layout Itemize
+For the 
+\begin_inset Quotes eld
+\end_inset
+
+W+light flavor
+\begin_inset Quotes erd
+\end_inset
+
+ process 
+\begin_inset Formula $\pm50\,\%$
+\end_inset
+
+ and for the 
+\begin_inset Quotes eld
+\end_inset
+
+W+cX
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+W+bX
+\begin_inset Quotes erd
+\end_inset
+
+ processes 
+\begin_inset Formula $\pm100\,\%$
+\end_inset
+
+ uncertainty is asigned to each cross section independently.
+\end_layout
+
+\begin_layout Itemize
+The di-boson processes, WW, WZ, and ZZ are each varied independently by
+ 
+\begin_inset Formula $\pm30\,\%$
+\end_inset
+
+ in their cross sections.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{Implemented as nuciance parameter, log-normal dist., templates
+ for other sys}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To gain further confidence in these uncertainties, a fit to the top quark
+ mass distribution is performed.
 \end_layout
 
 \begin_layout Subsection
