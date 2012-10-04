@@ -1160,14 +1160,46 @@ Another regularization method can be performed by suppressing large fluctuations
 \end_inset
 
 .
- The unfolded distribution is found by maximizing the minimizing the function
- 
+ The unfolded distribution is found by minimizing the function
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\chi^{2}=\left(y-Ax\right)^{\mathrm{T}}\cdot V_{yy}^{-1}\cdot\left(y-Ax\right)+\tau^{2}
+\chi^{2}=\left(\vec{y}-A\vec{x}\right)^{\mathrm{T}}\cdot V_{yy}^{-1}\cdot\left(\vec{y}-A\vec{x}\right)+\mathrm{optional\, terms},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $V_{yy}$
+\end_inset
+
+ denotes the covariance matrix of 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+.
+ If the measured distribution 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ contains no correlations between its bins the covariance matrix can be
+ expressed as 
+\begin_inset Formula $V_{jj}=\sqrt{y_{j}}$
+\end_inset
+
+ which assumes Poisson uncertainties.
+\end_layout
+
+\begin_layout Standard
+To suppress large fluctuations as optional term 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
++\tau^{2}\vec{x}\cdot L^{\mathrm{T}}L\cdot\vec{x}+\left(\sum y_{i}-\epsilon^{\mathrm{T}}\vec{x}\right)
 \]
 
 \end_inset
