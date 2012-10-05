@@ -797,7 +797,7 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.199\cdot4480.0$
+\begin_inset Formula $\mathrm{matched\, to\, inclusive}$
 \end_inset
 
 
@@ -844,7 +844,7 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.174\cdot1435.0$
+\begin_inset Formula $\mathrm{matched\, to\, inclusive}$
 \end_inset
 
 
@@ -891,7 +891,7 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.638\cdot304.2$
+\begin_inset Formula $\mathrm{matched\, to\, inclusive}$
 \end_inset
 
 
@@ -905,7 +905,7 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{exclusive\,4\, jets}$
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mbox{\mathrm{exclusive\,}}\geq\mathrm{4\, jets}$
 \end_inset
 
 
@@ -938,7 +938,7 @@ MadGraph
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.163\cdot172.6$
+\begin_inset Formula $\mathrm{matched\, to\, inclusive}$
 \end_inset
 
 
@@ -1227,24 +1227,6 @@ key "tWds"
 
  production in next to leading order are treated.
  In the analysis, the diagram removal samples are used.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{how works the incl.
- excl.
- mixing? ref}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2740,20 +2722,6 @@ key "FastSim,CMStechnicalReport"
 \end_inset
 
 .
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{what about pileup conditions?, pdfs, pythia parameters, alphas}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6682,6 +6650,22 @@ For jets within the detector barrel (
 ), additional requirements are applied:
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{grenzt jet von noise ab! in einem satz kurz beschreiben!}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 the neutral and charged EM energy fractions are below 
 \begin_inset Formula $<0.99$
@@ -6699,17 +6683,8 @@ the neutral hadron energy fraction is below
 \end_layout
 
 \begin_layout Itemize
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{what's neutral charged had.
- fraction}
-\end_layout
-
+the charged hadron fraction 
+\begin_inset Formula $>0$
 \end_inset
 
 
@@ -7334,22 +7309,6 @@ Data
 </cell>
 </row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{recalculate error with QCD}
-\end_layout
 
 \end_inset
 
