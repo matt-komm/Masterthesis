@@ -1107,9 +1107,9 @@ Regularization
 \end_layout
 
 \begin_layout Standard
-The simplest regularization method is realized by performing a singular
- value decomposition of the response matrix and dropping a certain amount
- of SVDs during the matrix inversion.
+A simple regularization method is performed by a singular value decomposition
+ of the response matrix and dropping a certain amount of SVDs during the
+ matrix inversion.
  This method is often called 
 \begin_inset Quotes eld
 \end_inset
@@ -1119,25 +1119,18 @@ SVD Unfolding
 \end_inset
 
 .
- The regularization can be referred to as a hard cut off 
-\begin_inset Formula $\tau<n$
-\end_inset
-
-
+ The regularization can be referred to as a hard cut off which leads to
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-x_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right)
+x_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right),
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1150,13 +1143,28 @@ checkthis{check formular!!!}
 
 \end_inset
 
+where the parameter 
+\begin_inset Formula $\tau$
+\end_inset
 
+ denotes the index of the smallest regarded SVD 
+\begin_inset Formula $D_{\tau\tau}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Another regularization method can be performed by suppressing large fluctuations
- explicitly through a 
-\begin_inset Formula $\chi^{2}-\mathrm{fit}$
+Another regularization method can be defined if the solution is found through
+ a 
+\begin_inset Formula $\chi^{2}-\mathrm{minimization}$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tunfold"
+
 \end_inset
 
 .
@@ -1166,7 +1174,7 @@ Another regularization method can be performed by suppressing large fluctuations
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\chi^{2}=\left(\vec{y}-A\vec{x}\right)^{\mathrm{T}}\cdot V_{yy}^{-1}\cdot\left(\vec{y}-A\vec{x}\right)+\mathrm{optional\, terms},
+\chi^{2}=\left(\vec{y}-A\vec{x}\right)^{\mathrm{T}}\cdot V_{yy}^{-1}\cdot\left(\vec{y}-A\vec{x}\right)+\mathfrak{R}(\vec{x},\,\vec{y}),
 \]
 
 \end_inset
@@ -1184,22 +1192,39 @@ where
 \begin_inset Formula $\vec{y}$
 \end_inset
 
- contains no correlations between its bins the covariance matrix can be
- expressed as 
+ contains no correlations between its entries the covariance matrix can
+ be expressed as 
 \begin_inset Formula $V_{jj}=\sqrt{y_{j}}$
 \end_inset
 
  which assumes Poisson uncertainties.
-\end_layout
-
-\begin_layout Standard
-To suppress large fluctuations as optional term 
+ To suppress large fluctuations the optional term 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-+\tau^{2}\vec{x}\cdot L^{\mathrm{T}}L\cdot\vec{x}+\left(\sum y_{i}-\epsilon^{\mathrm{T}}\vec{x}\right)
+\mathfrak{R}(\vec{x},\,\vec{y})=\tau^{2}\vec{x}\cdot L^{\mathrm{T}}L\cdot\vec{x}+\left(\sum y_{i}-\epsilon^{\mathrm{T}}\vec{x}\right)
+\]
+
+\end_inset
+
+is added.
+ The matrix 
+\begin_inset Formula $L$
+\end_inset
+
+ approximates numerical the second derivates from 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ using
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\mathrm{d}^{2}f(x)}{\mathrm{d}x^{2}}\approx\frac{x_{i+1}-2\cdot x_{i}+x_{i-1}}{h^{2}}
 \]
 
 \end_inset
