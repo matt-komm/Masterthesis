@@ -105,21 +105,8 @@ Analysis Strategy
 
 \begin_layout Standard
 The core of the analysis is the measurement of the top quark spin asymmetries.
- Those can be caculated from the differential 
-\begin_inset Formula ${\textstyle \frac{d\sigma}{d\cos\theta}}$
-\end_inset
-
- distributions, where the angle 
-\begin_inset Formula $\cos\theta$
-\end_inset
-
- is calculated between the spin bases (spectator jet or beamline) and the
- spin-analyzers (muon, b-tagged jet or neutrino) in the top quark rest frame.
-\end_layout
-
-\begin_layout Standard
-The analysis strategy can be divided into the following two steps will are
- described in detail in this chapter:
+ The analysis strategy can be divided into the following two steps which
+ are described in detail in this chapter:
 \end_layout
 
 \begin_layout Itemize
@@ -203,14 +190,14 @@ Discrimination of Signal and Background
 \begin_layout Standard
 For multivariant classification, input variables have to be pict from the
  event kinematics.
- The choice for a certain variable is often made according to its significance
- within the multivariant training phase.
- This is case if one is solely interested in the highest discrimination
- power with a minimum set of variables.
+ The choice for a certain variable is often made according to its discrimination
+ power within the multivariant training phase.
+ This is case if one is solely interested in the best background suppression
+ with a minimum set of variables.
 \end_layout
 
 \begin_layout Standard
-For this analyses it is crucial to minimalize the bias on the shape of the
+For this analyses it is crucial to minimalize a bias on the shape of the
  observables after a discriminator is applied.
  This requirement can be met by choosing non-correlated variables which
  maybe independent to the observables.
@@ -254,8 +241,7 @@ where
 
  are the means of the respective distributions.
  It is however only sensitive to a linear dependence between two variables.
- To detect even non-linear dependencies a more sophisticated method has
- to be applied.
+ To detect even non-linear dependencies a more sophisticated method is used.
 \end_layout
 
 \begin_layout Standard
@@ -315,7 +301,7 @@ First, the distributions of
 \begin_inset Formula $(x,\, y)$
 \end_inset
 
- pairs this can be done by sorting 
+ pairs this can be performed by sorting 
 \begin_inset Formula $\vec{x}=(x_{1},\ldots x_{N})$
 \end_inset
 
@@ -419,6 +405,20 @@ This algorithms has been fed with over 700 different variables, including
 
 , angles and invariant masses between two particles which are defined during
  the top quark event reconstruction.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{used powheg, n-> set to 25}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -440,11 +440,12 @@ reference "tab:Variable-Ranking"
 
 \end_inset
 
- has been created by summing up the calculated 
+ has been created by testing each variable for independence against the
+ six angles and summing up the obtained 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
- for each observable against the one variable to test.
+ values.
 \end_layout
 
 \begin_layout Standard
@@ -625,8 +626,22 @@ Unfolding
 \end_layout
 
 \begin_layout Standard
-After event selection and an additional cut on a MVA discriminator a single
- top t-channel signal containing less background can be obtain from data.
+After a signal enhanced phase space is selected by a MVA discriminator a
+ single top t-channel signal containing less background can be obtain from
+ data.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{bad sentence}
+\end_layout
+
+\end_inset
+
  A caculation of the top spin asymmetries from that can not yet be compared
  to the theory prediction.
  This is due to the smearing effects, finite resolution and the acceptance
@@ -780,7 +795,7 @@ reference "eq:unfolding"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\vec{x}=A^{-1}\vec{y}.
+\vec{x}=A^{-1}\vec{y}.\label{eq:unfolding-solution}
 \end{equation}
 
 \end_inset
@@ -1124,9 +1139,9 @@ SVD Unfolding
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-x_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right),
-\]
+\begin{equation}
+x_{i}\rightarrow\tilde{x}_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right),
+\end{equation}
 
 \end_inset
 
@@ -1144,7 +1159,7 @@ checkthis{check formular!!!}
 \end_inset
 
 where the parameter 
-\begin_inset Formula $\tau$
+\begin_inset Formula $\tau<n$
 \end_inset
 
  denotes the index of the smallest regarded SVD 
@@ -1152,30 +1167,49 @@ where the parameter
 \end_inset
 
 .
+ The regularized solution 
+\begin_inset Formula $\tilde{x}_{i}$
+\end_inset
+
+ inherits a bias.
+ The choice of the parameter 
+\begin_inset Formula $\tau$
+\end_inset
+
+ defines a-priori the maximal curvature of the unfolded distribution.
+ Therefore, unfolding in general can only be applied if a sufficient 
+\begin_inset Quotes eld
+\end_inset
+
+smooth
+\begin_inset Quotes erd
+\end_inset
+
+ unfolded distribution is expected e.g.
+ from theory.
 \end_layout
 
 \begin_layout Standard
-Another regularization method can be defined if the solution is found through
- a 
-\begin_inset Formula $\chi^{2}-\mathrm{minimization}$
+The analysis uses a more sophisticated regularization method.
+ The solution 
+\begin_inset Formula $\vec{x}$
 \end_inset
 
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "tunfold"
+ of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:unfolding-solution"
 
 \end_inset
 
-.
- The unfolded distribution is found by minimizing the function
+ can be rewritten as the minimization of the function
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \chi^{2}=\left(\vec{y}-A\vec{x}\right)^{\mathrm{T}}\cdot V_{yy}^{-1}\cdot\left(\vec{y}-A\vec{x}\right)+\mathfrak{R}(\vec{x},\,\vec{y}),
-\]
+\end{equation}
 
 \end_inset
 
@@ -1185,6 +1219,13 @@ where
 
  denotes the covariance matrix of 
 \begin_inset Formula $\vec{y}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tunfold"
+
 \end_inset
 
 .
@@ -1203,9 +1244,9 @@ where
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathfrak{R}(\vec{x},\,\vec{y})=\tau^{2}\vec{x}\cdot L^{\mathrm{T}}L\cdot\vec{x}+\left(\sum y_{i}-\epsilon^{\mathrm{T}}\vec{x}\right)
-\]
+\end{equation}
 
 \end_inset
 
@@ -1223,9 +1264,9 @@ is added.
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \frac{\mathrm{d}^{2}f(x)}{\mathrm{d}x^{2}}\approx\frac{x_{i+1}-2\cdot x_{i}+x_{i-1}}{h^{2}}
-\]
+\end{equation}
 
 \end_inset
 
