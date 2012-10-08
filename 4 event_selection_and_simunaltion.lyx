@@ -3128,6 +3128,7 @@ reference "tab:The-generated-coupling"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3174,7 +3175,7 @@ The resulting top quark spin asymmetries and W boson helicity fractions.
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="22" columns="12">
+<lyxtabular version="3" rows="12" columns="12">
 <features rotate="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -3591,116 +3592,6 @@ W boson helicity fractions
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -3840,116 +3731,6 @@ W boson helicity fractions
 \begin_inset Formula $0.665$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -4103,116 +3884,6 @@ W boson helicity fractions
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4352,116 +4023,6 @@ W boson helicity fractions
 \begin_inset Formula $0.417$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -4615,116 +4176,6 @@ W boson helicity fractions
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4871,122 +4322,10 @@ W boson helicity fractions
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $1.0$
 \end_inset
 
@@ -4999,8 +4338,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -5013,8 +4350,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -5027,8 +4362,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.5$
 \end_inset
 
@@ -5041,8 +4374,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $+0.077$
 \end_inset
 
@@ -5055,8 +4386,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $+0.132$
 \end_inset
 
@@ -5069,8 +4398,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $-0.158$
 \end_inset
 
@@ -5083,8 +4410,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $-0.273$
 \end_inset
 
@@ -5097,8 +4422,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $+0.100$
 \end_inset
 
@@ -5111,8 +4434,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $+0.172$
 \end_inset
 
@@ -5125,8 +4446,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.040$
 \end_inset
 
@@ -5139,121 +4458,9 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.917$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5407,116 +4614,6 @@ W boson helicity fractions
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -5663,122 +4760,10 @@ W boson helicity fractions
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -5791,8 +4776,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -5805,8 +4788,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.0$
 \end_inset
 
@@ -5819,8 +4800,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $1.0$
 \end_inset
 
@@ -5833,8 +4812,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $-0.149$
 \end_inset
 
@@ -5847,8 +4824,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $-0.168$
 \end_inset
 
@@ -5861,8 +4836,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $-0.297$
 \end_inset
 
@@ -5875,8 +4848,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $-0.338$
 \end_inset
 
@@ -5889,8 +4860,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $+0.367$
 \end_inset
 
@@ -5903,8 +4872,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $+0.417$
 \end_inset
 
@@ -5917,8 +4884,6 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.869$
 \end_inset
 
@@ -5931,121 +4896,9 @@ W boson helicity fractions
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\color red
 \begin_inset Formula $0.124$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -6082,7 +4935,14 @@ key "Wbeyond"
 
 .
  However the top quark spin asymmetries agree only for the Standard Model
- coupling case with the theory.
+ coupling case with the theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wbeyond"
+
+\end_inset
+
+.
  Furthermore, the samples with the couplings 
 \begin_inset Formula $\mathrm{V_{L}=1.0,\, V_{R}=0.0,\, g_{L}=0.0,\, g_{R}=0.5}$
 \end_inset
@@ -6101,8 +4961,8 @@ key "Wbeyond"
 \end_layout
 
 \begin_layout Standard
-During the analysis, the WHIZARD samples are only used to estimate a bias
- within the analysis procedure.
+During the analysis, the WHIZARD samples are only used to estimate a potential
+ bias within the analysis procedure.
  Therefore, the influence on the measurement by using those samples anyway
  is marginal.
 \end_layout
@@ -6122,247 +4982,15 @@ The data from the first half of the 2011 run at
 \end_inset
 
 .
- Table lists the required HTL triggers for the selection of muon events
- from the recorded data.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{leave table out..
- to technical}
-\end_layout
-
+ The trigger 
+\begin_inset Quotes eld
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="right" valignment="top" width="0">
-<row>
-<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-trigger
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-integrated luminosity
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-HLT_IsoMu17_v5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $46.38\,\mathrm{pb}^{-1}$
+HLT_IsoMu17
+\begin_inset Quotes erd
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-HLT_IsoMu17_v6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $164.63\,\mathrm{pb}^{-1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-HLT_IsoMu17_v8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $136.38\,\mathrm{pb}^{-1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-HLT_IsoMu17_v9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $560.10\,\mathrm{pb}^{-1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-HLT_IsoMu17_v10
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $4.42\,\mathrm{pb}^{-1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-HLT_IsoMu17_v11
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $253.69\,\mathrm{pb}^{-1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-total
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $1165.60\,\mathrm{pb^{-1}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:The-used-datasets"
-
-\end_inset
-
-The used triggers and corresponding luminosities for the analysis.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ for the selection of muon events from the recorded data is used.
 \end_layout
 
 \begin_layout Section
@@ -6379,14 +5007,7 @@ Muon selection
 \end_layout
 
 \begin_layout Standard
-Besides that one of the triggers in table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:The-used-datasets"
-
-\end_inset
-
- is fired the muon needs to fulfill the following:
+Besides that the HTL trigger is fired the muon needs to fulfill the following:
 \end_layout
 
 \begin_layout Itemize
@@ -6701,6 +5322,14 @@ reference "tab:Cutflow"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+The observed disagreement of the expected MC events maybe due to an underestimat
+ed background process.
+ Those have large uncertainties in their yield.
+ This will be investigated further during the measurement.
 \end_layout
 
 \begin_layout Standard
@@ -7098,7 +5727,7 @@ QCD multijet (
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $11.74\pm1.2$
+\begin_inset Formula $11.74\pm1.20$
 \end_inset
 
  
@@ -7251,7 +5880,7 @@ Total MC
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $3948.49\pm12.51$
+\begin_inset Formula $3948.49\pm28.51$
 \end_inset
 
  
@@ -7274,7 +5903,7 @@ Data
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $4776.0$
+\begin_inset Formula $4776.00$
 \end_inset
 
  
@@ -7312,27 +5941,11 @@ checkthis{recaculated total error with QCD error}
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{say something to the yield disagreement}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The simulated single top t-channel events which pass the event selection
  are not entirely from the direct W boson decay into a muon and neutrino.
  There are extra events which contain processes where the W boson decays
  into a tau and a neutrino.
- Then the tau decays further into a muon and a second neutrino.
+ Then, the tau decays further into a muon and a second neutrino.
  In that decay chain the spin information of the top quark is lost due to
  the unknown relative directions of two escaping neutrinos.
  Therefore those events are singled out and have to be considered as an
@@ -7687,7 +6300,28 @@ reference "fig:WHIZARD-SM-in-costheta"
 
  distributions are shown for all three spin analyzers (muon, b-tagged jet,
  and neutrino) in the two bases (spectator, and beamline).
- Through the event selection, a drop in the distributions occurs for 
+ The agreement between the Powheg and WHIZARD prediction in those distributions
+ fits very well and shows only a slight deviation for the muon as spin analyzer
+ (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-theta-spec-lepton"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-theta-beaml-lepton"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Through the event selection, a drop in the distributions for the muon and
+ b-tagged jet as spin analyzer occurs for 
 \begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}\rightarrow1$
 \end_inset
 
@@ -7705,7 +6339,8 @@ For
 \end_inset
 
  and the light jet are in the same direction in the top quark rest frame.
- This holds often also for the lab rest frame.
+ This is often also the case if the situation is viewed in the lab rest
+ frame.
  Thus by requiring that the muon is isolated the observed drop in 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7741,6 +6376,10 @@ reference "fig:cos-theta-beaml-bjet"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+In conclusion the generated WHIZARD sample 
 \end_layout
 
 \begin_layout Standard
@@ -8025,7 +6664,7 @@ WHIZARD SM and Powheg comparison in kinematic variables.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
