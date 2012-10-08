@@ -3016,7 +3016,7 @@ The distributions demonstrate that the effect of anomalous couplings can
 \end_inset
 
  and 
-\begin_inset Formula $\mathrm{V_{L}=V=g_{L}=0,\, g_{R}=1}$
+\begin_inset Formula $\mathrm{V_{L}=V_{\mathrm{R}}=g_{L}=0,\, g_{R}=1}$
 \end_inset
 
  which differ for the bottom quark and the neutrino spin analyzer in shape
@@ -4944,11 +4944,35 @@ key "Wbeyond"
 
 .
  Furthermore, the samples with the couplings 
-\begin_inset Formula $\mathrm{V_{L}=1.0,\, V_{R}=0.0,\, g_{L}=0.0,\, g_{R}=0.5}$
+\begin_inset Formula $\mathrm{V_{L}=1.0}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{V_{R}=0.0}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{L}=0.0}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{R}=0.5}$
 \end_inset
 
  and 
-\begin_inset Formula $\mathrm{V_{L}=0.0,\, V_{R}=0.0,\, g_{L}=0.0,\, g_{R}=1.0}$
+\begin_inset Formula $\mathrm{V_{L}=0.0}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{V_{R}=0.0}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{L}=0.0}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{R}=1.0}$
 \end_inset
 
  yield an unexpected significant higher polarization 
@@ -4977,11 +5001,6 @@ The data from the first half of the 2011 run at
 \end_inset
 
  is analyzed.
- It corresponds to an integrated luminosity of 
-\begin_inset Formula $1165.595\,\mathrm{pb^{-1}}$
-\end_inset
-
-.
  The trigger 
 \begin_inset Quotes eld
 \end_inset
@@ -4990,7 +5009,12 @@ HLT_IsoMu17
 \begin_inset Quotes erd
 \end_inset
 
- for the selection of muon events from the recorded data is used.
+ for the selection of muon events is required from the recorded data.
+ This corresponds to an integrated luminosity of 
+\begin_inset Formula $1165.595\,\mathrm{pb^{-1}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -5919,22 +5943,6 @@ Data
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{recaculated total error with QCD error}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -5980,7 +5988,7 @@ status open
 \begin_inset Graphics
 	filename images/topquarkreco.png
 	lyxscale 10
-	scale 35
+	scale 32
 
 \end_inset
 
@@ -6379,7 +6387,11 @@ reference "fig:cos-theta-beaml-bjet"
 \end_layout
 
 \begin_layout Standard
-In conclusion the generated WHIZARD sample 
+In conclusion the simulation of the SM coupling scenario with WHIZARD reproduces
+ the Powheg prediction.
+ Thus it is applicable to use also the anomalous coupling samples which
+ have been generated with the same setup as a cross check of the analysis
+ procedure.
 \end_layout
 
 \begin_layout Standard
@@ -6909,7 +6921,16 @@ WHIZARD SM and Powheg comparison in
 \begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
 \end_inset
 
+ with the spectator jet or the beamline as spin basis 
+\begin_inset Formula $\mathrm{B}$
+\end_inset
 
+ and the muon, b-tagged jet, or the neutrino as spin analyzer 
+\begin_inset Formula $\mathrm{X}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_inset
