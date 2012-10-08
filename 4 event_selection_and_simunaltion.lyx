@@ -222,7 +222,8 @@ The analysis within this thesis concentrates only on the processes where
 \end_layout
 
 \begin_layout Standard
-The next sections will describe the simulated samples as well as the dataset.
+In this chapter, the simulated samples, the dataset and the event selection
+ and reconstruction is described.
 \end_layout
 
 \begin_layout Section
@@ -1256,14 +1257,13 @@ heavy
 \begin_inset Formula $\mathrm{c,\, b}$
 \end_inset
 
- quarks) from this background processes.
- To gain confidence into the flavor contributions after merging the inclusive
- and exclusive samples, the generated 
+ quarks) from this background process.
+ The inclusive and exclusive 
 \begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
 \end_inset
 
  events are sorted into the following three categories with respect to their
- flavor content:
+ flavor content to gain confidence into the flavor modeling:
 \end_layout
 
 \begin_layout Itemize
@@ -1352,7 +1352,7 @@ with WHIZARD
 The WHIZARD event generator is used for the simulation of single top quark
  t-channel events with anomalous couplings.
  Such samples are needed to test the analysis strategy and investigate a
- possible bias.
+ potential bias.
  
 \end_layout
 
@@ -2691,12 +2691,12 @@ The simulated processes with WHIZARD.
 \end_layout
 
 \begin_layout Standard
-Due to the trivial CKM matrix implementation within the chosen model, their
- are no contributions from 
+Their are no contributions involving 
 \begin_inset Formula $\mathrm{Wqq}^{\prime}$
 \end_inset
 
--vertices, where the quarks are not from the same generation.
+-vertices due to the trivial CKM matrix implementation within the chosen
+ model, where the quarks are not from the same generation.
  The WHIZARD generator automatically mixes each defined process with a certain
  fraction according to the internally calculated cross sections into one
  sample.
@@ -2755,18 +2755,18 @@ Approximately 2,000,000 events have been simulated for different coupling
 \end_inset
 
  coupling.
- Ten samples have been generated in total together with the SM coupling
- scenario.
+ In total, ten scenarios have been generated including the SM coupling case
+ for comparison.
 \end_layout
 
 \begin_layout Standard
-The scope of the analysis does not involve coupling scenarios with complex
- phases.
- All results are valid under the assumption 
+All results are valid under the assumption 
 \begin_inset Formula $\mathfrak{Im}(\mathrm{V_{L}})=\mathfrak{Im}(\mathrm{V_{R}})=\mathfrak{Im}(\mathrm{g_{L}})=\mathfrak{Im}(\mathrm{g_{R}})=0$
 \end_inset
 
 .
+ The scope of the analysis does not involve scenarios with complex couplings.
+ Such couplings may introduce a new CP violation.
 \end_layout
 
 \begin_layout Subsection
@@ -2832,6 +2832,14 @@ Events are selected for comparison from the generated samples where the
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Generated--distributions"
+
+\end_inset
+
+.
+ WHIZARD reproduces the expected linear shape from theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wbeyond"
 
 \end_inset
 
@@ -2984,12 +2992,20 @@ name "fig:Generated--distributions"
 
 \end_inset
 
-The resulting 
+The simulated 
 \begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
 
- distributions for the lepton (a), bottom quark (b), and neutrino (c) in
- the spectator basis for different coupling scenarios.
+ distributions for the lepton (a), bottom quark (b), and neutrino (c) as
+ spin analyzer 
+\begin_inset Formula $\mathrm{X}$
+\end_inset
+
+ in the spectator basis 
+\begin_inset Formula $\mathrm{B}$
+\end_inset
+
+ for different coupling scenarios by WHIZARD.
 \end_layout
 
 \end_inset
@@ -3113,11 +3129,11 @@ reference "tab:The-generated-coupling"
 
  summarizes the found top quark spin asymmetries and W boson helicity fractions
  of the generated WHIZARD samples for the ten different coupling scenarios.
- The W boson helicity fractions have been estimated by a 
-\begin_inset Formula $\chi^{2}$
+ The W boson helicity fractions are estimated by a 
+\begin_inset Formula $\chi^{2}-\mathrm{fit}$
 \end_inset
 
- fit in 
+ in 
 \begin_inset Formula $\cos\theta^{\star}$
 \end_inset
 
@@ -5009,9 +5025,10 @@ HLT_IsoMu17
 \begin_inset Quotes erd
 \end_inset
 
- for the selection of muon events is required from the recorded data.
+ for the selection of muon events is required to be fired in the recorded
+ data.
  This corresponds to an integrated luminosity of 
-\begin_inset Formula $1165.595\,\mathrm{pb^{-1}}$
+\begin_inset Formula $1165.60\,\mathrm{pb^{-1}}$
 \end_inset
 
 .
@@ -5233,7 +5250,7 @@ Jets
 \end_layout
 
 \begin_layout Standard
-Two PF jets are required which have been reconstructed by the anti-
+Two PF jets are required which have to be reconstructed by the anti-
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
@@ -5314,8 +5331,9 @@ the charged multiplicity is larger than
 \end_layout
 
 \begin_layout Standard
-Those are motivated by the fact that a jet consists of a mixture of charged
- and neutral particles measured in the ECAL and HCAL.
+Those quality requirements are motivated by the fact that a real jet consists
+ out of a mixture of charged and neutral particles measured in the ECAL
+ and HCAL.
 \end_layout
 
 \begin_layout Standard
@@ -5350,10 +5368,10 @@ reference "tab:Cutflow"
 \end_layout
 
 \begin_layout Standard
-The observed disagreement of the expected MC events maybe due to an underestimat
-ed background process.
- Those have large uncertainties in their yield.
- This will be investigated further during the measurement.
+The observed disagreement between the data and the expected events from
+ MC maybe due to an underestimated background process.
+ Those samples contain also an uncertainty in their yields.
+ This discrepancy will be further investigated during the measurement.
 \end_layout
 
 \begin_layout Standard
@@ -5975,6 +5993,8 @@ reference "fig:The-top-quark-reco"
 .
  It shows a view of an event which is used as top quark hypothesis within
  the analysis development environment VISPA.
+ Before the top quark can be reconstructed, a neutrino hypothesis has to
+ be obtained from the missing transverse energy.
 \end_layout
 
 \begin_layout Standard
@@ -6023,8 +6043,7 @@ top quark event view
 
 \end_inset
 
-Before the top quark can be reconstructed, the a neutrino hypothesis has
- to be obtained from the missing transverse energy.
+
 \end_layout
 
 \begin_layout Standard
@@ -6239,8 +6258,7 @@ best jet
 \begin_inset Quotes erd
 \end_inset
 
-.
- 
+ as alternative hypothesis.
 \end_layout
 
 \begin_layout Section
@@ -6264,7 +6282,7 @@ Fast simulation
 
  of the detector.
  This is also interesting if there is a visible effect between the next-to-leadi
-ng order simulation of powheg and the leading order simulation of WHIZARD.
+ng order simulation of Powheg and the leading order simulation of WHIZARD.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6307,10 +6325,10 @@ reference "fig:WHIZARD-SM-in-costheta"
 \end_inset
 
  distributions are shown for all three spin analyzers (muon, b-tagged jet,
- and neutrino) in the two bases (spectator, and beamline).
- The agreement between the Powheg and WHIZARD prediction in those distributions
- fits very well and shows only a slight deviation for the muon as spin analyzer
- (figure 
+ and neutrino) in the two bases (spectator, and beamline) The agreement
+ between the Powheg and WHIZARD prediction in those distributions fits very
+ well and shows only a slight deviation for the muon as spin analyzer (figure
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:cos-theta-spec-lepton"
@@ -6364,7 +6382,7 @@ reference "fig:cos-theta-beaml-lepton"
 \end_inset
 
  occurs.
- Futhermore, a minimum distance 
+ Furthermore, a minimum distance 
 \begin_inset Formula $\Delta R=\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}$
 \end_inset
 
@@ -6389,9 +6407,8 @@ reference "fig:cos-theta-beaml-bjet"
 \begin_layout Standard
 In conclusion the simulation of the SM coupling scenario with WHIZARD reproduces
  the Powheg prediction.
- Thus it is applicable to use also the anomalous coupling samples which
- have been generated with the same setup as a cross check of the analysis
- procedure.
+ Thus it is applicable to use for cross checks also the anomalous coupling
+ samples which have been generated with the same setup in the analysis procedure.
 \end_layout
 
 \begin_layout Standard
