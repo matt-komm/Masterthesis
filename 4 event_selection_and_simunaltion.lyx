@@ -186,8 +186,8 @@ The signature of single top t-channel production with leptonic W boson decay.
 
 \end_inset
 
-The signature includes also a second jet with a b-tag, but it mostly escapes
- the detector acceptance and is therefore not observed.
+The signature includes also a second jet with a b-tag, but this jet mostly
+ escapes the detector acceptance.
  The jet without a b-tag originates often from up, down or strange quarks
  and is therefore referred to as 
 \begin_inset Quotes eld
@@ -1238,19 +1238,11 @@ The inclusive
  the event selection.
  This is performed by adding exclusive contributions from the W boson plus
  one to four additional jet events.
- Furthermore, the samples are mainly dominated by light flavored jets (
-\begin_inset Quotes eld
+ Furthermore, the 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
 \end_inset
 
-light
-\begin_inset Quotes erd
-\end_inset
-
-=
-\begin_inset Formula $\mathrm{u,\, d,\, s}$
-\end_inset
-
- quarks).
+ samples are mainly dominated by light flavored jets.
  The signal selection requires however a b-tagged jet which selects the
  statistically low heavy flavor content (
 \begin_inset Quotes eld
@@ -1266,8 +1258,12 @@ heavy
 
  quarks) from this background processes.
  To gain confidence into the flavor contributions after merging the inclusive
- and exclusive samples, the generated events are sorted into the following
- three categories with respect to their flavor content:
+ and exclusive samples, the generated 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ events are sorted into the following three categories with respect to their
+ flavor content:
 \end_layout
 
 \begin_layout Itemize
@@ -1355,12 +1351,13 @@ with WHIZARD
 \begin_layout Standard
 The WHIZARD event generator is used for the simulation of single top quark
  t-channel events with anomalous couplings.
- Such samples are needed to investigate a possible bias within the analysis.
+ Such samples are needed to test the analysis strategy and investigate a
+ possible bias.
  
 \end_layout
 
 \begin_layout Standard
-The generator provides a model called 
+The generator provides a pre-implemented model called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1396,9 +1393,9 @@ reference "tab:The-simulated-processes"
  The notation follows the summing rule of WHIZARD.
  A process is defined by selecting one particle from each of the comma separated
  lists.
- The internal O'Mega matrix element generator constructs all possible leading
- order processes between the initial and final state by checking the all
- combinations.
+ The internal O'Mega matrix element generator constructs the possible leading
+ order processes between all combinations of the specified initial and final
+ state particles.
  From those only the events are generated where the top quark is produced
  in resonance.
  This is performed by requiring that the last three particles in the final
@@ -2744,8 +2741,8 @@ Approximately 2,000,000 events have been simulated for different coupling
 \end_inset
 
  couplings were generated.
- To include interference effects additionally six samples were generated
- with mixes of 
+ Additionally six samples have been generated to include interference effects.
+ Those contain mixes of 
 \begin_inset Formula $\mathrm{V_{L}}=1$
 \end_inset
 
@@ -2758,24 +2755,14 @@ Approximately 2,000,000 events have been simulated for different coupling
 \end_inset
 
  coupling.
- Together with the SM couplings, ten samples are generated in total.
- 
+ Ten samples have been generated in total together with the SM coupling
+ scenario.
 \end_layout
 
 \begin_layout Standard
 The scope of the analysis does not involve coupling scenarios with complex
  phases.
- Their bias has to be evaluated by more additional samples from the eight
- dimensional coupling space which is span by 
-\begin_inset Formula $\mathrm{V_{L},\, V_{R},\, g_{L}}$
-\end_inset
-
- and 
-\begin_inset Formula $\mathrm{g_{R}}$
-\end_inset
-
-.
- Therefore, all results are valid under the assumption 
+ All results are valid under the assumption 
 \begin_inset Formula $\mathfrak{Im}(\mathrm{V_{L}})=\mathfrak{Im}(\mathrm{V_{R}})=\mathfrak{Im}(\mathrm{g_{L}})=\mathfrak{Im}(\mathrm{g_{R}})=0$
 \end_inset
 
@@ -2787,8 +2774,8 @@ Results
 \end_layout
 
 \begin_layout Standard
-From the generated samples the events are selected for comparison where
- the W boson decays into a muon and neutrino.
+Events are selected for comparison from the generated samples where the
+ W boson decays into a muon and neutrino.
  The distributions of the angles 
 \family roman
 \series medium
@@ -2855,7 +2842,7 @@ reference "fig:Generated--distributions"
 
 ) is highlighted as bold black line and a subset of anomalous coupling scenarios
  are drawn as colored lines.
- The legend displays only the couplings which are non-zero.
+ The legend denotes only the couplings which are non-zero.
 \end_layout
 
 \begin_layout Standard
@@ -3021,7 +3008,7 @@ The resulting
 
 \begin_layout Standard
 The distributions demonstrate that the effect of anomalous couplings can
- have a significant impact in those observables.
+ have a significant impact.
  Also some coupling scenarios yield only shape differences for one or two
  of the three spin analyzers.
  This is for example the case for the two scenarios with the couplings 
@@ -3049,7 +3036,8 @@ Another distribution which is influenced by the anomalous couplings is
 \end_inset
 
  is the angle between the W boson in the top quark rest frame and the muon
- in the W boson rest frame which is shown in figure 
+ in the W boson rest frame.
+ It is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Generated-W-boson"
@@ -6136,6 +6124,21 @@ The data from the first half of the 2011 run at
 .
  Table lists the required HTL triggers for the selection of muon events
  from the recorded data.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{leave table out..
+ to technical}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6629,23 +6632,8 @@ For jets within the detector barrel (
 \begin_inset Formula $|\eta|<2.4$
 \end_inset
 
-), additional requirements are applied:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{grenzt jet von noise ab! in einem satz kurz beschreiben!}
-\end_layout
-
-\end_inset
-
-
+), additional requirements are applied.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -6678,6 +6666,11 @@ the charged multiplicity is larger than
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Those are motivated by the fact that a jet consists of a mixture of charged
+ and neutral particles measured in the ECAL and HCAL.
 \end_layout
 
 \begin_layout Standard
@@ -7342,8 +7335,8 @@ The simulated single top t-channel events which pass the event selection
  Then the tau decays further into a muon and a second neutrino.
  In that decay chain the spin information of the top quark is lost due to
  the unknown relative directions of two escaping neutrinos.
- Therefore those events have to be considered as an additional background
- contribution.
+ Therefore those events are singled out and have to be considered as an
+ additional background contribution.
 \end_layout
 
 \begin_layout Section
@@ -7409,7 +7402,8 @@ top quark event view
 
 \end_inset
 
-
+Before the top quark can be reconstructed, the a neutrino hypothesis has
+ to be obtained from the missing transverse energy.
 \end_layout
 
 \begin_layout Standard
@@ -7633,12 +7627,23 @@ Validation
 \end_layout
 
 \begin_layout Standard
-For the validation of the WHIZARD prediction, the SM coupling scenario (
+The WHIZARD SM coupling scenario (
 \begin_inset Formula $\mathrm{V_{L}}=1,\,\mathrm{V_{R}}=\mathrm{g_{L}}=\mathrm{g_{R}}=0$
 \end_inset
 
 ) is compared to the Powheg single top t-channel sample after the event
- selection and top quark reconstruction.
+ selection and top quark reconstruction to gain confidence in the WHIZARD
+ simulation and the 
+\begin_inset Quotes eld
+\end_inset
+
+Fast simulation
+\begin_inset Quotes erd
+\end_inset
+
+ of the detector.
+ This is also interesting if there is a visible effect between the next-to-leadi
+ng order simulation of powheg and the leading order simulation of WHIZARD.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7648,7 +7653,94 @@ reference "fig:whizard-SM-and-powheg"
 
  shows kinematic distributions in variables related to the single top quark
  production process.
+ The WHIZARD distributions are normalized to the Powheg prediction.
  
+\end_layout
+
+\begin_layout Standard
+There is a well agreement in the simulation of the transverse momentum of
+ the leading jet and the muon.
+ The distributions in pseudorapidity for the muon fits also well.
+ However a discrepancy in the prediction in the pseudorapidity distribution
+ of the light jet is visible for 
+\begin_inset Formula $|\eta|\gtrsim3$
+\end_inset
+
+.
+ This is a known behavior of the Fast simulation for jets simulated within
+ the hadron forward (HF) calorimeter.
+ Nevertheless the distributions of the reconstructed transverse W boson
+ mass and the top mass display no obvious discrepancies.
+\end_layout
+
+\begin_layout Standard
+In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:WHIZARD-SM-in-costheta"
+
+\end_inset
+
+, the 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
+\end_inset
+
+ distributions are shown for all three spin analyzers (muon, b-tagged jet,
+ and neutrino) in the two bases (spectator, and beamline).
+ Through the event selection, a drop in the distributions occurs for 
+\begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}\rightarrow1$
+\end_inset
+
+.
+ This can be explained as follows.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}=1$
+\end_inset
+
+, the spin analyzer 
+\begin_inset Formula $\mathrm{X}$
+\end_inset
+
+ and the light jet are in the same direction in the top quark rest frame.
+ This holds often also for the lab rest frame.
+ Thus by requiring that the muon is isolated the observed drop in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-theta-spec-lepton"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-theta-beaml-lepton"
+
+\end_inset
+
+ occurs.
+ Futhermore, a minimum distance 
+\begin_inset Formula $\Delta R=\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}$
+\end_inset
+
+ between the light jet and the b-tagged jet is imposed through the jet clusterin
+g which explains also the drop in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-theta-spec-bjet"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-theta-beaml-bjet"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7657,7 +7749,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 afterpage{
 \backslash
@@ -7957,6 +8049,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-theta-spec-lepton"
+
+\end_inset
+
 
 \end_layout
 
@@ -7988,6 +8086,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-theta-beaml-lepton"
+
+\end_inset
+
 
 \end_layout
 
@@ -8020,6 +8124,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-theta-spec-bjet"
+
+\end_inset
+
 
 \end_layout
 
@@ -8051,6 +8161,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-theta-beaml-bjet"
+
+\end_inset
+
 
 \end_layout
 
@@ -8140,6 +8256,13 @@ status open
 \begin_layout Plain Layout
 WHIZARD SM and Powheg comparison
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:WHIZARD-SM-in-costheta"
 
 \end_inset
 
