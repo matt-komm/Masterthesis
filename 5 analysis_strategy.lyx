@@ -105,13 +105,13 @@ Analysis Strategy
 
 \begin_layout Standard
 The core of the analysis is the measurement of the top quark spin asymmetries.
- The analysis strategy can be divided into the following two steps which
+ The analysis strategy can be divided into the following three steps which
  are described in detail in this chapter:
 \end_layout
 
 \begin_layout Itemize
-Measurement of single the top t-channel differential 
-\begin_inset Formula ${\textstyle \frac{d\sigma}{d\cos\theta}}$
+Measurement of the single top quark t-channel differential 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
 
  distributions from data using multivariant analysis techniques.
@@ -122,9 +122,8 @@ Unfolding of the distributions to correct for reconstruction and detector
  effects.
 \end_layout
 
-\begin_layout Standard
-A cross check is performed by testing the analysis strategy with the generated
- anomalous coupling samples.
+\begin_layout Itemize
+Caculation of the top quark spin asymmetries.
 \end_layout
 
 \begin_layout Section
@@ -151,10 +150,6 @@ reference "fig:Cos-helicity-after"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
@@ -192,17 +187,22 @@ For multivariant classification, input variables have to be pict from the
  event kinematics.
  The choice for a certain variable is often made according to its discrimination
  power within the multivariant training phase.
- This is case if one is solely interested in the best background suppression
- with a minimum set of variables.
+ This is applicable if one is solely interested in the best background discrimin
+ation with a minimum set of variables.
 \end_layout
 
 \begin_layout Standard
-For this analyses it is crucial to minimalize a bias on the shape of the
- observables after a discriminator is applied.
- This requirement can be met by choosing non-correlated variables which
- maybe independent to the observables.
- The actual influence however is investigated by the anomalous coupling
- samples.
+For this analyses it is crucial to minimalize a potential bias on the shape
+ of the differential distributions after a discriminator is applied.
+ This can occur if the multivariant method gets sensitive to the specific
+ coupling scenario which is used for training.
+ Therefore, non-correlated variables to the 
+\begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
+\end_inset
+
+ angles are chosen as input variables.
+ It is a necessary but not a sufficient condition.
+ The actual bias however is investigated by the anomalous coupling samples.
 \end_layout
 
 \begin_layout Subsection
@@ -309,7 +309,7 @@ First, the distributions of
 \begin_inset Formula $\vec{y}=(y_{1},\ldots y_{N})$
 \end_inset
 
- independently and reasigning their values according to the positions after
+ independently and replacing each value according to the positions after
  the sorting
 \end_layout
 
@@ -343,8 +343,8 @@ Second, from the flattend distributions an
 \end_inset
 
  are independent, then the histogram content is expected to be compatible
- with a 2d uniformed distribution.
- To quantify the hypothesis a 
+ with a two dimensional uniform distribution.
+ To quantify the independence hypothesis a 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
@@ -371,7 +371,7 @@ e=\frac{N}{n^{2}},\qquad\sigma_{e}=\sqrt{\frac{N}{n^{2}}}
 \end_inset
 
 is performed.
- The probability of the flat hypothese follows a 
+ The probability of this hypothese follows a 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
@@ -389,9 +389,9 @@ is performed.
 \end_layout
 
 \begin_layout Standard
-This algorithms has been fed with over 700 different variables, including
- basic kinematics of one reconstructed particle and correlated variables
- like 
+For the analysis, this algorithms is fed with over 700 different variables,
+ including basic kinematics of one reconstructed particle and correlated
+ variables like 
 \begin_inset Formula $\Delta p_{\mathrm{T}}$
 \end_inset
 
@@ -403,8 +403,52 @@ This algorithms has been fed with over 700 different variables, including
 \begin_inset Formula $\Delta R$
 \end_inset
 
-, angles and invariant masses between two particles which are defined during
- the top quark event reconstruction.
+, angles and invariant masses between two particles.
+ The independent analysis is performed with the Powheg sample with about
+ 
+\begin_inset Formula $\approx50000$
+\end_inset
+
+ events.
+ Each bin in the histogram 
+\begin_inset Formula $h$
+\end_inset
+
+ is filled with a statistically sufficient amount of MC events of about
+ 
+\begin_inset Formula $\approx100$
+\end_inset
+
+.
+ This requirement leads for the Powheg sample to 
+\begin_inset Formula ${\textstyle \frac{50000}{100}}\approx22^{2}$
+\end_inset
+
+ bins in 
+\begin_inset Formula $h$
+\end_inset
+
+ and 
+\begin_inset Formula $484$
+\end_inset
+
+ degrees of freedom.
+\end_layout
+
+\begin_layout Standard
+Confidence was gained in the algorithm when it first suggested the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ angles of all particles.
+ Those are expected to be independent to any other kinematic variable due
+ to the detector geometry.
+ But these angles do not support any discrimination power between signal
+ and background processes and are therefore neglected in the variable choice.
+\end_layout
+
+\begin_layout Standard
+The complete ranking is listed in the appendix.
  
 \begin_inset ERT
 status open
@@ -413,43 +457,48 @@ status open
 
 
 \backslash
-checkthis{used powheg, n-> set to 25}
+checkthis{add ranking to appendix}
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Confidence was gained in the algorithm as it first suggested the 
-\begin_inset Formula $\phi$
+It has been created by testing each variable for independence against the
+ six 
+\begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
 \end_inset
 
- angles of all particles which are expected to be independent to any other
- kinematic variable due to the detector geometry.
- But these angles do not support any discrimination power between signal
- and background processes and are therefore neglected in the variable choice.
-\end_layout
-
-\begin_layout Standard
-The ranking in table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Variable-Ranking"
-
-\end_inset
-
- has been created by testing each variable for independence against the
- six angles and summing up the obtained 
+ angles and summing up the obtained 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
  values.
+ The analysis concentrates only on the first one hundred variables.
+ Figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{...}
+\end_layout
+
+\end_inset
+
+ shows the first and 100th variable in the histogram 
+\begin_inset Formula $h$
+\end_inset
+
+ against the 
+\begin_inset Formula $\cos\theta_{\mathrm{spec.,\, muon}}$
+\end_inset
+
+ angle.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
+\begin_inset Float figure
 wide false
 sideways false
 status open
@@ -458,13 +507,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Variable-Ranking"
-
-\end_inset
-
-Variable Ranking
+Correlation of the first and 100th variable
 \end_layout
 
 \end_inset
@@ -482,13 +525,46 @@ MVA Training
 \end_layout
 
 \begin_layout Standard
-To delay the choice for a certain amount of variables, 20 different discriminato
-rs for each BDT and Likelihood method has been trained.
+To delay the choice for a certain amount of input variables, 20 different
+ discriminators for each BDT and Likelihood method has been trained.
  Their used amount of variables from the ranking ranges up to one hundred
  in steps of five.
- Later in the analysis a tradeoff between a discriminator independent from
- the observables which uses less variables and contradicting to that a discrimin
-ator with a high background suppression which uses many variables is made.
+ Later in the analysis a tradeoff has to be made.
+ If a discriminator with less variables is used it may be independent from
+ the observables but has less discrimination power.
+ Otherwise a discriminator with many variables provides a high background
+ suppression but can introduce a potential bias.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{...}
+\end_layout
+
+\end_inset
+
+ shows five the most independent variables.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{good describtion, modeling, fit to data}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -523,45 +599,64 @@ Discrimination Power
 \end_layout
 
 \begin_layout Standard
+The resulting discrimination power of the 40 methods can be quantified by
+ the area under the 
+\begin_inset Quotes eld
+\end_inset
+
+Receiver Operating Characteristic
+\begin_inset Quotes erd
+\end_inset
+
+ (ROC) curve 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ROC"
+
+\end_inset
+
+.
+ In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Examplary-discriminantion-power"
+
+\end_inset
+
+, a subset of the ROC curves are shown for the BDT and Likelihood method.
+ After the first 45 variables, the area seems to increase no more than 
+\begin_inset Formula $\approx4\,\%$
+\end_inset
+
+ for both methods by including more variables.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{binning problem in likelihood output?}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-BDT ROC curves
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Likelihood ROC curves
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -574,10 +669,29 @@ Likelihood ROC curves
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -590,10 +704,21 @@ Likelihood ROC curves
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-</row>
-</lyxtabular>
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -604,7 +729,24 @@ Likelihood ROC curves
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Examplary discrimantion power of BDT and Likelihood
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Examplary discriminantion power.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Examplary-discriminantion-power"
+
+\end_inset
+
+Examplary discriminantion power of the BDT and Likelihood methods.
+ (a): BDT, (b): Likelihood.
 \end_layout
 
 \end_inset
@@ -626,32 +768,18 @@ Unfolding
 \end_layout
 
 \begin_layout Standard
-After a signal enhanced phase space is selected by a MVA discriminator a
- single top t-channel signal containing less background can be obtain from
- data.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{bad sentence}
-\end_layout
-
-\end_inset
-
- A caculation of the top spin asymmetries from that can not yet be compared
- to the theory prediction.
+A signal enhanced phase space containing less background can be now selected
+ by a multivariant discriminator from MC and data.
+ The caculation of the top quark spin asymmetries from that can not yet
+ be compared to the theory prediction.
  This is due to the smearing effects, finite resolution and the acceptance
- of the detector and from the conducted cuts which bias the differential
+ of the detector and from the conducted selections which bias the differential
  
 \begin_inset Formula ${\textstyle \frac{d\sigma}{d\cos\theta}}$
 \end_inset
 
 -shape.
- Unfolding is a method to correct these effects from a measured distribution.
+ Unfolding is a method to correct for these effects in a measured distribution.
 \end_layout
 
 \begin_layout Subsection
@@ -733,15 +861,15 @@ reference "eq:folding-integral"
 
 \end_inset
 
-where the vectors 
+where the vector denotes 
 \begin_inset Formula $\vec{y}$
 \end_inset
 
- and 
+ the measured binned distribution and denotes 
 \begin_inset Formula $\vec{x}$
 \end_inset
 
- are the measured and the true binned distributions.
+ the true binned distributions.
  The matrix 
 \begin_inset Formula $A$
 \end_inset
@@ -809,6 +937,29 @@ reference "fig:Oscillations"
 \end_inset
 
 .
+ Starting with the true distribution 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:true-dist"
+
+\end_inset
+
+ and the measured distribution 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:measured-dist"
+
+\end_inset
+
+ (solid line) the dashed line is subjected to unfolding by inversion.
+ The result is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:oscillation-dist"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -819,15 +970,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -838,12 +984,34 @@ status open
 \end_inset
 
 
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:true-dist"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -854,12 +1022,30 @@ status open
 \end_inset
 
 
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:measured-dist"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -870,41 +1056,22 @@ status open
 \end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(a)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:oscillation-dist"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-(b)
+
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-(c)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
 
 \end_inset
 
@@ -957,8 +1124,9 @@ key "GCowan"
 
 Large oscillations appear if one tries to unfold another distribution with
  an inverted response matrix.
- Those oscillations can already arise through statistical fluctuations.
- To understand this behavior the Singular Value Decomposition (SVD) provides
+ Those oscillations can already arise through statistical fluctuations around
+ the measured distribution from which the response matrix is constructed.
+ To understand this behavior the singular value decomposition (SVD) provides
  more insight.
 \end_layout
 
@@ -1035,7 +1203,7 @@ from a fictitious detector with the parameter
 \end_layout
 
 \begin_layout Standard
-The SVD decomposition applied to 
+The SVD applied to 
 \begin_inset Formula $A$
 \end_inset
 
@@ -1069,10 +1237,6 @@ y_{2}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 for the unfolding problem.
  The last term in equation 
 \begin_inset CommandInset ref
@@ -1095,10 +1259,7 @@ reference "eq:anticorr"
 \end_inset
 
  goes to zero, this leads to oscillations.
- The oscillation term dominates through the sorting of the SVDs 
-\begin_inset Formula $D_{ii}>D_{i+1,\, i+1}$
-\end_inset
-
+ The oscillation term dominates through the sorting of the singular values
  the first term in equation 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1111,7 +1272,7 @@ reference "eq:anticorr"
 
 \begin_layout Standard
 In conclusion, this means that differences between two bins get unphysically
- amplified through simple inversion if the response matrix contains very
+ amplified through a simple inversion if the response matrix contains very
  small singular values.
  For a tradeoff between unphysical fluctuations and physical meaning the
  singular values need to be regularized.
