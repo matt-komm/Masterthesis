@@ -1174,7 +1174,7 @@ with the diagonal matrix
 A=\frac{1}{2}\cdot\left(\begin{array}{cc}
 1+\epsilon & 1-\epsilon\\
 1-\epsilon & 1+\epsilon
-\end{array}\right),\qquad\epsilon\in[0;\,1]
+\end{array}\right),\qquad\epsilon\in[0;\,1]\label{eq:example-detector}
 \end{equation}
 
 \end_inset
@@ -1351,7 +1351,7 @@ smooth
 \end_layout
 
 \begin_layout Standard
-The analysis uses a more sophisticated regularization method.
+This analysis uses a more sophisticated regularization method.
  The solution 
 \begin_inset Formula $\vec{x}$
 \end_inset
@@ -1369,13 +1369,13 @@ reference "eq:unfolding-solution"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\chi^{2}=\left(\vec{y}-A\vec{x}\right)^{\mathrm{T}}\cdot V_{yy}^{-1}\cdot\left(\vec{y}-A\vec{x}\right)+\mathfrak{R}(\vec{x},\,\vec{y}),
+\chi^{2}=\left(\vec{y}-A\vec{x}\right)^{\mathrm{T}}\cdot V_{y}^{-1}\cdot\left(\vec{y}-A\vec{x}\right)+\mathfrak{R}(\vec{x},\,\vec{y}),\label{eq:chi2-unfolding}
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $V_{yy}$
+\begin_inset Formula $V_{y}$
 \end_inset
 
  denotes the covariance matrix of 
@@ -1396,31 +1396,31 @@ key "tunfold"
 
  contains no correlations between its entries the covariance matrix can
  be expressed as 
-\begin_inset Formula $V_{jj}=\sqrt{y_{j}}$
+\begin_inset Formula $V_{y,\, jj}=\sqrt{y_{j}}$
 \end_inset
 
  which assumes Poisson uncertainties.
- To suppress large fluctuations the optional term 
+ The optional term 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathfrak{R}(\vec{x},\,\vec{y})=\tau^{2}\vec{x}\cdot L^{\mathrm{T}}L\cdot\vec{x}+\left(\sum y_{i}-\epsilon^{\mathrm{T}}\vec{x}\right)
+\mathfrak{R}(\vec{x},\,\vec{y})=\tau^{2}\vec{x}\cdot L^{\mathrm{T}}L\cdot\vec{x}+\left(\sum y_{i}-\epsilon^{\mathrm{T}}\vec{x}\right)\label{eq:reg}
 \end{equation}
 
 \end_inset
 
-is added.
+is added to suppress large fluctuations.
  The matrix 
 \begin_inset Formula $L$
 \end_inset
 
- approximates numerical the second derivates from 
+ approximates numerically the second derivates from 
 \begin_inset Formula $\vec{x}$
 \end_inset
 
- using
+ by utilizing the general formular
 \end_layout
 
 \begin_layout Standard
@@ -1431,7 +1431,162 @@ is added.
 
 \end_inset
 
+for the second derivative of a function 
+\begin_inset Formula $f(x)$
+\end_inset
 
+ with the step width 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Additionally, the second term in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reg"
+
+\end_inset
+
+ invokes a constrain on the total number of events in the unfolded distribution
+ by using the diagonal efficienty matrix 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ Thus by mininizing equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:chi2-unfolding"
+
+\end_inset
+
+ the additional term 
+\begin_inset Formula $\mathfrak{R}$
+\end_inset
+
+ suppresses minima 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ with large curvatures and corrects simultaneously also for acceptance effects.
+ Oscillating solutions have high curvatures and are therefore rejected.
+ The regularization paremeter 
+\begin_inset Formula $\tau$
+\end_inset
+
+ controls the influence of the second derivates in the minimzation and has
+ to be chosen carefully.
+ If it is chosen too small, unphysical oscillations are not sufficient suppresse
+d.
+ But if it is chosen too large, the solution is biased towards a solution
+ with the smallest curvature.
+\end_layout
+
+\begin_layout Standard
+This regularization method is special case of the Tikhonov-Phillips regularizati
+on.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add ref}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this analysis the optimal value of the parameter 
+\begin_inset Formula $\tau$
+\end_inset
+
+ is estimated by investigating the correlations in the unfolded solution.
+ The procedure is demonstrated for a similar detector given in equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:example-detector"
+
+\end_inset
+
+ which has been extended to measure in four different bins.
+ The correlations can be caculated as follows:
+\end_layout
+
+\begin_layout Standard
+The covariance matrix 
+\begin_inset Formula $V_{x}$
+\end_inset
+
+ of the unfolded spectrum is obtained by propagation of error
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{x}=J\cdot V_{y}\cdot J^{\mathrm{T}}=\tilde{A}^{-1}\cdot V_{y}\cdot\left(\tilde{A}^{-1}\right)^{\mathrm{T}},
+\end{equation}
+
+\end_inset
+
+where the Jacobi matrix 
+\begin_inset Formula $J$
+\end_inset
+
+ is equivalent to the regularized inverted response matrix 
+\begin_inset Formula $\tilde{A}^{-1}$
+\end_inset
+
+.
+ Then the correlation between two bins 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\rho_{ij}=\frac{\mathrm{cov}_{ij}}{\sqrt{\mathrm{var}_{i}\cdot\mathrm{var}_{j}}}=\frac{V_{x,\, ij}}{\sqrt{V_{x,\, ii}\cdot V_{x,\, jj}}}.
+\end{equation}
+
+\end_inset
+
+For analysis, the correlations coefficients are average as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+"\langle\rho_{i,i+j}\rangle"\equiv\frac{1}{n}\cdot\sum_{i}^{n-j-1}\rho_{i,i+j}.
+\]
+
+\end_inset
+
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Unregularized-correlations"
+
+\end_inset
+
+ shows the averaged correlations for a simple matrix inversion against the
+ detector parameter 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1456,7 +1611,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Unregularized correlations
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Unregularized-correlations"
+
+\end_inset
+
+Correlations in an unregularized unfolded distribution.
 \end_layout
 
 \end_inset
@@ -1466,7 +1627,16 @@ Unregularized correlations
 
 \end_inset
 
+No artificial correlations are present only for a perfect detector 
+\begin_inset Formula $\epsilon=1$
+\end_inset
 
+.
+ Furthermore, the anti-correlation between directly adjacent bins 
+\begin_inset Formula $\langle\rho_{i,i+1}\rangle<0$
+\end_inset
+
+ is an indicator for the previous observed unphysical oscillations.
 \end_layout
 
 \begin_layout Standard
@@ -1474,10 +1644,6 @@ Unregularized correlations
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
