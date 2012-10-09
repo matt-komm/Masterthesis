@@ -1569,20 +1569,28 @@ For analysis, the correlations coefficients are average as
 \begin_layout Standard
 \begin_inset Formula 
 \[
-"\langle\rho_{i,i+j}\rangle"\equiv\frac{1}{n}\cdot\sum_{i}^{n-j-1}\rho_{i,i+j}.
+"\langle\rho_{i,i+j}\rangle"\equiv\frac{1}{n-j-1}\cdot\sum_{i}^{n-j-1}\rho_{i,i+j}.
 \]
 
 \end_inset
 
-Figure 
+Then, anti-correlations between directly adjacent bins 
+\begin_inset Formula $\langle\rho_{i,i+1}\rangle<0$
+\end_inset
+
+ are an indicator for the previous observed unphysical oscillations.
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Unregularized-correlations"
 
 \end_inset
 
- shows the averaged correlations for a simple matrix inversion against the
- detector parameter 
+ shows the averaged correlations for a simple matrix inversion (
+\begin_inset Formula $\tau=0$
+\end_inset
+
+) against the detector parameter 
 \begin_inset Formula $\epsilon$
 \end_inset
 
@@ -1600,7 +1608,7 @@ status open
 \begin_inset Graphics
 	filename plots/unregulaziedUnfolding.ps-crop.pdf
 	lyxscale 40
-	width 8cm
+	height 5.2cm
 
 \end_inset
 
@@ -1627,86 +1635,104 @@ Correlations in an unregularized unfolded distribution.
 
 \end_inset
 
-No artificial correlations are present only for a perfect detector 
+No artificial correlations are present only for a perfect detector (
 \begin_inset Formula $\epsilon=1$
 \end_inset
 
-.
- Furthermore, the anti-correlation between directly adjacent bins 
-\begin_inset Formula $\langle\rho_{i,i+1}\rangle<0$
+).
+ For 
+\begin_inset Formula $\epsilon<1$
 \end_inset
 
- is an indicator for the previous observed unphysical oscillations.
+ the unfolded distribution is dominated by artificial anti-correlations
+ between adjacent bins.
+ 
+\end_layout
+
+\begin_layout Standard
+The situation changes if the regularization proposed in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:reg"
+
+\end_inset
+
+ is turned on (
+\begin_inset Formula $\tau>0$
+\end_inset
+
+).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:corr-eps95"
+
+\end_inset
+
+ shows the resulting correlations for 
+\begin_inset Formula $\epsilon=0.95$
+\end_inset
+
+ against the parameter 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+ In the limit case 
+\begin_inset Formula $\tau\rightarrow\infty$
+\end_inset
+
+ the unfolded distribution is artifically influenced by large correlations.
+ Thus by using the described regularization method the unfolded distribution
+ can even be artificially biased in this limit case.
+ On the other hand the occuring anti-correlations are marginal and an unregulari
+zed unfolding might even apply.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:corr-eps70"
+
+\end_inset
+
+ shows the variation in the correlations against the parameter 
+\begin_inset Formula $\tau$
+\end_inset
+
+ for 
+\begin_inset Formula $\epsilon=0.7$
+\end_inset
+
+.
+ The parameter 
+\begin_inset Formula $\tau$
+\end_inset
+
+ can be chosen so that less correlations are present in the unfolded distributio
+n.
+ 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename plots/estimateEps07.ps-crop.pdf
 	lyxscale 40
-	width 8cm
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/estimateEps95.ps-crop.pdf
-	lyxscale 40
-	width 8cm
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-(a)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-(b)
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+	height 5.2cm
 
 \end_inset
 
@@ -1717,7 +1743,54 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Regularized correlations
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:corr-eps70"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/estimateEps95.ps-crop.pdf
+	lyxscale 40
+	height 5.2cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:corr-eps95"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1734,8 +1807,112 @@ Regularized correlations
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Regularized correlations for an examplary detector.
+\end_layout
+
+\end_inset
+
+Regularized correlations for an examplary detector.
+ (a): 
+\begin_inset Formula $\epsilon=0.7$
+\end_inset
+
+, (b): 
+\begin_inset Formula $\epsilon=0.95$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This fact motivates the choice for a certain 
+\begin_inset Formula $\tau$
+\end_inset
+
+ during the analysis as follows.
+ The shown correlation minima are estimated from the global correlation
+ coefficients 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{??ref??}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho_{i}=\sqrt{1-V_{x,\, ii}\cdot\left(V_{x}^{-1}\right)_{ii}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho_{\mathrm{mean}}=\frac{1}{n}\cdot\sum_{i}\rho_{i},\qquad\rho_{\mathrm{max}}=\mathrm{max\left[\rho_{1};\ldots\rho_{n}\right]}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From those, the regularization paremeter is then chosen as 
+\begin_inset Formula $\tau={\textstyle \frac{\rho_{\mathrm{mean}}+\rho_{\mathrm{max}}}{2}}$
+\end_inset
+
+.
+ This way of estimating the regularization parameter depends only on the
+ response matrix.
+\end_layout
+
 \begin_layout Subsection
 Construction of the Response Matrix
+\end_layout
+
+\begin_layout Standard
+The response matrix has to be carefully constructed from the simulation.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1746,13 +1923,49 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="1">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0pt">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Graphics
+	filename images/response.eps
+	lyxscale 20
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1765,23 +1978,33 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(a)
+
 \end_layout
 
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1794,23 +2017,29 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(b)
+
 \end_layout
 
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1823,21 +2052,17 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
-(c)
+
 \end_layout
 
 \end_inset
-</cell>
-</row>
-</lyxtabular>
+
+
+\end_layout
 
 \end_inset
 
