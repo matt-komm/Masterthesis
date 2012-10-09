@@ -104,67 +104,91 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-blablablab
+This thesis demonstates a first analysis strategy and measurement of the
+ top quark spin asymmetries.
+ It is expected from the theory of the Standard Model of Particle Physics
+ (SM) that top quarks have a 
+\begin_inset Quotes eld
+\end_inset
+
+vector
+\begin_inset Quotes erd
+\end_inset
+
+-
+\begin_inset Quotes erd
+\end_inset
+
+axialvector
+\begin_inset Quotes erd
+\end_inset
+
+ (V-A) coupling structure at the 
+\begin_inset Formula $\mathrm{Wtb}$
+\end_inset
+
+-vertex.
+ This is probed by the top quark spin asymmetries.
+ In an effective extension of the SM, the asymmetries are used to constrain
+ possible the anomalous couplings 
+\begin_inset Formula $\mathrm{V_{L}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{V_{R}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{L}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-ifnum
-\backslash
-value{part}<1
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+After the event selection, the contributions from background processes are
+ still very high.
+ Therefore, the multivariant classification methods are trained to discriminate
+ the remaining background further.
+ This includes Boosted Decision Trees with high discriminating power and
+ Projective Likelihood Estimators as a cross check.
+ An optimization procedure is carried out to find the best discriminator
+ and its value 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
+To correct for detector and reconstruction effects an unfolding procedure
+ is applied.
+ Propagation of error through the unfolding is performed by dicing of template
+ based toy samples within the statistical and systematical uncertainties.
+ The resulting asymmetries are checked for a potential bias by a Neyman
+ construction.
+ For that, ten different anomalous coupling samples have been generated
+ with the WHIZARD Monte-Carlo generator and subjected to the analysis procedure
+ as well.
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "references"
-options "siam"
-
+The asymmetries can be measured in two spin bases.
+ It has been found out that the asymmetries with the smallest uncertainties
+ are obtained from the spectator basis with 
+\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-fi
-\end_layout
-
+\begin_inset Formula $A_{b}^{\mathrm{spec.}}=$
 \end_inset
 
 
+\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}=$
+\end_inset
+
+ .
+ These results lead to the 
 \end_layout
 
 \end_body

@@ -113,22 +113,27 @@ key "topQuarkObservation"
 \end_inset
 
 .
- Back then, its properties like mass and the production cross-sections were
- measured.
- Due to the low statistics it was difficult to obtain more information about
- the coupling structure of the top quark.
- Here the Standard Model of Particle Physics (SM) predicts that only left-handed
+ Its has the highest mass of 
+\begin_inset Formula $m_{\mathrm{t}}=173.5\,\mathrm{GeV}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pdg"
+
+\end_inset
+
+ among all so far known elementary particles.
+ The Standard Model of Particle Physics (SM) predicts that only left-handed
  top quarks (
 \begin_inset Formula $\mathrm{t}$
 \end_inset
 
 ) couple to the W boson (
-
 \begin_inset Formula $\mathrm{W}$
 \end_inset
 
-
-\lang american
 ) and the bottom quark (
 \begin_inset Formula $\mathrm{b}$
 \end_inset
@@ -151,14 +156,13 @@ axialvector
 \end_inset
 
  (V-A) structure.
- With the start of data taking at the Large Hadron Collider in 2010 (CERN)
- in Geneva, Switzerland, more data about the top quark is provided to investigat
-e further into this area.
+ New interactions or particles may influence this couplings structure.
+ 
 \end_layout
 
 \begin_layout Standard
-In my thesis, I present the means, strategy and result of the top spin asymmetri
-es measurement.
+In my thesis, I present the means, strategy and results of a first measurement
+ of the top spin asymmetries.
  These asymmetries are sensitive to the structure of the 
 \begin_inset Formula $\mathrm{Wtb}$
 \end_inset
