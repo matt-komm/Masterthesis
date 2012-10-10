@@ -106,8 +106,8 @@ Introduction
 \begin_layout Standard
 The Standard Model of Particle Physics (SM) is the theory of the interactions
  between point-like (elementary) particles.
- Among all up till now known elementary particles, the top quark has the
- highest mass of 
+ Among all known elementary particles, the top quark has the highest mass
+ of 
 \begin_inset Formula $m_{\mathrm{t}}=173.5\,\mathrm{GeV}$
 \end_inset
 
@@ -119,8 +119,8 @@ key "pdg"
 \end_inset
 
 .
- In 1995, it was discovered at the Tevatron Collider (Fermilab) in Chicago,
- USA 
+ In 1995, the top quark was discovered at the Tevatron Collider (Fermilab)
+ in Chicago, USA 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "topQuarkObservation"
@@ -164,49 +164,72 @@ axialvector
 \end_layout
 
 \begin_layout Standard
-In my thesis, I present the means, strategy and results of a first measurement
- of the top spin asymmetries.
- These asymmetries can be measured in single top t-channel production.
+In this thesis, the strategy and results of a first measurement of the top
+ quark spin asymmetries are presented.
+ These asymmetries are measured in single top quark t-channel production.
  They are sensitive to the coupling structure at the 
 \begin_inset Formula $\mathrm{Wtb}$
 \end_inset
 
--vertex and will be used in a further step to constrain the anomalous couplings.
+-vertex and are used to constrain possible anomalous couplings in a further
+ step.
+ The analysis uses data from proton-proton collisons recorded by the CMS
+ (Compact Muon Solenoid) experiment at a center-of-mass energy of 
+\begin_inset Formula $\sqrt{s}=7\,\mathrm{TeV}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-The next chapter will cover briefly the theory behind the Standard Model
- of Particle Physics and how the top quark fits in it.
- Also, an effective extension of the SM is discussed to introduce a more
- general coupling scenario.
- The Monte-Carlo generator WHIZARD is described, which will be used to generate
- such generalized scenarios.
+The next chapter covers briefly the theory behind the Standard Model of
+ Particle Physics and focuses especially on the top quark.
+ An effective extension of the SM is discussed to introduce a more general
+ coupling scenario.
+ The Monte-Carlo generator WHIZARD is used to generate anomalous coupling
+ scenarios.
 \end_layout
 
 \begin_layout Standard
 In chapter 3, the experimental setup is depicted.
- Here, the CMS experiment, the reconstruction of the nescessary physics
- objects as well as the used software to perform the measurement is described.
- The multivariant classification methods Boosted Decision Tree and Projective
- Likelihood Estimator are explained.
+ The CMS experiment, the reconstruction of the nescessary physics objects
+ and the used software to perform the measurement are described.
+ The multivariant classification methods 
+\begin_inset Quotes eld
+\end_inset
+
+Boosted Decision Tree
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Projective Likelihood Estimator
+\begin_inset Quotes erd
+\end_inset
+
+ are explained.
  
 \end_layout
 
 \begin_layout Standard
-After the event simulation and selection in chapter 4, the multivariant
- classification methods are used in chapter 5 to further discriminate remaining
- background constributions in data after the event selection.
- Unfolding is applied to correct for detector and reconstruction effects.
- The unfolding solutions and the nescessary regularization is discussed
- in detail.
- 
+The event simulation and selection is described in chapter 4.
+ The analysis strategy is presented in chapter 5.
+ The multivariant classification methods are used to further discriminate
+ remaining background constributions after the event selection and to obtain
+ a highly pure signal from data.
+ The selected events are unfolded to correct for detector and reconstruction
+ effects.
+ The unfolding procedure and its regularization is analyzed in detail.
 \end_layout
 
 \begin_layout Standard
-Finaly, in chapter 6, the top quark spin asymmetries can be obtained from
- unfolded distributions.
- The complete analysis procedure is furthermore cross checked by a Neyman
- construction with the generated anomalous coupling samples.
+Finally, in chapter 6, the top quark spin asymmetries are measured using
+ the unfolded distributions.
+ The complete analysis procedure is furthermore cross checked with the generated
+ anomalous coupling samples.
 \end_layout
 
 \begin_layout Subsection*
