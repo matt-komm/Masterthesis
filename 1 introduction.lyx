@@ -104,16 +104,10 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-In 1995 the top quark was discovered at the Tevatron Collider (Fermilab)
- in Chicago, USA
-\begin_inset CommandInset citation
-LatexCommand cite
-key "topQuarkObservation"
-
-\end_inset
-
-.
- Its has the highest mass of 
+The Standard Model of Particle Physics (SM) is the theory of the interactions
+ between point-like (elementary) particles.
+ Among all up till now known elementary particles, the top quark has the
+ highest mass of 
 \begin_inset Formula $m_{\mathrm{t}}=173.5\,\mathrm{GeV}$
 \end_inset
 
@@ -124,9 +118,18 @@ key "pdg"
 
 \end_inset
 
- among all so far known elementary particles.
- The Standard Model of Particle Physics (SM) predicts that only left-handed
- top quarks (
+.
+ In 1995, it was discovered at the Tevatron Collider (Fermilab) in Chicago,
+ USA 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "topQuarkObservation"
+
+\end_inset
+
+.
+ The SM predicts that in electroweak interactions only left-handed top quarks
+ (
 \begin_inset Formula $\mathrm{t}$
 \end_inset
 
@@ -156,18 +159,19 @@ axialvector
 \end_inset
 
  (V-A) structure.
- New interactions or particles may influence this couplings structure.
- 
+ But it is possible that new yet undiscovered interactions or particles
+ may lead to a deviation from this coupling structure.
 \end_layout
 
 \begin_layout Standard
 In my thesis, I present the means, strategy and results of a first measurement
  of the top spin asymmetries.
- These asymmetries are sensitive to the structure of the 
+ These asymmetries can be measured in single top t-channel production.
+ They are sensitive to the coupling structure at the 
 \begin_inset Formula $\mathrm{Wtb}$
 \end_inset
 
--vertex coupling.
+-vertex and will be used in a further step to constrain the anomalous couplings.
 \end_layout
 
 \begin_layout Standard
@@ -180,9 +184,29 @@ The next chapter will cover briefly the theory behind the Standard Model
 \end_layout
 
 \begin_layout Standard
-Then the experimental setup is depicted.
+In chapter 3, the experimental setup is depicted.
  Here, the CMS experiment, the reconstruction of the nescessary physics
  objects as well as the used software to perform the measurement is described.
+ The multivariant classification methods Boosted Decision Tree and Projective
+ Likelihood Estimator are explained.
+ 
+\end_layout
+
+\begin_layout Standard
+After the event simulation and selection in chapter 4, the multivariant
+ classification methods are used in chapter 5 to further discriminate remaining
+ background constributions in data after the event selection.
+ Unfolding is applied to correct for detector and reconstruction effects.
+ The unfolding solutions and the nescessary regularization is discussed
+ in detail.
+ 
+\end_layout
+
+\begin_layout Standard
+Finaly, in chapter 6, the top quark spin asymmetries can be obtained from
+ unfolded distributions.
+ The complete analysis procedure is furthermore cross checked by a Neyman
+ construction with the generated anomalous coupling samples.
 \end_layout
 
 \begin_layout Subsection*

@@ -104,10 +104,15 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This thesis demonstates a first analysis strategy and measurement of the
- top quark spin asymmetries.
- It is expected from the theory of the Standard Model of Particle Physics
- (SM) that top quarks have a 
+This thesis demonstated a first analysis strategy and measurement of the
+ top quark spin asymmetries in single top quark t-channel production with
+ data from the CMS experiment.
+ 
+\end_layout
+
+\begin_layout Standard
+It is expected from the theory of the Standard Model of Particle Physics
+ (SM) that in electroweak interactions top quarks have a 
 \begin_inset Quotes eld
 \end_inset
 
@@ -128,9 +133,10 @@ axialvector
 \end_inset
 
 -vertex.
- This is probed by the top quark spin asymmetries.
- In an effective extension of the SM, the asymmetries are used to constrain
- possible the anomalous couplings 
+ This is probed by the top quark spin asymmetries which are calculated from
+ differential distributions.
+ In an effective extension of the SM, the top quark spin asymmetries are
+ observables which can constrain arising anomalous couplings 
 \begin_inset Formula $\mathrm{V_{L}}$
 \end_inset
 
@@ -147,33 +153,55 @@ axialvector
 \end_inset
 
 .
+ Those may be effected by new interactions or particles at higher energy
+ scales.
+ In the SM, the anomalous couplings are expected to be 
+\begin_inset Formula $\mathrm{V_{L}}=\mathrm{V_{tb}}\approx1$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathrm{V_{R}}=\mathrm{g_{L}}=\mathrm{g_{R}}=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 After the event selection, the contributions from background processes are
  still very high.
- Therefore, the multivariant classification methods are trained to discriminate
- the remaining background further.
+ Therefore, multivariant classification methods are trained to discriminate
+ the remaining background contributions further.
  This includes Boosted Decision Trees with high discriminating power and
  Projective Likelihood Estimators as a cross check.
- An optimization procedure is carried out to find the best discriminator
- and its value 
+ A novel optimization procedure is carried out to find the best discriminator
+ for a certain set of input variables.
+ A potential bias through the discriminator which favors a certain coupling
+ scenario is minimized by selecting non-correlated input variables.
+ The optimal working point for discrimination is found through a tradeoff
+ between the high systematic uncertainties from remaining background processes
+ and the statistical dominated uncertainties of the selected single top
+ quark t-channel process.
+ 
 \end_layout
 
 \begin_layout Standard
-To correct for detector and reconstruction effects an unfolding procedure
- is applied.
- Propagation of error through the unfolding is performed by dicing of template
- based toy samples within the statistical and systematical uncertainties.
- The resulting asymmetries are checked for a potential bias by a Neyman
- construction.
+After that, an unfolding procedure is applied to correct for detector and
+ reconstruction effects.
+ Propagation of error through the unfolding is performed by dicing of template-b
+ased toy samples within the statistical and systematical uncertainties.
+ 
+\end_layout
+
+\begin_layout Standard
+The resulting asymmetries from the unfolded distributions are checked for
+ a potential bias by a Neyman construction.
  For that, ten different anomalous coupling samples have been generated
- with the WHIZARD Monte-Carlo generator and subjected to the analysis procedure
- as well.
+ with the WHIZARD Monte-Carlo generator and are subjected to the analysis
+ procedure as well.
 \end_layout
 
 \begin_layout Standard
-The asymmetries can be measured in two spin bases.
+The asymmetries are measured in two spin bases.
  It has been found out that the asymmetries with the smallest uncertainties
  are obtained from the spectator basis with 
 \begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=$
@@ -188,7 +216,24 @@ The asymmetries can be measured in two spin bases.
 \end_inset
 
  .
- These results lead to the 
+ These results lead together with single top cross section and W boson helicity
+ fraction measurements to a constrain of the anomalous couplings to 
+\begin_inset Formula $\mathrm{V_{L}}=$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{V_{R}}=$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{L}}=$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathrm{g_{R}}=$
+\end_inset
+
+
 \end_layout
 
 \end_body
