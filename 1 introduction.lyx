@@ -159,13 +159,13 @@ axialvector
 \end_inset
 
  (V-A) structure.
- But it is possible that new yet undiscovered interactions or particles
+ However it is possible that yet undiscovered interactions or particles
  may lead to a deviation from this coupling structure.
 \end_layout
 
 \begin_layout Standard
-In this thesis, the strategy and results of a first measurement of the top
- quark spin asymmetries are presented.
+In this thesis, the strategy for and results of a first measurement of the
+ top quark spin asymmetries are presented.
  These asymmetries are measured in single top quark t-channel production.
  They are sensitive to the coupling structure at the 
 \begin_inset Formula $\mathrm{Wtb}$
@@ -173,7 +173,7 @@ In this thesis, the strategy and results of a first measurement of the top
 
 -vertex and are used to constrain possible anomalous couplings in a further
  step.
- The analysis uses data from proton-proton collisons recorded by the CMS
+ The analysis uses data from proton-proton collisions recorded by the CMS
  (Compact Muon Solenoid) experiment at a center-of-mass energy of 
 \begin_inset Formula $\sqrt{s}=7\,\mathrm{TeV}$
 \end_inset
@@ -182,19 +182,19 @@ In this thesis, the strategy and results of a first measurement of the top
 \end_layout
 
 \begin_layout Standard
-The next chapter covers briefly the theory behind the Standard Model of
+The next chapter briefly covers the theory behind the Standard Model of
  Particle Physics and focuses especially on the top quark.
  An effective extension of the SM is discussed to introduce a more general
  coupling scenario.
- The Monte-Carlo generator WHIZARD is used to generate anomalous coupling
+ The Monte-Carlo event generator WHIZARD is used to generate anomalous coupling
  scenarios.
 \end_layout
 
 \begin_layout Standard
-In chapter 3, the experimental setup is depicted.
- The CMS experiment, the reconstruction of the nescessary physics objects
- and the used software to perform the measurement are described.
- The multivariant classification methods 
+In chapter 3, the experimental setup is discussed.
+ The CMS experiment, the reconstruction of the necessary physics objects
+ and the used software are described.
+ The multivariate classification methods 
 \begin_inset Quotes eld
 \end_inset
 
@@ -215,21 +215,21 @@ Projective Likelihood Estimator
 \end_layout
 
 \begin_layout Standard
-The event simulation and selection is described in chapter 4.
+The event simulation and selection are described in chapter 4.
  The analysis strategy is presented in chapter 5.
- The multivariant classification methods are used to further discriminate
- remaining background constributions after the event selection and to obtain
- a highly pure signal from data.
- The selected events are unfolded to correct for detector and reconstruction
- effects.
- The unfolding procedure and its regularization is analyzed in detail.
+ The multivariate classification methods are used to further discriminate
+ remaining background constributions after the event selection.
+ This yields a very pure selection of signal events from data.
+ The resulting distributions are unfolded to correct for detector and reconstruc
+tion effects.
+ The unfolding procedure and its regularization are analyzed in detail.
 \end_layout
 
 \begin_layout Standard
 Finally, in chapter 6, the top quark spin asymmetries are measured using
  the unfolded distributions.
- The complete analysis procedure is furthermore cross checked with the generated
- anomalous coupling samples.
+ The complete analysis procedure is cross checked with the generated anomalous
+ coupling samples.
 \end_layout
 
 \begin_layout Subsection*

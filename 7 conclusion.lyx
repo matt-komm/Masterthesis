@@ -104,9 +104,9 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This thesis demonstates the first analysis strategy and measurement of the
- top quark spin asymmetries in single top quark t-channel production.
- It uses 
+This thesis presents the first measurement of the top quark spin asymmetries
+ in single top quark t-channel production.
+ The analysis uses 
 \begin_inset Formula $1.17\,\mbox{\mathrm{fb}}^{-1}$
 \end_inset
 
@@ -116,6 +116,7 @@ This thesis demonstates the first analysis strategy and measurement of the
 \end_inset
 
 .
+ For the measurement a new analysis strategy is developed.
 \end_layout
 
 \begin_layout Standard
@@ -137,23 +138,69 @@ axialvector
 \end_inset
 
  (V-A) coupling structure in electroweak interactions.
- This is probed by the top quark spin asymmetries which are influenced by
- possible anomalous top quark couplings.
- In the SM, the anomalous couplings are expected to be 
-\begin_inset Formula $\mathrm{V_{L}}=\mathrm{V_{tb}}\approx1$
+ This is probed by the top quark spin asymmetries.
+ 
+\end_layout
+
+\begin_layout Standard
+The asymmetries are caculated from distributions of the angles 
+\begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
+\end_inset
+
+ between the spin analyzers 
+\begin_inset Formula $\mathrm{X}$
+\end_inset
+
+ and the top quark spin bases 
+\begin_inset Formula $\mathrm{B}$
+\end_inset
+
+ in the top quark rest frame.
+ The muon, the bottom quark and the neutrino from leptonically decaying
+ top quarks are choosen as the spin analyzers.
+ The direction of the spectator quark or its projection onto the beamline
+ serves as the top quark spin basis.
+ 
+\end_layout
+
+\begin_layout Standard
+The SM predicts the top quark spin asymmetries 
+\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=0.49$
+\end_inset
+
+, 
+\begin_inset Formula $A_{b}^{\mathrm{spec.}}=-0.19$
 \end_inset
 
 , and 
-\begin_inset Formula $\mathrm{V_{R}}=\mathrm{g_{L}}=\mathrm{g_{R}}=0$
+\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}=-0.17$
 \end_inset
 
-.
+ in the spectator basis.
+ In an effective extension of the SM, the anomalous top quark couplings
+ 
+\begin_inset Formula $\mathrm{V_{L}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{V_{R}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{L}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+ arise which can influence these asymmetries.
 \end_layout
 
 \begin_layout Standard
 After the event selection, the contributions from background processes are
  still very high.
- Therefore, multivariant classification methods are used to further discriminate
+ Therefore, multivariate classification methods are used to further discriminate
  between signal and remaining background contributions.
  Boosted Decision Trees with high discriminating power are applied, while
  Projective Likelihood Estimators are used as a cross check.
@@ -161,65 +208,55 @@ After the event selection, the contributions from background processes are
 \end_layout
 
 \begin_layout Standard
-A multivariant discriminator could favors a certain coupling scenario.
- This potential bias is minimized by selecting non-correlated input variables.
+The selection of input variables which are less correlated to the angular
+ distributions minimizes a potential bias if a multivariate discriminator
+ favor the coupling scenario from its training.
 \end_layout
 
 \begin_layout Standard
-For the measurement, a tradeoff between the high systematic uncertainties
- from background processes and the statistical dominated uncertainties of
- the selected single top quark t-channel process is required.
- The optimal discriminator and its working point is chosen by minimizing
- the total uncertainty on the asymmetry measurement.
+The optimal set of input variables and the working point of the discriminator
+ are chosen by minimizing the total uncertainty on the asymmetry measurement.
+ This displays a tradeoff between the high systematic uncertainties from
+ background processes and the statistically dominated uncertainties of the
+ selected single top quark t-channel process.
+ 
 \end_layout
 
 \begin_layout Standard
-An unfolding procedure is applied to correct for detector and reconstruction
- effects.
- Systematical and statistical uncertainties are propagated through the unfolding
- procedure with generated pseudo-experiments.
+The angular distributions are unfolded to correct for detector and reconstructio
+n effects.
+ Pseudo-experiments are generated to correctly propagate systematic and
+ statistical uncertainties through the unfolding procedure.
 \end_layout
 
 \begin_layout Standard
-A potential bias on the measurement could arise due to the event selection,
- signal separation or the unfolding.
- This is checked by using a Neyman construction with eight different anomalous
- coupling scenarios.
- These scenarios are generated with the WHIZARD Monte-Carlo generator.
+A Neyman construction using event samples according to eight different anomalous
+ coupling scenarios checks for a potential bias on the measurement due to
+ the event selection, signal separation or the unfolding.
+ The anomalous coupling scenarios are generated with the WHIZARD Monte-Carlo
+ generator.
 \end_layout
 
 \begin_layout Standard
-In total three top quark spin asymmetries are measured in the spectator
+In total, three top quark spin asymmetries are measured in the spectator
  basis and in the beamline basis.
  The asymmetries with the smallest uncertainties are obtained using the
  spectator basis with 
-\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=$
+\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=0.17_{-0.43}^{+0.18}$
 \end_inset
 
-
-\begin_inset Formula $A_{b}^{\mathrm{spec.}}=$
+, 
+\begin_inset Formula $A_{b}^{\mathrm{spec.}}=-0.31_{-0.22}^{+0.44}$
 \end_inset
 
-
-\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}=$
+, and 
+\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}=0.13_{-0.53}^{+0.55}$
 \end_inset
 
- .
- Using single top quark cross sections 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "tCh-measurement,tWCh-measurement"
-
-\end_inset
-
- and W boson helicity fractions measurements 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Whel-measurement"
-
-\end_inset
-
- a constrain the anomalous couplings is obtained.
+.
+ These top quark spin asymmetries are used to constrain the anomalous couplings
+ with additional information from measurements of the single top quark cross
+ sections and the W boson helicity fractions.
 \end_layout
 
 \begin_layout Standard
