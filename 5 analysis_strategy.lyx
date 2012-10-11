@@ -152,6 +152,18 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/cos_theta_specator_muon.ps-crop.pdf
+	lyxscale 30
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -1971,7 +1983,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/matrix_spectator_lepton.ps-crop.pdf
 	lyxscale 40
-	width 11cm
+	height 5cm
 
 \end_inset
 
@@ -1997,6 +2009,37 @@ status collapsed
 \end_inset
 
 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/spectator_lepton.ps-crop.pdf
+	lyxscale 20
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2010,7 +2053,38 @@ status collapsed
 \begin_inset Graphics
 	filename plots/matrix_spectator_bjet.ps-crop.pdf
 	lyxscale 40
-	width 11cm
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/spectator_bjet.ps-crop.pdf
+	lyxscale 20
+	height 5cm
 
 \end_inset
 
@@ -2045,7 +2119,38 @@ status collapsed
 \begin_inset Graphics
 	filename plots/matrix_spectator_neutrino.ps-crop.pdf
 	lyxscale 40
-	width 11cm
+	height 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/spectator_neutrino.ps-crop.pdf
+	lyxscale 20
+	height 5cm
 
 \end_inset
 
