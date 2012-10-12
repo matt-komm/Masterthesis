@@ -2675,32 +2675,24 @@ reference "fig:The-response-matrices"
 \end_inset
 
  observables in the spectator basis.
- The response matrices are normalized to the transition probability.
- Additionally, the estimation for the regularization parameter 
-\begin_inset Formula $\tau$
+ The response matrices are normalized to the transition probability 
+\begin_inset Formula $p(\mathrm{true}\rightarrow\mathrm{measured)}$
 \end_inset
 
- is given.
+.
  The resolution in 
 \begin_inset Formula $\cos_{\mathrm{B},\,\mathrm{X}}$
 \end_inset
 
  is best for the muon.
  For the b-tagged jet the resolution is only slightly more smeared.
- The resolution of the neutrino shows required 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{same estimation!!!}
-\end_layout
-
+ The resolution of the neutrino is far more smeared through the neutrino
+ 
+\begin_inset Formula $p_{\mathrm{z}}\mbox{\mathrm{-solution}}$
 \end_inset
 
-
+ from the missing transverse energy.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2720,7 +2712,7 @@ status open
 \begin_inset Graphics
 	filename plots/matrix_spectator_lepton.ps-crop.pdf
 	lyxscale 40
-	height 5cm
+	width 9cm
 
 \end_inset
 
@@ -2740,37 +2732,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/spectator_lepton.ps-crop.pdf
-	lyxscale 20
-	height 5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -2790,38 +2751,7 @@ status open
 \begin_inset Graphics
 	filename plots/matrix_spectator_bjet.ps-crop.pdf
 	lyxscale 40
-	height 5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/beamline_bjet.ps-crop.pdf
-	lyxscale 20
-	height 5cm
+	width 9cm
 
 \end_inset
 
@@ -2856,38 +2786,7 @@ status open
 \begin_inset Graphics
 	filename plots/matrix_spectator_neutrino.ps-crop.pdf
 	lyxscale 40
-	height 5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/beamline_neutrino.ps-crop.pdf
-	lyxscale 20
-	height 5cm
+	width 9cm
 
 \end_inset
 
@@ -2931,9 +2830,9 @@ The response matrices for the observables in the spectator basis.
 
 \end_inset
 
-The response matrices for the muon (a), the b-tagged jet (c), and the neutrino
- (e) in the spectator basis.
- 
+The response matrices for the muon (a), the b-tagged jet (b), and the neutrino
+ (c) in the spectator basis.
+ The color code denotes the transition probability.
 \end_layout
 
 \end_inset
