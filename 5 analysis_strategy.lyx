@@ -105,7 +105,7 @@ Analysis Strategy
 
 \begin_layout Standard
 The core of the analysis is the measurement of the top quark spin asymmetries.
- The analysis strategy can be divided into the following three steps which
+ The analysis strategy can be divided into the following two steps which
  are described in detail in this chapter:
 \end_layout
 
@@ -114,7 +114,7 @@ Measurement of the single top quark t-channel differential
 \begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
 
- distributions from data using multivariant analysis techniques.
+ distributions from data using multivariate analysis techniques.
 \end_layout
 
 \begin_layout Itemize
@@ -122,8 +122,8 @@ Unfolding of the distributions to correct for reconstruction and detector
  effects.
 \end_layout
 
-\begin_layout Itemize
-Caculation of the top quark spin asymmetries.
+\begin_layout Standard
+From the unfolded distributions the top quark spin asymmetries are calculated.
 \end_layout
 
 \begin_layout Section
@@ -138,11 +138,94 @@ reference "fig:Cos-helicity-after"
 
 \end_inset
 
- displayes the observables after the event selection.
- It shows that the constributions from background processes are still very
+ displays the 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
+\end_inset
+
+ distributions after the event selection.
+ The yield of the background processes in the distributions are already
+ set to their estimate from a fit which is described in chapter 6.
+\end_layout
+
+\begin_layout Standard
+There is a good agreement between data and MC for the neutrino spin analyzers
+ and the b-tagged jet spin analyzers in both bases (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-spec-neutrino"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-beaml-neutrino"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-spec-bjet"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-beaml-bjet"
+
+\end_inset
+
+).
+ However a trend is observed for the muon spin analyzer which seems to disagree
+ slightly within the statistical uncertainties (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-spec-muon"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cos-beaml-muon"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Furthermore, the contributions from background processes are still very
  high.
- Therefore, multivariant methods are used to enhance the signal over background
+ Boosted Decision Trees are trained to enhance the signal over background
  ratio.
+ The discriminator output is then used to select a highly pure signal phase
+ space from data.
+\end_layout
+
+\begin_layout Standard
+Additionally Projective Likelihood Estimators are trained for comparison
+ as well.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+afterpage{
+\backslash
+clearpage}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -153,10 +236,242 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename plots/cos_theta_specator_muon.ps-crop.pdf
+	filename plots/cos_theta_specator_muon.wl.ps-crop.pdf
 	lyxscale 30
-	width 11cm
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-spec-muon"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/cos_theta_beamline_muon.ps-crop.pdf
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-beaml-muon"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/cos_theta_specator_bjet.wl.ps-crop.pdf
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-spec-bjet"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/cos_theta_beamline_bjet.ps-crop.pdf
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-beaml-bjet"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/cos_theta_specator_neutrino.wl.ps-crop.pdf
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-spec-neutrino"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/cos_theta_beamline_neutrino.ps-crop.pdf
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cos-beaml-neutrino"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -173,7 +488,26 @@ name "fig:Cos-helicity-after"
 
 \end_inset
 
-Cos helicity after event selection
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
+\end_inset
+
+ distributions after the event selection.
+ 
+\end_layout
+
+\end_inset
+
+The 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
+\end_inset
+
+ distributions after the event selection.
 \end_layout
 
 \end_inset
@@ -195,25 +529,25 @@ Discrimination of Signal and Background
 \end_layout
 
 \begin_layout Standard
-For multivariant classification, input variables have to be pict from the
- event kinematics.
+For multivariate classification, input variables have to be picked from
+ the event kinematics.
  The choice for a certain variable is often made according to its discrimination
- power within the multivariant training phase.
+ power within the multivariate training phase.
  This is applicable if one is solely interested in the best background discrimin
 ation with a minimum set of variables.
 \end_layout
 
 \begin_layout Standard
-For this analyses it is crucial to minimalize a potential bias on the shape
+For this analyses it is crucial to minimize a potential bias on the shape
  of the differential distributions after a discriminator is applied.
- This can occur if the multivariant method gets sensitive to the specific
+ This can occur if a multivariate method gets sensitive to the specific
  coupling scenario which is used for training.
  Therefore, non-correlated variables to the 
 \begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
 \end_inset
 
  angles are chosen as input variables.
- It is a necessary but not a sufficient condition.
+ This is a necessary but not a sufficient condition.
  The actual bias however is investigated by the anomalous coupling samples.
 \end_layout
 
@@ -251,8 +585,16 @@ where
 \begin_inset Formula $\bar{y}$
 \end_inset
 
- are the means of the respective distributions.
- It is however only sensitive to a linear dependence between two variables.
+ are the means of the respective distributions 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+.
+ It is only sensitive to a linear dependence between two variables.
  To detect even non-linear dependencies a more sophisticated method is used.
 \end_layout
 
@@ -270,8 +612,13 @@ key "independentAlgo"
 \end_inset
 
 .
- The algorithm is composed in two steps.
- Suppose the distributions 
+ In the following the algorithm is elaborated.
+ 
+\end_layout
+
+\begin_layout Standard
+It can be divided into two steps.
+ Suppose the distributions of 
 \begin_inset Formula $x$
 \end_inset
 
@@ -291,7 +638,7 @@ First, the distributions of
 \begin_inset Formula $y$
 \end_inset
 
- are flattend.
+ are flattened.
  This is performed by constructing a copula in which 
 \begin_inset Formula $x\rightarrow\tilde{x}$
 \end_inset
@@ -300,7 +647,8 @@ First, the distributions of
 \begin_inset Formula $y\rightarrow\tilde{y}$
 \end_inset
 
- are only within the interval 
+ are transformed so that the distributions are only within the interval
+ 
 \begin_inset Formula $\tilde{x},\,\tilde{y}\in[0;\,1]$
 \end_inset
 
@@ -321,8 +669,8 @@ First, the distributions of
 \begin_inset Formula $\vec{y}=(y_{1},\ldots y_{N})$
 \end_inset
 
- independently and replacing each value according to the positions after
- the sorting
+ independently.
+ Then each value is replaced according to its position after the sorting
 \end_layout
 
 \begin_layout Standard
@@ -337,7 +685,7 @@ x_{i}^{\mathrm{sorted}}\rightarrow\tilde{x}_{i}\equiv\frac{i}{N},\quad y_{i}^{\m
 \end_layout
 
 \begin_layout Standard
-Second, from the flattend distributions an 
+Second, from the flattened distributions an 
 \begin_inset Formula $n\times n$
 \end_inset
 
@@ -346,7 +694,7 @@ Second, from the flattend distributions an
 \end_inset
 
  with equidistant binning is created.
- If 
+ If the distributions of 
 \begin_inset Formula $x$
 \end_inset
 
@@ -371,7 +719,7 @@ Second, from the flattend distributions an
 
 \end_inset
 
-with the expectation value and its uncertainty
+with the expectation value and its uncertainty for the flat hypothesis
 \end_layout
 
 \begin_layout Standard
@@ -383,7 +731,7 @@ e=\frac{N}{n^{2}},\qquad\sigma_{e}=\sqrt{\frac{N}{n^{2}}}
 \end_inset
 
 is performed.
- The probability of this hypothese follows a 
+ The probability of this hypotheses follows a 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
@@ -401,10 +749,31 @@ is performed.
 \end_layout
 
 \begin_layout Standard
-For the analysis, this algorithms is fed with over 700 different variables,
- including basic kinematics of one reconstructed particle and correlated
- variables like 
+The algorithm is feed with over 700 variables.
+ This includes the transverse momentum 
+\begin_inset Formula $p_{\mathrm{T}}$
+\end_inset
+
+, the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ angle, the pseudorapidity 
+\begin_inset Formula $\eta$
+\end_inset
+
+ and energy 
+\begin_inset Formula $E$
+\end_inset
+
+ of one reconstructed object.
+ Additionally, more variables are calculated by choosing two particles and
+ calculating their 
 \begin_inset Formula $\Delta p_{\mathrm{T}}$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta\eta$
 \end_inset
 
 , 
@@ -412,12 +781,22 @@ For the analysis, this algorithms is fed with over 700 different variables,
 \end_inset
 
 , 
-\begin_inset Formula $\Delta R$
+\begin_inset Formula ${\textstyle \Delta R=\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}}$
 \end_inset
 
-, angles and invariant masses between two particles.
- The independent analysis is performed with the Powheg sample with about
- 
+, included angle, invariant mass and total transverse momentum 
+\begin_inset Formula 
+\begin{equation}
+\sum p_{\mathrm{T}}^{ij}=\sqrt{\left(p_{x}^{i}+p_{x}^{j}\right)^{2}+\left(p_{y}^{i}+p_{y}^{j}\right)^{2}}.
+\end{equation}
+
+\end_inset
+
+The search for independent variables to 
+\begin_inset Formula $\cos\theta_{\mathrm{B.,\, X}}$
+\end_inset
+
+ is performed with the Powheg sample with about 
 \begin_inset Formula $\approx50000$
 \end_inset
 
@@ -426,8 +805,7 @@ For the analysis, this algorithms is fed with over 700 different variables,
 \begin_inset Formula $h$
 \end_inset
 
- is filled with a statistically sufficient amount of MC events of about
- 
+ is filled with a statistical sufficient amount of MC events of about 
 \begin_inset Formula $\approx100$
 \end_inset
 
@@ -453,8 +831,11 @@ Confidence was gained in the algorithm when it first suggested the
 \end_inset
 
  angles of all particles.
- Those are expected to be independent to any other kinematic variable due
- to the detector geometry.
+ Those are expected to be independent to 
+\begin_inset Formula $\cos\theta_{\mathrm{B.,\, X}}$
+\end_inset
+
+ due to the detector geometry.
  But these angles do not support any discrimination power between signal
  and background processes and are therefore neglected in the variable choice.
 \end_layout
@@ -537,12 +918,12 @@ MVA Training
 \end_layout
 
 \begin_layout Standard
-To delay the choice for a certain amount of input variables, 20 different
- discriminators for each BDT and Likelihood method has been trained.
+Twenty different discriminators for each BDT and Likelihood method are trained
+ to delay the choice for a certain amount of input variables.
  Their used amount of variables from the ranking ranges up to one hundred
  in steps of five.
  Later in the analysis a tradeoff has to be made.
- If a discriminator with less variables is used it may be independent from
+ If a discriminator with less variables is used it maybe independent from
  the observables but has less discrimination power.
  Otherwise a discriminator with many variables provides a high background
  suppression but can introduce a potential bias.
@@ -550,33 +931,61 @@ To delay the choice for a certain amount of input variables, 20 different
 
 \begin_layout Standard
 Figure 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{...}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-5-most"
 
 \end_inset
 
- shows five the most independent variables.
+ shows a selection out of the first 10th variables used as input.
+ In 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:w_hfs_pt"
+
+\end_inset
+
+, the transverse momentum of the W boson and the hadronical final state
+ (HFS) is displayed.
  
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{good describtion, modeling, fit to data}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pt_besttop"
 
 \end_inset
 
+ shows the transverse momentum of the 
+\begin_inset Quotes eld
+\end_inset
 
+best
+\begin_inset Quotes erd
+\end_inset
+
+ top quark hypothesis.
+ The 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta p_{\mathrm{T}}$
+\end_inset
+
+ between the top quark and the light jet is shown in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:delta_phi_light_top"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:delta_pt_light_top"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -586,10 +995,34 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/histo_pt_vector_sum_W_hfs.wl.ps-crop.pdf
+	lyxscale 20
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The 5 most independent variables
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:w_hfs_pt"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -599,6 +1032,195 @@ The 5 most independent variables
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/pt_bestTop.ps-crop.pdf
+	lyxscale 20
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pt_besttop"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/histo_delta_phi_lightjet_btaggedtop.wl.ps-crop.pdf
+	lyxscale 20
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:delta_phi_light_top"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/histo_delta_pt_lightjet_btaggedtop.ps-crop.pdf
+	lyxscale 20
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:delta_pt_light_top"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-5-most"
+
+\end_inset
+
+A selection out of the 10th input variables.
+ (a): The total transverse momentum of the W boson and the hadronical final
+ state (HFS).
+ (b): The transverse momentum of the 
+\begin_inset Quotes eld
+\end_inset
+
+best
+\begin_inset Quotes erd
+\end_inset
+
+ top quark.
+ (c): The 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ between the lightjet and the top quark.
+ (d): The 
+\begin_inset Formula $\Delta p_{\mathrm{T}}$
+\end_inset
+
+ between the lightjet and the top quark.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Those complex defined variables are well modeled in the MC simulation.
+ The distributions agree within the statistical uncertainties with the expectati
+on from data and show no significant deviations in shape.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{was zu den anderen 100?}
 \end_layout
 
 \end_inset
@@ -611,8 +1233,9 @@ Discrimination Power
 \end_layout
 
 \begin_layout Standard
-The resulting discrimination power of the 40 methods can be quantified by
- the area under the 
+The resulting 40 multivariate classifiers after the training can be characterize
+d by their discrimination power.
+ This can be quantified by the area under the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -636,7 +1259,14 @@ reference "fig:Examplary-discriminantion-power"
 \end_inset
 
 , a subset of the ROC curves are shown for the BDT and Likelihood method.
- After the first 45 variables, the area seems to increase no more than 
+ This curves are obtained by selecting certain discriminator working points
+ and calculating the amount of remaining signal event (efficiency) and backgroun
+d events (purity).
+ 
+\end_layout
+
+\begin_layout Standard
+After the first 45 variables, the area seems to increase no more than 
 \begin_inset Formula $\approx4\,\%$
 \end_inset
 
@@ -745,7 +1375,7 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-Examplary discriminantion power.
+Exemplary discrimination power.
 \end_layout
 
 \end_inset
@@ -757,7 +1387,7 @@ name "fig:Examplary-discriminantion-power"
 
 \end_inset
 
-Examplary discriminantion power of the BDT and Likelihood methods.
+Exemplary discrimination power of the BDT and Likelihood methods.
  (a): BDT, (b): Likelihood.
 \end_layout
 
@@ -780,14 +1410,18 @@ Unfolding
 \end_layout
 
 \begin_layout Standard
-A signal enhanced phase space containing less background can be now selected
- by a multivariant discriminator from MC and data.
- The caculation of the top quark spin asymmetries from that can not yet
- be compared to the theory prediction.
- This is due to the smearing effects, finite resolution and the acceptance
- of the detector and from the conducted selections which bias the differential
+A signal enhanced phase space containing less background contributions can
+ be selected by a multivariate discriminator from MC and data.
+ However the calculation of the top quark spin asymmetries from the resulting
  
-\begin_inset Formula ${\textstyle \frac{d\sigma}{d\cos\theta}}$
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
+\end_inset
+
+-distributions can not yet be compared to the theory prediction.
+ This is due to the smearing effects, finite resolution, the acceptance
+ of the detector and from the conducted selections criteria that change
+ the differential 
+\begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
 \end_inset
 
 -shape.
@@ -832,7 +1466,14 @@ g(y)=\int f(x)A(y,\, x)\mathrm{d}x\label{eq:folding-integral}
 
 \end_inset
 
-which is called a Fredholm integral equation of the first kind.
+which is called a Fredholm integral equation of the first kind 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "volkerBobel"
+
+\end_inset
+
+.
  The function 
 \begin_inset Formula $A(y,\, x)$
 \end_inset
@@ -873,15 +1514,15 @@ reference "eq:folding-integral"
 
 \end_inset
 
-where the vector denotes 
+where 
 \begin_inset Formula $\vec{y}$
 \end_inset
 
- the measured binned distribution and denotes 
+ denotes the measured binned distribution and 
 \begin_inset Formula $\vec{x}$
 \end_inset
 
- the true binned distributions.
+ denotes the true binned distributions.
  The matrix 
 \begin_inset Formula $A$
 \end_inset
@@ -904,13 +1545,14 @@ response matrix
 \begin_inset Formula $\vec{y}$
 \end_inset
 
- are accessable.
+ are accessible.
+ The unfolding relies therefore on the correctness of the detector simulation.
  An element 
 \begin_inset Formula $a_{ij}$
 \end_inset
 
- of the response matrix is then proportional to the probability that a true
- value in bin 
+ of the response matrix is proportional to the probability that a true value
+ in bin 
 \begin_inset Formula $j$
 \end_inset
 
@@ -940,7 +1582,15 @@ reference "eq:unfolding"
 
 \end_inset
 
-However, this solution can be very unstable.
+However, this solution can be very unstable because unfolding is actual
+ an ill-posed problem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "volkerBobel"
+
+\end_inset
+
+.
  An example is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -963,7 +1613,9 @@ reference "fig:measured-dist"
 
 \end_inset
 
- (solid line) the dashed line is subjected to unfolding by inversion.
+ (solid line) a response matrix is created.
+ The dashed line is then subjected to unfolding by inversion of the response
+ matrix.
  The result is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1134,10 +1786,12 @@ key "GCowan"
 
 \end_inset
 
-Large oscillations appear if one tries to unfold another distribution with
- an inverted response matrix.
- Those oscillations can already arise through statistical fluctuations around
- the measured distribution from which the response matrix is constructed.
+Large oscillations can appear if one tries to unfold other distributions
+ with an inverted response matrix.
+ Only the measured distribution which is used to construct the matrix does
+ not inherited these oscillations.
+ The oscillations can already arise through statistical fluctuations around
+ the used measured distribution.
  To understand this behavior the singular value decomposition (SVD) provides
  more insight.
 \end_layout
@@ -1168,12 +1822,12 @@ with the diagonal matrix
 \end_inset
 
  are called singular values.
- They are per convention normalized as 
+ For the unfolding problem, they are per convention normalized as 
 \begin_inset Formula $D_{11}=1$
 \end_inset
 
  and sorted as 
-\begin_inset Formula $D_{ii}>D_{i+1,\, i+1}$
+\begin_inset Formula $D_{ii}>D_{i+1,\, i+1}>0$
 \end_inset
 
 .
@@ -1225,16 +1879,17 @@ The SVD applied to
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\vec{x} & =\underbrace{\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
+\vec{x} & =\underbrace{\left(U\cdot D\cdot V\right)^{-1}}_{A^{-1}}\cdot\vec{y}\\
+ & =\underbrace{\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
 1 & 1\\
 1 & -1
-\end{array}\right)}_{=U^{-1}}\cdot\underbrace{\left(\begin{array}{cc}
+\end{array}\right)}_{=V^{-1}}\cdot\underbrace{\left(\begin{array}{cc}
 1 & 0\\
 0 & {\textstyle \frac{1}{\epsilon}}
 \end{array}\right)}_{=D^{-1}}\cdot\underbrace{\frac{1}{\sqrt{2}}\left(\begin{array}{cc}
 1 & 1\\
 1 & -1
-\end{array}\right)}_{=V^{-1}}\cdot\left(\begin{array}{c}
+\end{array}\right)}_{=U^{-1}}\cdot\left(\begin{array}{c}
 y_{1}\\
 y_{2}
 \end{array}\right)\\
@@ -1257,7 +1912,7 @@ reference "eq:anticorr"
 
 \end_inset
 
- induces an anticorrelation between 
+ induces an negative correlation between 
 \begin_inset Formula $x_{1}$
 \end_inset
 
@@ -1272,7 +1927,11 @@ reference "eq:anticorr"
 
  goes to zero, this leads to oscillations.
  The oscillation term dominates through the sorting of the singular values
- the first term in equation 
+ the first term involving 
+\begin_inset Formula $D_{11}$
+\end_inset
+
+ in equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:anticorr"
@@ -1312,22 +1971,10 @@ SVD Unfolding
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-x_{i}\rightarrow\tilde{x}_{i}=\left(\sum_{j}^{\tau}U_{ij}^{-1}\frac{1}{D_{jj}}V_{ji}^{-1}x_{j}\right),
-\end{equation}
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{check formular!!!}
-\end_layout
+\begin{align}
+x_{i}\rightarrow\tilde{x}_{i} & =\sum_{k}^{n}\tilde{A}_{ik}^{-1}\cdot x_{k}\\
+ & =\sum_{k}^{n}\left(\sum_{j}^{\tau}V_{ij}^{-1}\frac{1}{D_{jj}}U_{jk}^{-1}\right)\cdot x_{k},
+\end{align}
 
 \end_inset
 
@@ -1349,8 +1996,8 @@ where the parameter
 \begin_inset Formula $\tau$
 \end_inset
 
- defines a-priori the maximal curvature of the unfolded distribution.
- Therefore, unfolding in general can only be applied if a sufficient 
+ defines a priori the maximal curvature of the unfolded distribution.
+ Therefore, regularized unfolding can only be applied if a sufficient 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1428,11 +2075,12 @@ is added to suppress large fluctuations.
 \begin_inset Formula $L$
 \end_inset
 
- approximates numerically the second derivates from 
+ approximates numerically the second derivatives from 
 \begin_inset Formula $\vec{x}$
 \end_inset
 
- by utilizing the general formular
+.
+ It utilizes the general formula
 \end_layout
 
 \begin_layout Standard
@@ -1443,7 +2091,7 @@ is added to suppress large fluctuations.
 
 \end_inset
 
-for the second derivative of a function 
+for the second derivative of a discretizing generic function 
 \begin_inset Formula $f(x)$
 \end_inset
 
@@ -1452,6 +2100,19 @@ for the second derivative of a function
 \end_inset
 
 .
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{ref to numerical recipies?)}
+\end_layout
+
+\end_inset
+
  Additionally, the second term in equation 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1460,12 +2121,12 @@ reference "eq:reg"
 \end_inset
 
  invokes a constrain on the total number of events in the unfolded distribution
- by using the diagonal efficienty matrix 
+ by using the diagonal efficiency matrix 
 \begin_inset Formula $\epsilon$
 \end_inset
 
 .
- Thus by mininizing equation 
+ Thus by minimizing equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:chi2-unfolding"
@@ -1476,18 +2137,18 @@ reference "eq:chi2-unfolding"
 \begin_inset Formula $\mathfrak{R}$
 \end_inset
 
- suppresses minima 
+ suppresses solutions 
 \begin_inset Formula $\vec{x}$
 \end_inset
 
- with large curvatures and corrects simultaneously also for acceptance effects.
+ with large curvatures and corrects simultaneously for acceptance effects.
  Oscillating solutions have high curvatures and are therefore rejected.
- The regularization paremeter 
+ The regularization parameter 
 \begin_inset Formula $\tau$
 \end_inset
 
- controls the influence of the second derivates in the minimzation and has
- to be chosen carefully.
+ controls the influence of the second derivatives in the minimization and
+ has to be chosen carefully.
  If it is chosen too small, unphysical oscillations are not sufficient suppresse
 d.
  But if it is chosen too large, the solution is biased towards a solution
@@ -1528,7 +2189,8 @@ reference "eq:example-detector"
 \end_inset
 
  which has been extended to measure in four different bins.
- The correlations can be caculated as follows:
+ The resulting correlations in the unfolded distribution can be calculated
+ as follows:
 \end_layout
 
 \begin_layout Standard
@@ -1536,7 +2198,7 @@ The covariance matrix
 \begin_inset Formula $V_{x}$
 \end_inset
 
- of the unfolded spectrum is obtained by propagation of error
+ of the unfolded distribution is obtained by propagation of uncertainty
 \end_layout
 
 \begin_layout Standard
@@ -1586,11 +2248,11 @@ For analysis, the correlations coefficients are average as
 
 \end_inset
 
-Then, anti-correlations between directly adjacent bins 
+Then, negative correlations between directly adjacent bins leads to 
 \begin_inset Formula $\langle\rho_{i,i+1}\rangle<0$
 \end_inset
 
- are an indicator for the previous observed unphysical oscillations.
+ which is an indicator for the previous observed unphysical oscillations.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1656,8 +2318,8 @@ No artificial correlations are present only for a perfect detector (
 \begin_inset Formula $\epsilon<1$
 \end_inset
 
- the unfolded distribution is dominated by artificial anti-correlations
- between adjacent bins.
+ the unfolded distribution is dominated by negative correlations between
+ adjacent bins.
  
 \end_layout
 
@@ -1694,11 +2356,11 @@ reference "fig:corr-eps95"
 \begin_inset Formula $\tau\rightarrow\infty$
 \end_inset
 
- the unfolded distribution is artifically influenced by large correlations.
+ the unfolded distribution is artificially influenced by large correlations.
  Thus by using the described regularization method the unfolded distribution
- can even be artificially biased in this limit case.
- On the other hand the occuring anti-correlations are marginal and an unregulari
-zed unfolding might even apply.
+ can be artificially biased in this limit case.
+ On the other hand the occurring negative correlations are marginal and
+ an unregularized unfolding might even apply.
 \end_layout
 
 \begin_layout Standard
@@ -1827,12 +2489,12 @@ name "fig:corr-eps95"
 status open
 
 \begin_layout Plain Layout
-Regularized correlations for an examplary detector.
+Regularized correlations for an exemplary detector.
 \end_layout
 
 \end_inset
 
-Regularized correlations for an examplary detector.
+Regularized correlations for an exemplary detector.
  (a): 
 \begin_inset Formula $\epsilon=0.7$
 \end_inset
@@ -1864,9 +2526,9 @@ This fact motivates the choice for a certain
 \begin_inset Formula $\tau$
 \end_inset
 
- during the analysis as follows.
- The shown correlation minima are estimated from the global correlation
- coefficients 
+ during the analysis.
+ The shown correlation minima (green and red curves) are estimated from
+ the global correlation coefficients 
 \begin_inset ERT
 status open
 
@@ -1890,31 +2552,27 @@ checkthis{??ref??}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 with
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\rho_{\mathrm{mean}}=\frac{1}{n}\cdot\sum_{i}\rho_{i},\qquad\rho_{\mathrm{max}}=\mathrm{max\left[\rho_{1};\ldots\rho_{n}\right]}.
+\rho_{\mathrm{mean}}=\frac{1}{n}\cdot\sum_{i}\rho_{i},\qquad\rho_{\mathrm{max}}=\mathrm{max}\left[\rho_{1};\ldots\rho_{n}\right].
 \]
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-From those, the regularization paremeter is then chosen as 
-\begin_inset Formula $\tau={\textstyle \frac{\rho_{\mathrm{mean}}+\rho_{\mathrm{max}}}{2}}$
+From those, the regularization parameter is then chosen as 
+\begin_inset Formula $\tau={\textstyle \frac{\tau(\rho_{\mathrm{mean}})+\tau(\rho_{\mathrm{max}})}{2}}$
 \end_inset
 
 .
- This way of estimating the regularization parameter depends only on the
+ 
+\end_layout
+
+\begin_layout Standard
+This way of estimating the regularization parameter depends only on the
  response matrix.
 \end_layout
 
@@ -1924,7 +2582,43 @@ Construction of the Response Matrix
 
 \begin_layout Standard
 The response matrix has to be carefully constructed from the simulation.
+ This involves the correct categorization of events from the inclusive MC
+ sample.
+ In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Contstruction-of-the"
+
+\end_inset
+
+, the construction procedure is shown.
  
+\end_layout
+
+\begin_layout Standard
+From the inclusive events, those are singled out which pass the event selection
+ on the reconstructed objects.
+ If the selected events are from the single top t-channel process with a
+ W boson decaying into a muon, they contain a muon on generation level and
+ can be used to construct the response matrix.
+ Events that do not contain a muon on generation level can pass the event
+ selection as well.
+ The selected muons after the reconstruction are from subsequent tau decays.
+ Those are called 
+\begin_inset Quotes eld
+\end_inset
+
+fake
+\begin_inset Quotes erd
+\end_inset
+
+ events and treated as an additonal background process.
+\end_layout
+
+\begin_layout Standard
+All event which fail the event selection but contain a muon on generation
+ level are used to provide the unfolding method with the reconstruction
+ efficiencies.
 \end_layout
 
 \begin_layout Standard
@@ -1949,6 +2643,17 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Contstruction-of-the"
+
+\end_inset
+
+Contstruction of the response matrix.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1957,8 +2662,40 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-response-matrices"
+
+\end_inset
+
+ shows the resulting response matrices for the 
+\begin_inset Formula $\cos_{\mathrm{B},\,\mathrm{X}}$
+\end_inset
+
+ observables in the spectator basis.
+ The response matrices are normalized to the transition probability.
+ Additionally, the estimation for the regularization parameter 
+\begin_inset Formula $\tau$
+\end_inset
+
+ is given.
+ The resolution in 
+\begin_inset Formula $\cos_{\mathrm{B},\,\mathrm{X}}$
+\end_inset
+
+ is best for the muon.
+ For the b-tagged jet the resolution is only slightly more smeared.
+ The resolution of the neutrino shows required 
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
 
+
+\backslash
+checkthis{same estimation!!!}
 \end_layout
 
 \end_inset
@@ -1977,7 +2714,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2016,7 +2753,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/beamline_lepton.ps-crop.pdf
+	filename plots/spectator_lepton.ps-crop.pdf
 	lyxscale 20
 	height 5cm
 
@@ -2047,7 +2784,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2113,7 +2850,7 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -2178,7 +2915,25 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Response Matrix
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-response-matrices"
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+The response matrices for the observables in the spectator basis.
+\end_layout
+
+\end_inset
+
+The response matrices for the muon (a), the b-tagged jet (c), and the neutrino
+ (e) in the spectator basis.
+ 
 \end_layout
 
 \end_inset
