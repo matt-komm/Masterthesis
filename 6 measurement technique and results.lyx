@@ -117,8 +117,12 @@ and Results
 \end_layout
 
 \begin_layout Standard
-Before the top quark spin asymmetries can be measured from data the influence
- of systematic uncertainties has to be investigated.
+Before the top quark spin asymmetries from the 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
+\end_inset
+
+ distributions can be measured from data the influence of systematic uncertainti
+es has to be investigated.
  These can be divided into theoretical uncertainties and uncertainties which
  arise due to the measurement behavior of the CMS detector and the reconstructio
 n accuracy.
@@ -129,17 +133,21 @@ Systematic Uncertainties
 \end_layout
 
 \begin_layout Standard
-The contribution of the QCD Multijet background after the event selection
- can be investigated from the distribution of the transverse W boson mass
- 
-\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}$
+The contribution of the QCD Multijet background is investigated after the
+ event selection without the transverse W boson mass criterion 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
 \end_inset
 
- which is shown in figure 
+.
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:QCD-transverse-W"
 
+\end_inset
+
+ shows the distribution of the transverse W boson mass 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}$
 \end_inset
 
 .
@@ -149,7 +157,7 @@ reference "fig:QCD-transverse-W"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -157,6 +165,22 @@ status open
 	filename plots/mtw.norm.ps-crop.pdf
 	lyxscale 30
 	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{weighted -> normalized}
+\end_layout
 
 \end_inset
 
@@ -173,7 +197,7 @@ name "fig:QCD-transverse-W"
 
 \end_inset
 
-QCD transverse W boson mass
+QCD background in the transverse W boson mass distribution
 \end_layout
 
 \end_inset
@@ -195,12 +219,11 @@ After the selection requirement of
  events.
  Those will lead to large unphysical modelling uncertainties within the
  statistical evaluation.
- The shape modeling of the other processes with respect to 
-\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}$
+ The shape modeling of the other processes above 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
 \end_inset
 
- after the event selection is however reasonable enough to exclude the contribut
-ions from this background.
+ is however reasonable enough to exclude the contributions from this background.
 \end_layout
 
 \begin_layout Subsection
@@ -209,7 +232,7 @@ Sources
 
 \begin_layout Standard
 The considered source of systematic uncertainties which are applied on the
- MC samples are described in the following:
+ simulated event samples are described in the following:
 \end_layout
 
 \begin_layout Paragraph*
@@ -222,20 +245,20 @@ The energy measurement of particles with the CMS detector is mainly peformed
  It involves the translation of the calorimeter's readout into the actual
  deposited energy by a particle.
  The energy of a jet is then constructed by a jet algorithm.
- This intrinsically utilizes the translation and depends therefore on its
- accuray.
- Furthermore, the translation depends also on the measured pseudorapidity
- 
+ The jet construction intrinsically utilizes the readout translation and
+ depends therefore on its accuray.
+ The translation depends on the measured pseudorapidity 
 \begin_inset Formula $\eta$
 \end_inset
 
- through the calorimeter geometry and on the transvese momentum 
+ of a jet through the geometry of the calorimeter and on the transvese momentum
+ 
 \begin_inset Formula $p_{\mathrm{T}}$
 \end_inset
 
- of a jet.
- The resulting jet energy scale (JES) combines those effects into correction
- factors 
+ of a jet through the resolution of the calorimeter.
+ The jet energy scale (JES) combines those effects into correction factors
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "JESsource"
@@ -249,8 +272,8 @@ key "JESsource"
 The JES and its uncertainty is included into the analysis by varing the
  four-momenta of all measured jets.
  After that, the missing transverse energy is recalculated.
- It depends on the vector sum of all reconstructed particle momenta and
- receives therefore also an uncertainty from this source.
+ The missing transverse energy depends on the vector sum of all reconstructed
+ particle momenta and receives therefore also an uncertainty from this source.
 \end_layout
 
 \begin_layout Paragraph*
@@ -258,8 +281,8 @@ Jet energy resolution
 \end_layout
 
 \begin_layout Standard
-This systematic accounts for the smearing effects in the measurement of
- the jet energy and momentum by the detector.
+This systematic accounts for smearing effects in the measurement of the
+ jet energy and momentum by the detector.
  It is included into the analysis by varing the reconstructed energy and
  momentum of a jet against its generated energy and momentum 
 \begin_inset CommandInset citation
@@ -301,14 +324,11 @@ where
 \end_inset
 
  after the smearing.
-\end_layout
-
-\begin_layout Standard
-Then, the missing transverse energy is also recalculated.
+ Then, the missing transverse energy is also recalculated.
 \end_layout
 
 \begin_layout Paragraph*
-B-tagging and mis-tagging uncertainty
+B-tagging and mis-tagging
 \end_layout
 
 \begin_layout Standard
@@ -1101,9 +1121,9 @@ The signal selection requires events with exactly one jet with a b-tag.
 \end_layout
 
 \begin_layout Standard
-To account for those effects, the MC events are duplicated and allowed to
- migrate into the different b-tag categories.
- Their weight is adjusted to include the corresponding probabilities.
+To account for those effects, the simulated events are duplicated and allowed
+ to migrate into the different b-tag categories.
+ Their event weight is adjusted to include the corresponding probabilities.
  The b-tagging efficiency depends furthermore on the jet's transverse momentum
  which was measured in Ref.
  
@@ -1114,15 +1134,17 @@ key "BTAGsource"
 \end_inset
 
 .
- Additionally there are also b-tagging efficiencies considered for wrong
- tagged jets which originate from up, down, strange, or charm quarks.
+ Additionally there are also efficiencies for mis-tagged jets considered
+ which originate from up, down, strange, orinstead of gaussian distributions
+ charm quarks.
 \end_layout
 
 \begin_layout Standard
-By varing the efficiencies within their measured uncertainties the migration
- of events between the b-tag categories is influenced.
- This produces changes in the MC sample yields and shapes after the signal
- selection if events with exactly one b-tagged jet are singled out.
+By varing the b-tag and miss-tag efficiencies within their measured uncertaintie
+s the migration of simulated events between the b-tag categories is influenced.
+ After the signal selection the migrations change the yields and distribution
+ shapes in the simulated samples because events with exactly one b-tagged
+ jet are singled out.
 \end_layout
 
 \begin_layout Paragraph*
@@ -1181,26 +1203,48 @@ checkthis{how does this really work??}
 \end_layout
 
 \begin_layout Paragraph*
-Pileup uncertainty
+Pile up
 \end_layout
 
 \begin_layout Standard
 Multiple interactions can occure in a proton bunch crossing that lead to
  particles originating from additional vertices.
- During the MC simulation, a uniform distribution with up to 10 vertices
- has been assumed.
- This needs to be reweighted to the estimated number of vertices from data.
- The estimation from data is however influenced by the total proton-proton
- cross section and its uncertainty of 
-\begin_inset Formula $\sigma_{\mathrm{pp\rightarrow X}}=$
+ During the event simulation, a uniform distribution with up to ten vertices
+ is assumed.
+ The distribution of the number of vertex needs to be reweighted to the
+ estimated number of vertices from data.
+ The estimation on the number of vertices from data is depends on the total
+ proton-proton cross section and on its uncertainty of 
+\begin_inset Formula $\sigma_{\mathrm{pp\rightarrow X}}=68\,\mathrm{pb}\pm5\%$
 \end_inset
 
 .
+ The uncertainty on the cross section leads to different pile up reweighing
+ factors in the number of vertices distribution.
  
 \end_layout
 
 \begin_layout Standard
-This smears the true 
+The number of vertices distribution before the pile up reweighing is shown
+ in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pileup-off"
+
+\end_inset
+
+.
+ The assumed uniform distribution from simulation is folded by a Poisson
+ distribution due to the reconstruction of the detector.
+ After applying the pile up reweighting figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pileup-on"
+
+\end_inset
+
+ shows the resulting number of vertices distribution of the simulated events
+ which follows the shape of the distribution from data.
 \end_layout
 
 \begin_layout Standard
@@ -1210,10 +1254,131 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/nvertex.norm.wl.ps-crop.pdf
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-N-vertex distribution for WHIZARD and Powheg
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pileup-off"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/nvertex_pu.norm.ps-crop.pdf
+	lyxscale 30
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pileup-on"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{y-axis => normalized events!, add whizard sm sample}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:N-vertex-distribution-for"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Number of vertices distribution for the simulated events with Powheg.
+\end_layout
+
+\end_inset
+
+Number of vertices distribution for the simulated events with Powheg.
+ The simulated distributions are normalized to data.
+ The figures show the distributions before (a) and after (b) the pile up
+ reweighting.
 \end_layout
 
 \end_inset
@@ -1231,7 +1396,87 @@ W+jets modeling
 \end_layout
 
 \begin_layout Standard
-fgdgf
+In figure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{......}
+\end_layout
+
+\end_inset
+
+ the distribution for 
+\begin_inset Formula $\cos_{\mathrm{spec.},\,\mathrm{muon}}$
+\end_inset
+
+ in the control region with two jets and non b-tagged jet is shown.
+ The control region is dominated by 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ contributions.
+ The simulation of the 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ samples does not agree in the shape to data.
+ 
+\end_layout
+
+\begin_layout Standard
+Scale factors are derived from the control region for the 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ samples.
+ The scale factors are used for reweighting in the two jets and one b-tagged
+ jet signal region to account for the 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ modeling.
+ The 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ shape uncertainty is estimated by varying around the reweighted distribution
+ applying no scale factors or doubling the scale factors.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Distribution of 
+\begin_inset Formula $\cos_{\mathrm{spec.},\,\mathrm{muon}}$
+\end_inset
+
+ in the two jet and non b-tagged jet control region.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
@@ -1239,7 +1484,13 @@ Trigger efficiency
 \end_layout
 
 \begin_layout Standard
-fgfghf
+Muon trigger efficiencies depending on the pseudorapidity of the muon are
+ applied.
+ The uncertainty is conservatively estimated by 
+\begin_inset Formula $\pm3\%$
+\end_inset
+
+ over the measured pseudorapidity range.
 \end_layout
 
 \begin_layout Paragraph*
@@ -1247,11 +1498,42 @@ Luminosity
 \end_layout
 
 \begin_layout Standard
-fdgfgd
+The luminosity of the recored data is measured by counting the number of
+ the hit pixel clusters for each event 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCLumi"
+
+\end_inset
+
+.
+ The amount of total interactions is a linear function of that number.
+ Together with the beam profile and the inclusive proton-proton cross section
+ the luminosity is calculated 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vandemear"
+
+\end_inset
+
+.
+ The uncertainty of the luminosity measurement is estimated to 
+\begin_inset Formula $\pm2.2\%$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCLumi"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Paragraph*
-Cross section uncertainties
+Cross sections
 \end_layout
 
 \begin_layout Standard
@@ -1368,29 +1650,85 @@ The di-boson processes, WW, WZ, and ZZ are each varied independently by
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{Implemented as nuciance parameter, log-normal dist., templates
- for other sys}
-\end_layout
-
+The decribed uncertainties are implement in a THETA model with the differential
+ 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
 \end_inset
 
+ distributions as observables.
+ Nuciance parameters are assigned to each uncertainty.
+ Gaussian distributions are mainly used for the nuciance parameters.
+ The nuciance parameters are only allowed to vary in the interval 
+\begin_inset Formula $\left[0;\,\infty\right]$
+\end_inset
 
+ for the cross section uncertainties.
+ The mean and variance of such truncated Gaussian distributions can change
+ significantly if they are used for large uncertainties, e.g.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+W+bX
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Therefore, log-normal distributions are used instead of Gaussian distributions
+ for all cross section uncertainties.
 \end_layout
 
 \begin_layout Standard
-To gain further confidence in these uncertainties, a fit to the top quark
- mass distribution is performed.
+Uncertainties which influence the 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
+\end_inset
+
+ shape are implemented via templates.
+ THETA automatically morphs the 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
+\end_inset
+
+ shape by extrapolating between the provided templates.
 \end_layout
 
 \begin_layout Subsection
-Fit to m(top)
+Fit to the top quark mass
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:topmass-prefit"
+
+\end_inset
+
+ shows the distribution of the reconstructed top quark mass.
+ The overall yield from the simulated events underestimates the data events.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:whizard-top-quark-mass"
+
+\end_inset
+
+ shows the top quark mass distribution of the simulated 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ background and of the different anomalous coupling scenarios.
+ The shape of the distributions of the 
+\begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
+\end_inset
+
+ processes and the signal processes is quit different.
+ This difference motivates the choice for the top quark mass distribution
+ to
+\end_layout
+
+\begin_layout Standard
+A potential bias on the anomalous coupling scenarios by a fit to the top
+ quark mass is minimal.
 \end_layout
 
 \begin_layout Standard
@@ -1401,14 +1739,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1421,10 +1755,35 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:topmass-prefit"
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1437,30 +1796,39 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:whizard-top-quark-mass"
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
-</cell>
-</row>
-</lyxtabular>
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{change whizard plot to only 8 scenarios!!}
+\end_layout
 
 \end_inset
 
@@ -1471,7 +1839,16 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-m(top)
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The top quark mass distribution before the fit.
+\end_layout
+
+\end_inset
+
+The top quark mass distribution before the fit.
 \end_layout
 
 \end_inset
@@ -1491,6 +1868,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="24" columns="5">
 <features tabularvalignment="middle">
@@ -3088,14 +3466,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="7" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3108,10 +3482,29 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3124,130 +3517,21 @@ status open
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+\begin_inset Caption
 
 \begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
 \end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
 
 \end_inset
 
@@ -3666,7 +3950,7 @@ SIGNAL
 \begin_inset Text
 
 \begin_layout Plain Layout
-PILEUP 
+pile up 
 \end_layout
 
 \end_inset
