@@ -1498,6 +1498,22 @@ Exemplary discrimination power of the BDT and Likelihood methods.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{BDT and likelihood outputs instead of ROCs}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Unfolding
 \end_layout
