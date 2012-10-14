@@ -5283,7 +5283,9 @@ reference "fig:uncertainty-neyman-construction"
 
 \end_inset
 
-
+ shows the resulting top quark spin asymmetries and their uncertainties
+ for the muon, b-tagged jet, and neutrino spin analyzer in the spectator
+ basis against the BDT input variable counts.
 \end_layout
 
 \begin_layout Standard
@@ -5504,7 +5506,20 @@ name "fig:uncertainty-neyman-construction"
 
 \end_inset
 
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
 Asymmetries and their uncertainties after the Neyman construction.
+\end_layout
+
+\end_inset
+
+Top quark spin asymmetries and their uncertainties in the spectator basis
+ after the Neyman construction.
+ (a) , (c), and (e): The asymmetry for the muon, b-tagged jet, and neutrino
+ spin analyzer and their corresponding uncertainties (b), (d), and (f).
 \end_layout
 
 \end_inset
