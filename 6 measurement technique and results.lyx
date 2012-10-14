@@ -5955,7 +5955,7 @@ value{part}<1
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "references"
-options "siam"
+options "amsplain_new"
 
 \end_inset
 

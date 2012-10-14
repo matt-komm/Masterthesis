@@ -767,7 +767,7 @@ addcontentsline{toc}{section}{Bibliography}
 LatexCommand bibtex
 btprint "btPrintAll"
 bibfiles "references"
-options "siam"
+options "amsplain_new"
 
 \end_inset
 

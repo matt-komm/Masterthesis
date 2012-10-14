@@ -110,7 +110,7 @@ The Large Hadron Collider
 \begin_layout Standard
 The Large Hadron Collider (LHC) is a proton-proton storage ring at the European
  Organization for Nuclear Research (CERN) in Geneva, Switzerland.
- It is build underground and has a circumference of approximately 
+ It is built underground and has a circumference of approximately 
 \begin_inset Formula $27\,\mathrm{km}$
 \end_inset
 
@@ -121,6 +121,13 @@ The Large Hadron Collider (LHC) is a proton-proton storage ring at the European
 
  at a luminosity of 
 \begin_inset Formula $L=10^{34}\,{\textstyle \frac{1}{\mathrm{cm^{2}s}}}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LHCmachine"
+
 \end_inset
 
 .
@@ -155,15 +162,12 @@ ator chain.
 
 \begin_layout Standard
 The acceleration of protons starts at the Linac2.
- This continues with the Proton Synchrotron Booster (PSB), the Proton Synchrotro
-n (PS), the Super Proton Synchrotron (SPS), and finally the protons are
- injected into the LHC at an energy per proton of 
-
+ It continues with the Proton Synchrotron Booster (PSB), the Proton Synchrotron
+ (PS), the Super Proton Synchrotron (SPS), and finally the protons are injected
+ into the LHC at an energy per proton of 
 \begin_inset Formula $450\,\mathrm{GeV}$
 \end_inset
 
-
-\lang american
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -230,22 +234,16 @@ key "pic_cern_acc_complex"
 
 \end_inset
 
-After filling the LHC ring, the proton beams consist maximally of 2808 bunches
+After filling the LHC ring, the proton beams consist of maximally 2808 bunches
  with a spacing of 
-
 \begin_inset Formula $25\,\mathrm{ns}$
 \end_inset
 
-
-\lang american
  between them.
  With 
-
 \begin_inset Formula $1.15\cdot10^{11}$
 \end_inset
 
-
-\lang american
  protons per bunch, the current per beam is 
 \begin_inset Formula $I=0.58\,\mathrm{A}$
 \end_inset
@@ -265,7 +263,8 @@ A magnet system of NbTi superconductors is used for deflection and focusing
 \begin_inset Formula $11850\,\mathrm{A}$
 \end_inset
 
- which produce a magnet field of 
+.
+ This produces a magnet field of 
 \begin_inset Formula $8.33\,\mathrm{T}$
 \end_inset
 
@@ -284,30 +283,21 @@ For accelerating, a superconducting cavity system operating at
 
  is used.
  The beams will gain 
-
 \begin_inset Formula $485\,\mathrm{keV}$
 \end_inset
 
-
-\lang american
  per turn which yields an acceleration time from injection energy at 
-
 \begin_inset Formula $450\,\mathrm{GeV}$
 \end_inset
 
-
-\lang american
  to 
 \begin_inset Formula $7\,\mathrm{TeV}$
 \end_inset
 
  per beam of around 
-
 \begin_inset Formula $20\,\mathrm{min}$
 \end_inset
 
-
-\lang american
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -329,27 +319,27 @@ ALICE (A Large Ion Collider Experiment) is a detector for studying heavy-ion
 
 \begin_layout Itemize
 ATLAS is a general purpose detector with a special donut-shaped magnet system.
- Its scientific program covers the physics of the Higgs boson, super symmetry
+ Its scientific program covers the physics of the Higgs boson, super-symmetry
  and extra dimensions besides others.
 \end_layout
 
 \begin_layout Itemize
-CMS (Compact Muon Solenoid) is also a general purpose detector with a wide
- ranging physics program.
+CMS (Compact Muon Solenoid) is also a general purpose detector with a wide-rangi
+ng physics program.
  Its design involves different technical solutions compared to ATLAS.
 \end_layout
 
 \begin_layout Itemize
 LHC-b (Large Hadron Collider beauty Experiment) has a forward sub-detector
  system.
- It probes besides others the CP violation in B hadrons.
+ Besides others it probes the CP violation in B hadrons.
 \end_layout
 
 \begin_layout Standard
 After a breakdown during the first tests in September 2008, the full operation
- started on 20th November 2009 with successful circulating beams at injection
+ started on 20th November 2009 with successfully circulating beams at injection
  energy.
- In March 2010 the targeted beam energy of 
+ In March 2010, the targeted beam energy of 
 \begin_inset Formula $3.5\,\mathrm{TeV}$
 \end_inset
 
@@ -361,11 +351,11 @@ key "pressLHCrecord"
 \end_inset
 
 .
- The proton-proton run program at 
+ In 2011, the proton-proton run program at 
 \begin_inset Formula $\sqrt{s}=7\,\mathrm{TeV}$
 \end_inset
 
- finished 2011 with a delivered integrated luminosity of 
+ finished with a delivered integrated luminosity of 
 \begin_inset Formula $5.57\,\mathrm{fb^{-1}}$
 \end_inset
 
@@ -382,12 +372,9 @@ key "LHCLumi"
 
 .
  In 2012 the center-of-mass energy has been raised to 
-
 \begin_inset Formula $\sqrt{s}=4\,\mathrm{TeV}$
 \end_inset
 
-
-\lang american
 .
 \end_layout
 
@@ -400,11 +387,11 @@ The Compact Muon Solenoid (CMS) is a general-purpose detector developed
  to record the proton-proton collisions at the high luminosity that the
  LHC provides.
  The physics program of the CMS collaboration involves the search for the
- Higgs boson and the discovery or exclusion of supersymmetric particles
- (SUSY), new heavy vector bosons as well as extra dimensions.
+ Higgs boson, the discovery or exclusion of supersymmetric particles (SUSY),
+ new heavy vector bosons, and extra dimensions.
  Besides that, precision measurements of the SM are performed like studies
  of QCD, electroweak and top quark physics.
- During heavy-ion runs, the properties of strong interacting nuclear matter
+ During heavy-ion runs, the properties of strongly-interacting nuclear matter
  is investigated.
 \end_layout
 
@@ -427,7 +414,7 @@ reference "fig:The-CMS-Experiment"
 
 \end_inset
 
- shows the CMS detector and its sub-systems which are mainly the inner tracker
+ shows the CMS detector and its sub systems which are mainly the inner tracker
  (pixel and silicon tracker), the electromagnetic calorimeter, the hadron
  calorimeter, the superconduction solenoid, and the muon detectors.
 \end_layout
@@ -437,9 +424,9 @@ CMS uses the following coordinate system.
  The interaction point (IP) is the origin.
  The z-axis matches the beamline.
  The x-axis points towards the center of the LHC ring and the y-axis points
- upwards orthogonal to x and z.
- To reflect the cylindrical symmetry of the detector, one often uses instead
- the pseudorapidity 
+ upwards, orthogonal to x and z.
+ To reflect the cylindrical symmetry of the detector, one instead often
+ uses the pseudorapidity 
 \begin_inset Formula $\eta=-\ln{\textstyle \left(\tan\frac{\theta}{2}\right)}$
 \end_inset
 
@@ -455,7 +442,7 @@ CMS uses the following coordinate system.
 \end_layout
 
 \begin_layout Standard
-The next paragraphs will describe briefly the main systems of the detector
+The next paragraphs will briefly describe the main systems of the detector
  starting from the IP.
 \end_layout
 
@@ -485,7 +472,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-The CMS detector and its sub-systems
+The CMS detector and its sub systems
 \end_layout
 
 \end_inset
@@ -497,7 +484,7 @@ name "fig:The-CMS-Experiment"
 
 \end_inset
 
-The CMS detector and its sub-systems 
+The CMS detector and its sub systems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMStechnicalReport"
@@ -524,12 +511,9 @@ Inner tracking system
 \begin_layout Standard
 Around the IP, the tracking system is placed.
  It is 
-
 \begin_inset Formula $540\,\mathrm{cm}$
 \end_inset
 
-
-\lang american
  long and has an outer radius of 
 \begin_inset Formula $r=110\,\mathrm{cm}$
 \end_inset
@@ -590,12 +574,12 @@ The electromagnetic calorimeter (ECAL) is composed out of lead tungstate
 \end_inset
 
 ).
- 61200 crystals are installed in the central barrel part and additionally
+ 61200 crystals are installed in the central barrel part and an additional
  7324 are placed in each of the two endcaps.
- Due to the crystals rather low light yield, photodetectors with intrinsic
- gain had to be applied.
- In the barrel, silicon avalanche photodiodes (APDs) and in the endcaps,
- vacuum phototriodes (VPTs) are used for amplification.
+ The light yield of the crystals is rather low.
+ Therefore photodetectors with intrinsic gain had to be applied.
+ For amplification silicon avalanche photodiodes (APDs) are used in the
+ barrel and vacuum phototriodes (VPTs) are used in the endcaps.
 \end_layout
 
 \begin_layout Standard
@@ -612,28 +596,25 @@ The complete ECAL covers a pseudorapidity range of
 \end_layout
 
 \begin_layout Standard
-Its energy resolution can be parameterized as
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\left(\frac{\sigma_{E}^{2}}{E}\right)=\underbrace{\left(\frac{2.8\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}}_{\mathrm{stochastic\, term}}+\underbrace{\left(\frac{0.12\,\mathrm{GeV}}{E}\right)^{2}}_{\mathrm{noise\, term}}+\underbrace{\left(0.3\%\right)^{2}}_{\mathrm{constant\, term}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+Its energy resolution can be parameterized 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cmsperformance"
 
 \end_inset
 
-.
+ as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left(\frac{\sigma_{E}^{2}}{E}\right)=\underbrace{\left(\frac{2.8\%\cdot\sqrt{E}}{\sqrt{E}}\right)^{2}}_{\mathrm{stochastic\, term}}+\underbrace{\left(\frac{0.12\,\mathrm{GeV}}{E}\right)^{2}}_{\mathrm{noise\, term}}+\underbrace{\left(0.3\%\right)^{2}}_{\mathrm{constant\, term}}.
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Paragraph*
@@ -646,7 +627,7 @@ The hadron calorimeter (HCAL) surrounds the the ECAL system.
 \end_layout
 
 \begin_layout Standard
-The hadron barrel (HB) is installed inside the magnetic coil, which covers
+The hadron barrel (HB) is installed inside the magnetic coil, and covers
  a pseudorapidity range of 
 \begin_inset Formula $\left|\eta\right|\leq1.4$
 \end_inset
@@ -658,11 +639,11 @@ The hadron barrel (HB) is installed inside the magnetic coil, which covers
 \end_inset
 
 .
- The hadron endcap (HE) has a coverage of 
+ The hadron endcap (HE) can measure in a pseudorapidity range of 
 \begin_inset Formula $1.3\leq\left|\eta\right|\leq3.0$
 \end_inset
 
- and the hadron forward (HF) can measure in a pseudorapidity range of 
+ and the hadron forward (HF) covers a pseudorapidity range of 
 \begin_inset Formula $3.0\leq\left|\eta\right|\leq5.0$
 \end_inset
 
@@ -698,7 +679,7 @@ The HCAL in combination with the ECAL can measure hadrons with a resolution
 \end_layout
 
 \begin_layout Standard
-More about the HCAL performance and how it effects the missing transveral
+More about the HCAL performance and how it affects the missing transverse
  energy resolution can be found in Ref.
  
 \begin_inset CommandInset citation
@@ -715,19 +696,16 @@ Solenoid coil
 \end_layout
 
 \begin_layout Standard
-A large superconducting solenoid coil for bending of charged particles is
- used.
+A large superconducting solenoid coil for bending of charged particle tracks
+ is used.
  Supplied with a current of 
 \begin_inset Formula $19.5\,\mathrm{kA}$
 \end_inset
 
 , it generates a field of 
-
-\begin_inset Formula $4\,\mathrm{T}$
+\begin_inset Formula $3.8\,\mathrm{T}$
 \end_inset
 
-
-\lang american
  at the IP .
  This provides a momentum resolution of
 \end_layout
@@ -747,14 +725,30 @@ which can unambiguously determine the charge of a muon up to
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{ref und folgt die aufloesung aus der formel??}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph*
 Muon system
 \end_layout
 
 \begin_layout Standard
-Muons originating from the IP are measured at three points.
- First with the inner tracker, then after the coil and finally in the outer
- magnetic field.
+Muons originating from the IP are measured with two detector sub systems.
+ First muons are measured with the inner tracker and then second with the
+ muon system in the outer magnetic field.
  The inner tracker can only measure muon momenta with a good resolution
  up to round 
 \begin_inset Formula $200\,\mathrm{GeV}$
@@ -775,12 +769,12 @@ full system
 \begin_layout Standard
 The muon system itself consists of three types of gaseous detectors to cover
  the large detector surface throughout the different radiation environments.
- Drift Tube (DT) chambers are installed in the barrel region of 
+ Drift tube (DT) chambers are installed in the barrel region of 
 \begin_inset Formula $\left|\eta\right|\leq1.2$
 \end_inset
 
- where the magnetic field and neutron background is low.
- In the two endcaps, Cathode Strip Chambers (CSCs) are used.
+ where the magnetic field and the neutron background is low.
+ In the two endcaps, cathode strip chambers (CSCs) are used.
  These can operate in the presence of the high magnetic field and neutron
  background.
  The endcaps cover a region up to 
@@ -789,7 +783,7 @@ The muon system itself consists of three types of gaseous detectors to cover
 
 .
  Both systems however lack in time resolution.
- Additionally, Resistive Plate Chambers (RPCs) are deployed in both regions.
+ Additionally, resistive pate chambers (RPCs) are deployed in both regions.
  Driven in avalanche mode, they complete the muon system by providing a
  good time resolution.
 \end_layout
@@ -799,7 +793,7 @@ Trigger and data acquisition
 \end_layout
 
 \begin_layout Standard
-For preselection of around 
+For the preselection of around 
 \begin_inset Formula $10^{9}$
 \end_inset
 
@@ -869,19 +863,16 @@ The CMS trigger system.
 
 \begin_layout Standard
 Starting at a bunch crossing rate of 
-
 \begin_inset Formula $40\,\mathrm{MHz}$
 \end_inset
 
-
-\lang american
 , the detector data is first written into a buffer.
  Within 
 \begin_inset Formula $3.2\,\mu\mathrm{s}$
 \end_inset
 
- all data is collected from the the sub systems and a decision has to be
- made whether to keep or reject the event.
+ all data is collected from the subsystems, and a decision has to be made
+ whether to keep or reject the event.
  The Level-1 (LV1) trigger operates in parallel to the buffering.
  It reaches a decision within 
 \begin_inset Formula $1\,\mu\mathrm{s}$
@@ -890,34 +881,28 @@ Starting at a bunch crossing rate of
  by using only the calorimetry and muon system readouts.
  The logic behind the decision needs to be executed very fast and is therefore
  implemented into custom Application Specific Integrated Circuits (ASICs),
- Field Programmable Gate Arrays (FPGAs) and Programmable Logic Devices (PLDs)
+ Field Programmable Gate Arrays (FPGAs) and Programmable Logic Devices (PLDs),
  amongst others.
 \end_layout
 
 \begin_layout Standard
 After passing the Level-1 trigger, the complete event in the buffer has
  a size of about 
-
 \begin_inset Formula $1.5\,\mathrm{MB}$
 \end_inset
 
-
-\lang american
  and is transferred to the processor farm.
  Here, the more complex High Level Trigger (HLT) software decides on the
  storing of events.
- By reconstructing the full event data which uses all detector sub systems,
+ By reconstructing the full event data that uses all detector sub systems,
  it further singles out interesting events and reduces the rate from 
 \begin_inset Formula $100\,\mathrm{kHz}$
 \end_inset
 
  down to approximately 
-
 \begin_inset Formula $100\,\mathrm{Hz}$
 \end_inset
 
-
-\lang american
 .
  
 \end_layout
@@ -959,14 +944,21 @@ The Particle-Flow Algorithm
 \end_layout
 
 \begin_layout Standard
-The Particle-Flow (PF) algorithm aims to precisely identify particle types
+The Particle-Flow (PF) algorithm aims at precisely identifing particle types
  and their momenta by exploiting all detector sub systems.
  It creates particle hypotheses within an event by combining information
- from charged-particle tracks, calorimetry hits and muon tracks.
+ from charged-particle tracks, calorimetry hits and muon tracks 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "particleflow"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-The algorithm starts with the tracker information by first singleing out
+The algorithm starts with the tracker information by first singling out
  tracks with very tight criteria originating closely from the IP.
  On the remaining tracks, iteratively looser criteria are applied for selection.
  In the calorimeters, hits are clustered.
@@ -987,25 +979,16 @@ topological clusters
 \begin_inset Quotes erd
 \end_inset
 
- are constructed by combining the seeds with adjacent cells which are over
- a certain energy threshold.
+ are constructed by combining the seeds with adjacent cells if they measured
+ an energy over a certain threshold.
  
 \end_layout
 
 \begin_layout Standard
-One expects that a particle causes a charged-particle track and/or hits
+One expects that a particle leads to a charged-particle track and/or hits
  several calorimeter clusters as well as one or no track in the muon system.
- All this information are linked to reconstruct each single observed particle
- while possible double counting has to be taken care of.
- The Particle-Flow algorithm is also independent of the event complexity.
- It depends mainly on the granularity of the particle building blocks 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "particleflow"
-
-\end_inset
-
-.
+ These pieces of information are linked to reconstruct each single observed
+ particle while possible double counting has to be taken care of.
 \end_layout
 
 \begin_layout Subsection
@@ -1045,12 +1028,9 @@ Global Muon
  data.
  This combination method improves the muon momentum resolution above a transvers
 e momentum of 
-
 \begin_inset Formula $200\,\mathrm{GeV}$
 \end_inset
 
-
-\lang american
 .
 \end_layout
 
@@ -1785,7 +1765,7 @@ value{part}<1
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "references"
-options "siam"
+options "amsplain_new"
 
 \end_inset
 
