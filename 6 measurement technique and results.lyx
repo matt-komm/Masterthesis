@@ -3728,15 +3728,12 @@ name "fig:Top-mass-distribution"
 
 \end_inset
 
-Top mass distribution after the fit to the reconstructed top quark mass.
+The reconstructed top quark mass distribution after the maximum likelihood
+ fit.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -4099,6 +4096,9 @@ Event variables before and after the fit to the reconstructed top quark
 
  Event variables before and after the fit to the reconstructed top quark
  mass.
+ The pseudorapidity of the light jet before (a) and after (b) the fit.
+ The HFS mass before (c) and after (d) the fit.
+ The missing transverse energy before (e) and after (f) the fit.
 \end_layout
 
 \end_inset
@@ -4968,6 +4968,9 @@ reference "fig:BDT-output-and"
 \end_inset
 
 .
+ The stacking order is changed to visualize the purity of the signal over
+ the background contributions.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5008,6 +5011,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bdtout30"
+
+\end_inset
+
 
 \end_layout
 
@@ -5047,6 +5056,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:btdout70"
+
+\end_inset
+
 
 \end_layout
 
@@ -5075,7 +5090,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/BDT30_3.ps-crop.pdf
+	filename plots/BDT30_3.wl.ps-crop.pdf
 	lyxscale 30
 	height 5cm
 
@@ -5088,6 +5103,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unc30"
+
+\end_inset
+
 
 \end_layout
 
@@ -5127,6 +5148,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unc70"
+
+\end_inset
+
 
 \end_layout
 
@@ -5161,7 +5188,11 @@ name "fig:BDT-output-and"
 
 \end_inset
 
-BDT output and Asymmetry uncertainty for different MVA cuts
+BDT outputs and asymmetry uncertainty for different discriminator values.
+ The BDT discriminator output with thrity input variables (a) and 70 input
+ variables (b).
+ The resulting uncertainty on the asymmetry by scanning the BDT 30 output
+ (c) and BDT 70 output (d).
 \end_layout
 
 \end_inset
@@ -5170,6 +5201,164 @@ BDT output and Asymmetry uncertainty for different MVA cuts
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:bdtout30"
+
+\end_inset
+
+ the discriminator output for the BDT from the first thrity less correlated
+ input variables is shown.
+ The output is scanned in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unc30"
+
+\end_inset
+
+.
+ The green line corresponds to the resulting statistical uncertainty on
+ the asymmetry measurement.
+ The blue line shows only the influence of the systematic uncertainties.The
+ lines are produced by generating pseudo experiments and excluding the statistic
+al or the systematic uncertainty.
+ The black line is the result of pseudo experiments with both uncertainties.
+ The lines are smoothed by averaging over the two adjacent points.
+ The vertical bar on each point shows the corresponding variations through
+ the averaging.
+ 
+\end_layout
+
+\begin_layout Standard
+For small discriminator values, the systematic uncertainty gets large through
+ the background processes and their contributing uncertainties.
+ For large discriminator values, only the systematic uncertainty from the
+ signal process remains.
+ However, the statistical uncertainty increases through the decreasing signal
+ selection efficiency of the discriminator.
+ The optimal discriminator value (working point) is set to the minimum of
+ the both uncertainties (black line).
+ This point resembles a tradeoff between the systematic and statistical
+ uncertainties.
+\end_layout
+
+\begin_layout Standard
+In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:btdout70"
+
+\end_inset
+
+ the BDT output for the first 70 input variables is shown.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unc70"
+
+\end_inset
+
+ shows the scanning result.
+ A working point for this discriminator is found again by selecting the
+ minimum.
+\end_layout
+
+\begin_layout Standard
+After scanning all BDTs for their optimal working point, the complete measuremen
+t procedure is conducted.
+ Figure
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:uncertainty-neyman-construction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:uncertainty-neyman-construction"
+
+\end_inset
+
+Asymmetries and their uncertainties after the Neyman construction.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -5191,10 +5380,6 @@ The Top Quark Spin Asymmetries
 wide false
 sideways false
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption
