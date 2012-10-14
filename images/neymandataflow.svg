@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.47 "
-   sodipodi:docname="neymandataflow.svg">
+   sodipodi:docname="neymandataflow.eps">
   <defs
      id="defs4">
     <marker
@@ -515,7 +515,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.56456688"
      inkscape:cx="526.21221"
-     inkscape:cy="429.72987"
+     inkscape:cy="500.58064"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -534,7 +534,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -751,17 +751,17 @@
        id="path4347" />
     <text
        xml:space="preserve"
-       style="font-size:34px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none"
-       x="887.6474"
+       style="font-size:34px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
+       x="903.6474"
        y="967.76245"
        id="text2816-1-0-1-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="887.6474"
+         x="903.6474"
          y="967.76245"
-         id="tspan3373-2">generator</tspan><tspan
+         id="tspan3373-2">generated</tspan><tspan
          sodipodi:role="line"
-         x="887.6474"
+         x="903.6474"
          y="1010.2625"
          id="tspan3731">asymmetry</tspan></text>
     <text
@@ -876,8 +876,8 @@
        d="m 672.77147,531.07874 0,93.54603 -255.83994,0"
        id="path4349-5" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Lend-1892)"
-       d="m 630.68192,120.03664 350.81942,0 0,863.43108 -214.57735,0"
+       style="fill:none;stroke:#000000;stroke-width:2.58642244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Lend-1892)"
+       d="m 621.86879,120.07985 375.53076,0 0,863.34566 -229.69195,0"
        id="path4302"
        sodipodi:nodetypes="cccc" />
   </g>

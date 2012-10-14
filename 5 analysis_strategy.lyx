@@ -2674,6 +2674,22 @@ Construction of the Response Matrix
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{not unfold in the complete phase space, pT(lq)>20GeV}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 The response matrix has to be carefully constructed from the simulation.
  This involves the correct categorization of events from the inclusive MC
  sample.
