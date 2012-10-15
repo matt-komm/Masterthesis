@@ -5274,9 +5274,9 @@ reference "fig:unc70"
 \end_layout
 
 \begin_layout Standard
-After scanning all BDTs for their optimal working point, the complete measuremen
-t procedure is conducted.
- Figure
+After scanning all BDT outputs for their optimal working point, the complete
+ measurement procedure is conducted.
+ Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:uncertainty-neyman-construction"
@@ -5285,7 +5285,7 @@ reference "fig:uncertainty-neyman-construction"
 
  shows the resulting top quark spin asymmetries and their uncertainties
  for the muon, b-tagged jet, and neutrino spin analyzer in the spectator
- basis against the BDT input variable counts.
+ basis against the number of used input variables for the BDT.
 \end_layout
 
 \begin_layout Standard
@@ -5351,6 +5351,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unc-asy-spec-muon"
+
+\end_inset
+
 
 \end_layout
 
@@ -5417,6 +5423,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unc-asy-spec-bjet"
+
+\end_inset
+
 
 \end_layout
 
@@ -5483,6 +5495,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unc-asy-spec-neutrino"
+
+\end_inset
+
 
 \end_layout
 
@@ -5532,8 +5550,107 @@ Top quark spin asymmetries and their uncertainties in the spectator basis
 
 \end_layout
 
+\begin_layout Standard
+It is expected that a BDT with only few variables results through its less
+ discrimination power in a large uncertainty for the asymmetry measurement.
+ On the other hand, a BDT with more variables can introduce a bias by favoring
+ the coupling scenario from its training.
+ This bias would be visible in an increase in the asymmetry uncertainty.
+ However, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:uncertainty-neyman-construction"
+
+\end_inset
+
+ does not present a significant increase in uncertainty for a BDT with many
+ input variables.
+ It is concluded that both effects, the discrimination power versus a potential
+ bias, are acting on different scales.
+\end_layout
+
+\begin_layout Standard
+For the measurement, the BDT with 70 input variables is chosen.
+ It presents for the three shown top quark asymmetries (figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unc-asy-spec-muon"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unc-asy-spec-bjet"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unc-asy-spec-neutrino"
+
+\end_inset
+
+) the smallest uncertainties.
+\end_layout
+
 \begin_layout Section
 Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+differential 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+unfolded diff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

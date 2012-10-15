@@ -252,8 +252,8 @@ After filling the LHC ring, the proton beams consist of maximally 2808 bunches
 \end_layout
 
 \begin_layout Standard
-A magnet system of NbTi superconductors is used for deflection and focusing
- of the beams.
+A magnet system of NbTi superconductors is used for deflecting and focusing
+ the beams.
  Superfluid helium cools the superconductors down to 
 \begin_inset Formula $1.9\,\mathrm{K}$
 \end_inset
@@ -264,7 +264,7 @@ A magnet system of NbTi superconductors is used for deflection and focusing
 \end_inset
 
 .
- This produces a magnet field of 
+ The dipole magnets produce a magnet field of 
 \begin_inset Formula $8.33\,\mathrm{T}$
 \end_inset
 
@@ -277,12 +277,12 @@ A magnet system of NbTi superconductors is used for deflection and focusing
 \end_layout
 
 \begin_layout Standard
-For accelerating, a superconducting cavity system operating at 
+A superconducting cavity system operating at 
 \begin_inset Formula $400\,\mathrm{MHz}$
 \end_inset
 
- is used.
- The beams will gain 
+ is used for accelerating.
+ The protons within the beams gain an energy of 
 \begin_inset Formula $485\,\mathrm{keV}$
 \end_inset
 
@@ -337,8 +337,8 @@ LHC-b (Large Hadron Collider beauty Experiment) has a forward sub-detector
 
 \begin_layout Standard
 After a breakdown during the first tests in September 2008, the full operation
- started on 20th November 2009 with successfully circulating beams at injection
- energy.
+ of the LHC started on 20th November 2009 with successfully circulating
+ beams at injection energy.
  In March 2010, the targeted beam energy of 
 \begin_inset Formula $3.5\,\mathrm{TeV}$
 \end_inset
@@ -372,7 +372,7 @@ key "LHCLumi"
 
 .
  In 2012 the center-of-mass energy has been raised to 
-\begin_inset Formula $\sqrt{s}=4\,\mathrm{TeV}$
+\begin_inset Formula $\sqrt{s}=8\,\mathrm{TeV}$
 \end_inset
 
 .
@@ -414,7 +414,7 @@ reference "fig:The-CMS-Experiment"
 
 \end_inset
 
- shows the CMS detector and its sub systems which are mainly the inner tracker
+ shows the CMS detector and its subsystems which are mainly the inner tracker
  (pixel and silicon tracker), the electromagnetic calorimeter, the hadron
  calorimeter, the superconduction solenoid, and the muon detectors.
 \end_layout
@@ -577,7 +577,7 @@ The electromagnetic calorimeter (ECAL) is composed out of lead tungstate
  61200 crystals are installed in the central barrel part and an additional
  7324 are placed in each of the two endcaps.
  The light yield of the crystals is rather low.
- Therefore photodetectors with intrinsic gain had to be applied.
+ Therefore photodetectors with intrinsic gain are applied.
  For amplification silicon avalanche photodiodes (APDs) are used in the
  barrel and vacuum phototriodes (VPTs) are used in the endcaps.
 \end_layout
@@ -746,9 +746,9 @@ Muon system
 \end_layout
 
 \begin_layout Standard
-Muons originating from the IP are measured with two detector sub systems.
- First muons are measured with the inner tracker and then second with the
- muon system in the outer magnetic field.
+Muons originating from the IP are measured with two detector subsystems:
+ the inner tracker in the inner magnetic field and the muon system in the
+ outer magnetic field.
  The inner tracker can only measure muon momenta with a good resolution
  up to round 
 \begin_inset Formula $200\,\mathrm{GeV}$
@@ -1010,8 +1010,8 @@ Tracker Muon
 
  is defined by extrapolating tracker tracks into the muon system.
  For this, energy loss and possible multiple scattering of muons from the
- tracker to the muon system is taken into account.
- At least one segment of the muon system (DT or CSC) needs to be coincidence
+ tracker to the muon system are taken into account.
+ At least one segment of the muon system (DT or CSC) needs to be in coincidence
  with the extrapolation to claim this muon hypothesis.
 \end_layout
 
@@ -1043,10 +1043,10 @@ Standalone-Muon track only
 \begin_inset Quotes erd
 \end_inset
 
- is claimed, if both previous described methods fail.
+ is claimed if both previously described methods fail.
  This is the case if the muon is observed only in the muon system.
- Due to the high tracker efficiency, those muons originate often from cosmic-ray
-s and not from an interaction at the IP 
+ Due to the high tracker efficiency, those muons often originate from cosmic
+ rays and not from an interaction at the IP 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "muonID"
@@ -1058,7 +1058,12 @@ key "muonID"
 
 \begin_layout Standard
 The Particle-Flow algorithm categorizes the muons further.
- A muon is labeled 
+ If there is less than a 10% fraction of the muon's transverse momentum
+ in a cone of 
+\begin_inset Formula $\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}<0.3$
+\end_inset
+
+ around the muon, the muon is labeled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1066,28 +1071,20 @@ isolated
 \begin_inset Quotes erd
 \end_inset
 
-, if additionally less than a 10% fraction of the muon's transverse momentum
- has been detected in a cone of 
-\begin_inset Formula $\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}<0.3$
-\end_inset
-
- around the muon.
- The remaining muons are then in the vicinity of hadronic activity.
- From those, 
+.
+ The remaining 
 \begin_inset Quotes eld
 \end_inset
 
-PF-tight
+non-isolated
 \begin_inset Quotes erd
 \end_inset
 
- muons are identified by requiring a minimum number of hits in the muon
- system to be compatible with the calorimeter deposits.
- The remaining uncategorized muons are labeled 
+ muons are labeled 
 \begin_inset Quotes eld
 \end_inset
 
-PF-loose
+loose
 \begin_inset Quotes erd
 \end_inset
 
@@ -1110,14 +1107,14 @@ After the Particle-Flow reconstruction, the missing transverse energy can
  be calculated.
  Due to the conversation of momentum, the net transverse momentum has to
  be zero after a collision.
- Therefore by summing up all reconstructed particle's momenta and mirroring
- the azimuthal momentum two-vector one obtains the missing transverse energy.
+ One can obtain the missing transverse energy from the mirrored net momentum
+ of all reconstructed particles.
 \end_layout
 
 \begin_layout Standard
 Depending on the physics analysis, the missing transverse energy is often
- used to construct hypotheses about particles that cannot be detected directly
- in CMS, like neutrinos or SUSY particles.
+ used to support the construction of hypotheses about particles that cannot
+ be detected directly in CMS, like neutrinos or SUSY particles.
 \end_layout
 
 \begin_layout Subsection
@@ -1125,11 +1122,10 @@ Jet Definition
 \end_layout
 
 \begin_layout Standard
-A jet is a group of particles originating from hadronization of gluons or
- quarks.
+A jet is a group of particles originating from hadronization of partons.
  Jet algorithms are used to group reconstructed particles to jets.
- By summing up the momenta within a jet, an inference about the hadronized
- parton momentum can be made.
+ By summing up the momenta within a jet, an inference about the parton momentum
+ can be made.
 \end_layout
 
 \begin_layout Standard
@@ -1149,7 +1145,7 @@ key "antiKT,siscone"
 \end_inset
 
 .
- Each one is considered infrared and collinear safe.
+ Each one is considered infrared- and collinear-safe.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1157,7 +1153,7 @@ reference "fig:Jet-definition"
 
 \end_inset
 
- shows exemplary scenarios to explain this two necessary safety features.
+ shows exemplary scenarios to explain these two necessary safety features.
 \end_layout
 
 \begin_layout Standard
@@ -1199,8 +1195,8 @@ Jet definition in different scenarios of additional particles
 \end_inset
 
 Jet definition in different scenarios of additional particles.
- The dark dotted gray ellipses show the result, if not an infrared and collinear
- safe algorithm is used.
+ The dark dotted gray ellipses show the result if not an infrared- and collinear
+-safe algorithm is used.
 \end_layout
 
 \end_inset
@@ -1220,10 +1216,10 @@ Jet definition in different scenarios of additional particles.
 \begin_layout Standard
 Soft gluons emitted from a parton during the hadronization produce additional
  particles with low momenta that should be clustered into the jet.
- However, low energetic particles originating from other interactions should
- be left out.
- Those infrared accumulation may sum up and have a significantly wrong input
- to the jet.
+ However, lowly energetic particles originating from other interactions
+ should be left out.
+ This infrared accumulation may sum up and has a significantly incorrect
+ input to the jet.
  Suppressing this behavior by setting a minimum momentum threshold (
 \begin_inset Quotes eld
 \end_inset
@@ -1232,9 +1228,8 @@ seed
 \begin_inset Quotes erd
 \end_inset
 
-) for the clustering will lead to the wrong result in the collinear limit
- case.
- Here, jet algorithms should not change their results, if one particle with
+) for the clustering will lead to the wrong result in the collinear limit.
+ Here, jet algorithms should not change their result, if one particle with
  high momentum is splitted into many collinear particles.
 \end_layout
 
@@ -1253,7 +1248,7 @@ proto-jets
 \end_inset
 
  which are initially the reconstructed particles.
- Its core procedure is the iteratively calculation of the distances
+ Its core procedure is the iterative calculation of the distances
 \end_layout
 
 \begin_layout Standard
@@ -1296,7 +1291,7 @@ between all proto-jets
 \begin_inset Formula $p_{\mathrm{T}}$
 \end_inset
 
- their transverse momenta.
+ denotes their transverse momenta.
  After the first calculation of the two distances 
 \begin_inset Formula $d_{ij}$
 \end_inset
@@ -1351,11 +1346,15 @@ Jet algorithms can not determine the original flavor of a hadronized quark.
  In a proton-proton collision, the hard interaction is often boosted with
  respect to the lab frame.
  If a long-lived particle such as a B hadron is produced, it will fly a
- measurable distance away from the primary interaction vertex before decaying.
+ measurable distance 
+\begin_inset Formula $d$
+\end_inset
+
+ from the primary interaction vertex before decaying.
 \end_layout
 
 \begin_layout Standard
-The reconstruction by CMS uses amongst others the track counting method.
+The CMS reconstruction uses, amongst others, the track-counting method.
  A 
 \begin_inset Quotes eld
 \end_inset
@@ -1364,8 +1363,11 @@ b-tag
 \begin_inset Quotes erd
 \end_inset
 
- discriminator is constructed by using the significance that the n-th good
- track of a jet is not from the primary vertex 
+ discriminator is constructed by using the significance 
+\begin_inset Formula ${\textstyle \frac{\sigma_{d}}{d}}$
+\end_inset
+
+ that the n-th good track of a jet is not from the primary vertex 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "btagging"
@@ -1374,7 +1376,7 @@ key "btagging"
 
 .
  The analysis in this thesis uses the Track Counting High Purity (TCHP)
- algorithm which is based on the significance of the third track of a jet.
+ algorithm, which is based on the significance of the third track of a jet.
 \end_layout
 
 \begin_layout Section
@@ -1473,12 +1475,12 @@ with the templates
 \end_inset
 
 .
- THETA provides then various producers to obtain a statistical inference
+ THETA provides then various producers to perform a statistical inference
  by e.g.
  comparing models with real data.
  Producers are available to perform frequentist or Bayesian methods including
- maximum likelihood estimator (MLE), marginalization using markov-chain
- monte-carlo (MCMC) besides others 
+ maximum likelihood estimator (MLE) and marginalization using markov-chain
+ monte-carlo (MCMC) methods besides others 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "THETA"
@@ -1489,8 +1491,8 @@ key "THETA"
 \end_layout
 
 \begin_layout Standard
-THETA is used in the analysis to produce toy samples for propagation of
- error and to obtain a data driven yield estimate through a fit.
+THETA is used in the analysis to generate pseudo experiments for propagation
+ of uncertainties and to obtain a data-driven yield estimate through a fit.
 \end_layout
 
 \begin_layout Subsection
@@ -1499,7 +1501,7 @@ ROOT
 
 \begin_layout Standard
 ROOT is a C++ framework for various tasks.
- It is used for data analyses, plotting, storing, and monitoring in many
+ It is used for analysing, plotting, storing, and monitoring data in many
  high energy physics experiments and analyses 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1528,8 +1530,8 @@ The Toolkit for Multivariate Data Analysis with ROOT (TMVA) is a C++ analysis
 \begin_layout Standard
 To setup a discriminator for classification, the classifier algorithm is
  first trained and tested with simulated signal and background events.
- For evaluation, statistical independent simulated samples are needed for
- a bias-free comparison with actual data.
+ For evaluation, statistically independent simulated samples are needed
+ for a bias-free comparison with actual data.
 \end_layout
 
 \begin_layout Standard
@@ -1573,17 +1575,17 @@ is defined.
 \begin_inset Formula $\mathrm{L_{S(B)}}$
 \end_inset
 
- is the product probability over all input variables from the training,
- that the event is signal- (background-) like.
+ is the product probability over all input variables from the training that
+ the event is signal- (background-) like.
  The resulting classifier ranges from 
 \begin_inset Formula $0$
 \end_inset
 
- (= background-like) to 
+ (background-like) to 
 \begin_inset Formula $1$
 \end_inset
 
- (= signal-like).
+ (signal-like).
  
 \end_layout
 
@@ -1601,9 +1603,9 @@ Boosted Decision Tree (BDT)
 \begin_layout Standard
 A decision tree tries to identify signal- or background-like phase spaces
  within the n-dimensional input variables space.
- This is performed by cutting sequentially on the variables to select a
+ This is performed by sequentially cutting on the variables to select a
  signal enhanced region.
- But a single trained decision tree can be very unstable due to statistical
+ However a single trained decision tree can be very unstable due to statistical
  fluctuations in the training samples.
  Therefore, many decision trees are constructed.
  A stabilized discriminator is derived by a majority vote over all trees.
@@ -1650,12 +1652,12 @@ where
 \end_layout
 
 \begin_layout Standard
-The used AdaBoost algorithm, calculates the weights 
+The used AdaBoost algorithm calculates the weights 
 \begin_inset Formula $\alpha_{j}$
 \end_inset
 
  from the misclassification rate 
-\begin_inset Formula $\mathrm{err}$
+\begin_inset Formula $\epsilon$
 \end_inset
 
  by
@@ -1664,7 +1666,7 @@ The used AdaBoost algorithm, calculates the weights
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\alpha=\frac{1-\mathrm{err}}{\mathrm{err}}.
+\alpha=\frac{1-\epsilon}{\epsilon}.
 \end{equation}
 
 \end_inset
@@ -1692,8 +1694,8 @@ key "TMVAGuide"
 \end_layout
 
 \begin_layout Standard
-The BDT has been chosen for its stability and high discriminating performance,
- which exploits also correlations between the input variables.
+The BDT has been chosen for its stability and high discrimination power.
+ It exploits also correlations between the input variables.
 \end_layout
 
 \begin_layout Subsection
@@ -1703,8 +1705,8 @@ VISPA and PXL
 \begin_layout Standard
 Visual Physics Analysis (VISPA) is a development environment for physics
  analyses.
- It utilizes the Physics eXtension Library (PXL), a C++ toolkit, for designing
- of modular analyses 
+ It utilizes the C++ toolkit Physics eXtension Library (PXL) for designing
+ modular analyses 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "VISPA"
@@ -1714,22 +1716,23 @@ key "VISPA"
 .
  Within the software, the user can write C++ or Python modules and connect
  them graphically to create a complex analysis logic.
- During runtime, data objects are passed along these connections and trigger
- methods within the modules where the user code is executed.
+ During runtime, data objects are passed along these connections.
+ The data objects trigger methods within the modules where the user code
+ is executed.
 \end_layout
 
 \begin_layout Standard
 Data objects are stored in the PXLIO file format.
- There are various convertes available to read Comma-Separated Values (CSV)
+ There are various converters available to read Comma-Separated Values (CSV)
  files, the Les Houches Event format and the data formats from the experiments
- CMS, ATLAS, Pierre Auger, and ILC besides others.
+ CMS, ATLAS, Pierre Auger, and ILC, besides others.
 \end_layout
 
 \begin_layout Standard
 Through the multifaceted areas of application, VISPA was used during the
  analysis for generator validation, event selection, multivariante classificatio
-n training and evaluation, and for coordination and analyzation of THETA
- runs and results.
+n training and evaluation, and for coordination and analysis of THETA runs
+ and results.
 \end_layout
 
 \begin_layout Standard
