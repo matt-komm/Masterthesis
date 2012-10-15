@@ -157,7 +157,7 @@ reference "fig:QCD-transverse-W"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -165,22 +165,6 @@ status collapsed
 	filename plots/mtw.norm.ps-crop.pdf
 	lyxscale 30
 	width 10cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{weighted -> normalized}
-\end_layout
 
 \end_inset
 
@@ -1258,7 +1242,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1299,7 +1283,7 @@ name "fig:pileup-off"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1397,15 +1381,9 @@ W+jets modeling
 
 \begin_layout Standard
 In figure 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{......}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2j0b"
 
 \end_inset
 
@@ -1423,7 +1401,7 @@ checkthis{......}
 \begin_inset Formula $\mathrm{W}(\rightarrow\mathrm{l}\nu)+\mathrm{jets}$
 \end_inset
 
- samples does not agree in the shape to data.
+ samples does not agree in shape with the data.
  
 \end_layout
 
@@ -1433,15 +1411,9 @@ Scale factors are derived from the control region for the
 \end_inset
 
  samples (figure 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{scale factors!}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2j0b-weights"
 
 \end_inset
 
@@ -1457,24 +1429,94 @@ checkthis{scale factors!}
 \end_inset
 
  shape uncertainty is estimated by varying around the reweighted distribution
- applying no scale factors or doubling the scale factors.
+ and applying no scale factors or doubling the scale factors.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
+\begin_inset Graphics
+	filename plots/2j0b.ps-crop.pdf
+	lyxscale 20
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2j0b"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 
+\end_layout
 
-\backslash
-checkthis{distribution and resulting weights!}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/2j0b_weights.ps-crop.pdf
+	lyxscale 20
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2j0b-weights"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -1610,7 +1652,7 @@ The contributions from the
 \begin_inset Quotes eld
 \end_inset
 
-Z+light flavor
+DY+light flavor
 \begin_inset Quotes erd
 \end_inset
 
@@ -1642,7 +1684,7 @@ For the
 \begin_inset Quotes eld
 \end_inset
 
-W+light flavor
+W+light jets
 \begin_inset Quotes erd
 \end_inset
 
@@ -1869,22 +1911,6 @@ name "fig:whizard-top-quark-mass"
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{change whizard plot to only 8 scenarios!!}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -1946,7 +1972,7 @@ reference "tab:Results-from-fit"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2093,7 +2119,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-0.109$
+\begin_inset Formula $-0.091$
 \end_inset
 
  
@@ -2105,7 +2131,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.733$
+\begin_inset Formula $0.688$
 \end_inset
 
  
@@ -2155,7 +2181,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.193$
+\begin_inset Formula $0.181$
 \end_inset
 
  
@@ -2167,7 +2193,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.690$
+\begin_inset Formula $0.717$
 \end_inset
 
  
@@ -2217,7 +2243,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.556$
+\begin_inset Formula $0.564$
 \end_inset
 
  
@@ -2229,7 +2255,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.923$
+\begin_inset Formula $0.911$
 \end_inset
 
  
@@ -2279,7 +2305,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.002$
+\begin_inset Formula $-0.007$
 \end_inset
 
  
@@ -2291,7 +2317,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.967$
+\begin_inset Formula $0.987$
 \end_inset
 
  
@@ -2341,7 +2367,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.137$
+\begin_inset Formula $0.117$
 \end_inset
 
  
@@ -2353,7 +2379,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.363$
+\begin_inset Formula $0.362$
 \end_inset
 
  
@@ -2403,7 +2429,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $-0.234$
+\begin_inset Formula $-0.227$
 \end_inset
 
  
@@ -2415,7 +2441,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.835$
+\begin_inset Formula $0.974$
 \end_inset
 
  
@@ -2465,7 +2491,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.000$
+\begin_inset Formula $0.251$
 \end_inset
 
  
@@ -2477,7 +2503,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.000$
+\begin_inset Formula $0.961$
 \end_inset
 
  
@@ -2527,7 +2553,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.053$
+\begin_inset Formula $1.051$
 \end_inset
 
  
@@ -2589,7 +2615,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.006$
+\begin_inset Formula $1.005$
 \end_inset
 
  
@@ -2651,7 +2677,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.011$
+\begin_inset Formula $1.010$
 \end_inset
 
  
@@ -2713,7 +2739,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.934$
+\begin_inset Formula $0.933$
 \end_inset
 
  
@@ -2725,7 +2751,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.275$
+\begin_inset Formula $0.273$
 \end_inset
 
  
@@ -2787,7 +2813,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.266$
+\begin_inset Formula $0.271$
 \end_inset
 
  
@@ -2837,7 +2863,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.944$
+\begin_inset Formula $0.940$
 \end_inset
 
  
@@ -2849,7 +2875,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.262$
+\begin_inset Formula $0.278$
 \end_inset
 
  
@@ -2899,7 +2925,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.944$
+\begin_inset Formula $0.942$
 \end_inset
 
  
@@ -2911,7 +2937,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.274$
+\begin_inset Formula $0.268$
 \end_inset
 
  
@@ -2961,7 +2987,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.017$
+\begin_inset Formula $1.001$
 \end_inset
 
  
@@ -2973,7 +2999,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.125$
+\begin_inset Formula $0.126$
 \end_inset
 
  
@@ -2987,7 +3013,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{W+light\, flavor}}$
+\begin_inset Formula $\beta_{\mathrm{W+light\, jets}}$
 \end_inset
 
  
@@ -3023,7 +3049,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.843$
+\begin_inset Formula $0.830$
 \end_inset
 
  
@@ -3085,7 +3111,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.022$
+\begin_inset Formula $0.948$
 \end_inset
 
  
@@ -3097,7 +3123,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.621$
+\begin_inset Formula $0.596$
 \end_inset
 
  
@@ -3147,7 +3173,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1.652$
+\begin_inset Formula $1.670$
 \end_inset
 
  
@@ -3159,7 +3185,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.525$
+\begin_inset Formula $0.521$
 \end_inset
 
  
@@ -3173,7 +3199,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\beta_{\mathrm{Z+light\, flavor}}$
+\begin_inset Formula $\beta_{\mathrm{DY+light\, flavor}}$
 \end_inset
 
  
@@ -3209,7 +3235,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.942$
+\begin_inset Formula $0.941$
 \end_inset
 
  
@@ -3221,7 +3247,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.267$
+\begin_inset Formula $0.269$
 \end_inset
 
  
@@ -3271,7 +3297,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.949$
+\begin_inset Formula $0.948$
 \end_inset
 
  
@@ -3283,7 +3309,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.268$
+\begin_inset Formula $0.275$
 \end_inset
 
  
@@ -3333,7 +3359,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.958$
+\begin_inset Formula $0.964$
 \end_inset
 
  
@@ -3345,7 +3371,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.271$
+\begin_inset Formula $0.299$
 \end_inset
 
  
@@ -3395,7 +3421,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.929$
+\begin_inset Formula $0.928$
 \end_inset
 
  
@@ -3407,7 +3433,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.271$
+\begin_inset Formula $0.275$
 \end_inset
 
  
@@ -3469,7 +3495,7 @@ uncertainty
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.270$
+\begin_inset Formula $0.277$
 \end_inset
 
  
@@ -3568,6 +3594,30 @@ Results from fit to the reconstructed top quark mass.
 \end_inset
 
 Results from fit to the reconstructed top quark mass.
+ Uncertainties are denoted in standard deviations for shape systematics
+ (
+\begin_inset Formula $\delta$
+\end_inset
+
+) and in procentual fraction for yield systematics (
+\begin_inset Formula $\beta$
+\end_inset
+
+).
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{gute formulierung?}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3582,12 +3632,12 @@ Results from fit to the reconstructed top quark mass.
 
 \begin_layout Standard
 The fit constrains the JES, JER, b-tag efficiency, mis-tag efficiency, uncluster
-ed energy, and pile up uncertainties.
+ed energy, pile up and W+jet shape uncertainties.
  Those constrains are ignored in the analysis because they can be artificial
  through the assumed template extrapolation within THETA.
  The mean values of the JES, JER, b-tag efficiency, mis-tag efficiency,
- unclustered energy, and pile up uncertainties after the fit are covered
- within the uncertainties before the fit.
+ unclustered energy, pile up and W+jet shape uncertainties after the fit
+ are covered within one standard deviation before the fit.
  Therefore, ignoring the constrains for those uncertainties is not contradicting
  to the fit results.
 \end_layout
@@ -3602,7 +3652,7 @@ W+bX
 \end_inset
 
  contribution is underestimated by a factor of 
-\begin_inset Formula $1.65$
+\begin_inset Formula $1.67$
 \end_inset
 
 .
@@ -3657,7 +3707,7 @@ The fit constrains the events yield uncertainties of the single top quark
 \begin_inset Formula $\mathrm{t}\bar{\mathrm{t}},$
 \end_inset
 
- W+light flavor, Z+jets, WW, WZ, and ZZ contributions only marginal.
+ W+light jets, Z+jets, WW, WZ, and ZZ contributions only marginal.
 \end_layout
 
 \begin_layout Standard
@@ -4142,23 +4192,6 @@ reference "tab:Results-from-fit"
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{more ....
- redo breakdown}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -4183,14 +4216,115 @@ Impact before unfolding
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="10" columns="5">
+<lyxtabular version="3" rows="12" columns="5">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JES 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.465_{-0.004}^{+0.015}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+signal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.465_{-0.0}^{+0.0}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
 <row>
 <cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
@@ -4226,60 +4360,7 @@ JER
 \begin_inset Text
 
 \begin_layout Plain Layout
-DY 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.465_{-0.008}^{+0.006}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TWCHANNEL 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.464_{-0.012}^{+0.011}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-FAKES 
+fake (tau) events
 \end_layout
 
 \end_inset
@@ -4302,60 +4383,7 @@ FAKES
 \begin_inset Text
 
 \begin_layout Plain Layout
-WSHAPE 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.466_{-0.155}^{+0.144}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-WBBJETS 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.454_{-0.105}^{+0.141}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-BTAG 
+b-tagging efficiency
 \end_layout
 
 \end_inset
@@ -4385,88 +4413,12 @@ BTAG
 \begin_inset Text
 
 \begin_layout Plain Layout
-PILEUP 
+single top s-channel
 \end_layout
 
 \end_inset
 </cell>
 <cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.465_{-0.003}^{+0.004}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-JES 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.465_{-0.004}^{+0.015}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-VV 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.464_{-0.006}^{+0.005}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SCHANNEL 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4478,6 +4430,29 @@ SCHANNEL
 
 \end_inset
 </cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mis-tagging efficiency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.465_{-0.0}^{+0.0}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
@@ -4491,7 +4466,63 @@ SCHANNEL
 \begin_inset Text
 
 \begin_layout Plain Layout
-WLJETS 
+\begin_inset Formula $\mathrm{t}\bar{\mathrm{t}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.464_{-0.039}^{+0.042}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+unclustered energy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.473_{-0.01}^{+0.048}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+W+light jets
 \end_layout
 
 \end_inset
@@ -4510,20 +4541,20 @@ WLJETS
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-MISAG 
+pile up
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.465_{-0.0}^{+0.0}$
+\begin_inset Formula $0.465_{-0.003}^{+0.004}$
 \end_inset
 
  
@@ -4544,7 +4575,7 @@ MISAG
 \begin_inset Text
 
 \begin_layout Plain Layout
-UE 
+W+bX / W+cX
 \end_layout
 
 \end_inset
@@ -4553,7 +4584,7 @@ UE
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.473_{-0.01}^{+0.048}$
+\begin_inset Formula $0.454_{-0.105}^{+0.141}$
 \end_inset
 
  
@@ -4563,41 +4594,11 @@ UE
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SIGNAL 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0.465_{-0.0}^{+0.0}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-MUOEFF 
+W+jet shape
 \end_layout
 
 \end_inset
@@ -4614,18 +4615,101 @@ MUOEFF
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-LUMI 
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DY+jets
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.465_{-0.008}^{+0.006}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+muon efficiency
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.466_{-0.155}^{+0.144}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WW, WZ, ZZ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.464_{-0.006}^{+0.005}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+luminosity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4650,7 +4734,7 @@ LUMI
 \begin_inset Text
 
 \begin_layout Plain Layout
-TTBAR 
+
 \end_layout
 
 \end_inset
@@ -4659,7 +4743,27 @@ TTBAR
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.464_{-0.039}^{+0.042}$
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+single top tW-channel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.464_{-0.012}^{+0.011}$
 \end_inset
 
  
@@ -4667,18 +4771,45 @@ TTBAR
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-TOTAL 
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4690,7 +4821,7 @@ TOTAL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4699,7 +4830,7 @@ TOTAL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4708,7 +4839,7 @@ TOTAL
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4719,6 +4850,22 @@ TOTAL
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{tabelle huebscher machen!}
+\end_layout
 
 \end_inset
 
@@ -4799,7 +4946,14 @@ The response matrix for the unfolding is always constructed from the anomalous
 \begin_inset Formula $\mathrm{X}$
 \end_inset
 
- (figure ).
+ (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:response-matrix-construction"
+
+\end_inset
+
+).
  
 \end_layout
 
@@ -4954,10 +5108,56 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+checkthis{remove legend from first plot}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:response-matrix-construction"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The anomalous coupling sample from which the response matrices are constructed.
+\end_layout
+
+\end_inset
+
+The anomalous coupling sample with 
+\begin_inset Formula $\mathrm{V_{L}=V_{R}=1}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{L}=g_{R}=0}$
+\end_inset
+
+ from which the response matrices are constructed.
+ The 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
+\end_inset
+
+ distributions for the (a) muon , (b) the b-tagged jet, and (c) the neutrino
+ as spin analyzer in the spectator basis.
 \end_layout
 
 \end_inset
@@ -5080,11 +5280,41 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hide{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename images/example_neyman.eps
 	lyxscale 20
 	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \end_inset
 
@@ -5839,7 +6069,7 @@ The Top Quark Spin Asymmetries
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -5851,7 +6081,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_lepton.ps-crop.pdf
 	lyxscale 30
-	height 6cm
+	height 7cm
 
 \end_inset
 
@@ -5877,6 +6107,9 @@ status collapsed
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -5884,9 +6117,43 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_lepton.ps-crop.pdf
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_bjet.ps-crop.pdf
 	lyxscale 30
-	height 6cm
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_neutrino.ps-crop.pdf
+	lyxscale 30
+	height 7cm
 
 \end_inset
 
@@ -5922,136 +6189,28 @@ The top spin asymmetry measurement (Neyman construction)
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection
-Fit to Anomalous Couplings
-\end_layout
-
 \begin_layout Standard
-\begin_inset Float table
+\begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+\begin_inset Graphics
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_lepton.ps-crop.pdf
+	lyxscale 30
+	height 7cm
 
 \end_inset
 
@@ -6062,7 +6221,41 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-TopFit input values
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_bjet.ps-crop.pdf
+	lyxscale 30
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -6073,6 +6266,61 @@ TopFit input values
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_neutrino.ps-crop.pdf
+	lyxscale 30
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The top spin asymmetry measurement (Neyman construction)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fit to Anomalous Couplings
 \end_layout
 
 \begin_layout Standard
