@@ -2685,6 +2685,22 @@ This way of estimating the regularization parameter depends only on the
  response matrix.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{show real example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Construction of the Response Matrix
 \end_layout
