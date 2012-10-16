@@ -6112,6 +6112,75 @@ The simulated single top t-channel events which pass the event selection
  additional background contribution.
 \end_layout
 
+\begin_layout Standard
+After the event selection requirement of 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
+\end_inset
+
+ the remaining contribution from the simulated QCD multijet background contains
+ only very few MC events.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:QCD-transverse-W"
+
+\end_inset
+
+ shows the normalized distribution of the transverse W boson mass 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}$
+\end_inset
+
+ before the selection requirement.
+ The shape modeling of the other simulated processes above 
+\begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
+\end_inset
+
+ shows a good agreement to data.
+ The QCD multijet background contribution is therefore neglected in this
+ analysis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename D:/MasterThesis/plots/mtw.norm.ps-crop.pdf
+	lyxscale 30
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:QCD-transverse-W"
+
+\end_inset
+
+QCD background in the transverse W boson mass distribution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Top Quark Reconstruction
 \end_layout

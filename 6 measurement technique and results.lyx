@@ -121,11 +121,24 @@ Before the top quark spin asymmetries from the
 \begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
 \end_inset
 
- distributions can be measured from data the influence of systematic uncertainti
-es has to be investigated.
- These can be divided into theoretical uncertainties and uncertainties which
- arise due to the measurement behavior of the CMS detector and its reconstructio
-n accuracy.
+ distributions are measured from data, the influence of systematic uncertainties
+ is investigated.
+ The systematic uncertainties are divided into theoretical uncertainties
+ and uncertainties which arise due to the resolution of the CMS detector
+ and its reconstruction accuracy.
+\end_layout
+
+\begin_layout Standard
+After that, the measurement procedure is described.
+ The measurement procedure is optimized for the top quark spin asymmetry
+ measurement with the smallest uncertainty.
+\end_layout
+
+\begin_layout Standard
+Finally, the results for the top quark spin asymmetries are presented.
+ In an additional step, the asymmetries are used with additonal information
+ from cross section measurements and W boson helicity fractions measurement
+ to obtain limits on the anomalous top quark couplings.
 \end_layout
 
 \begin_layout Section
@@ -137,8 +150,7 @@ Sources
 \end_layout
 
 \begin_layout Standard
-The considered source of systematic uncertainties which are applied on the
- simulated event samples are described in the following:
+The considered source of systematic uncertainties are described in the following.
 \end_layout
 
 \begin_layout Paragraph*
@@ -5334,7 +5346,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/BDT_100.ps-crop.pdf
+	filename plots/BDT_70.ps-crop.pdf
 	lyxscale 30
 	height 6cm
 
@@ -5422,7 +5434,7 @@ name "fig:unc30"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
