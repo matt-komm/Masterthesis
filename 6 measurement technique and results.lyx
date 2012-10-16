@@ -1224,7 +1224,7 @@ reference "fig:pileup-on"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3571,7 +3571,7 @@ Results from fit to the reconstructed top quark mass.
 \begin_inset Formula $\delta$
 \end_inset
 
-) and in procentual fraction for yield systematic (
+) and in percental fraction for yield systematic (
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -5037,22 +5037,6 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{remove legend from first plot}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -5601,7 +5585,7 @@ status open
 
 \begin_layout Plain Layout
 
-
+%
 \backslash
 afterpage{
 \backslash
@@ -5924,7 +5908,7 @@ reference "fig:unc-asy-spec-neutrino"
 \begin_layout Standard
 As a cross check, the signal separation in the measurement procedure is
  switch from the BDTs to the trained Projective Likelihood Estimators.
- The disciriminator output of the PLE trained with 50 and 70 variables are
+ The discriminator output of the PLE trained with 50 and 70 variables are
  shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5933,7 +5917,7 @@ reference "fig:Examplary-PLE-outputs."
 \end_inset
 
 .
- The discriminator ouput distribution of the PLEs highly differs in shape
+ The discriminator output distribution of the PLEs highly differs in shape
  from the BDTs.
  Events are nearly exclusively found at output values of 
 \begin_inset Formula $-1.0$
@@ -5945,7 +5929,7 @@ reference "fig:Examplary-PLE-outputs."
 
 .
  The scanning of the optimal working point for the PLEs is skipped due to
- this extreme ouput shape.
+ this extreme output shape.
 \end_layout
 
 \begin_layout Standard
@@ -6042,15 +6026,15 @@ name "fig:Examplary-PLE-outputs."
 
 
 \begin_inset Argument
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Examplary PLE outputs.
+Exemplary PLE outputs.
 \end_layout
 
 \end_inset
 
-Examplary PLE outputs.
+Exemplary PLE outputs.
  (a) shows the PLE output with 50 and (b) with 70 input variables.
 \end_layout
 
@@ -6082,14 +6066,14 @@ reference "fig:neyman-optimization-likelihood"
 
 \end_inset
 
- shows the asymmetry of the muon spin analyzer in the spectator basis againt
+ shows the asymmetry of the muon spin analyzer in the spectator basis against
  the number of used input variables.
 \end_layout
 
 \begin_layout Standard
 The asymmetry and its uncertainty seems to settle when at least 50 input
  variables are used.
- A local minima is also present if the PLE is trained with 70 input variabels.
+ A local minima is also present if the PLE is trained with 70 input variables.
  The measurement procedure is conducted with PLE with 70 input variables
  for the comparison of the measurement results obtained with the BDT.
 \end_layout
@@ -6248,7 +6232,7 @@ reference "fig:unfolded-spec-lepton-inc"
 \end_inset
 
  shows the unfolded distribution after the expected background from simulation
- is substracted from data.
+ is subtracted from data.
  The blue line shows the expected distribution from the simulated SM samples.
 \end_layout
 
@@ -6419,7 +6403,7 @@ name "fig:unfolded-spec-lepton"
 \end_layout
 
 \begin_layout Standard
-The observerd differences between the data and the prediction from the SM
+The observed differences between the data and the prediction from the SM
  can be translated for the asymmetry measurement into a significance.
  The calculation of the p-value and the significance from the pseudo experiments
  is shown in figure 
@@ -6796,7 +6780,7 @@ wide false
 sideways false
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename plots/neyman_legend.ps-crop.pdf
@@ -6886,7 +6870,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_lepton.wl.ps-crop.pdf
 	lyxscale 30
-	height 6.8cm
+	height 7cm
 
 \end_inset
 
@@ -6917,7 +6901,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_lepton.wl.ps-crop.pdf
 	lyxscale 30
-	height 6.8cm
+	height 7cm
 
 \end_inset
 
@@ -6981,7 +6965,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_bjet.wl.ps-crop.pdf
 	lyxscale 30
-	height 6.8cm
+	height 7cm
 
 \end_inset
 
@@ -7012,7 +6996,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_bjet.wl.ps-crop.pdf
 	lyxscale 30
-	height 6.8cm
+	height 7cm
 
 \end_inset
 
@@ -7080,7 +7064,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_neutrino.wl.ps-crop.pdf
 	lyxscale 30
-	height 6.8cm
+	height 7cm
 
 \end_inset
 
@@ -7111,7 +7095,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_neutrino.wl.ps-crop.pdf
 	lyxscale 30
-	height 6.8cm
+	height 7cm
 
 \end_inset
 
@@ -7487,22 +7471,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hide{
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
@@ -7649,20 +7617,6 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -7716,7 +7670,7 @@ value{part}<1
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset Newpage clearpage
 \end_inset
 
 
