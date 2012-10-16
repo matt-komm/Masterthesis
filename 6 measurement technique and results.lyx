@@ -124,7 +124,7 @@ Before the top quark spin asymmetries from the
  distributions can be measured from data the influence of systematic uncertainti
 es has to be investigated.
  These can be divided into theoretical uncertainties and uncertainties which
- arise due to the measurement behavior of the CMS detector and the reconstructio
+ arise due to the measurement behavior of the CMS detector and its reconstructio
 n accuracy.
 \end_layout
 
@@ -132,9 +132,22 @@ n accuracy.
 Systematic Uncertainties
 \end_layout
 
+\begin_layout Subsection
+Sources
+\end_layout
+
+\begin_layout Standard
+The considered source of systematic uncertainties which are applied on the
+ simulated event samples are described in the following:
+\end_layout
+
+\begin_layout Paragraph*
+Simulation of QCD multijet background
+\end_layout
+
 \begin_layout Standard
 The contribution of the QCD multijet background is investigated after the
- event selection without the transverse W boson mass criterion 
+ event selection without the transverse W boson mass criterion of 
 \begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
 \end_inset
 
@@ -199,24 +212,16 @@ After the selection requirement of
 \begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
 \end_inset
 
- the remain of the QCD multijet background contribution contains only very
- few simulated events.
- Those will lead to large unphysical modelling uncertainties within the
- statistical evaluation.
+ the remaining contribution from the simulated QCD multijet background contains
+ only very few MC events.
+ Those will lead to large unphysical modeling uncertainties within the statistic
+al evaluation.
  The shape modeling of the other processes above 
 \begin_inset Formula $M_{\mathrm{T}}^{\mathrm{W}}>40\,\mathrm{GeV}$
 \end_inset
 
- is however reasonable enough to exclude the contributions from this background.
-\end_layout
-
-\begin_layout Subsection
-Sources
-\end_layout
-
-\begin_layout Standard
-The considered source of systematic uncertainties which are applied on the
- simulated event samples are described in the following:
+ is however reasonable enough to exclude the remaining contributions from
+ this background.
 \end_layout
 
 \begin_layout Paragraph*
@@ -224,19 +229,19 @@ Jet energy scale
 \end_layout
 
 \begin_layout Standard
-The energy measurement of particles with the CMS detector is mainly peformed
+The energy measurement of particles with the CMS detector is mainly performed
  with the calorimeters.
- It involves the translation of the calorimeter's readout into the actual
+ It involves the translation of the calorimeter readouts into the actual
  deposited energy by a particle.
  The energy of a jet is then constructed by a jet algorithm.
- The jet construction intrinsically utilizes the readout translation and
- depends therefore on its accuray.
- The translation depends on the measured pseudorapidity 
+ The jet construction intrinsically utilizes the readout-energy translation
+ and depends therefore on its scale and accuracy.
+ Furthermore, the translation depends on the measured pseudorapidity 
 \begin_inset Formula $\eta$
 \end_inset
 
- of a jet through the geometry of the calorimeter and on the transvese momentum
- 
+ of a jet through the geometry of the calorimeter and on the transverse
+ momentum 
 \begin_inset Formula $p_{\mathrm{T}}$
 \end_inset
 
@@ -253,7 +258,7 @@ key "JESsource"
 \end_layout
 
 \begin_layout Standard
-The JES and its uncertainty is included into the analysis by varing the
+The JES and its uncertainty is included into the analysis by varying the
  four-momenta of all measured jets.
  After that, the missing transverse energy is recalculated.
  The missing transverse energy depends on the vector sum of all reconstructed
@@ -267,7 +272,7 @@ Jet energy resolution
 \begin_layout Standard
 This systematic accounts for smearing effects in the measurement of the
  jet energy and momentum by the detector.
- It is included into the analysis by varing the reconstructed energy and
+ It is included into the analysis by varying the reconstructed energy and
  momentum of a jet against its generated energy and momentum 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -329,18 +334,19 @@ key "BTAGsource"
  This leads to a total of six possibilities that an event with none, one
  or two b-tagged jets can end up in the same or another b-tag category due
  to mis-identification.
- For a generic b-tagging efficiency 
-\begin_inset Formula $\epsilon$
-\end_inset
-
- the table 
+ Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:The-scale-factors"
 
 \end_inset
 
- lists these permutations and their probabilities.
+ lists these permutations and their probabilities for a generic b-tagging
+ efficiency 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -726,7 +732,7 @@ before
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\times$
+\begin_inset Formula $\cdot$
 \end_inset
 
 
@@ -846,7 +852,7 @@ b-tagging
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\times$
+\begin_inset Formula $\cdot$
 \end_inset
 
 
@@ -887,7 +893,7 @@ b-tagging
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\times$
+\begin_inset Formula $\cdot$
 \end_inset
 
 
@@ -975,7 +981,7 @@ efficiency
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\times$
+\begin_inset Formula $\cdot$
 \end_inset
 
 
@@ -1011,7 +1017,7 @@ efficiency
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\times$
+\begin_inset Formula $\cdot$
 \end_inset
 
 
@@ -1052,7 +1058,7 @@ efficiency
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\times$
+\begin_inset Formula $\cdot$
 \end_inset
 
 
@@ -1087,15 +1093,15 @@ efficiency
 
 \end_inset
 
-The signal selection requires events with exactly one jet with a b-tag.
+The signal selection requires events with exactly one b-tagged jet.
  Such selected events have a probability of 
 \begin_inset Formula $\epsilon$
 \end_inset
 
  to come from a simulated event where the jet has actually originated from
  a bottom quark.
- But events can be selected as well where both jets originated from a bottom
- quark.
+ However, events can be selected as well where both jets originated from
+ a bottom quark.
  Those events have a probability of 
 \begin_inset Formula $(1-\epsilon)\cdot\epsilon\cdot2$
 \end_inset
@@ -1108,8 +1114,8 @@ The signal selection requires events with exactly one jet with a b-tag.
 To account for those effects, the simulated events are duplicated and allowed
  to migrate into the different b-tag categories.
  Their event weight is adjusted to include the corresponding probabilities.
- The b-tagging efficiency depends furthermore on the jet's transverse momentum
- which was measured in Ref.
+ The b-tagging efficiency depends furthermore on the transverse momentum
+ of the jet which was measured in Ref.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1118,17 +1124,14 @@ key "BTAGsource"
 \end_inset
 
 .
- Additionally there are also efficiencies for mis-tagged jets considered
- which originate from up, down, strange, orinstead of gaussian distributions
- charm quarks.
+ Additionally there are also efficiencies for mis-tagged jets considered.
+ Mis-tagged jets can originate from up, down, strange, or from charm quarks.
 \end_layout
 
 \begin_layout Standard
-By varing the b-tag and miss-tag efficiencies within their measured uncertaintie
-s the migration of simulated events between the b-tag categories is influenced.
- After the signal selection the migrations change the yields and distribution
- shapes in the simulated samples because events with exactly one b-tagged
- jet are singled out.
+The migration of simulated events between the b-tag categories is influenced
+ by varying the b-tagging and miss-tagging efficiencies within their measured
+ uncertainties.
 \end_layout
 
 \begin_layout Paragraph*
@@ -1137,9 +1140,9 @@ Unclustered energy
 
 \begin_layout Standard
 The uncertainty due to unclustered energy can be understood as the result
- of the missing transerse energy scale uncertainty and resolution.
- The missing transverse energy can be refered to as a composite object which
- depends on all reconstructed particles.
+ of the missing transverse energy scale uncertainty and resolution.
+ The missing transverse energy can be referred to as a composite object
+ which depends on all reconstructed particles.
 \end_layout
 
 \begin_layout Standard
@@ -1148,10 +1151,11 @@ The scale uncertainty and resolution of the missing transverse energy can
  jets, taus, electrons, photons, muons and unclustered energy.
  Only jets, muons, and the unclustered energy are relevant for the analysis.
  The small uncertainty from the muon energy scale and resolution is neglected
- due to the larger jets and unclustered energy contributions.
+ due to the larger contributions from jets and unclustered energy.
  For the jets, JES and JER are affecting in their implementation the missing
  transverse energy.
- The unclustered energy needs to be additionally varied.
+ The unclustered energy is varied additionally and the missing transverse
+ energy is recalculated.
 \end_layout
 
 \begin_layout Standard
@@ -1176,7 +1180,7 @@ Pile up
 \end_layout
 
 \begin_layout Standard
-Multiple interactions can occure in a proton bunch crossing that lead to
+Multiple interactions can occur in a proton bunch crossing that lead to
  particles originating from additional vertices.
  During the event simulation, a uniform distribution with up to ten vertices
  is assumed.
@@ -1212,8 +1216,8 @@ reference "fig:pileup-on"
 
 \end_inset
 
- shows the resulting number of vertices distribution of the simulated events
- which follows the shape of the distribution from data.
+ shows the resulting number of vertices distribution of the simulated events.
+ The simulated distribution follows the shape from data.
 \end_layout
 
 \begin_layout Standard
@@ -1301,22 +1305,6 @@ name "fig:pileup-on"
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{y-axis => normalized events!, add whizard sm sample}
 \end_layout
 
 \end_inset
@@ -1554,7 +1542,7 @@ Luminosity
 \end_layout
 
 \begin_layout Standard
-The luminosity of the recored data is measured by counting the number of
+The luminosity of the recorded data is measured by counting the number of
  the hit pixel clusters for each event 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1593,7 +1581,7 @@ Cross sections
 \end_layout
 
 \begin_layout Standard
-Each of the simulated processes have been asigned with a certain weight
+Each of the simulated processes have been assigned with a certain weight
  which scales its yield according to the theoretical cross section.
  To account for uncertainties on the cross section and Monte-Carlo modeling
  the following variations in the yields are applied:
@@ -1602,7 +1590,7 @@ Each of the simulated processes have been asigned with a certain weight
 \begin_layout Itemize
 The single top quark t-channel cross section including the W boson decaying
  into tau and neutrino 
-\begin_inset Formula $\mathrm{(t\rightarrow b\tau\nu)}$
+\begin_inset Formula $\mathrm{(t\rightarrow b}\tau\nu)$
 \end_inset
 
  is varied by 
@@ -1613,8 +1601,8 @@ The single top quark t-channel cross section including the W boson decaying
 \end_layout
 
 \begin_layout Itemize
-The single top quark s-channel and tW-channel cross sections are each varied
- 
+The single top quark s-channel and tW-channel cross sections are varied
+ each by
 \begin_inset Formula $\pm30\,\%$
 \end_inset
 
@@ -1661,7 +1649,7 @@ Z+cX
 \begin_inset Formula $\pm30\,\%$
 \end_inset
 
- to account also for the modeling uncertainty of their branching ratios.
+ to account also for the modeling uncertainty in their branching ratios.
 \end_layout
 
 \begin_layout Itemize
@@ -1697,11 +1685,11 @@ W+bX
 \begin_inset Formula $\pm100\,\%$
 \end_inset
 
- uncertainty is asigned to each cross section independently.
+ uncertainty is assigned to each cross section independently.
 \end_layout
 
 \begin_layout Itemize
-The di-boson processes, WW, WZ, and ZZ are each varied independently by
+The di-boson processes, WW, WZ, and ZZ, are each varied independently by
  
 \begin_inset Formula $\pm30\,\%$
 \end_inset
@@ -1710,15 +1698,15 @@ The di-boson processes, WW, WZ, and ZZ are each varied independently by
 \end_layout
 
 \begin_layout Standard
-The decribed uncertainties are implement in a THETA model with the differential
+The described uncertainties are implement in a THETA model with the differential
  
 \begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
 \end_inset
 
  distributions as observables.
- Nuciance parameters are assigned to each uncertainty.
- Gaussian distributions are mainly used for the nuciance parameters.
- The nuciance parameters for the cross section uncertainties are only allowed
+ Nuisance parameters are assigned to each uncertainty.
+ Gaussian distributions are mainly used for the nuisance parameters.
+ The nuisance parameters for the cross section uncertainties are only allowed
  to vary in the interval 
 \begin_inset Formula $\left[0;\,\infty\right]$
 \end_inset
@@ -1750,7 +1738,7 @@ Uncertainties which influence the
 \end_inset
 
  shape by extrapolating between the provided templates according to the
- nuciance parameter.
+ nuisance parameter.
 \end_layout
 
 \begin_layout Subsection
@@ -1796,7 +1784,7 @@ First, the shape between the
 \end_inset
 
  and single top quark t-channel top quark mass distribution is quit different.
- The fit profits from the differences by contraining background and signal
+ The fit profits from the differences by constraining background and signal
  contributions nearly uncorrelated to each other.
 \end_layout
 
@@ -1929,9 +1917,9 @@ reference "tab:Results-from-fit"
 
 \end_inset
 
- lists the nuciance parameters before and after the maximum likelihood fit
+ lists the nuisance parameters before and after the maximum likelihood fit
  of the signal and background processes to data.
- Nuciance parameters that influcence the shape morphing are denote as 
+ Nuisance parameters that influence the shape morphing are denote as 
 \begin_inset Formula $\delta$
 \end_inset
 
@@ -1945,7 +1933,7 @@ reference "tab:Results-from-fit"
 \end_inset
 
  variation in the extrapolation between the provided templates.
- The nuciance parameters that change only the simulatd event yields are
+ The nuisance parameters that change only the simulated event yields are
  denoted as 
 \begin_inset Formula $\beta$
 \end_inset
@@ -3579,12 +3567,11 @@ Results from fit to the reconstructed top quark mass.
 \end_inset
 
 Results from fit to the reconstructed top quark mass.
- Uncertainties are denoted in standard deviations for shape systematics
- (
+ Uncertainties are denoted in standard deviations for shape systematic (
 \begin_inset Formula $\delta$
 \end_inset
 
-) and in procentual fraction for yield systematics (
+) and in procentual fraction for yield systematic (
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -3693,6 +3680,7 @@ The fit constrains the events yield uncertainties of the single top quark
 \end_inset
 
  W+light jets, Z+jets, WW, WZ, and ZZ contributions only marginal.
+ Those constrains are also neglected.
 \end_layout
 
 \begin_layout Standard
@@ -3834,24 +3822,6 @@ W+bX
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-afterpage{
-\backslash
-clearpage}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3868,7 +3838,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/lightjet_eta.wl.ps-crop.pdf
 	lyxscale 50
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -3907,9 +3877,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/lightjet_eta_fit.ps-crop.pdf
+	filename plots/lightjet_eta_fit.wl.ps-crop.pdf
 	lyxscale 50
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -3954,7 +3924,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/massHFS.wl.ps-crop.pdf
 	lyxscale 50
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -3989,9 +3959,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/massHFS_fit.ps-crop.pdf
+	filename plots/massHFS_fit.wl.ps-crop.pdf
 	lyxscale 50
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -4032,7 +4002,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/MET.wl.ps-crop.pdf
 	lyxscale 50
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -4067,9 +4037,9 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/MET_fit.ps-crop.pdf
+	filename plots/MET_fit.wl.ps-crop.pdf
 	lyxscale 50
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -4148,8 +4118,8 @@ Pseudo
 
  distributions are generated by dicing around the systematic and statistical
  uncertainties.
- The expected nominal background from simulation is substracted and the
- resulting asymmetry is calculated.
+ The expected nominal background from simulation is subtracted and the resulting
+ asymmetry is calculated.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4189,7 +4159,7 @@ name "tab:Impact-before-unfolding"
 
 \end_inset
 
-Impact of systematic uner
+Impact of systematic uncertainties.
 \end_layout
 
 \end_inset
@@ -4846,6 +4816,37 @@ total
 \begin_layout Standard
 The asymmetry depends not on the signal yield.
  The uncertainty 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{more....}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+afterpage{
+\backslash
+clearpage}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4876,7 +4877,7 @@ A Boosted Decision Tree separates between the signal and background processes.
 
 .
  For a selected Boosted Decision Tree its working point of the discriminator
- value is choosen.
+ value is chosen.
 \end_layout
 
 \begin_layout Standard
@@ -4913,7 +4914,7 @@ The response matrix for the unfolding is always constructed from the anomalous
 \begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
 \end_inset
 
- distributions for all spin analysers 
+ distributions for all spin analyzers 
 \begin_inset Formula $\mathrm{X}$
 \end_inset
 
@@ -4935,17 +4936,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\align left
 \begin_inset Float figure
 wide false
 sideways false
@@ -4955,7 +4946,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/whizard_gen_cos_spectator_lepton_res.wl.ps-crop.pdf
 	lyxscale 30
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -4977,14 +4968,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -4994,7 +4977,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/whizard_gen_cos_spectator_bjet_res.wl.ps-crop.pdf
 	lyxscale 30
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -5018,14 +5001,8 @@ status collapsed
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
 \begin_layout Plain Layout
+\align left
 \begin_inset Float figure
 wide false
 sideways false
@@ -5035,7 +5012,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/whizard_gen_cos_spectator_neutrino_res.wl.ps-crop.pdf
 	lyxscale 30
-	height 6cm
+	height 5.5cm
 
 \end_inset
 
@@ -5053,25 +5030,6 @@ status collapsed
 
 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
 
 \end_inset
 
@@ -5538,7 +5496,7 @@ name "fig:BDT-output-and"
 \end_inset
 
 BDT outputs and asymmetry uncertainty for different discriminator values.
- The BDT discriminator output with thrity input variables (a) and 70 input
+ The BDT discriminator output with thirty input variables (a) and 70 input
  variables (b).
  The resulting uncertainty on the asymmetry by scanning the BDT 30 output
  (c) and BDT 70 output (d).
@@ -5566,7 +5524,7 @@ reference "fig:bdtout30"
 
 \end_inset
 
- the discriminator output for the BDT from the first thrity less correlated
+ the discriminator output for the BDT from the first thirty less correlated
  input variables is shown.
  The output is scanned in figure 
 \begin_inset CommandInset ref
@@ -5654,7 +5612,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/asy_spec_muon.ps-crop.pdf
 	lyxscale 20
-	height 6cm
+	height 5.8cm
 
 \end_inset
 
@@ -5689,7 +5647,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/asy_unc_spec_muon.ps-crop.pdf
 	lyxscale 20
-	height 6cm
+	height 5.8cm
 
 \end_inset
 
@@ -5730,7 +5688,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/asy_spec_bjet.ps-crop.pdf
 	lyxscale 20
-	height 6cm
+	height 5.8cm
 
 \end_inset
 
@@ -5761,7 +5719,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/asy_unc_spec_bjet.ps-crop.pdf
 	lyxscale 20
-	height 6cm
+	height 5.8cm
 
 \end_inset
 
@@ -5802,7 +5760,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/asy_spec_neutrino.ps-crop.pdf
 	lyxscale 20
-	height 6cm
+	height 5.8cm
 
 \end_inset
 
@@ -5833,7 +5791,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/asy_unc_spec_neutrino.ps-crop.pdf
 	lyxscale 20
-	height 6cm
+	height 5.8cm
 
 \end_inset
 
@@ -5878,13 +5836,14 @@ name "fig:uncertainty-neyman-construction"
 status collapsed
 
 \begin_layout Plain Layout
-Asymmetries and their uncertainties after the Neyman construction.
+Asymmetries and their uncertainties after the Neyman construction with the
+ BDT method.
 \end_layout
 
 \end_inset
 
 Top quark spin asymmetries and their uncertainties in the spectator basis
- after the Neyman construction.
+ after the Neyman construction with the BDT method.
  (a) , (c), and (e): The asymmetry for the muon, b-tagged jet, and neutrino
  spin analyzer and their corresponding uncertainties (b), (d), and (f).
 \end_layout
@@ -5944,10 +5903,337 @@ reference "fig:unc-asy-spec-neutrino"
 ) the smallest uncertainties.
 \end_layout
 
+\begin_layout Standard
+As a cross check, the signal separation in the measurement procedure is
+ switch from the BDTs to the trained Projective Likelihood Estimators.
+ The disciriminator output of the PLE trained with 50 and 70 variables are
+ shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Examplary-PLE-outputs."
+
+\end_inset
+
+.
+ The discriminator ouput distribution of the PLEs highly differs in shape
+ from the BDTs.
+ Events are nearly exclusively found at output values of 
+\begin_inset Formula $-1.0$
+\end_inset
+
+ or 
+\begin_inset Formula $1.0$
+\end_inset
+
+.
+ The scanning of the optimal working point for the PLEs is skipped due to
+ this extreme ouput shape.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/Likelihood_50.ps-crop.pdf
+	lyxscale 20
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/Likelihood_70.ps-crop.pdf
+	lyxscale 20
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Examplary-PLE-outputs."
+
+\end_inset
+
+
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Examplary PLE outputs.
+\end_layout
+
+\end_inset
+
+Examplary PLE outputs.
+ (a) shows the PLE output with 50 and (b) with 70 input variables.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A discriminator value of 
+\begin_inset Formula $0.9$
+\end_inset
+
+ is used to investigate the uncertainty on the asymmetry measurement with
+ the PLE method.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:neyman-optimization-likelihood"
+
+\end_inset
+
+ shows the asymmetry of the muon spin analyzer in the spectator basis againt
+ the number of used input variables.
+\end_layout
+
+\begin_layout Standard
+The asymmetry and its uncertainty seems to settle when at least 50 input
+ variables are used.
+ A local minima is also present if the PLE is trained with 70 input variabels.
+ The measurement procedure is conducted with PLE with 70 input variables
+ for the comparison of the measurement results obtained with the BDT.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/asy_like_spec_muon.ps-crop.pdf
+	lyxscale 20
+	width 5.8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/asy_unc_like_spec_muon.ps-crop.pdf
+	lyxscale 20
+	width 5.8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:neyman-optimization-likelihood"
+
+\end_inset
+
+Top quark spin asymmetries and their uncertainties in the spectator basis
+ after the Neyman construction with the PLE method.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Results
 \end_layout
 
+\begin_layout Subsection
+The Unfolded Distributions
+\end_layout
+
+\begin_layout Standard
+During the measurement procedure, the 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
+\end_inset
+
+ distributions are unfolded into the inclusive phase space with only the
+ selection criterion of 
+\begin_inset Formula $p_{\mathrm{light\, jet}}>20\,\mathrm{GeV}$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:spec-lepton-bdt"
+
+\end_inset
+
+ shows the 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
+\end_inset
+
+ distribution with the statistical uncertainties for the muons spin analyzer
+ 
+\begin_inset Formula $\mathrm{X}$
+\end_inset
+
+ in the spectator basis 
+\begin_inset Formula $\mathrm{B}$
+\end_inset
+
+ after the BDT is used to extract the signal.
+ 
+\end_layout
+
+\begin_layout Standard
+The statistical and systematic uncertainties are propagated from the pseudo
+ experiments and applied to the data.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unfolded-spec-lepton-inc"
+
+\end_inset
+
+ shows the unfolded distribution after the expected background from simulation
+ is substracted from data.
+ The blue line shows the expected distribution from the simulated SM samples.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -5955,10 +6241,157 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/cos_theta_specator_muon_bdt.ps-crop.pdf
+	lyxscale 30
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption
 
 \begin_layout Plain Layout
-differential 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:spec-lepton-bdt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/unfolded_dist_spectator_lepton.ps-crop.pdf
+	lyxscale 30
+	width 7.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unfolded-spec-lepton-inc"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unfolded-spec-lepton"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The observerd differences between the data and the prediction from the SM
+ can be translated for the asymmetry measurement into a significance.
+ The calculation of the p-value and the significance from the pseudo experiments
+ is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Significance"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/sig_Aspec_muon.ps-crop.pdf
+	lyxscale 20
+	height 5.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Significance"
+
+\end_inset
+
+Significance
 \end_layout
 
 \end_inset
@@ -5972,12 +6405,46 @@ differential
 \end_layout
 
 \begin_layout Standard
+The measured asymmetry of 
+\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=0.227$
+\end_inset
+
+ for the muon spin analyzer in the spectator basis has a significance of
+ 
+\begin_inset Formula $1.55\sigma$
+\end_inset
+
+ with the SM expectation of 
+\begin_inset Formula $A=0.49$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In figure
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/cos_theta_specator_bjet_bdt.ps-crop.pdf
+	lyxscale 20
+	width 8cm
+
+\end_inset
+
 
 \end_layout
 
@@ -5985,7 +6452,59 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-unfolded diff
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/cos_theta_specator_bjet_bdt.ps-crop.pdf
+	lyxscale 20
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -6004,135 +6523,6 @@ unfolded diff
 
 \begin_layout Subsection
 The Top Quark Spin Asymmetries
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_lepton.ps-crop.pdf
-	lyxscale 30
-	height 7cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_bjet.ps-crop.pdf
-	lyxscale 30
-	height 7cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_spectator_neutrino.ps-crop.pdf
-	lyxscale 30
-	height 7cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-The top spin asymmetry measurement (Neyman construction)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6208,6 +6598,29 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The top spin asymmetry measurement for the muon spin analyzer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
@@ -6272,6 +6685,33 @@ status collapsed
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The top spin asymmetry measurement for the b-tagged jet spin analyzer.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -6343,133 +6783,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-The top spin asymmetry measurement (Neyman construction)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/sig_Aspec_muon.ps-crop.pdf
-	lyxscale 20
-	height 5.5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/sig_Aspec_btaggedjet.ps-crop.pdf
-	lyxscale 20
-	height 5.5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/sig_Aspec_neurino.ps-crop.pdf
-	lyxscale 20
-	height 5.5cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Significance
+The top spin asymmetry measurement for the neutrino spin analyzer.
 \end_layout
 
 \end_inset
@@ -6691,10 +7005,6 @@ Limits on anomalous couplings using TopFit
 
 \begin_layout Standard
 
-\end_layout
-
-\begin_layout Standard
-blablablab
 \end_layout
 
 \begin_layout Standard

@@ -2713,7 +2713,10 @@ status open
 
 
 \backslash
-checkthis{not unfold in the complete phase space, pT(lq)>20GeV}
+checkthis{not unfold in the complete phase space, pT(lq)>20GeV, plot ->
+ asy inc.
+ vs.
+ asy cut}
 \end_layout
 
 \end_inset
