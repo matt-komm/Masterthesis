@@ -1375,8 +1375,8 @@ key "btagging"
 \end_inset
 
 .
- The analysis in this thesis uses the Track Counting High Purity (TCHP)
- algorithm, which is based on the significance of the third track of a jet.
+ In the analysis the track counting  algorithm is used, which is based on
+ the significance of the third track of a jet.
 \end_layout
 
 \begin_layout Section
