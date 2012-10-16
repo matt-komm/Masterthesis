@@ -5596,6 +5596,24 @@ reference "fig:uncertainty-neyman-construction"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+afterpage{
+\backslash
+clearpage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -6416,7 +6434,7 @@ reference "fig:Significance"
 
 \begin_layout Standard
 The measured asymmetry of 
-\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=0.227$
+\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=0.23$
 \end_inset
 
  for the muon spin analyzer in the spectator basis has a significance of
@@ -6432,7 +6450,101 @@ The measured asymmetry of
 \end_layout
 
 \begin_layout Standard
-In figure
+The distributions for the b-tagged jet and the neutrino spin analyzer in
+ the spectator basis before and after the unfolding are shown in figures
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unfolded-spec-bjet"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unfolded-spec-neutrino"
+
+\end_inset
+
+.
+ The distribution for the neutrino spin analyzer (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:spec-neutrino-bdt"
+
+\end_inset
+
+) shows a disagreement in one bin.
+ The disagreement is still present in the unfolded distribution (figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unfolded-spec-neutrino-inc"
+
+\end_inset
+
+).
+ If the regularization of the unfolding procedure would induce a large bias,
+ the disagreement would be less present because the solution is biased in
+ the direction of the simulated expectation.
+\end_layout
+
+\begin_layout Standard
+The measured asymmetry for the b-tagged jet spin analyzer 
+\begin_inset Formula $A_{b}^{\mathrm{spec.}}=-0.13$
+\end_inset
+
+ agrees well with the SM expectation of 
+\begin_inset Formula $A_{\mathrm{theo.,\,}b}^{\mathrm{spec.}}=-0.19$
+\end_inset
+
+.
+ It has a significance of 
+\begin_inset Formula $0.06\sigma$
+\end_inset
+
+.
+ For the neutrino spin analyzer, the measured asymmetry of 
+\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}=0.10$
+\end_inset
+
+ has a significance of 
+\begin_inset Formula $0.72\sigma$
+\end_inset
+
+ with the SM expectation of 
+\begin_inset Formula $A_{\mathrm{theo.,\,}\nu}^{\mathrm{spec.}}=-0.17$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The asymmetry 
+\begin_inset Formula $A_{b}^{\mathrm{spec.}}$
+\end_inset
+
+ is corrected for the difference between the SM theory value and the resulting
+ asymmetry from the SM sample after the unfolding.
+ No correction is necessary for the other two asymmetry measurements.
+\end_layout
+
+\begin_layout Standard
+The distributions for the beamline basis can be found in the appendix.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkthis{add unfolded dist into appendix!}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6465,7 +6577,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:spec-lepton-bdt-1"
+name "fig:spec-bjet-bdt"
 
 \end_inset
 
@@ -6506,7 +6618,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:unfolded-spec-lepton-inc-1"
+name "fig:unfolded-spec-bjet-inc"
 
 \end_inset
 
@@ -6527,15 +6639,17 @@ name "fig:unfolded-spec-lepton-inc-1"
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unfolded-spec-bjet"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -6574,7 +6688,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:spec-lepton-bdt-1-1"
+name "fig:spec-neutrino-bdt"
 
 \end_inset
 
@@ -6615,7 +6729,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:unfolded-spec-lepton-inc-1-1"
+name "fig:unfolded-spec-neutrino-inc"
 
 \end_inset
 
@@ -6636,6 +6750,12 @@ name "fig:unfolded-spec-lepton-inc-1-1"
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:unfolded-spec-neutrino"
+
+\end_inset
+
 
 \end_layout
 
@@ -6658,12 +6778,33 @@ The Top Quark Spin Asymmetries
 \end_layout
 
 \begin_layout Standard
+The measured top quark spin asymmetries are obtained from the Neyman constructio
+n.
+ The Neyman constructions use the legend which is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Neyman-legend"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename plots/neyman_legend.ps-crop.pdf
+	lyxscale 29
+	width 6cm
+
+\end_inset
+
 
 \end_layout
 
@@ -6671,6 +6812,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Neyman-legend"
+
+\end_inset
+
 Neyman legend
 \end_layout
 
@@ -6686,6 +6833,40 @@ Neyman legend
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-spin-muon"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-spin-bjet"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-spin-neutrino"
+
+\end_inset
+
+ show the final results of the top quark spin asymmetries measurement.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:The-measured-top"
+
+\end_inset
+
+ lists the measured asymmetries.
+ Slightly smaller uncertainties are obtained by using the spectator basis.
 \end_layout
 
 \begin_layout Standard
@@ -6730,11 +6911,11 @@ status collapsed
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_lepton.ps-crop.pdf
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_lepton.wl.ps-crop.pdf
 	lyxscale 30
 	height 6.8cm
 
@@ -6764,6 +6945,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-top-spin-muon"
+
+\end_inset
+
 The top spin asymmetry measurement for the muon spin analyzer.
 \end_layout
 
@@ -6823,7 +7010,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_bjet.ps-crop.pdf
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_bjet.wl.ps-crop.pdf
 	lyxscale 30
 	height 6.8cm
 
@@ -6853,6 +7040,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-top-spin-bjet"
+
+\end_inset
+
 The top spin asymmetry measurement for the b-tagged jet spin analyzer.
 \end_layout
 
@@ -6916,7 +7109,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_neutrino.ps-crop.pdf
+	filename plots/TopQuarkEventView_DiscriminatorBDT_POWHEG_POWHEG_70_0.075_beamline_neutrino.wl.ps-crop.pdf
 	lyxscale 30
 	height 6.8cm
 
@@ -6946,6 +7139,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:The-top-spin-neutrino"
+
+\end_inset
+
 The top spin asymmetry measurement for the neutrino spin analyzer.
 \end_layout
 
@@ -6963,8 +7162,322 @@ The top spin asymmetry measurement for the neutrino spin analyzer.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:The-measured-top"
+
+\end_inset
+
+The measured top spin asymmetries.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+spin analyzer
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+muon spin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b-tagged jet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+neutrino
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+spin basis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+spectator basis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.23{}_{-0.44}^{+0.20}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-0.33{}_{-0.23}^{+0.44}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.10_{-0.55}^{+0.55}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+beamline basis
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.17{}_{-0.44}^{+0.20}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-0.29{}_{-0.20}^{+0.45}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.41{}_{-0.75}^{+0.52}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Fit to Anomalous Couplings
+\end_layout
+
+\begin_layout Standard
+The program 
+\begin_inset Quotes eld
+\end_inset
+
+TopFit
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wbeyond"
+
+\end_inset
+
+ can be used to constrain anomalous top quark couplings by combining results
+ from cross section measurements 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tWCh-measurement,tCh-measurement"
+
+\end_inset
+
+, W boson helicity fractions measurement 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Whel-measurement"
+
+\end_inset
+
+ and the measured top quark spin asymmetries from this analysis.
+ The resulting exclusion limits for the anomalous top quark couplings 
+\begin_inset Formula $\mathrm{V_{L}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{V_{R}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{g_{L}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+ are shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Limits-on-anomalous"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7153,7 +7666,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Limits on anomalous couplings using TopFit
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Limits-on-anomalous"
+
+\end_inset
+
+Limits on anomalous couplings using the program TopFit.
 \end_layout
 
 \end_inset
