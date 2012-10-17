@@ -104,7 +104,7 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-This thesis presents the first measurement of the top quark spin asymmetries
+This thesis presents a first measurement of the top quark spin asymmetries
  in single top quark t-channel production.
  The analysis uses 
 \begin_inset Formula $1.17\,\mbox{\mathrm{fb}}^{-1}$
@@ -143,7 +143,7 @@ axialvector
 \end_layout
 
 \begin_layout Standard
-The asymmetries are caculated from distributions of the angles 
+The asymmetries are calculated from distributions of the angles 
 \begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
 \end_inset
 
@@ -208,9 +208,9 @@ After the event selection, the contributions from background processes are
 \end_layout
 
 \begin_layout Standard
-The selection of input variables which are less correlated to the angular
- distributions minimizes a potential bias if a multivariate discriminator
- favor the coupling scenario from its training.
+Input variables which are only weakly correlated to the angular distributions
+ minimizes a potential bias if a multivariate discriminator favor the coupling
+ scenario from its training.
 \end_layout
 
 \begin_layout Standard
@@ -232,7 +232,7 @@ n effects.
 \begin_layout Standard
 A Neyman construction using event samples according to eight different anomalous
  coupling scenarios checks for a potential bias on the measurement due to
- the event selection, signal separation or the unfolding.
+ the event selection, signal separation, or the unfolding.
  The anomalous coupling scenarios are generated with the WHIZARD Monte-Carlo
  generator.
 \end_layout
@@ -257,6 +257,26 @@ In total, three top quark spin asymmetries are measured in the spectator
  These top quark spin asymmetries are used to constrain the anomalous couplings
  with additional information from measurements of the single top quark cross
  sections and the W boson helicity fractions.
+\end_layout
+
+\begin_layout Standard
+The measured top quark spin asymmetry for the muons spin analyzer in the
+ spectator basis is compatible with the SM within a significance of 
+\begin_inset Formula $1.55\sigma$
+\end_inset
+
+.
+ The top quark spin asymmetry agrees well with a significance of 
+\begin_inset Formula $0.06\sigma$
+\end_inset
+
+ with the SM.
+ For the top quark spin asymmetry of the neutrino spin analyzer, the measurement
+ agrees with a significance of 
+\begin_inset Formula $0.72\sigma$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard

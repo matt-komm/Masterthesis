@@ -277,7 +277,14 @@ high purity
 
 \begin_layout Standard
 However, the measured efficiencies differ from the efficiencies in the simulatio
-n.
+n 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BTAGsource"
+
+\end_inset
+
+.
  Therefore, the treatment of the b-tagging and mis-tagging efficiency and
  their systematic uncertainties leads to permutations of the simulated events.
  The required permutation procedure is described in the following.
@@ -1070,15 +1077,7 @@ To account for those effects, the simulated events are duplicated and allowed
  to migrate into the different b-tag categories.
  Their event weight is adjusted to include the corresponding probabilities.
  The b-tagging efficiency depends furthermore on the transverse momentum
- of the jet which was measured in Ref.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BTAGsource"
-
-\end_inset
-
-.
+ of the jet.
  Additionally, efficiencies for mis-tagged jets are considered.
  
 \end_layout
@@ -3603,20 +3602,6 @@ W+cX
 
  distributions.
  The full correlation matrix from the fit is shown in the appendix.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add correlation matrix into the appendix!}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6276,20 +6261,6 @@ The
 
 \begin_layout Standard
 The distributions for the beamline basis are shown in the appendix.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add unfolded dist into appendix!}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -6743,6 +6714,7 @@ name "fig:The-top-spin-muon"
 \end_inset
 
 The top spin asymmetry measurement for the muon spin analyzer.
+ (a): spectator basis, (b) beamline basis.
 \end_layout
 
 \end_inset
@@ -6838,6 +6810,7 @@ name "fig:The-top-spin-bjet"
 \end_inset
 
 The top spin asymmetry measurement for the b-tagged jet spin analyzer.
+ (a): spectator basis, (b) beamline basis.
 \end_layout
 
 \end_inset
@@ -6937,6 +6910,7 @@ name "fig:The-top-spin-neutrino"
 \end_inset
 
 The top spin asymmetry measurement for the neutrino spin analyzer.
+ (a): spectator basis, (b) beamline basis.
 \end_layout
 
 \end_inset
