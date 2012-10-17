@@ -136,7 +136,7 @@ After that, the measurement procedure is described.
 
 \begin_layout Standard
 Finally, the results for the top quark spin asymmetries are presented.
- In an additional step, the asymmetries are used with additonal information
+ In an additional step, the asymmetries are used with additional information
  from cross section measurements and W boson helicity fractions measurement
  to obtain limits on the anomalous top quark couplings.
 \end_layout
@@ -257,10 +257,10 @@ high purity
 \begin_inset Quotes erd
 \end_inset
 
- working point of its discirminator (TCHP).
+ working point of its discriminator (TCHP).
  The b-tagging efficiency at the working point states how often a b-tagged
  jet is correctly identified to originate from a bottom quark.
- The mis-tagging efficiency states how often a b-tagged jet has recieved
+ The mis-tagging efficiency states how often a b-tagged jet has received
  an incorrect b-tag.
  Mis-tagged jets can originate from up, down, strange, charm quarks or gluons.
  The 
@@ -3535,7 +3535,7 @@ Results from fit to the reconstructed top quark mass.
 \begin_inset Formula $\delta$
 \end_inset
 
-) and in percental fraction for yield systematic (
+) and in percental fractions for yield systematic (
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -3764,7 +3764,7 @@ W+bX
 \begin_inset Quotes erd
 \end_inset
 
- contribution is resonable not only for the reconstructed top quark mass,
+ contribution is reasonable not only for the reconstructed top quark mass,
  but also for other variables.
 \end_layout
 
@@ -4100,7 +4100,7 @@ reference "tab:Results-from-fit"
 
  is used to calculate the values in this table.
  The impact of each single systematic uncertainty is calculated by generating
- only pseudo experiments for each systematic separatly.
+ only pseudo experiments for each systematic separately.
  The total uncertainty is obtained by varying all systematic uncertainties
  together.
 \end_layout
@@ -4702,18 +4702,7 @@ ng efficiency uncertainty.
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-afterpage{
-\backslash
-clearpage}
-\end_layout
-
+\begin_inset Newpage clearpage
 \end_inset
 
 
@@ -5013,7 +5002,7 @@ The unfolded asymmetry is calculated from each unfolded pseudo
 \end_layout
 
 \begin_layout Standard
-Each simulated anomalous coupling scenario is evaluated with the discribed
+Each simulated anomalous coupling scenario is evaluated with the described
  measurement procedure.
  For each simulated anomalous coupling scenario, the reconstructed asymmetry
  and the generated asymmetry are compared.
@@ -5043,7 +5032,15 @@ The total uncertainty on an asymmetry measurement from data is obtained
 
  confidence levels amongst the unfolded distributions from all anomalous
  coupling samples.
- The distant is calculated from the angle bisector.
+ The distance is calculated from the angle bisector.
+\end_layout
+
+\begin_layout Standard
+Additionally, the asymmetry measurement is checked for compatibility with
+ the SM coupling case.
+ This is performed by calculating the significance of the data from the
+ probability distribution of the simulated SM asymmetry from the pseudo
+ experiments.
 \end_layout
 
 \begin_layout Standard
@@ -5096,8 +5093,8 @@ Optimization
 \end_layout
 
 \begin_layout Standard
-The measurement procedure depends on the selected Boosted Decision Tree
- and its used working point.
+The measurement procedure depends on the used Boosted Decision Tree and
+ its working point.
  Twenty Boosted Decision Trees are trained within this analysis.
  Each is trained with a certain amount of less-correlated variables to 
 \begin_inset Formula $\cos_{\mathrm{B},\,\mathrm{X}}$
@@ -5125,7 +5122,7 @@ reference "fig:BDT-output-and"
 
 .
  The stacking order is changed to visualize the purity of the signal over
- the background contributions at the high discriminator ouput.
+ the background contributions at the high discriminator output.
 \end_layout
 
 \begin_layout Standard
@@ -5286,7 +5283,7 @@ name "fig:unc30"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -5343,6 +5340,16 @@ name "fig:BDT-output-and"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+BDT outputs and asymmetry uncertainty for different discriminator values.
+\end_layout
+
+\end_inset
+
 BDT outputs and asymmetry uncertainty for different discriminator values.
  The BDT discriminator output with thirty input variables (a) and 70 input
  variables (b).
@@ -5374,7 +5381,8 @@ reference "fig:bdtout30"
 
  the discriminator output for the BDT from the first thirty less correlated
  input variables is shown.
- The output is scanned in figure 
+ The resulting uncertainty on the asymmetry measurement is calculated as
+ a function of the discriminator output in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:unc30"
@@ -5382,25 +5390,26 @@ reference "fig:unc30"
 \end_inset
 
 .
- The green line corresponds to the resulting statistical uncertainty on
+ The green curve corresponds to the resulting statistical uncertainty on
  the asymmetry measurement.
- The blue line shows only the influence of the systematic uncertainties.The
- lines are produced by generating pseudo experiments and excluding the statistic
-al or the systematic uncertainty.
- The black line is the result of pseudo experiments with both uncertainties.
- The lines are smoothed by averaging over the two adjacent points.
+ The blue curve shows the influence of the systematic uncertainties.
+ The lines are produced by generating pseudo experiments and excluding either
+ the statistical or the systematic uncertainty.
+ The black curve shows the total uncertainty.
+ The lines are smoothed by averaging each point over its two adjacent points.
  The vertical bar on each point shows the corresponding variations through
  the averaging.
  
 \end_layout
 
 \begin_layout Standard
-For small discriminator values, the systematic uncertainty gets large through
- the background processes and their contributing uncertainties.
- For large discriminator values, only the systematic uncertainty from the
+For small discriminator values, the systematic uncertainty becomes the dominant
+ contribution because the background processes and their uncertainties are
+ large.
+ For high discriminator values, only the systematic uncertainty from the
  signal process remains.
- However, the statistical uncertainty increases through the decreasing signal
- selection efficiency of the discriminator.
+ However, the statistical uncertainty increases as the signal selection
+ efficiency decreases.
  The optimal discriminator value (working point) is set to the minimum of
  the both uncertainties (black line).
  This point resembles a tradeoff between the systematic and statistical
@@ -5415,7 +5424,7 @@ reference "fig:btdout70"
 
 \end_inset
 
- the BDT output for the first 70 input variables is shown.
+, the BDT output for the first 70 input variables is shown.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5429,9 +5438,7 @@ reference "fig:unc70"
 \end_layout
 
 \begin_layout Standard
-After scanning all BDT outputs for their optimal working point, the complete
- measurement procedure is conducted.
- Figure 
+Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:uncertainty-neyman-construction"
@@ -5441,24 +5448,6 @@ reference "fig:uncertainty-neyman-construction"
  shows the resulting top quark spin asymmetries and their uncertainties
  for the muon, b-tagged jet, and neutrino spin analyzer in the spectator
  basis against the number of used input variables for the BDT.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-afterpage{
-\backslash
-clearpage}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5725,10 +5714,11 @@ Top quark spin asymmetries and their uncertainties in the spectator basis
 \end_layout
 
 \begin_layout Standard
-It is expected that a BDT with only few variables results through its less
- discrimination power in a large uncertainty for the asymmetry measurement.
- On the other hand, a BDT with more variables can introduce a bias by favoring
- the coupling scenario from its training.
+It is expected that a BDT with a few variables results in a large uncertainty
+ for the asymmetry measurement, because it is much less discriminant than
+ a BDT with a high number of input variables.
+ On the other hand, a BDT with more variables may introduce a bias by favoring
+ events with the coupling scenario that has been used for its training.
  This bias would be visible in an increase in the asymmetry uncertainty.
  However, figure 
 \begin_inset CommandInset ref
@@ -5740,12 +5730,12 @@ reference "fig:uncertainty-neyman-construction"
  does not present a significant increase in uncertainty for a BDT with many
  input variables.
  It is concluded that both effects, the discrimination power versus a potential
- bias, are acting on different scales.
+ bias, are happening at different scales.
 \end_layout
 
 \begin_layout Standard
 For the measurement, the BDT with 70 input variables is chosen.
- It presents for the three shown top quark asymmetries (figures 
+ It has for all three top quark asymmetries (figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:unc-asy-spec-muon"
@@ -5771,7 +5761,7 @@ reference "fig:unc-asy-spec-neutrino"
 
 \begin_layout Standard
 As a cross check, the signal separation in the measurement procedure is
- switch from the BDTs to the trained Projective Likelihood Estimators.
+ switched from the BDTs to Projective Likelihood Estimators (PLEs).
  The discriminator output of the PLE trained with 50 and 70 variables are
  shown in figure 
 \begin_inset CommandInset ref
@@ -5782,7 +5772,7 @@ reference "fig:Examplary-PLE-outputs."
 
 .
  The discriminator output distribution of the PLEs highly differs in shape
- from the BDTs.
+ from the BDT discriminator output.
  Events are nearly exclusively found at output values of 
 \begin_inset Formula $-1.0$
 \end_inset
@@ -5935,11 +5925,14 @@ reference "fig:neyman-optimization-likelihood"
 \end_layout
 
 \begin_layout Standard
-The asymmetry and its uncertainty seems to settle when at least 50 input
+The asymmetry and its uncertainty seems to converge when at least 50 input
  variables are used.
- A local minima is also present if the PLE is trained with 70 input variables.
+ A local minimum is also present if the PLE is trained with 70 input variables.
  The measurement procedure is conducted with PLE with 70 input variables
  for the comparison of the measurement results obtained with the BDT.
+ For the chosen PLE, the asymmetry measurement has a larger uncertainty
+ than the measurement with the BDT.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -6042,6 +6035,13 @@ Top quark spin asymmetries and their uncertainties in the spectator basis
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Results
 \end_layout
@@ -6055,12 +6055,12 @@ During the measurement procedure, the
 \begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
 \end_inset
 
- distributions are unfolded into the inclusive phase space with only the
+ distributions are unfolded into the inclusive phase space (with only the
  selection criterion of 
 \begin_inset Formula $p_{\mathrm{light\, jet}}>20\,\mathrm{GeV}$
 \end_inset
 
-.
+).
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6072,7 +6072,7 @@ reference "fig:spec-lepton-bdt"
 \begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
 \end_inset
 
- distribution with the statistical uncertainties for the muons spin analyzer
+ distribution with statistical uncertainties for the muons spin analyzer
  
 \begin_inset Formula $\mathrm{X}$
 \end_inset
@@ -6081,12 +6081,13 @@ reference "fig:spec-lepton-bdt"
 \begin_inset Formula $\mathrm{B}$
 \end_inset
 
- after the BDT is used to extract the signal.
+.
+ The BDT selection criterion is applied to these events.
  
 \end_layout
 
 \begin_layout Standard
-The statistical and systematic uncertainties are propagated from the pseudo
+The statistical and systematic uncertainties are evaluated using the pseudo
  experiments and applied to the data.
  Figure 
 \begin_inset CommandInset ref
@@ -6097,7 +6098,43 @@ reference "fig:unfolded-spec-lepton-inc"
 
  shows the unfolded distribution after the expected background from simulation
  is subtracted from data.
- The blue line shows the expected distribution from the simulated SM samples.
+ The blue line shows the expected distribution from the simulated SM scenario.
+ 
+\end_layout
+
+\begin_layout Standard
+The distributions for the b-tagged jet and the neutrino spin analyzer in
+ the spectator basis before and after the unfolding are shown in figures
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unfolded-spec-bjet"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:unfolded-spec-neutrino"
+
+\end_inset
+
+.
+ The distribution for the neutrino spin analyzer (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:spec-neutrino-bdt"
+
+\end_inset
+
+) and the b-tagged jet spin analyzer (figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:spec-bjet-bdt"
+
+\end_inset
+
+) are well compatible to the simulated events.
 \end_layout
 
 \begin_layout Standard
@@ -6162,7 +6199,7 @@ status collapsed
 \begin_inset Graphics
 	filename plots/unfolded_dist_spectator_lepton.ps-crop.pdf
 	lyxscale 30
-	height 6cm
+	width 11cm
 
 \end_inset
 
@@ -6194,53 +6231,6 @@ name "fig:unfolded-spec-lepton-inc"
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/sig_Aspec_muon.ps-crop.pdf
-	lyxscale 20
-	height 6cm
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Significance"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -6254,6 +6244,24 @@ name "fig:unfolded-spec-lepton"
 \end_inset
 
 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-muon}}}$
+\end_inset
+
+ before and after the unfolding.
+\end_layout
+
+\end_inset
+
+The 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-muon}}}$
+\end_inset
+
+ before (a) and after (b) the unfolding.
 \end_layout
 
 \end_inset
@@ -6267,118 +6275,7 @@ name "fig:unfolded-spec-lepton"
 \end_layout
 
 \begin_layout Standard
-The observed differences between the data and the prediction from the SM
- can be translated for the asymmetry measurement into a significance.
- The calculation of the p-value and the significance from the pseudo experiments
- is shown in figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Significance"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The measured asymmetry of 
-\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=0.23$
-\end_inset
-
- for the muon spin analyzer in the spectator basis has a significance of
- 
-\begin_inset Formula $1.55\sigma$
-\end_inset
-
- compared to the SM expectation of 
-\begin_inset Formula $A_{\mathrm{theo.,\,}\mu}^{\mathrm{spec.}}=0.49$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The distributions for the b-tagged jet and the neutrino spin analyzer in
- the spectator basis before and after the unfolding are shown in figures
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:unfolded-spec-bjet"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:unfolded-spec-neutrino"
-
-\end_inset
-
-.
- The distribution for the neutrino spin analyzer (figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:spec-neutrino-bdt"
-
-\end_inset
-
-) shows a disagreement in one bin.
- The disagreement is still present in the unfolded distribution (figure
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:unfolded-spec-neutrino-inc"
-
-\end_inset
-
-).
- If the regularization of the unfolding procedure would induce a large bias,
- the disagreement would be less present because the solution is biased in
- the direction of the simulated expectation.
-\end_layout
-
-\begin_layout Standard
-The measured asymmetry for the b-tagged jet spin analyzer 
-\begin_inset Formula $A_{b}^{\mathrm{spec.}}=-0.13$
-\end_inset
-
- agrees well with the SM expectation of 
-\begin_inset Formula $A_{\mathrm{theo.,\,}b}^{\mathrm{spec.}}=-0.19$
-\end_inset
-
-.
- It has a significance of 
-\begin_inset Formula $0.06\sigma$
-\end_inset
-
-.
- For the neutrino spin analyzer, the measured asymmetry of 
-\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}=0.10$
-\end_inset
-
- has a significance of 
-\begin_inset Formula $0.72\sigma$
-\end_inset
-
- with the SM expectation of 
-\begin_inset Formula $A_{\mathrm{theo.,\,}\nu}^{\mathrm{spec.}}=-0.17$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The asymmetry 
-\begin_inset Formula $A_{b}^{\mathrm{spec.}}$
-\end_inset
-
- is corrected for the difference between the SM theory value and the resulting
- asymmetry from the SM sample after the unfolding.
- No correction is necessary for the other two asymmetry measurements.
-\end_layout
-
-\begin_layout Standard
-The distributions for the beamline basis can be found in the appendix.
+The distributions for the beamline basis are shown in the appendix.
  
 \begin_inset ERT
 status open
@@ -6493,7 +6390,25 @@ name "fig:unfolded-spec-bjet"
 
 \end_inset
 
+ 
+\begin_inset Argument
+status open
 
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-tagged\, jet}}}$
+\end_inset
+
+ before and after the unfolding.
+\end_layout
+
+\end_inset
+
+The 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-tagged\, jet}}}$
+\end_inset
+
+ before (a) and after (b) the unfolding.
 \end_layout
 
 \end_inset
@@ -6605,6 +6520,24 @@ name "fig:unfolded-spec-neutrino"
 \end_inset
 
 
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-neutrino}}}$
+\end_inset
+
+ before and after the unfolding.
+\end_layout
+
+\end_inset
+
+The 
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-neutrino}}}$
+\end_inset
+
+ before (a) and after (b) the unfolding.
 \end_layout
 
 \end_inset
@@ -6621,14 +6554,42 @@ name "fig:unfolded-spec-neutrino"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 The Top Quark Spin Asymmetries
 \end_layout
 
 \begin_layout Standard
 The measured top quark spin asymmetries are obtained from the Neyman constructio
-n.
- The Neyman constructions use the legend which is shown in figure 
+ns shown in figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-spin-muon"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-spin-bjet"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-spin-neutrino"
+
+\end_inset
+
+.
+ The legend for the plots is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Neyman-legend"
@@ -6636,6 +6597,9 @@ reference "fig:Neyman-legend"
 \end_inset
 
 .
+ The figures present the final result of the measured top quark spin asymmetries
+ for the three spin analyzers (muon, b-tagged jet, neutrino) in the two
+ basis (spectator, beamline).
 \end_layout
 
 \begin_layout Standard
@@ -6666,7 +6630,7 @@ name "fig:Neyman-legend"
 
 \end_inset
 
-Neyman legend
+The used legend for the Neyman constructions.
 \end_layout
 
 \end_inset
@@ -6684,28 +6648,7 @@ Neyman legend
 \end_layout
 
 \begin_layout Standard
-The figures 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:The-top-spin-muon"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:The-top-spin-bjet"
-
-\end_inset
-
-, and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:The-top-spin-neutrino"
-
-\end_inset
-
- show the final results of the top quark spin asymmetries measurement.
+The figures show the final results of the top quark spin asymmetries measurement.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7266,6 +7209,134 @@ beamline basis
 
 \end_layout
 
+\begin_layout Standard
+The observed deviation between the data and the SM prediction is translated
+ into a significance.
+ The calculation of the p-value and the significance using the pseudo experiment
+s is exemplary shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Significance"
+
+\end_inset
+
+ for 
+\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/sig_Aspec_muon.ps-crop.pdf
+	lyxscale 20
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Significance"
+
+\end_inset
+
+ The significance for the asymmetry measurement for the muons spin analyzer
+ in the spectator basis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The measured asymmetry of 
+\begin_inset Formula $A_{\mu}^{\mathrm{spec.}}=0.23$
+\end_inset
+
+ for the muon spin analyzer in the spectator basis has a significance of
+ 
+\begin_inset Formula $1.55\sigma$
+\end_inset
+
+ with respect to the SM expectation of 
+\begin_inset Formula $A_{\mathrm{theo.,\,}\mu}^{\mathrm{spec.}}=0.49$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The given measured asymmetry for the b-tagged jet spin analyzer is shifted,
+ because the simulated SM scenario does not lie on the angle bisector (figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:The-top-spin-bjet"
+
+\end_inset
+
+).
+ The shifted measured asymmetry for the b-tagged jet spin analyzer 
+\begin_inset Formula $A_{b}^{\mathrm{spec.}}=-0.13$
+\end_inset
+
+ agrees well with the SM expectation of 
+\begin_inset Formula $A_{\mathrm{theo.,\,}b}^{\mathrm{spec.}}=-0.19$
+\end_inset
+
+.
+ It has a significance of 
+\begin_inset Formula $0.06\sigma$
+\end_inset
+
+.
+ For the neutrino spin analyzer, the measured asymmetry of 
+\begin_inset Formula $A_{\nu}^{\mathrm{spec.}}=0.10$
+\end_inset
+
+ has a significance of 
+\begin_inset Formula $0.72\sigma$
+\end_inset
+
+ with the SM expectation of 
+\begin_inset Formula $A_{\mathrm{theo.,\,}\nu}^{\mathrm{spec.}}=-0.17$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Fit to Anomalous Couplings
 \end_layout
@@ -7302,7 +7373,7 @@ key "Whel-measurement"
 \end_inset
 
  and the measured top quark spin asymmetries from this analysis.
- The resulting exclusion limits for the anomalous top quark couplings 
+ The exclusion limits for the anomalous top quark couplings 
 \begin_inset Formula $\mathrm{V_{L}}$
 \end_inset
 
@@ -7318,11 +7389,41 @@ key "Whel-measurement"
 \begin_inset Formula $\mathrm{g_{R}}$
 \end_inset
 
- are shown in figure 
+ are shown in figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Limits-on-anomalous"
 
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Limits-on-anomalous2"
+
+\end_inset
+
+.
+ The limits on the right are obtained with the top quark spin asymmetry
+ measurement and the limits on the left are obtained without the top quark
+ spin asymmetry measurement.
+\end_layout
+
+\begin_layout Standard
+In figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Limits-on-anomalous2"
+
+\end_inset
+
+, the presented measurement of the top quark spin asymmetries provide nearly
+ an exclusion of 
+\begin_inset Formula $\mathrm{g_{R}>0}$
+\end_inset
+
+ at a confidence limit of 
+\begin_inset Formula $68\%$
 \end_inset
 
 .
@@ -7335,22 +7436,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-hide{
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Float figure
 wide false
@@ -7359,9 +7444,10 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/vlvr.wl.ps-crop.pdf
+	filename plots/wvlvr.wl.ps.jpg
 	lyxscale 30
-	height 6cm
+	scale 40
+	rotateAngle -90
 
 \end_inset
 
@@ -7387,11 +7473,6 @@ status collapsed
 \end_inset
 
 
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-
 \begin_inset Float figure
 wide false
 sideways false
@@ -7399,9 +7480,10 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/vlgl.ps-crop.pdf
+	filename plots/vlvr.ps.jpg
 	lyxscale 30
-	height 6cm
+	scale 41
+	rotateAngle -90
 
 \end_inset
 
@@ -7434,9 +7516,10 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/vlgr.wl.ps-crop.pdf
+	filename plots/wvlgl.wl.ps.jpg
 	lyxscale 30
-	height 6cm
+	scale 40
+	rotateAngle -90
 
 \end_inset
 
@@ -7455,11 +7538,6 @@ status collapsed
 
 \end_layout
 
-\end_inset
-
-
-\begin_inset space \hspace{}
-\length 0.5cm
 \end_inset
 
 
@@ -7470,9 +7548,10 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename plots/glgr.ps-crop.pdf
+	filename plots/vlgl.ps.jpg
 	lyxscale 30
-	height 6cm
+	scale 41
+	rotateAngle -90
 
 \end_inset
 
@@ -7489,20 +7568,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
 \end_layout
 
 \end_inset
@@ -7520,12 +7585,42 @@ name "fig:Limits-on-anomalous"
 
 \end_inset
 
-Limits on anomalous couplings using the program TopFit.
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Limits on anomalous couplings 1.
 \end_layout
 
 \end_inset
 
+Limits on anomalous couplings using the program TopFit.
+ The limits are shown for 
+\begin_inset Formula $\mathrm{V_{L}}$
+\end_inset
 
+ vs.
+ 
+\begin_inset Formula $\mathrm{V_{R}}$
+\end_inset
+
+ without (a) and with (b) the top quark spin asymmetries and for 
+\begin_inset Formula $\mathrm{V_{L}}$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $\mathrm{g_{L}}$
+\end_inset
+
+ without (c) and with (d) the top quark spin asymmetries.
+ 
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -7534,6 +7629,197 @@ Limits on anomalous couplings using the program TopFit.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/wvlgr.wl.ps.jpg
+	lyxscale 30
+	scale 40
+	rotateAngle -90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/vlgr.ps.jpg
+	lyxscale 30
+	scale 41
+	rotateAngle -90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/wglgr.wl.ps.jpg
+	lyxscale 30
+	scale 40
+	rotateAngle -90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/glgr.ps.jpg
+	lyxscale 30
+	scale 41
+	rotateAngle -90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Limits-on-anomalous2"
+
+\end_inset
+
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Limits on anomalous couplings 2.
+\end_layout
+
+\end_inset
+
+Limits on anomalous couplings using the program TopFit.
+ The limits are shown for 
+\begin_inset Formula $\mathrm{V_{L}}$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+ without (a) and with (b) the top quark spin asymmetries and 
+\begin_inset Formula $\mathrm{g_{L}}$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $\mathrm{g_{R}}$
+\end_inset
+
+ without (c) and with (d) the top quark spin asymmetries.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

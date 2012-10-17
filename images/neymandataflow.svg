@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.47 "
-   sodipodi:docname="neymandataflow.eps">
+   sodipodi:docname="neymandataflow.svg">
   <defs
      id="defs4">
     <marker
@@ -534,7 +534,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -574,7 +574,7 @@
          id="tspan3748">coupling samples</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:34px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:34px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
        x="305.46542"
        y="477.60992"
        id="text2816-1-0"
@@ -583,12 +583,12 @@
          x="309.71542"
          y="477.60992"
          id="tspan2820-4-4"
-         style="text-align:center;text-anchor:middle;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none">pseudo </tspan><tspan
+         style="text-align:center;text-anchor:middle">pseudo </tspan><tspan
          sodipodi:role="line"
          x="305.46542"
          y="520.10992"
          id="tspan3774"
-         style="text-align:center;text-anchor:middle;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none">distributions</tspan></text>
+         style="text-align:center;text-anchor:middle">experiments</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype;stroke-width:2.5;stroke-miterlimit:4;stroke-dasharray:none;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%"
