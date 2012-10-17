@@ -1973,20 +1973,20 @@ For the masses of the electroweak gauge bosons, the
 
 \end_inset
 
+The Higgs boson is predicted by the SM but was not observed for a long time.
+ Very recently, an evidence for a Higgs boson with a mass of 
+\begin_inset Formula $m_{\mathrm{H}}=126\pm0.6\,\mathrm{GeV}$
+\end_inset
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{Higgs boson not observed up till now}
-\end_layout
+ has been observed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "higgsobservation"
 
 \end_inset
 
-The 
+.
+ The 
 \begin_inset Formula $W^{\pm}$
 \end_inset
 
@@ -2045,7 +2045,7 @@ Weinberg
 \end_inset
 
  boson.
- Thus, this mechanism of spontanous symmetry breaking yields the following
+ Thus, this mechanism of spontaneous symmetry breaking yields the following
  mass terms for the four bosons:
 \end_layout
 
@@ -2351,37 +2351,13 @@ reference "fig:The-production-and-decay-of-tops"
 
  pairs via strong interactions.
  The production in pairs follows from the flavor conservation.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{sounds bad!}
-\end_layout
-
-\end_inset
-
  Single top quarks are produced by electroweak interactions.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{Top quarks predominantly decay into}
-\end_layout
-
-\end_inset
-
  Here, the measured relation of the CKM matrix elements 
 \begin_inset Formula $\mathrm{V_{tb}}\gg\mathrm{V_{ts},\, V_{td}}$
 \end_inset
 
- favors the production and decay by a W boson and a bottom quark 
+ favors the production and decay of top quarks by a W boson and a bottom
+ quark 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ckmVtb"
@@ -2649,44 +2625,19 @@ key "topprocesspics"
 \end_layout
 
 \begin_layout Subsection
-Measurements and Results
+Theoretical Results
 \end_layout
 
 \begin_layout Standard
-Measuring the top quark production cross sections and its properties is
- essential for understanding the electroweak symmetry breaking, since the
- top quark mass is in the vicinity of the Higgs potential vacuum expectation
- value 
-\begin_inset Formula $v={\textstyle (\sqrt{2}G_{\mathrm{F}})^{-1/2}}\approx246.22\,\mathrm{GeV}$
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Formula $G_{\mathrm{F}}$
-\end_inset
-
- denotes the Fermi constant, which can be measured in muon decays 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fermiconstant"
+In table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Top-quark-cross"
 
 \end_inset
 
-.
-\end_layout
-
-\end_inset
-
-.
- Furthermore, new heavy particles are predicted by various extensions to
- the SM like SUper SYmmetry (SUSY) or extra dimension models.
- Those particles can decay into top quarks which changes the expected SM
- cross sections.
- Also, loop corrections involving new particles or interactions may alter
- the V-A coupling structure.
+, the theoretical calculated cross sections for the different top quark
+ production processes are listed.
 \end_layout
 
 \begin_layout Standard
@@ -2705,6 +2656,13 @@ status open
 \begin_layout Plain Layout
 Top quark cross sections.
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Top-quark-cross"
 
 \end_inset
 
@@ -2906,19 +2864,40 @@ key "tW-xsec"
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
+Measuring the top quark production cross sections and its properties is
+ essential for understanding the electroweak symmetry breaking, since the
+ top quark mass is in the vicinity of the Higgs potential vacuum expectation
+ value 
+\begin_inset Formula $v={\textstyle (\sqrt{2}G_{\mathrm{F}})^{-1/2}}\approx246.22\,\mathrm{GeV}$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Formula $G_{\mathrm{F}}$
+\end_inset
 
+ denotes the Fermi constant, which can be measured in muon decays 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fermiconstant"
 
-\backslash
-checkthis{add measurements or rename subsection}
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
-
+.
+ Furthermore, new heavy particles are predicted by various extensions to
+ the SM like SUper SYmmetry (SUSY) or extra dimension models.
+ Those particles can decay into top quarks which changes the expected SM
+ cross sections.
+ Also, loop corrections involving new particles or interactions may alter
+ the V-A coupling structure.
 \end_layout
 
 \begin_layout Section
@@ -3094,7 +3073,7 @@ One way of probing the presence of anomalous couplings at the
 
 \end_inset
 
-where the angle is caculated through
+where the angle is calculated through
 \end_layout
 
 \begin_layout Standard
@@ -3405,40 +3384,7 @@ A_{\mathrm{X}}^{\mathrm{B}}=\frac{N\left(\cos\theta_{\mathrm{B,\, X}}>0\right)-N
 \end_layout
 
 \begin_layout Standard
-Another variable is the ratio between two top quark spin asymmetries for
- two different spin analyzers in the same basis:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{leave ratio (not measured) out}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-r_{\mathrm{XX}^{\prime}}\equiv\frac{A_{\mathrm{X}}^{\mathrm{B}}}{A_{\mathrm{X}^{\prime}}^{\mathrm{B}}}=\frac{c_{\mathrm{X}}}{c_{\mathrm{X}^{\prime}}}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In total, three asymmetries, each in two bases, and two ratios can be constructe
-d.
+In total, three asymmetries, each in two bases, can be constructed.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3506,10 +3452,8 @@ The expected top quark spin asymmetries and ratios if the SM couplings are
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="6">
+<lyxtabular version="3" rows="5" columns="4">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -3541,41 +3485,6 @@ asymmetries
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="1" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ratios 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-
-\begin_inset Formula $r_{\mathrm{XX}^{\prime}}$
-\end_inset
-
 
 \end_layout
 
@@ -3628,30 +3537,6 @@ neutrino:
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{\frac{bottom\, quark}{muon}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\mathrm{\frac{neutrino}{muon}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
@@ -3695,24 +3580,6 @@ neutrino:
 \begin_inset Formula $c_{\nu}=-0.34$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3765,56 +3632,6 @@ spectator basis
 
 \end_inset
 </cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-\begin_inset Formula $-0.39$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
-\begin_inset Formula $-0.34$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 </row>
 <row>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
@@ -3857,24 +3674,6 @@ beamline basis
 \begin_inset Formula $-0.16$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell multirow="4" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 

@@ -319,8 +319,8 @@ ALICE (A Large Ion Collider Experiment) is a detector for studying heavy-ion
 
 \begin_layout Itemize
 ATLAS is a general purpose detector with a special donut-shaped magnet system.
- Its scientific program covers the physics of the Higgs boson, super-symmetry
- and extra dimensions besides others.
+ Its scientific program covers the physics of the Higgs boson, super-symmetry,
+ extra dimensions and SM precision measurements besides others.
 \end_layout
 
 \begin_layout Itemize
@@ -332,7 +332,7 @@ ng physics program.
 \begin_layout Itemize
 LHC-b (Large Hadron Collider beauty Experiment) has a forward sub-detector
  system.
- Besides others it probes the CP violation in B hadrons.
+ Besides others, it probes the CP violation in B hadrons.
 \end_layout
 
 \begin_layout Standard
@@ -371,7 +371,7 @@ key "LHCLumi"
 \end_inset
 
 .
- In 2012 the center-of-mass energy has been raised to 
+ In 2012, the center-of-mass energy has been raised to 
 \begin_inset Formula $\sqrt{s}=8\,\mathrm{TeV}$
 \end_inset
 
@@ -384,15 +384,15 @@ The CMS Experiment
 
 \begin_layout Standard
 The Compact Muon Solenoid (CMS) is a general-purpose detector developed
- to record the proton-proton collisions at the high luminosity that the
- LHC provides.
+ to detect and record the proton-proton collisions at the high luminosity
+ that the LHC provides.
  The physics program of the CMS collaboration involves the search for the
  Higgs boson, the discovery or exclusion of supersymmetric particles (SUSY),
  new heavy vector bosons, and extra dimensions.
- Besides that, precision measurements of the SM are performed like studies
- of QCD, electroweak and top quark physics.
+ Besides that, precision measurements of the SM are performed, e.g.
+ like studies of QCD, electroweak and top quark physics.
  During heavy-ion runs, the properties of strongly-interacting nuclear matter
- is investigated.
+ are investigated.
 \end_layout
 
 \begin_layout Standard
@@ -472,7 +472,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-The CMS detector and its sub systems
+The CMS detector and its sub systems.
 \end_layout
 
 \end_inset
@@ -484,7 +484,7 @@ name "fig:The-CMS-Experiment"
 
 \end_inset
 
-The CMS detector and its sub systems 
+The CMS detector and its subsystems 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMStechnicalReport"
@@ -537,7 +537,7 @@ The system itself is divided into three regions.
 \begin_inset Formula $20<r<55\,\mathrm{cm}$
 \end_inset
 
- silicon microstrip detectors can be used due to the lower particle flux.
+, silicon microstrip detectors can be used due to the lower particle flux.
  They have a minimal cell size of 
 \begin_inset Formula $\mathrm{10\, cm}\times\mathrm{80}\,\mu\mathrm{m}$
 \end_inset
@@ -575,11 +575,11 @@ The electromagnetic calorimeter (ECAL) is composed out of lead tungstate
 
 ).
  61200 crystals are installed in the central barrel part and an additional
- 7324 are placed in each of the two endcaps.
+ 7324 crystals are placed in each of the two endcaps.
  The light yield of the crystals is rather low.
- Therefore photodetectors with intrinsic gain are applied.
- For amplification silicon avalanche photodiodes (APDs) are used in the
- barrel and vacuum phototriodes (VPTs) are used in the endcaps.
+ Therefore, photodetectors with intrinsic gain are applied.
+ For amplification, silicon avalanche photodiodes (APDs) are used in the
+ barrel, and vacuum phototriodes (VPTs) are used in the endcaps.
 \end_layout
 
 \begin_layout Standard
@@ -596,7 +596,7 @@ The complete ECAL covers a pseudorapidity range of
 \end_layout
 
 \begin_layout Standard
-Its energy resolution can be parameterized 
+Its energy resolution can be parametrized 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "cmsperformance"
@@ -722,23 +722,14 @@ which can unambiguously determine the charge of a muon up to
 \begin_inset Formula $p=1\,\mathrm{TeV}$
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{ref und folgt die aufloesung aus der formel??}
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMStechnicalReport"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Paragraph*
@@ -755,7 +746,7 @@ Muons originating from the IP are measured with two detector subsystems:
 \end_inset
 
 .
- Therefore the muon system is combined with the inner tracker to the 
+ Therefore, the muon system is combined with the inner tracker to the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -783,7 +774,7 @@ The muon system itself consists of three types of gaseous detectors to cover
 
 .
  Both systems however lack in time resolution.
- Additionally, resistive pate chambers (RPCs) are deployed in both regions.
+ Additionally, resistive plate chambers (RPCs) are deployed in both regions.
  Driven in avalanche mode, they complete the muon system by providing a
  good time resolution.
 \end_layout
@@ -797,23 +788,22 @@ For the preselection of around
 \begin_inset Formula $10^{9}$
 \end_inset
 
- interactions per second at design luminosity a trigger system is used to
- single out the interesting bunch crossings.
+ interactions per second at design luminosity, a trigger system is used
+ to single out the interesting events.
  This lowers the data rate to 
 \begin_inset Formula $\approx10^{2}$
 \end_inset
 
- crossing per second.
+ event per second.
  At this rate, it is possible to store the data on archival media.
- In Figure 
+ The data flow through the trigger system is depicted in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:The-CMS-trigger"
 
 \end_inset
 
- the data flow through the trigger system is depicted.
- 
+.
 \end_layout
 
 \begin_layout Standard
@@ -881,8 +871,8 @@ Starting at a bunch crossing rate of
  by using only the calorimetry and muon system readouts.
  The logic behind the decision needs to be executed very fast and is therefore
  implemented into custom Application Specific Integrated Circuits (ASICs),
- Field Programmable Gate Arrays (FPGAs) and Programmable Logic Devices (PLDs),
- amongst others.
+ Field Programmable Gate Arrays (FPGAs), and Programmable Logic Devices
+ (PLDs), amongst others.
 \end_layout
 
 \begin_layout Standard
@@ -892,8 +882,8 @@ After passing the Level-1 trigger, the complete event in the buffer has
 \end_inset
 
  and is transferred to the processor farm.
- Here, the more complex High Level Trigger (HLT) software decides on the
- storing of events.
+ Here, the more complex High Level Trigger (HLT) software decides if the
+ event is stored.
  By reconstructing the full event data that uses all detector sub systems,
  it further singles out interesting events and reduces the rate from 
 \begin_inset Formula $100\,\mathrm{kHz}$
@@ -916,7 +906,7 @@ Tier-0
 \begin_inset Quotes erd
 \end_inset
 
- and copied to the 
+ center and copied to the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -924,8 +914,16 @@ Tier-1
 \begin_inset Quotes erd
 \end_inset
 
- of the Worldwide LHC Computing Grid (WLCG) to be accessed from experimentalists
- around the world 
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Tier-2
+\begin_inset Quotes erd
+\end_inset
+
+ centers of the Worldwide LHC Computing Grid (WLCG) to be accessed from
+ experimentalists around the world 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMStechnicalReport"
@@ -944,10 +942,10 @@ The Particle-Flow Algorithm
 \end_layout
 
 \begin_layout Standard
-The Particle-Flow (PF) algorithm aims at precisely identifing particle types
- and their momenta by exploiting all detector sub systems.
+The Particle-Flow (PF) algorithm aims at precisely identifying particle
+ types and their momenta by exploiting all detector sub systems.
  It creates particle hypotheses within an event by combining information
- from charged-particle tracks, calorimetry hits and muon tracks 
+ from charged-particle tracks, calorimetry hits, and muon tracks 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "particleflow"
@@ -958,9 +956,10 @@ key "particleflow"
 \end_layout
 
 \begin_layout Standard
-The algorithm starts with the tracker information by first singling out
- tracks with very tight criteria originating closely from the IP.
- On the remaining tracks, iteratively looser criteria are applied for selection.
+The algorithm starts with the tracker information by first selecting tracks
+ with very tight criteria originating closely from the IP.
+ Iteratively looser criteria are applied for the selection of the remaining
+ tracks.
  In the calorimeters, hits are clustered.
  This is performed by finding cells with high energy maxima (
 \begin_inset Quotes eld
@@ -985,10 +984,11 @@ topological clusters
 \end_layout
 
 \begin_layout Standard
-One expects that a particle leads to a charged-particle track and/or hits
- several calorimeter clusters as well as one or no track in the muon system.
+One expects that a particle leads to a charged-particle track, and/or hits
+ several calorimeter clusters, and leads to one or no track in the muon
+ system.
  These pieces of information are linked to reconstruct each single observed
- particle while possible double counting has to be taken care of.
+ particle.
 \end_layout
 
 \begin_layout Subsection
@@ -996,7 +996,7 @@ Muon Identification
 \end_layout
 
 \begin_layout Standard
-Muons can be identified in three ways:
+Muons are identified in three ways:
 \end_layout
 
 \begin_layout Enumerate
@@ -1057,13 +1057,16 @@ key "muonID"
 \end_layout
 
 \begin_layout Standard
-The Particle-Flow algorithm categorizes the muons further.
- If there is less than a 10% fraction of the muon's transverse momentum
- in a cone of 
+The PF algorithm categorizes the muons further.
+ If the energy deposit in a cone of 
 \begin_inset Formula $\sqrt{\Delta\eta^{2}+\Delta\phi^{2}}<0.3$
 \end_inset
 
- around the muon, the muon is labeled 
+ around the muon track is less than 
+\begin_inset Formula $10\%$
+\end_inset
+
+ of the muon's transverse momentum, the muon is labeled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1099,22 +1102,21 @@ key "pfmuon"
 \end_layout
 
 \begin_layout Subsection
-Missing transverse Energy
+Missing Transverse Energy
 \end_layout
 
 \begin_layout Standard
-After the Particle-Flow reconstruction, the missing transverse energy can
- be calculated.
- Due to the conversation of momentum, the net transverse momentum has to
+After the PF reconstruction, the missing transverse energy is calculated.
+ Due to the conversation of momentum, the net transverse momentum should
  be zero after a collision.
- One can obtain the missing transverse energy from the mirrored net momentum
- of all reconstructed particles.
+ One can obtain the missing transverse energy from the net momentum of all
+ reconstructed particles.
 \end_layout
 
 \begin_layout Standard
-Depending on the physics analysis, the missing transverse energy is often
- used to support the construction of hypotheses about particles that cannot
- be detected directly in CMS, like neutrinos or SUSY particles.
+Depending on the physics analysis, the missing transverse energy may hints
+ about particles that cannot be detected directly in CMS, e.g.
+ like neutrinos or SUSY particles.
 \end_layout
 
 \begin_layout Subsection
@@ -1137,7 +1139,7 @@ Nowadays, the mainly used jet algorithms are the
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
- and the Seedless Infrared-Safe Cone (SIS-Cone) algorithms 
+, and the Seedless Infrared-Safe Cone (SIS-Cone) algorithms 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "antiKT,siscone"
@@ -1214,10 +1216,11 @@ Jet definition in different scenarios of additional particles.
 \end_layout
 
 \begin_layout Standard
-Soft gluons emitted from a parton during the hadronization produce additional
- particles with low momenta that should be clustered into the jet.
+Soft gluons which are emitted from a parton during the hadronization produce
+ additional particles with low momenta that should be clustered into the
+ jet.
  However, lowly energetic particles originating from other interactions
- should be left out.
+ should be omitted.
  This infrared accumulation may sum up and has a significantly incorrect
  input to the jet.
  Suppressing this behavior by setting a minimum momentum threshold (
@@ -1234,7 +1237,7 @@ seed
 \end_layout
 
 \begin_layout Standard
-In the CMS reconstruction, the anti-
+In the CMS jet reconstruction, the anti-
 \begin_inset Formula $\mathrm{k_{T}}$
 \end_inset
 
@@ -1314,7 +1317,7 @@ between all proto-jets
 \begin_inset Formula $d_{i}>d_{ij}$
 \end_inset
 
- the two proto-jets 
+, the two proto-jets 
 \begin_inset Formula $i$
 \end_inset
 
@@ -1389,19 +1392,26 @@ For performing the analysis in this thesis, various software packages have
 \end_layout
 
 \begin_layout Subsection
-CMS Software framework
+CMS Software Framework
 \end_layout
 
 \begin_layout Standard
 The CMS software (CMSSW) framework provides a collection of software packages
- for simulation and reconstruction.
+ for simulation and reconstruction 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMSSW"
+
+\end_inset
+
+.
  The event data model (EDM) acts as a common interface between the different
  packages.
 \end_layout
 
 \begin_layout Standard
-A CMSSW job is configured by a script file which specifies the inputs and
- outputs as well as the intermediate analysis module chain.
+A analysis with CMSSW is configured by a script file which specifies the
+ inputs and outputs as well as the intermediate analysis module chain.
  This script file is passed to the 
 \begin_inset Quotes eld
 \end_inset
@@ -1410,20 +1420,13 @@ cmsRun
 \begin_inset Quotes erd
 \end_inset
 
- executable 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "CMSSW"
-
-\end_inset
-
-.
+ executable.
 \end_layout
 
 \begin_layout Standard
-For splitting and running large numbers of CMSSW jobs on the WLCG, the CMS
- remote analysis builder (CRAB) provides a convenient configuration and
- submission of jobs as well as status tracking 
+For splitting and running large numbers of CMSSW analyses on the WLCG, the
+ CMS remote analysis builder (CRAB) provides a convenient configuration
+ and submission of analyses as well as their status tracking 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "crab"
@@ -1434,8 +1437,8 @@ key "crab"
 \end_layout
 
 \begin_layout Standard
-For the analysis, the CMSSW version 4.2.8 has been used for the event reconstructi
-on, selection and simulation.
+For this analysis, the CMSSW version 4.2.8 is used for the event reconstruction,
+ selection, and simulation.
 \end_layout
 
 \begin_layout Subsection
@@ -1444,14 +1447,21 @@ THETA
 
 \begin_layout Standard
 The THETA framework provides tools for template-based statistical modeling
- and inference.
+ and inference 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "THETA"
+
+\end_inset
+
+.
  A model is defined by a set of histograms (templates), parameters, and
  observables.
- A simple observable 
+ As an example, a simple observable 
 \begin_inset Formula $O$
 \end_inset
 
- within a model is constructed for example by
+ within a model is constructed by
 \end_layout
 
 \begin_layout Standard
@@ -1475,23 +1485,17 @@ with the templates
 \end_inset
 
 .
- THETA provides then various producers to perform a statistical inference
+ THETA provides then various methods to perform a statistical inference
  by e.g.
- comparing models with real data.
- Producers are available to perform frequentist or Bayesian methods including
- maximum likelihood estimator (MLE) and marginalization using markov-chain
- monte-carlo (MCMC) methods besides others 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "THETA"
-
-\end_inset
-
-.
+ comparing models with data.
+ THETA is able to perform frequentist or Bayesian methods including maximum
+ likelihood estimator (MLE) and marginalization using Markov-Chain Monte-Carlo
+ (MCMC) methods besides others.
+ 
 \end_layout
 
 \begin_layout Standard
-THETA is used in the analysis to generate pseudo experiments for propagation
+In the analysis, THETA is used to generate pseudo experiments for propagation
  of uncertainties and to obtain a data-driven yield estimate through a fit.
 \end_layout
 
@@ -1500,9 +1504,7 @@ ROOT
 \end_layout
 
 \begin_layout Standard
-ROOT is a C++ framework for various tasks.
- It is used for analysing, plotting, storing, and monitoring data in many
- high energy physics experiments and analyses 
+ROOT is a C++ framework for various tasks 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ROOT"
@@ -1510,6 +1512,8 @@ key "ROOT"
 \end_inset
 
 .
+ It is used for analyzing, plotting, storing, and monitoring data in many
+ high energy physics experiments and analyses .
  For example, the main file format for data exchange in CMSSW is a ROOT
  tree structure.
 \end_layout
@@ -1520,7 +1524,14 @@ Toolkit for Multivariate Data Analysis with ROOT
 
 \begin_layout Standard
 The Toolkit for Multivariate Data Analysis with ROOT (TMVA) is a C++ analysis
- framework.
+ framework 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TMVAGuide"
+
+\end_inset
+
+.
  It hosts various algorithms for multivariate classification.
  In high energy physics, such classifications in high dimensional spaces
  are often used to further discriminate between signal and background events
@@ -1528,10 +1539,10 @@ The Toolkit for Multivariate Data Analysis with ROOT (TMVA) is a C++ analysis
 \end_layout
 
 \begin_layout Standard
-To setup a discriminator for classification, the classifier algorithm is
+To set up a discriminator for classification, the classifier algorithm is
  first trained and tested with simulated signal and background events.
  For evaluation, statistically independent simulated samples are needed
- for a bias-free comparison with actual data.
+ to allow a bias-free comparison with actual data.
 \end_layout
 
 \begin_layout Standard
@@ -1551,7 +1562,7 @@ Boosted Decision and Regression Tree
 \begin_inset Quotes erd
 \end_inset
 
- algorithms, which are applied in the analysis.
+ algorithms, which are applied in this analysis.
 \end_layout
 
 \begin_layout Paragraph*
@@ -1592,8 +1603,6 @@ is defined.
 \begin_layout Standard
 This method has been chosen because it is not sensitive to correlations
  within the input variables.
- This is required in order to not alter artificially the signal shape if
- the classifier is used to select a signal enhanced phase space.
 \end_layout
 
 \begin_layout Paragraph*
@@ -1605,12 +1614,12 @@ A decision tree tries to identify signal- or background-like phase spaces
  within the n-dimensional input variables space.
  This is performed by sequentially cutting on the variables to select a
  signal enhanced region.
- However a single trained decision tree can be very unstable due to statistical
+ However, a single trained decision tree can be very unstable due to statistical
  fluctuations in the training samples.
  Therefore, many decision trees are constructed.
  A stabilized discriminator is derived by a majority vote over all trees.
  Boosting increases the discriminator stability further by applying additional
- weight factors for each decision tree based on its performance.
+ weight factors for each decision tree based on its classification performance.
  The Boosted Decision Tree (BDT) discriminator can be written as
 \end_layout
 
@@ -1675,19 +1684,12 @@ Through the normalization to
 \begin_inset Formula $\sum\alpha_{j}=\mathrm{const}$
 \end_inset
 
- the BDT discriminator ranges between 
+, the BDT discriminator ranges between 
 \begin_inset Formula $-1$
 \end_inset
 
  and 
 \begin_inset Formula $1$
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "TMVAGuide"
-
 \end_inset
 
 .
@@ -1716,7 +1718,8 @@ key "VISPA"
 .
  Within the software, the user can write C++ or Python modules and connect
  them graphically to create a complex analysis logic.
- During runtime, data objects are passed along these connections.
+ During runtime, data objects are passed along these connections to the
+ user modules.
  The data objects trigger methods within the modules where the user code
  is executed.
 \end_layout
@@ -1724,14 +1727,14 @@ key "VISPA"
 \begin_layout Standard
 Data objects are stored in the PXLIO file format.
  There are various converters available to read Comma-Separated Values (CSV)
- files, the Les Houches Event format and the data formats from the experiments
+ files, the Les Houches Event format, and the data formats from the experiments
  CMS, ATLAS, Pierre Auger, and ILC, besides others.
 \end_layout
 
 \begin_layout Standard
-Through the multifaceted areas of application, VISPA was used during the
- analysis for generator validation, event selection, multivariante classificatio
-n training and evaluation, and for coordination and analysis of THETA runs
+Through the multifaceted areas of application, VISPA is used during this
+ analysis for generator validation, event selection, multivariate classification
+ training and evaluation, and for coordination and analysis of THETA runs
  and results.
 \end_layout
 

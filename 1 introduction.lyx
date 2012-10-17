@@ -218,7 +218,7 @@ Projective Likelihood Estimator
 The event simulation and selection are described in chapter 4.
  The analysis strategy is presented in chapter 5.
  The multivariate classification methods are used to further discriminate
- remaining background constributions after the event selection.
+ remaining background contributions after the event selection.
  This yields a very pure selection of signal events from data.
  The resulting distributions are unfolded to correct for detector and reconstruc
 tion effects.

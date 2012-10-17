@@ -68,29 +68,11 @@
 %\renewcommand{\listtablename}{Tabellenverzeichnis}
 
 %ersetze Chapter -> Section fuer ListofFigures
-\renewcommand\listoffigures{%
-  \section*{\listfigurename}%
-  \@mkboth{\MakeUppercase\listfigurename}{\MakeUppercase\listfigurename}%
-  \@starttoc{lof}%
-}
+%\renewcommand\listoffigures{%  \section*{\listfigurename}%  \@mkboth{\MakeUppercase\listfigurename}{\MakeUppercase\listfigurename}%  \@starttoc{lof}%}
 %ersetze Chapter -> Section fuer ListofTables
-\renewcommand\listoftables{%
-  \section*{\listtablename}%
-  \@mkboth{\MakeUppercase\listtablename}{\MakeUppercase\listtablename}%
-  \@starttoc{lot}%
-}
+%\renewcommand\listoftables{%  \section*{\listtablename}%  \@mkboth{\MakeUppercase\listtablename}{\MakeUppercase\listtablename}%  \@starttoc{lot}%}
 %ersetze Chapter -> Section fuer Nomenklatur
-\renewcommand{\thenomenclature}{%
-    \section*{\nomname}
-
-  \nompreamble
-  \list{}{%
-    \labelwidth\nom@tempdim
-    \leftmargin\labelwidth
-    \advance\leftmargin\labelsep
-    \itemsep\nomitemsep
-    \let\makelabel\nomlabel}
-}
+%\renewcommand{\thenomenclature}{% \section*{\nomname} \nompreamble  \list{}{%    \labelwidth\nom@tempdim    \leftmargin\labelwidth    \advance\leftmargin\labelsep    \itemsep\nomitemsep    \let\makelabel\nomlabel}}
 %ersetze Titlenamen fuer Nomenklatur
 \renewcommand{\nomname}{List of Abbreviations}
 \setlength{\nomlabelwidth}{.15\hsize}

@@ -120,7 +120,7 @@ Simulation
 Single top quark t-channel events are simulated for comparison with data.
  Also background processes with the same signature need to be included in
  the analysis.
- The signature of the single top quark t-channel production with leptonic
+ The signature of the single top quark t-channel production with leptonically
  W boson decay (signal process) involves two jets, where one of the jets
  is required b-tagged, a lepton and missing transverse energy (MET) through
  the escaping neutrino.
@@ -146,23 +146,6 @@ status open
 	filename images/singletopsignature.eps
 	lyxscale 10
 	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{rename often -> mostly, lepton -> charged lepton, 1st btagged,
- 2nd btagged, out -> not in detector}
-\end_layout
 
 \end_inset
 
@@ -202,20 +185,7 @@ Signature of single top quark t-channel production with leptonically decaying
 
 The signature includes also a second jet with a b-tag.
  This second jet mostly escapes the detector acceptance because most of
- its mometum comes from the proton.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{formulierung}
-\end_layout
-
-\end_inset
-
+ its mometum comes from one of the colliding protons.
  The jet without a b-tag originates often from up, down or strange quarks
  and is therefore referred to as 
 \begin_inset Quotes eld
@@ -226,7 +196,7 @@ light
 \end_inset
 
  jet.
- Additionallym, it is often labeled 
+ Additionally, it is often labeled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2826,7 +2796,7 @@ key "tauola"
  The hadronization simulation is performed with Pythia6.
  Then, the Fast Simulation package is used to simulate the detector.
  Fast Simulation provides a 100 - 1000 faster simulation than the Geant4-based
- simulation by approximating the detector response 
+ simulation (Fullsim) by approximating the detector response 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "FastSim,CMStechnicalReport"
@@ -2837,7 +2807,8 @@ key "FastSim,CMStechnicalReport"
 \end_layout
 
 \begin_layout Standard
-Approximately 2,000,000 events have been simulated for varous coupling scenarios.
+Approximately 2,000,000 events have been simulated for various coupling
+ scenarios.
  Most extreme deviations from the SM coupling case have been used.
  Therefore, four samples with pure 
 \begin_inset Formula $\mathrm{V_{L},\, V_{R},\, g_{L}}$
@@ -6456,8 +6427,8 @@ best jet
 \end_layout
 
 \begin_layout Standard
-Additionally, a hadronic final state (HFS) object is constructed from the
- momenta of the two jets.
+Additionally, the hadronic final state (HFS) object is constructed from
+ the momenta of the two jets.
 \end_layout
 
 \begin_layout Section

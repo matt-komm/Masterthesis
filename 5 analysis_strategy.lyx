@@ -155,7 +155,7 @@ reference "fig:Cos-helicity-after"
 
  distributions after the event selection.
  The background processes are already normalized to their data-driven estimate
- from as described in chapter 6.1.
+ as described in chapter 6.1.
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +214,7 @@ The contributions from background processes are still very high after the
  Boosted Decision Trees (BDTs) are trained in order to separate signal and
  background events.
  The discriminator output is then used to select a highly pure signal phase
- space from data.
+ space.
 \end_layout
 
 \begin_layout Standard
@@ -552,7 +552,7 @@ Discrimination of Signal and Background
 As an input to multivariate classification techniques, input variables have
  to be chosen.
  The choice for a certain variable which is e.g.
- based on the event kinematics, is often made according to its discrimination
+ based on the event kinematics is often made according to its discrimination
  power within the multivariate training phase.
  This is applicable if one is solely interested in the best background discrimin
 ation with a minimum set of variables.
@@ -560,9 +560,10 @@ ation with a minimum set of variables.
 
 \begin_layout Standard
 For this analyses it is crucial to minimize a potential bias on the shape
- of the differential distributions after a discriminator is applied.
- A shape bias can occur if a multivariate method gets sensitive to the specific
- coupling scenario which is used for training of the classifier.
+ of the differential distributions after a discriminator requirement is
+ applied.
+ A shape bias can occur if a multivariate method becomes sensitive to the
+ specific coupling scenario which is used for the training of the classifier.
  Non-correlated variables to the 
 \begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
 \end_inset
@@ -622,7 +623,8 @@ where
 \end_layout
 
 \begin_layout Standard
-An algorithm to test an independence hypothesis has been proposed 
+An algorithm to test an independence hypothesis has been proposed in reference
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "independentAlgo"
@@ -630,7 +632,7 @@ key "independentAlgo"
 \end_inset
 
 .
- It uses a 
+ It is based on a 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
@@ -726,12 +728,12 @@ Second, from the flattened distributions an
 \end_inset
 
  are independent, the histogram content is expected to be compatible with
- a two dimensional uniform distribution.
+ a two-dimensional uniform distribution.
  To quantify the independence hypothesis a 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
--test by calculating
+-test is performed by calculating
 \end_layout
 
 \begin_layout Standard
@@ -748,13 +750,12 @@ with the expectation value and its uncertainty for the flat hypothesis
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-e=\frac{N}{n^{2}},\qquad\sigma_{e}=\sqrt{\frac{N}{n^{2}}}
+e=\frac{N}{n^{2}},\qquad\sigma_{e}=\sqrt{\frac{N}{n^{2}}}.
 \end{equation}
 
 \end_inset
 
-is performed.
- The probability of this hypothesis follows a 
+The probability of this hypothesis follows a 
 \begin_inset Formula $\chi^{2}$
 \end_inset
 
@@ -828,13 +829,13 @@ The search for independent variables to
 \begin_inset Formula $h$
 \end_inset
 
- is filled with a statistical sufficient amount of simulated events of approxima
-tely 
+ is filled with a statistically sufficient amount of simulated events of
+ approximately 
 \begin_inset Formula $100$
 \end_inset
 
 .
- This leads for the Powheg sample to 
+ For the Powheg sample, this leads to 
 \begin_inset Formula ${\textstyle \frac{55000}{100}}\approx23^{2}$
 \end_inset
 
@@ -866,19 +867,6 @@ Confidence is gained in the algorithm as it first suggests the
 
 \begin_layout Standard
 The complete ranking is listed in the appendix.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-checkthis{add ranking to appendix}
-\end_layout
-
-\end_inset
-
  The ranking is obtained by testing each variable for independence against
  the six 
 \begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
@@ -897,7 +885,7 @@ reference "fig:Correlation-of-the"
 
 \end_inset
 
- shows the first and 100th variable in the histogram 
+ shows the first and the 100th variable in the histogram 
 \begin_inset Formula $h$
 \end_inset
 
@@ -909,11 +897,11 @@ reference "fig:Correlation-of-the"
  For the first variable, no obvious correlation is visible.
  The 100th variable presents a slight correlation because the regions around
  the points 
-\begin_inset Formula $(1.0,\,-1.0)$
+\begin_inset Formula $(1.0,\,0.0)$
 \end_inset
 
  and 
-\begin_inset Formula $(-1.0,\,1.0)$
+\begin_inset Formula $(0.0,\,1.0)$
 \end_inset
 
  contain less events.
@@ -1067,11 +1055,11 @@ Twenty different discriminators for each BDT and PLE method are trained
 
 ).
  Later in the analysis a discriminator with a certain set is chosen.
- If a discriminator with a set of less variables is used it maybe independent
+ If a discriminator with a set of fewer variables is used it may be independent
  from the observables but has less discrimination power.
  Otherwise a discriminator trained with a set of many variables provides
  a high background suppression but can introduce a potential bias through
- the possible higher correlation to 
+ the possibly higher correlation with 
 \begin_inset Formula $\cos\theta_{\mathrm{B,\, X}}$
 \end_inset
 
@@ -1679,7 +1667,7 @@ reference "fig:Examplary-discriminantion-power"
 \end_inset
 
 , a subset of the ROC curves are shown for the BDT and PLE method.
- This curves are obtained by using certain discriminator working points
+ These curves are obtained by using certain discriminator working points
  and calculating the amount of remaining signal event (efficiency) and backgroun
 d events (purity).
  The ROC curve shapes for some PLEs possess a TMVA internal artifact at
@@ -1819,7 +1807,7 @@ Unfolding
 \end_layout
 
 \begin_layout Standard
-A signal enriched phase space is obtained by using a multivariate discriminator.
+A signal-enriched phase space is obtained by using a multivariate discriminator.
  Smearing effects, finite resolution, the acceptance of the detector and
  the event selection change the differential 
 \begin_inset Formula ${\textstyle \frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}}$
@@ -1874,7 +1862,7 @@ key "volkerBobel"
 \end_inset
 
 .
- This transformation even includes non-linear detector responses.
+ This transformation may even include non-linear detector responses.
  One is then interested in solving this equation to obtain the true distribution
  
 \begin_inset Formula $f(x)$
@@ -1942,8 +1930,8 @@ response matrix
 \end_inset
 
 .
- The response matrix can be constructed by using a MC simulation in which
- both distributions 
+ The response matrix can be constructed by using a simulated event sample
+ in which both distributions 
 \begin_inset Formula $\vec{x}$
 \end_inset
 
@@ -2164,7 +2152,7 @@ The ill-posed unfolding problem.
  solid and a second dashed distribution subjected to unfolding.
  (c): The result from the unfolding of the dashed distribution by inversion
  of the response matrix.
- Figures where taken from Ref.
+ Figures are taken from Ref.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2186,7 +2174,14 @@ key "GCowan"
 \end_layout
 
 \begin_layout Standard
-The singular value decomposition (SVD) helps to understand the problem.
+The singular value decomposition (SVD) helps to understand the problem 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "svdunfolding"
+
+\end_inset
+
+.
  SVD can be used to decompose even non-quadratic matrices 
 \begin_inset Formula $A$
 \end_inset
@@ -2301,7 +2296,7 @@ reference "eq:anticorr"
 
 \end_inset
 
- induces an negative correlation between 
+ induces a negative correlation between 
 \begin_inset Formula $x_{1}$
 \end_inset
 
@@ -2315,15 +2310,15 @@ reference "eq:anticorr"
 \end_inset
 
  goes to zero, this term leads to oscillations.
- The oscillation term dominates through the inequation 
-\begin_inset Formula ${\textstyle \frac{1}{D_{11}}}<{\textstyle \frac{1}{D_{22}}}$
-\end_inset
-
- the first term in equation 
+ The oscillation term dominates the first term in equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:anticorr"
 
+\end_inset
+
+ through the inequation 
+\begin_inset Formula ${\textstyle \frac{1}{D_{11}}}<{\textstyle \frac{1}{D_{22}}}$
 \end_inset
 
 .
@@ -2354,7 +2349,7 @@ SVD Unfolding
 \end_inset
 
 .
- The regularization can be referred to as a hard cut off which leads to
+ The regularization can be referred to as a hard cut-off which leads to
 \end_layout
 
 \begin_layout Standard
@@ -2385,7 +2380,8 @@ where the parameter
 \end_inset
 
  defines a priori the maximal curvature of the unfolded distribution.
- Therefore, regularized unfolding can only be applied if a sufficient 
+ Therefore, regularized unfolding can only be applied if a sufficiently
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2536,16 +2532,16 @@ The regularization parameter
 
  controls the influence of the second derivatives in the minimization and
  has to be chosen carefully.
- If it is chosen too small, unphysical oscillations are not sufficient suppresse
-d.
+ If it is chosen too small, unphysical oscillations are not sufficiently
+ suppressed.
  If 
 \begin_inset Formula $\tau$
 \end_inset
 
  is chosen too large, the solution is biased towards a solution with the
  smallest curvature.
- This regularization method is special case of the Tikhonov-Phillips regularizat
-ion method.
+ This regularization method is a special case of the Tikhonov-Phillips regulariz
+ation method.
 \end_layout
 
 \begin_layout Standard
@@ -2612,8 +2608,7 @@ where the Jacobi matrix
 
 \end_inset
 
-In this particular analysis, the correlations coefficients are averaged
- as
+In this particular analysis, the correlation coefficients are averaged as
 \end_layout
 
 \begin_layout Standard
@@ -2629,7 +2624,7 @@ Negative correlations between directly adjacent bins lead to
 \end_inset
 
 .
- This is an indicator for the previous observed unphysical oscillations.
+ This is an indicator for the previously observed unphysical oscillations.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3067,7 +3062,7 @@ fake
 \begin_inset Quotes erd
 \end_inset
 
- events and treated as an additional background process.
+ events and are treated as an additional background process.
 \end_layout
 
 \begin_layout Standard

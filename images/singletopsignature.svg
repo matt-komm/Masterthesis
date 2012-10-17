@@ -228,7 +228,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.1086532"
      inkscape:cx="686.8746"
-     inkscape:cy="584.47894"
+     inkscape:cy="501.93763"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -270,7 +270,7 @@
          sodipodi:role="line"
          id="tspan2832"
          x="483.63367"
-         y="409.3913">1 &quot;light&quot; jet (often from u,  </tspan><tspan
+         y="409.3913">1 &quot;light&quot; jet (mostly from u,  </tspan><tspan
          sodipodi:role="line"
          x="483.63367"
          y="451.8913"
@@ -284,7 +284,7 @@
          sodipodi:role="line"
          id="tspan2832-7"
          x="484.9527"
-         y="486.60046">1 lepton</tspan></text>
+         y="486.60046">1 charged lepton</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
@@ -304,7 +304,7 @@
          sodipodi:role="line"
          id="tspan2865"
          x="484.93201"
-         y="609.91992">1 b-tagged jet</tspan></text>
+         y="609.91992">1st b-tagged jet</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:34px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Palatino Linotype;-inkscape-font-specification:Palatino Linotype"
@@ -318,7 +318,11 @@
          sodipodi:role="line"
          x="484.76617"
          y="721.47308"
-         id="tspan4434">(out of acceptance)</tspan></text>
+         id="tspan4434">(mostly not in detector </tspan><tspan
+         sodipodi:role="line"
+         x="484.76617"
+         y="763.97308"
+         id="tspan2864"> acceptance)</tspan></text>
     <rect
        style="fill:#ffffff;stroke:none;stroke-width:2.31316495000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1"
        id="rect4438"
