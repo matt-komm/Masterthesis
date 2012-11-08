@@ -1196,6 +1196,11 @@ status open
 
 \begin_layout Plain Layout
 The SM interactions and their gauge bosons
+\end_layout
+
+\end_inset
+
+ The SM interactions and their gauge bosons 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "pdg"
@@ -1203,11 +1208,6 @@ key "pdg"
 \end_inset
 
 .
-\end_layout
-
-\end_inset
-
- The SM interactions and their gauge bosons.
 \end_layout
 
 \end_inset
@@ -2274,7 +2274,7 @@ with
 \end_inset
 
 .
- Quark are 
+ Quarks are 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3435,13 +3435,12 @@ name "tab:The-top-quark-spin-asymmetries-and-ratios"
 status open
 
 \begin_layout Plain Layout
-The expected top quark spin asymmetries and ratios.
+The expected top quark spin asymmetries.
 \end_layout
 
 \end_inset
 
-The expected top quark spin asymmetries and ratios if the SM couplings are
- considered.
+The expected top quark spin asymmetries if the SM couplings are considered.
 \end_layout
 
 \end_inset

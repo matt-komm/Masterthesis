@@ -1069,7 +1069,7 @@ The signal selection requires events with exactly one b-tagged jet.
 \end_inset
 
  to be measured with only one b-tagged jet due to the possibility that the
- second jet is mis-tagged.
+ second jet is not tagged.
 \end_layout
 
 \begin_layout Standard
@@ -1659,7 +1659,7 @@ The di-boson processes, WW, WZ, and ZZ, are each varied independently by
 \end_layout
 
 \begin_layout Standard
-The described uncertainties are implement in a THETA model.
+The described uncertainties are implemented in a THETA model.
  The differential 
 \begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, X}}}$
 \end_inset
@@ -6234,7 +6234,7 @@ status open
 
 \begin_layout Plain Layout
 The 
-\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-muon}}}$
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{spec,\, muon}}}$
 \end_inset
 
  before and after the unfolding.
@@ -6243,7 +6243,7 @@ The
 \end_inset
 
 The 
-\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-muon}}}$
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{spec,\, muon}}}$
 \end_inset
 
  before (a) and after (b) the unfolding.
@@ -6367,7 +6367,7 @@ status open
 
 \begin_layout Plain Layout
 The 
-\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-tagged\, jet}}}$
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{spec,\, tagged\, jet}}}$
 \end_inset
 
  before and after the unfolding.
@@ -6376,7 +6376,7 @@ The
 \end_inset
 
 The 
-\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-tagged\, jet}}}$
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{spec,\, b-tagged\, jet}}}$
 \end_inset
 
  before (a) and after (b) the unfolding.
@@ -6496,7 +6496,7 @@ status open
 
 \begin_layout Plain Layout
 The 
-\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-neutrino}}}$
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{spec,\, neutrino}}}$
 \end_inset
 
  before and after the unfolding.
@@ -6505,7 +6505,7 @@ The
 \end_inset
 
 The 
-\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{B,\, b-neutrino}}}$
+\begin_inset Formula $\frac{\mathrm{d}\sigma}{\mathrm{d}\cos\theta_{\mathrm{spec,\, neutrino}}}$
 \end_inset
 
  before (a) and after (b) the unfolding.

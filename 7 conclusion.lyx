@@ -157,7 +157,7 @@ The asymmetries are calculated from distributions of the angles
 
  in the top quark rest frame.
  The muon, the bottom quark and the neutrino from leptonically decaying
- top quarks are choosen as the spin analyzers.
+ top quarks are chosen as the spin analyzers.
  The direction of the spectator quark or its projection onto the beamline
  serves as the top quark spin basis.
  
@@ -260,23 +260,24 @@ In total, three top quark spin asymmetries are measured in the spectator
 \end_layout
 
 \begin_layout Standard
-The measured top quark spin asymmetry for the muons spin analyzer in the
+The measured top quark spin asymmetry for the muon spin analyzer in the
  spectator basis is compatible with the SM within a significance of 
 \begin_inset Formula $1.55\sigma$
 \end_inset
 
 .
- The top quark spin asymmetry agrees well with a significance of 
+ The top quark spin asymmetry for the b-tagged jet spin analyzer in the
+ spectator basis agrees well with a significance of 
 \begin_inset Formula $0.06\sigma$
 \end_inset
 
  with the SM.
- For the top quark spin asymmetry of the neutrino spin analyzer, the measurement
- agrees with a significance of 
+ For the top quark spin asymmetry of the neutrino spin analyzer in the spectator
+ basis, the measurement agrees with a significance of 
 \begin_inset Formula $0.72\sigma$
 \end_inset
 
-.
+ with the SM.
 \end_layout
 
 \begin_layout Standard
