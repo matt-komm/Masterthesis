@@ -1621,6 +1621,16 @@ name "fig:MVA-outputs"
 
 \end_inset
 
+
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Discriminator outputs for some trained BDTs and PLEs.
+\end_layout
+
+\end_inset
+
 Discriminator outputs for some trained BDTs and PLEs.
  The discriminator outputs for the BDT by using 20 (a), 45 (c), and 100
  (e) input variables and for the PLE by using 20 (b), 45 (d), and 100 (f)
