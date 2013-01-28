@@ -1974,18 +1974,26 @@ For the masses of the electroweak gauge bosons, the
 \end_inset
 
 The Higgs boson is predicted by the SM but was not observed for a long time.
- Very recently, an evidence for a Higgs boson with a mass of 
-\begin_inset Formula $m_{\mathrm{H}}=126\pm0.6\,\mathrm{GeV}$
+ Very recently, an evidence for a Higgs-like boson with a mass of around
+ 
+\begin_inset Formula $m_{\mathrm{H}}\approx126\,\mathrm{GeV}$
 \end_inset
 
- has been observed 
+ has been observed by the ATLAS 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "higgsobservation"
+key "higgsobservation1"
 
 \end_inset
 
-.
+ and CMS 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "higgsobservation2"
+
+\end_inset
+
+ experiments.
  The 
 \begin_inset Formula $W^{\pm}$
 \end_inset

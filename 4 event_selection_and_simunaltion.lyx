@@ -6110,7 +6110,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/MasterThesis/plots/mtw.norm.ps-crop.pdf
+	filename plots/mtw.norm.ps-crop.pdf
 	lyxscale 30
 	width 10cm
 

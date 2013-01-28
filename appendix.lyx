@@ -1417,7 +1417,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/correlation.pdf
+	filename plots/correlation-crop.pdf
 	lyxscale 40
 	width 15cm
 	rotateAngle 90
@@ -1457,7 +1457,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename D:/MasterThesis/plots/cos_theta_beamline_muon_bdt.ps-crop.pdf
+	filename plots/cos_theta_beamline_muon_bdt.ps-crop.pdf
 	lyxscale 30
 	width 11cm
 
@@ -1492,7 +1492,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename D:/MasterThesis/plots/unfolded_dist_beamline_lepton.ps-crop.pdf
+	filename plots/unfolded_dist_beamline_lepton.ps-crop.pdf
 	lyxscale 30
 	width 11cm
 
@@ -1527,7 +1527,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename D:/MasterThesis/plots/cos_theta_beamline_bjet_bdt.ps-crop.pdf
+	filename plots/cos_theta_beamline_bjet_bdt.ps-crop.pdf
 	lyxscale 30
 	width 11cm
 
@@ -1563,7 +1563,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename D:/MasterThesis/plots/unfolded_dist_beamline_bjet.ps-crop.pdf
+	filename plots/unfolded_dist_beamline_bjet.ps-crop.pdf
 	lyxscale 30
 	width 11cm
 
@@ -1599,7 +1599,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename D:/MasterThesis/plots/cos_theta_beamline_neutrino_bdt.ps-crop.pdf
+	filename plots/cos_theta_beamline_neutrino_bdt.ps-crop.pdf
 	lyxscale 30
 	width 11cm
 
@@ -1635,7 +1635,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename D:/MasterThesis/plots/unfolded_dist_beamline_neutrino.ps-crop.pdf
+	filename plots/unfolded_dist_beamline_neutrino.ps-crop.pdf
 	lyxscale 30
 	width 11cm
 
@@ -1845,7 +1845,7 @@ top
 \begin_inset Quotes erd
 \end_inset
 
- CMS Teams nicht zu stande gekommen.
+ CMS Teams nicht zustande gekommen.
  Mein erster Dank gilt daher Prof.
  Dr.
  Martin Erdmann, Robert Fischer, Dennis Klingebiel und Jan Steggemann.
@@ -1865,7 +1865,7 @@ exezellente
  Bei Prof.
  Dr.
  Martin Erdmann bedanke ich mich ausserdem für die Möglichkeit an einem
- so interessanten Team als Abschluss meines Masterstudium zu arbeiten.
+ so interessanten Thema zum Abschluss meines Masterstudium zu arbeiten.
  Dies hat mir besonders viel Freude bereitet!
 \end_layout
 
